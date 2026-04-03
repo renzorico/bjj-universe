@@ -8,7 +8,7 @@ The application is organized around a graph-centric frontend and a layered data 
 
 - `src/app` hosts the root composition and page-level shell.
 - `src/components` contains reusable UI surfaces without domain-specific ingestion logic.
-- `src/features/graph` contains graph presentation utilities and future graph-scene integration points.
+- `src/features/graph` contains the live Sigma scene, graph adapters, filters, and detail-panel logic.
 
 ### Data layers
 
@@ -27,4 +27,4 @@ The core constraint is future expansion. ADCC data is only the first source. The
 
 ## Rendering direction
 
-Phase 1 uses a premium shell and a graph preview surface rather than a blank starter page. A real Sigma.js scene can later plug into `src/features/graph` without changing domain contracts or metric transforms.
+Phase 2 mounts Sigma.js imperatively inside the graph feature layer. React owns filter and selection UI state only. The mutable `Graphology` instance and `Sigma` renderer stay outside React state and refresh through reducer-driven display logic.
