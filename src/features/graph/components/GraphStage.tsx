@@ -5,7 +5,7 @@ import {
   createDefaultGraphFilters,
   getAthleteDetail,
 } from '@/features/graph/lib/buildGraphSceneModel';
-import { buildSigmaGraph } from '@/features/graph/lib/buildSigmaGraph';
+import { buildForceGraphData } from '@/features/graph/lib/buildForceGraphData';
 import { GraphCanvas } from '@/features/graph/components/GraphCanvas';
 import { GraphControls } from '@/features/graph/components/GraphControls';
 import { AthleteDetailPanel } from '@/features/graph/components/AthleteDetailPanel';
@@ -24,8 +24,8 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
     () => buildGraphSceneModel(snapshot, filters),
     [filters, snapshot],
   );
-  const sigmaGraph = useMemo(
-    () => buildSigmaGraph(scene.nodes, scene.edges),
+  const graphData = useMemo(
+    () => buildForceGraphData(scene.nodes, scene.edges),
     [scene.edges, scene.nodes],
   );
   const detail = useMemo(
@@ -68,7 +68,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
       <div className="grid flex-1 gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-h-[58vh] xl:min-h-0">
           <GraphCanvas
-            graph={sigmaGraph}
+            data={graphData}
             selectedAthleteId={selectedAthleteId}
             hoveredAthleteId={hoveredAthleteId}
             onSelectAthlete={setSelectedAthleteId}

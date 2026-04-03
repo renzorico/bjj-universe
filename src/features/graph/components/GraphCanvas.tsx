@@ -1,195 +1,293 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import Sigma from 'sigma';
-import { MultiDirectedGraph } from 'graphology';
+import ForceGraph2D from 'react-force-graph-2d';
 import {
-  SigmaEdgeAttributes,
-  SigmaNodeAttributes,
-} from '@/features/graph/lib/buildSigmaGraph';
-import { getFocusedGraphState } from '@/features/graph/lib/getFocusedGraphState';
+  ForceGraphData,
+  ForceGraphLink,
+  ForceGraphNode,
+} from '@/features/graph/lib/buildForceGraphData';
 
 interface GraphCanvasProps {
-  graph: MultiDirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>;
+  data: ForceGraphData;
   selectedAthleteId: string | null;
   hoveredAthleteId: string | null;
   onSelectAthlete: (athleteId: string | null) => void;
   onHoverAthlete: (athleteId: string | null) => void;
 }
 
+interface CanvasSize {
+  width: number;
+  height: number;
+}
+
+interface GraphTestApi {
+  getNodeScreenPosition: (nodeId: string) => { x: number; y: number } | null;
+}
+
+declare global {
+  interface Window {
+    __BJJ_UNIVERSE_GRAPH__?: GraphTestApi;
+  }
+}
+
 export function GraphCanvas({
-  graph,
+  data,
   selectedAthleteId,
   hoveredAthleteId,
   onSelectAthlete,
   onHoverAthlete,
 }: GraphCanvasProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const sigmaRef = useRef<Sigma<
-    SigmaNodeAttributes,
-    SigmaEdgeAttributes
-  > | null>(null);
-  const [renderError, setRenderError] = useState(false);
-  const focusStateRef = useRef(getFocusedGraphState(graph, null, null));
-  const currentFocusState = useMemo(
-    () => getFocusedGraphState(graph, selectedAthleteId, hoveredAthleteId),
-    [graph, hoveredAthleteId, selectedAthleteId],
+  const [size, setSize] = useState<CanvasSize>({ width: 0, height: 0 });
+  const nodeById = useMemo(
+    () => new Map(data.nodes.map((node) => [node.id, node] as const)),
+    [data.nodes],
+  );
+  const focusState = useMemo(
+    () => buildFocusState(data, selectedAthleteId, hoveredAthleteId),
+    [data, hoveredAthleteId, selectedAthleteId],
   );
 
   useEffect(() => {
-    focusStateRef.current = currentFocusState;
-  }, [currentFocusState]);
-
-  const reducers = useMemo(
-    () => ({
-      nodeReducer: (nodeId: string, data: SigmaNodeAttributes) => {
-        const active = focusStateRef.current.activeNodeIds.has(nodeId);
-        const selected = selectedAthleteId === nodeId;
-        const hovered = hoveredAthleteId === nodeId;
-
-        return {
-          ...data,
-          color: active ? data.color : 'rgba(125, 147, 183, 0.18)',
-          highlighted: selected || hovered,
-          forceLabel: selected || hovered || data.forceLabel,
-          zIndex: selected || hovered ? 3 : active ? 2 : 1,
-        };
-      },
-      edgeReducer: (edgeId: string, data: SigmaEdgeAttributes) => {
-        const active = focusStateRef.current.activeEdgeIds.has(edgeId);
-
-        return {
-          ...data,
-          color: active ? data.color : 'rgba(125, 147, 183, 0.07)',
-          hidden:
-            !active &&
-            (selectedAthleteId !== null || hoveredAthleteId !== null),
-          zIndex: active ? 2 : 1,
-        };
-      },
-    }),
-    [hoveredAthleteId, selectedAthleteId],
-  );
-
-  useEffect(() => {
-    if (graph.order === 0) {
-      return undefined;
-    }
-
     if (!containerRef.current) {
       return undefined;
     }
 
-    try {
-      let renderStateTimeout: number | null = null;
-      const sigma = new Sigma(graph, containerRef.current, {
-        allowInvalidContainer: true,
-        defaultEdgeColor: 'rgba(157, 219, 211, 0.22)',
-        defaultNodeColor: '#7aa2ff',
-        enableEdgeEvents: false,
-        hideEdgesOnMove: false,
-        itemSizesReference: 'positions',
-        labelDensity: 0.06,
-        labelRenderedSizeThreshold: 14,
-        labelColor: { color: '#dce9ff' },
-        labelFont: 'Space Grotesk',
-        minCameraRatio: 0.25,
-        maxCameraRatio: 6,
-        nodeReducer: reducers.nodeReducer,
-        edgeReducer: reducers.edgeReducer,
-        renderEdgeLabels: false,
-        renderLabels: true,
-        stagePadding: 48,
-        zIndex: true,
+    const element = containerRef.current;
+    const updateSize = () => {
+      setSize({
+        width: Math.max(1, Math.floor(element.clientWidth)),
+        height: Math.max(1, Math.floor(element.clientHeight)),
       });
-
-      sigma.on('clickNode', ({ node }) => onSelectAthlete(node));
-      sigma.on('clickStage', () => onSelectAthlete(null));
-      sigma.on('enterNode', ({ node }) => onHoverAthlete(node));
-      sigma.on('leaveNode', () => onHoverAthlete(null));
-      void sigma.getCamera().animatedReset({ duration: 0 });
-
-      sigmaRef.current = sigma;
-      renderStateTimeout = window.setTimeout(() => setRenderError(false), 0);
-
-      const animationFrame = window.requestAnimationFrame(() => {
-        sigma.refresh();
-        void sigma.getCamera().animatedReset({ duration: 0 });
-      });
-      const resizeObserver = new ResizeObserver(() => {
-        sigma.refresh();
-      });
-      resizeObserver.observe(containerRef.current);
-
-      return () => {
-        if (renderStateTimeout !== null) {
-          window.clearTimeout(renderStateTimeout);
-        }
-        window.cancelAnimationFrame(animationFrame);
-        resizeObserver.disconnect();
-        sigma.kill();
-        sigmaRef.current = null;
-      };
-    } catch {
-      const renderStateTimeout = window.setTimeout(
-        () => setRenderError(true),
-        0,
-      );
-      sigmaRef.current = null;
-      return () => {
-        window.clearTimeout(renderStateTimeout);
-      };
-    }
-
-    return () => {
-      sigmaRef.current?.kill();
-      sigmaRef.current = null;
     };
-  }, [
-    graph,
-    onHoverAthlete,
-    onSelectAthlete,
-    reducers.edgeReducer,
-    reducers.nodeReducer,
-  ]);
+
+    updateSize();
+
+    const resizeObserver = new ResizeObserver(updateSize);
+    resizeObserver.observe(element);
+
+    return () => resizeObserver.disconnect();
+  }, []);
 
   useEffect(() => {
-    const sigma = sigmaRef.current;
+    const container = containerRef.current;
 
-    if (!sigma) {
-      return;
+    if (!container || size.width <= 0 || size.height <= 0) {
+      return undefined;
     }
 
-    sigma.refresh();
-  }, [currentFocusState, graph]);
+    window.__BJJ_UNIVERSE_GRAPH__ = {
+      getNodeScreenPosition: (nodeId: string) => {
+        const node = nodeById.get(nodeId);
 
-  if (graph.order === 0) {
+        if (!node) {
+          return null;
+        }
+
+        const rect = container.getBoundingClientRect();
+
+        return {
+          x: rect.left + size.width / 2 + node.x,
+          y: rect.top + size.height / 2 + node.y,
+        };
+      },
+    };
+
+    return () => {
+      delete window.__BJJ_UNIVERSE_GRAPH__;
+    };
+  }, [nodeById, size.height, size.width]);
+
+  if (data.nodes.length === 0 || data.links.length === 0) {
     return renderFallback(
       'No matches in view',
       'Adjust the year or division filters to restore athletes and observed match connections.',
     );
   }
 
-  if (renderError) {
-    return renderFallback(
-      'Graph unavailable',
-      'The graph renderer could not initialize from the current dataset. Clear the filters or reload to retry.',
-    );
-  }
-
   return (
-    <div className="relative h-full min-h-[440px] overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,_rgba(255,255,255,0.05),_rgba(255,255,255,0.02))]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,162,255,0.16),_transparent_46%)]" />
+    <div className="relative h-full min-h-[520px] overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,_rgba(255,255,255,0.05),_rgba(255,255,255,0.02))]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,162,255,0.12),_transparent_46%)]" />
       <div
         ref={containerRef}
         aria-label="Interactive athlete graph"
-        className="h-full min-h-[440px] w-full"
-      />
+        className="h-full min-h-[520px] w-full"
+      >
+        {size.width > 0 && size.height > 0 ? (
+          <ForceGraph2D
+            width={size.width}
+            height={size.height}
+            graphData={data}
+            cooldownTicks={0}
+            d3AlphaDecay={1}
+            enableNodeDrag={false}
+            enablePanInteraction={false}
+            enableZoomInteraction={false}
+            backgroundColor="rgba(0,0,0,0)"
+            linkDirectionalParticles={0}
+            nodePointerAreaPaint={paintNodePointerArea}
+            linkWidth={(link) =>
+              resolveLinkWidth(link as ForceGraphLink, focusState)
+            }
+            linkColor={(link) =>
+              resolveLinkColor(link as ForceGraphLink, focusState)
+            }
+            linkDirectionalArrowLength={3}
+            linkDirectionalArrowRelPos={1}
+            linkDirectionalArrowColor={(link) =>
+              resolveLinkColor(link as ForceGraphLink, focusState)
+            }
+            onBackgroundClick={() => onSelectAthlete(null)}
+            onNodeHover={(node) =>
+              onHoverAthlete((node as ForceGraphNode | null)?.id ?? null)
+            }
+            onNodeClick={(node) => onSelectAthlete((node as ForceGraphNode).id)}
+            nodeCanvasObject={(node, context) =>
+              paintNode(
+                node as ForceGraphNode,
+                context,
+                focusState,
+                selectedAthleteId,
+                hoveredAthleteId,
+              )
+            }
+          />
+        ) : null}
+      </div>
     </div>
   );
 }
 
+function buildFocusState(
+  data: ForceGraphData,
+  selectedAthleteId: string | null,
+  hoveredAthleteId: string | null,
+) {
+  const focusId = hoveredAthleteId ?? selectedAthleteId;
+  const activeNodeIds = new Set<string>();
+  const activeLinkIds = new Set<string>();
+
+  if (!focusId) {
+    return {
+      activeNodeIds,
+      activeLinkIds,
+      hasFocus: false,
+    };
+  }
+
+  activeNodeIds.add(focusId);
+
+  for (const link of data.links) {
+    if (link.source === focusId || link.target === focusId) {
+      activeLinkIds.add(link.id);
+      activeNodeIds.add(link.source);
+      activeNodeIds.add(link.target);
+    }
+  }
+
+  return {
+    activeNodeIds,
+    activeLinkIds,
+    hasFocus: true,
+  };
+}
+
+function resolveLinkColor(
+  link: ForceGraphLink,
+  focusState: ReturnType<typeof buildFocusState>,
+) {
+  if (!focusState.hasFocus) {
+    return withAlpha(link.color, 0.46);
+  }
+
+  if (focusState.activeLinkIds.has(link.id)) {
+    return withAlpha(link.color, 0.92);
+  }
+
+  return 'rgba(125, 147, 183, 0.08)';
+}
+
+function resolveLinkWidth(
+  link: ForceGraphLink,
+  focusState: ReturnType<typeof buildFocusState>,
+) {
+  if (!focusState.hasFocus) {
+    return link.width;
+  }
+
+  return focusState.activeLinkIds.has(link.id) ? link.width + 0.6 : 0.4;
+}
+
+function paintNode(
+  node: ForceGraphNode,
+  context: CanvasRenderingContext2D,
+  focusState: ReturnType<typeof buildFocusState>,
+  selectedAthleteId: string | null,
+  hoveredAthleteId: string | null,
+) {
+  const selected = selectedAthleteId === node.id;
+  const hovered = hoveredAthleteId === node.id;
+  const active = !focusState.hasFocus || focusState.activeNodeIds.has(node.id);
+  const radius = node.size + (selected ? 4 : hovered ? 2 : 0);
+
+  context.beginPath();
+  context.arc(node.x, node.y, radius, 0, Math.PI * 2, false);
+  context.fillStyle = active ? node.color : 'rgba(125, 147, 183, 0.18)';
+  context.fill();
+
+  if (selected || hovered) {
+    context.beginPath();
+    context.arc(node.x, node.y, radius + 5, 0, Math.PI * 2, false);
+    context.strokeStyle = selected
+      ? 'rgba(157, 219, 211, 0.95)'
+      : 'rgba(122, 162, 255, 0.72)';
+    context.lineWidth = 2;
+    context.stroke();
+  }
+
+  if (selected || hovered || node.activeMatches >= 8) {
+    context.font = '12px Space Grotesk';
+    context.fillStyle = '#edf3ff';
+    context.textAlign = 'center';
+    context.textBaseline = 'bottom';
+    context.fillText(node.label, node.x, node.y - radius - 8);
+  }
+}
+
+function paintNodePointerArea(
+  node: object,
+  color: string,
+  context: CanvasRenderingContext2D,
+) {
+  const graphNode = node as ForceGraphNode;
+
+  context.fillStyle = color;
+  context.beginPath();
+  context.arc(
+    graphNode.x,
+    graphNode.y,
+    graphNode.size + 8,
+    0,
+    2 * Math.PI,
+    false,
+  );
+  context.fill();
+}
+
+function withAlpha(color: string, alpha: number) {
+  if (color.startsWith('rgba(')) {
+    return color.replace(/rgba\(([^)]+),\s*[\d.]+\)$/, `rgba($1, ${alpha})`);
+  }
+
+  if (color.startsWith('hsla(')) {
+    return color.replace(/hsla\(([^)]+),\s*[\d.]+\)$/, `hsla($1, ${alpha})`);
+  }
+
+  return color;
+}
+
 function renderFallback(title: string, description: string) {
   return (
-    <div className="flex h-full min-h-[420px] items-center justify-center rounded-[28px] border border-dashed border-white/15 bg-black/20 text-center">
+    <div className="flex h-full min-h-[520px] items-center justify-center rounded-[28px] border border-dashed border-white/15 bg-black/20 text-center">
       <div>
         <p className="font-display text-2xl text-white">{title}</p>
         <p className="mt-3 max-w-sm text-sm leading-6 text-[var(--text-secondary)]">
