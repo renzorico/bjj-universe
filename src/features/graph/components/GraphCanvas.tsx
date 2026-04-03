@@ -1,18 +1,8 @@
-import {
-  ComponentType,
-  MouseEvent,
-  MutableRefObject,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
-import ForceGraph2D from 'react-force-graph-2d';
-import {
-  ForceGraphData,
-  ForceGraphLink,
-  ForceGraphNode,
-} from '@/features/graph/lib/buildForceGraphData';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import ForceGraph3D, {
+  ForceGraphMethods,
+} from 'react-force-graph-3d';
+import { ForceGraphData, ForceGraphLink, ForceGraphNode } from '@/features/graph/lib/buildForceGraphData';
 
 interface GraphCanvasProps {
   data: ForceGraphData;
@@ -33,50 +23,18 @@ interface GraphTestApi {
   selectNode: (nodeId: string | null) => void;
 }
 
+interface D3ForceHandle<Value = unknown> {
+  strength?: (value: Value) => unknown;
+  distance?: (value: Value) => unknown;
+  radius?: (value: Value) => unknown;
+  iterations?: (value: number) => unknown;
+}
+
 declare global {
   interface Window {
     __BJJ_UNIVERSE_GRAPH__?: GraphTestApi;
   }
 }
-
-interface ForceGraphRendererProps {
-  ref?: MutableRefObject<unknown>;
-  width: number;
-  height: number;
-  graphData: ForceGraphData;
-  cooldownTicks: number;
-  d3AlphaDecay: number;
-  minZoom: number;
-  maxZoom: number;
-  enableNodeDrag: boolean;
-  enablePanInteraction: boolean;
-  enableZoomInteraction: boolean;
-  backgroundColor: string;
-  linkDirectionalParticles: number;
-  nodeRelSize: number;
-  linkCurvature: (link: ForceGraphLink) => number;
-  nodePointerAreaPaint: (
-    node: object,
-    color: string,
-    context: CanvasRenderingContext2D,
-  ) => void;
-  linkWidth: (link: ForceGraphLink) => number;
-  linkColor: (link: ForceGraphLink) => string;
-  linkDirectionalArrowLength: number;
-  linkDirectionalArrowRelPos: number;
-  linkDirectionalArrowColor: (link: ForceGraphLink) => string;
-  onBackgroundClick?: () => void;
-  onNodeHover?: (node: ForceGraphNode | null) => void;
-  onNodeClick?: (node: ForceGraphNode) => void;
-  onEngineStop: () => void;
-  nodeCanvasObject: (
-    node: ForceGraphNode,
-    context: CanvasRenderingContext2D,
-  ) => void;
-}
-
-const ForceGraph2DShim =
-  ForceGraph2D as unknown as ComponentType<ForceGraphRendererProps>;
 
 export function GraphCanvas({
   data,
@@ -86,10 +44,9 @@ export function GraphCanvas({
   onHoverAthlete,
 }: GraphCanvasProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const graphRef = useRef<unknown>(null);
-  const renderedNodePositionsRef = useRef<
-    Map<string, { x: number; y: number }>
-  >(new Map());
+  const graphRef = useRef<
+    ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined
+  >(undefined);
   const [size, setSize] = useState<CanvasSize>({ width: 0, height: 0 });
   const nodeById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node] as const)),
@@ -132,27 +89,21 @@ export function GraphCanvas({
       ready: false,
       selectNode: (nodeId: string | null) => onSelectAthlete(nodeId),
       getNodeScreenPosition: (nodeId: string) => {
-        const renderedPosition = renderedNodePositionsRef.current.get(nodeId);
-        const graph = graphRef.current as {
-          graph2ScreenCoords?: (
-            x: number,
-            y: number,
-          ) => { x: number; y: number };
-        } | null;
+        const node = nodeById.get(nodeId);
+        const graph = graphRef.current;
 
-        if (!renderedPosition || !graph) {
+        if (
+          !node ||
+          !graph ||
+          typeof node.x !== 'number' ||
+          typeof node.y !== 'number' ||
+          typeof node.z !== 'number'
+        ) {
           return null;
         }
 
         const rect = container.getBoundingClientRect();
-        const screenPoint = graph.graph2ScreenCoords?.(
-          renderedPosition.x,
-          renderedPosition.y,
-        );
-
-        if (!screenPoint) {
-          return null;
-        }
+        const screenPoint = graph.graph2ScreenCoords(node.x, node.y, node.z);
 
         return {
           x: rect.left + screenPoint.x,
@@ -161,72 +112,80 @@ export function GraphCanvas({
       },
     };
 
+    const readyTimer = window.setTimeout(() => {
+      if (window.__BJJ_UNIVERSE_GRAPH__) {
+        window.__BJJ_UNIVERSE_GRAPH__.ready = true;
+      }
+    }, 450);
+
     return () => {
+      window.clearTimeout(readyTimer);
       delete window.__BJJ_UNIVERSE_GRAPH__;
     };
   }, [nodeById, onSelectAthlete, size.height, size.width]);
 
   useEffect(() => {
-    const graph = graphRef.current as {
-      d3Force?: (name: string) => {
-        strength?: (value: unknown) => unknown;
-        distance?: (value: unknown) => unknown;
-        iterations?: (value: number) => unknown;
-        radius?: (value: unknown) => unknown;
-        x?: (value: unknown) => unknown;
-        y?: (value: unknown) => unknown;
-      } | null;
-    } | null;
+    const graph = graphRef.current;
 
     if (!graph || data.nodes.length === 0) {
       return;
     }
 
-    graph
-      .d3Force?.('charge')
-      ?.strength?.((node: ForceGraphNode) => -42 - node.importance * 1.8);
-    graph
-      .d3Force?.('link')
-      ?.distance?.((link: ForceGraphLink) =>
-        Math.max(24, 92 - link.rivalryCount * 12),
-      );
-    graph
-      .d3Force?.('link')
-      ?.strength?.((link: ForceGraphLink) =>
-        Math.min(0.32, 0.1 + link.rivalryCount * 0.05),
-      );
-    graph.d3Force?.('center')?.x?.(0);
-    graph.d3Force?.('center')?.y?.(0);
-    graph
-      .d3Force?.('collide')
-      ?.radius?.((node: ForceGraphNode) => node.size + 6);
-    graph.d3Force?.('collide')?.iterations?.(2);
-  }, [data, size.height, size.width]);
+    const chargeForce = graph.d3Force('charge') as
+      | D3ForceHandle<(node: ForceGraphNode) => number>
+      | undefined;
+    const linkForce = graph.d3Force('link') as
+      | D3ForceHandle<(link: ForceGraphLink) => number>
+      | undefined;
+    const collideForce = graph.d3Force('collide') as
+      | D3ForceHandle<(node: ForceGraphNode) => number>
+      | undefined;
+
+    chargeForce?.strength?.((node: ForceGraphNode) => -52 - node.importance * 2.2);
+    linkForce?.distance?.((link: ForceGraphLink) =>
+      Math.max(28, 118 - link.rivalryCount * 10),
+    );
+    linkForce?.strength?.((link: ForceGraphLink) =>
+      Math.min(0.28, 0.08 + link.rivalryCount * 0.045),
+    );
+    collideForce?.radius?.((node: ForceGraphNode) => node.size * 4.8);
+    collideForce?.iterations?.(2);
+    graph.d3ReheatSimulation();
+  }, [data]);
 
   useEffect(() => {
-    const graph = graphRef.current as {
-      centerAt?: (x?: number, y?: number, ms?: number) => void;
-      zoom?: (scale: number, ms?: number) => void;
-      zoomToFit?: (ms?: number, padding?: number) => void;
-    } | null;
+    const graph = graphRef.current;
 
     if (!graph) {
       return;
     }
 
     if (!selectedAthleteId) {
-      graph.zoomToFit?.(450, 90);
+      resetView(graph);
       return;
     }
 
     const selectedNode = nodeById.get(selectedAthleteId);
 
-    if (!selectedNode) {
+    if (
+      !selectedNode ||
+      typeof selectedNode.x !== 'number' ||
+      typeof selectedNode.y !== 'number' ||
+      typeof selectedNode.z !== 'number'
+    ) {
       return;
     }
 
-    graph.centerAt?.(selectedNode.x, selectedNode.y, 450);
-    graph.zoom?.(2.1, 450);
+    const distance = Math.max(140, selectedNode.size * 26);
+    graph.cameraPosition(
+      {
+        x: selectedNode.x * 1.08,
+        y: selectedNode.y * 1.08,
+        z: selectedNode.z + distance,
+      },
+      { x: selectedNode.x, y: selectedNode.y, z: selectedNode.z },
+      550,
+    );
   }, [nodeById, selectedAthleteId]);
 
   if (data.nodes.length === 0 || data.links.length === 0) {
@@ -236,116 +195,74 @@ export function GraphCanvas({
     );
   }
 
-  const handleGraphClick = (event: MouseEvent<HTMLDivElement>) => {
-    const graph = graphRef.current as {
-      graph2ScreenCoords?: (x: number, y: number) => { x: number; y: number };
-    } | null;
-
-    if (!graph?.graph2ScreenCoords) {
-      onSelectAthlete(null);
-      return;
-    }
-
-    let closestNodeId: string | null = null;
-    let closestDistance = Number.POSITIVE_INFINITY;
-
-    for (const node of data.nodes) {
-      const renderedPosition = renderedNodePositionsRef.current.get(node.id);
-
-      if (!renderedPosition) {
-        continue;
-      }
-
-      const screenPoint = graph.graph2ScreenCoords(
-        renderedPosition.x,
-        renderedPosition.y,
-      );
-      const deltaX = screenPoint.x - event.nativeEvent.offsetX;
-      const deltaY = screenPoint.y - event.nativeEvent.offsetY;
-      const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-      const hitRadius = node.size + 12;
-
-      if (distance <= hitRadius && distance < closestDistance) {
-        closestDistance = distance;
-        closestNodeId = node.id;
-      }
-    }
-
-    onSelectAthlete(closestNodeId);
-  };
-
   return (
     <div className="relative h-full min-h-[520px] overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,_rgba(255,255,255,0.05),_rgba(255,255,255,0.02))]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,162,255,0.16),_transparent_34%),radial-gradient(circle_at_20%_15%,_rgba(95,225,197,0.12),_transparent_28%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,162,255,0.18),_transparent_34%),radial-gradient(circle_at_20%_15%,_rgba(95,225,197,0.12),_transparent_28%),linear-gradient(180deg,_rgba(4,10,17,0.22),_rgba(4,10,17,0.08))]" />
+
+      <button
+        type="button"
+        onClick={() => {
+          onSelectAthlete(null);
+          const graph = graphRef.current;
+
+          if (graph) {
+            resetView(graph);
+          }
+        }}
+        className="absolute top-4 right-4 z-10 rounded-full border border-white/12 bg-black/40 px-3 py-2 text-xs tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-black/60"
+      >
+        Reset view
+      </button>
+
       <div
         ref={containerRef}
         aria-label="Interactive athlete graph"
         className="h-full min-h-[520px] w-full"
-        onClick={handleGraphClick}
       >
         {size.width > 0 && size.height > 0 ? (
-          <ForceGraph2DShim
-            ref={graphRef as MutableRefObject<unknown>}
+          <ForceGraph3D
+            ref={graphRef}
             width={size.width}
             height={size.height}
             graphData={data}
-            cooldownTicks={140}
-            d3AlphaDecay={0.04}
-            minZoom={0.55}
-            maxZoom={6}
-            enableNodeDrag={false}
-            enablePanInteraction
-            enableZoomInteraction
             backgroundColor="rgba(0,0,0,0)"
-            linkDirectionalParticles={0}
-            nodeRelSize={1}
-            linkCurvature={(link: ForceGraphLink) =>
-              resolveLinkCurvature(link, focusState)
+            showNavInfo={false}
+            forceEngine="d3"
+            numDimensions={3}
+            nodeLabel={(node) => node.label}
+            nodeRelSize={4}
+            nodeResolution={12}
+            nodeVal={(node) => node.size}
+            nodeColor={(node) => resolveNodeColor(node, focusState)}
+            linkColor={(link) => resolveLinkColor(link, focusState)}
+            linkWidth={(link) => resolveLinkWidth(link, focusState)}
+            linkOpacity={0.24}
+            linkCurvature={(link) => resolveLinkCurvature(link, focusState)}
+            linkResolution={10}
+            linkDirectionalArrowLength={0}
+            linkDirectionalParticles={(link) =>
+              focusState.activeLinkIds.has(link.id) ? 2 : 0
             }
-            nodePointerAreaPaint={paintNodePointerArea}
-            linkWidth={(link: ForceGraphLink) =>
-              resolveLinkWidth(link, focusState)
-            }
-            linkColor={(link: ForceGraphLink) =>
+            linkDirectionalParticleWidth={1.6}
+            linkDirectionalParticleSpeed={0.003}
+            linkDirectionalParticleColor={(link) =>
               resolveLinkColor(link, focusState)
             }
-            linkDirectionalArrowLength={3}
-            linkDirectionalArrowRelPos={1}
-            linkDirectionalArrowColor={(link: ForceGraphLink) =>
-              resolveLinkColor(link, focusState)
-            }
-            onNodeHover={(node: ForceGraphNode | null) =>
-              onHoverAthlete(node?.id ?? null)
-            }
-            onEngineStop={() =>
-              (() => {
-                (
-                  graphRef.current as {
-                    zoomToFit?: (ms?: number, padding?: number) => void;
-                  } | null
-                )?.zoomToFit?.(400, 90);
-
-                if (window.__BJJ_UNIVERSE_GRAPH__) {
-                  window.__BJJ_UNIVERSE_GRAPH__.ready = true;
-                }
-              })()
-            }
-            nodeCanvasObject={(
-              node: ForceGraphNode,
-              context: CanvasRenderingContext2D,
-            ) => {
-              renderedNodePositionsRef.current.set(node.id, {
-                x: node.x,
-                y: node.y,
-              });
-
-              paintNode(
-                node,
-                context,
-                focusState,
-                selectedAthleteId,
-                hoveredAthleteId,
-              );
+            warmupTicks={90}
+            cooldownTicks={140}
+            d3AlphaDecay={0.035}
+            d3VelocityDecay={0.22}
+            enableNodeDrag={false}
+            enableNavigationControls
+            enablePointerInteraction
+            showPointerCursor
+            onNodeHover={(node) => onHoverAthlete(node?.id ?? null)}
+            onNodeClick={(node) => onSelectAthlete(node.id)}
+            onBackgroundClick={() => onSelectAthlete(null)}
+            onEngineStop={() => {
+              if (!selectedAthleteId) {
+                resetView(graphRef.current);
+              }
             }}
           />
         ) : null}
@@ -388,19 +305,34 @@ function buildFocusState(
   };
 }
 
+function resolveNodeColor(
+  node: ForceGraphNode,
+  focusState: ReturnType<typeof buildFocusState>,
+) {
+  if (!focusState.hasFocus) {
+    return withAlpha(node.color, 0.92);
+  }
+
+  if (focusState.activeNodeIds.has(node.id)) {
+    return withAlpha(node.color, 0.98);
+  }
+
+  return 'rgba(102, 120, 154, 0.16)';
+}
+
 function resolveLinkColor(
   link: ForceGraphLink,
   focusState: ReturnType<typeof buildFocusState>,
 ) {
   if (!focusState.hasFocus) {
-    return withAlpha(link.color, 0.46);
+    return withAlpha(link.color, 0.34);
   }
 
   if (focusState.activeLinkIds.has(link.id)) {
-    return withAlpha(link.color, 0.92);
+    return withAlpha(link.color, 0.8);
   }
 
-  return 'rgba(125, 147, 183, 0.08)';
+  return 'rgba(88, 102, 126, 0.06)';
 }
 
 function resolveLinkWidth(
@@ -408,10 +340,10 @@ function resolveLinkWidth(
   focusState: ReturnType<typeof buildFocusState>,
 ) {
   if (!focusState.hasFocus) {
-    return Math.max(0.55, link.width * 0.8);
+    return Math.max(0.4, link.width * 0.75);
   }
 
-  return focusState.activeLinkIds.has(link.id) ? link.width + 0.6 : 0.4;
+  return focusState.activeLinkIds.has(link.id) ? link.width + 0.35 : 0.12;
 }
 
 function resolveLinkCurvature(
@@ -419,88 +351,10 @@ function resolveLinkCurvature(
   focusState: ReturnType<typeof buildFocusState>,
 ) {
   if (focusState.activeLinkIds.has(link.id)) {
-    return 0.16;
+    return 0.1;
   }
 
-  return link.rivalryCount > 1 ? 0.12 : 0.04;
-}
-
-function paintNode(
-  node: ForceGraphNode,
-  context: CanvasRenderingContext2D,
-  focusState: ReturnType<typeof buildFocusState>,
-  selectedAthleteId: string | null,
-  hoveredAthleteId: string | null,
-) {
-  const selected = selectedAthleteId === node.id;
-  const hovered = hoveredAthleteId === node.id;
-  const active = !focusState.hasFocus || focusState.activeNodeIds.has(node.id);
-  const radius = node.size + (selected ? 4 : hovered ? 2 : 0);
-  const baseFill = active ? node.color : 'rgba(125, 147, 183, 0.2)';
-
-  context.beginPath();
-  context.arc(node.x, node.y, radius, 0, Math.PI * 2, false);
-  context.shadowColor = active ? withAlpha(baseFill, 0.8) : 'transparent';
-  context.shadowBlur = selected
-    ? 26
-    : hovered
-      ? 18
-      : node.importance >= 16
-        ? 14
-        : 8;
-  context.fillStyle = baseFill;
-  context.fill();
-  context.shadowBlur = 0;
-
-  context.beginPath();
-  context.arc(
-    node.x,
-    node.y,
-    Math.max(1.3, radius * 0.42),
-    0,
-    Math.PI * 2,
-    false,
-  );
-  context.fillStyle = 'rgba(255,255,255,0.66)';
-  context.fill();
-
-  if (selected || hovered) {
-    context.beginPath();
-    context.arc(node.x, node.y, radius + 5, 0, Math.PI * 2, false);
-    context.strokeStyle = selected
-      ? 'rgba(157, 219, 211, 0.95)'
-      : 'rgba(122, 162, 255, 0.72)';
-    context.lineWidth = 2;
-    context.stroke();
-  }
-
-  if (selected || hovered || node.importance >= 16) {
-    context.font = selected ? '600 13px Space Grotesk' : '12px Space Grotesk';
-    context.fillStyle = '#edf3ff';
-    context.textAlign = 'center';
-    context.textBaseline = 'bottom';
-    context.fillText(node.label, node.x, node.y - radius - 8);
-  }
-}
-
-function paintNodePointerArea(
-  node: object,
-  color: string,
-  context: CanvasRenderingContext2D,
-) {
-  const graphNode = node as ForceGraphNode;
-
-  context.fillStyle = color;
-  context.beginPath();
-  context.arc(
-    graphNode.x,
-    graphNode.y,
-    graphNode.size + 14,
-    0,
-    2 * Math.PI,
-    false,
-  );
-  context.fill();
+  return link.rivalryCount > 1 ? 0.08 : 0.03;
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -513,6 +367,13 @@ function withAlpha(color: string, alpha: number) {
   }
 
   return color;
+}
+
+function resetView(
+  graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined,
+) {
+  graph?.zoomToFit(650, 90);
+  graph?.cameraPosition({ x: 0, y: 0, z: 420 }, { x: 0, y: 0, z: 0 }, 650);
 }
 
 function renderFallback(title: string, description: string) {

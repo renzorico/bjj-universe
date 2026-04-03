@@ -12,6 +12,7 @@
       "@/*": ["src/*"]
     },
     "strict": true,
+    "skipLibCheck": true,
     "types": ["node", "vitest/globals"]
   },
   "include": [

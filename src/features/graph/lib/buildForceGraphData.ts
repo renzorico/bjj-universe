@@ -8,6 +8,7 @@ export interface ForceGraphNode {
   label: string;
   x: number;
   y: number;
+  z: number;
   size: number;
   color: string;
   wins: number;
@@ -16,6 +17,7 @@ export interface ForceGraphNode {
   clusterKey: string;
   clusterIndex: number;
   importance: number;
+  eraAnchor: number;
 }
 
 export interface ForceGraphLink {
@@ -39,6 +41,7 @@ export function buildForceGraphData(
   edges: SceneEdgeViewModel[],
 ): ForceGraphData {
   const clusterPalette = buildClusterPalette(nodes);
+  const yearBounds = resolveYearBounds(nodes);
 
   return {
     nodes: nodes.map((node) => {
@@ -46,6 +49,7 @@ export function buildForceGraphData(
       const clusterIndex =
         clusterPalette.clusterIndexByKey.get(clusterKey) ?? 0;
       const seededOffset = createSeededOffset(node.id);
+      const eraAnchor = resolveEraAnchor(node.yearsActive, yearBounds);
       const x =
         scalePosition(node.position.x, 50, 10) +
         clusterPalette.clusterCenters[clusterIndex].x +
@@ -54,6 +58,7 @@ export function buildForceGraphData(
         scalePosition(node.position.y, 50, 8) +
         clusterPalette.clusterCenters[clusterIndex].y +
         seededOffset.y;
+      const z = eraAnchor + seededOffset.z;
       const importance =
         node.activeMatches + node.bridgeScore * 0.12 + node.wins * 1.5;
 
@@ -62,6 +67,7 @@ export function buildForceGraphData(
         label: node.label,
         x,
         y,
+        z,
         size: clamp(3 + Math.sqrt(Math.max(1, importance)) * 1.15, 3.5, 13),
         color: clusterPalette.colorByKey.get(clusterKey) ?? '#7aa2ff',
         wins: node.wins,
@@ -70,6 +76,7 @@ export function buildForceGraphData(
         clusterKey,
         clusterIndex,
         importance,
+        eraAnchor,
       };
     }),
     links: edges.map((edge) => ({
@@ -151,15 +158,46 @@ function resolveClusterKey(node: SceneNodeViewModel) {
   return node.divisions[0] ?? 'Open';
 }
 
+function resolveYearBounds(nodes: SceneNodeViewModel[]) {
+  const years = nodes.flatMap((node) => node.yearsActive);
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
+
+  if (!Number.isFinite(minYear) || !Number.isFinite(maxYear)) {
+    return { minYear: 2000, maxYear: 2024 };
+  }
+
+  return { minYear, maxYear };
+}
+
+function resolveEraAnchor(
+  yearsActive: number[],
+  bounds: { minYear: number; maxYear: number },
+) {
+  if (yearsActive.length === 0) {
+    return 0;
+  }
+
+  const averageYear =
+    yearsActive.reduce((sum, year) => sum + year, 0) / yearsActive.length;
+  const range = Math.max(1, bounds.maxYear - bounds.minYear);
+  const ratio = (averageYear - bounds.minYear) / range;
+
+  return Number(((ratio - 0.5) * 220).toFixed(3));
+}
+
 function createSeededOffset(seed: string) {
   const hash = seed.split('').reduce((value, character) => {
     return (value * 31 + character.charCodeAt(0)) % 104729;
   }, 17);
   const angle = (hash % 360) * (Math.PI / 180);
   const radius = 8 + (hash % 23);
+  const zSign = hash % 2 === 0 ? 1 : -1;
+  const zMagnitude = 6 + (hash % 29);
 
   return {
     x: Number((Math.cos(angle) * radius).toFixed(3)),
     y: Number((Math.sin(angle) * radius).toFixed(3)),
+    z: Number((zSign * zMagnitude).toFixed(3)),
   };
 }

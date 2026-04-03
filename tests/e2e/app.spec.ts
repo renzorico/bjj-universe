@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('can click a graph node and inspect an athlete', async ({ page }) => {
+test('can click a 3d graph node and inspect an athlete', async ({ page }) => {
   await page.goto('/universe');
 
   await expect(
