@@ -32,6 +32,11 @@ interface D3ForceHandle<Value = unknown> {
   iterations?: (value: number) => unknown;
 }
 
+interface CameraViewState {
+  position: { x: number; y: number; z: number };
+  lookAt: { x: number; y: number; z: number };
+}
+
 declare global {
   interface Window {
     __BJJ_UNIVERSE_GRAPH__?: GraphTestApi;
@@ -49,6 +54,8 @@ export function GraphCanvas({
   const graphRef = useRef<
     ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined
   >(undefined);
+  const initialViewRef = useRef<CameraViewState | null>(null);
+  const hasCapturedInitialViewRef = useRef(false);
   const [size, setSize] = useState<CanvasSize>({ width: 0, height: 0 });
   const nodeById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node] as const)),
@@ -158,39 +165,9 @@ export function GraphCanvas({
   }, [data]);
 
   useEffect(() => {
-    const graph = graphRef.current;
-
-    if (!graph) {
-      return;
-    }
-
-    if (!selectedAthleteId) {
-      resetView(graph);
-      return;
-    }
-
-    const selectedNode = nodeById.get(selectedAthleteId);
-
-    if (
-      !selectedNode ||
-      typeof selectedNode.x !== 'number' ||
-      typeof selectedNode.y !== 'number' ||
-      typeof selectedNode.z !== 'number'
-    ) {
-      return;
-    }
-
-    const distance = Math.max(140, selectedNode.size * 26);
-    graph.cameraPosition(
-      {
-        x: selectedNode.x * 1.08,
-        y: selectedNode.y * 1.08,
-        z: selectedNode.z + distance,
-      },
-      { x: selectedNode.x, y: selectedNode.y, z: selectedNode.z },
-      550,
-    );
-  }, [nodeById, selectedAthleteId]);
+    initialViewRef.current = null;
+    hasCapturedInitialViewRef.current = false;
+  }, [data, size.height, size.width]);
 
   if (data.nodes.length === 0 || data.links.length === 0) {
     return renderFallback(
@@ -210,7 +187,7 @@ export function GraphCanvas({
           const graph = graphRef.current;
 
           if (graph) {
-            resetView(graph);
+            resetView(graph, initialViewRef.current);
           }
         }}
         className="absolute right-4 bottom-4 z-10 rounded-full border border-white/12 bg-black/40 px-3 py-2 text-xs tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-black/60"
@@ -264,9 +241,17 @@ export function GraphCanvas({
             onNodeClick={(node) => onSelectAthlete(node.id)}
             onBackgroundClick={() => onSelectAthlete(null)}
             onEngineStop={() => {
-              if (!selectedAthleteId) {
-                resetView(graphRef.current);
+              const graph = graphRef.current;
+
+              if (!graph || hasCapturedInitialViewRef.current) {
+                return;
               }
+
+              const initialView = captureInitialView(graph);
+
+              initialViewRef.current = initialView;
+              hasCapturedInitialViewRef.current = true;
+              graph.cameraPosition(initialView.position, initialView.lookAt, 0);
             }}
           />
         ) : null}
@@ -375,9 +360,40 @@ function withAlpha(color: string, alpha: number) {
 
 function resetView(
   graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined,
+  initialView: CameraViewState | null,
 ) {
-  graph?.zoomToFit(650, 90);
-  graph?.cameraPosition({ x: 0, y: 0, z: 420 }, { x: 0, y: 0, z: 0 }, 650);
+  if (!graph) {
+    return;
+  }
+
+  const targetView = initialView ?? captureInitialView(graph);
+  graph.cameraPosition(targetView.position, targetView.lookAt, 700);
+}
+
+function captureInitialView(
+  graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink>,
+): CameraViewState {
+  const bbox = graph.getGraphBbox();
+  const center = {
+    x: (bbox.x[0] + bbox.x[1]) / 2,
+    y: (bbox.y[0] + bbox.y[1]) / 2,
+    z: (bbox.z[0] + bbox.z[1]) / 2,
+  };
+  const span = Math.max(
+    bbox.x[1] - bbox.x[0],
+    bbox.y[1] - bbox.y[0],
+    bbox.z[1] - bbox.z[0],
+    160,
+  );
+
+  return {
+    lookAt: center,
+    position: {
+      x: center.x,
+      y: center.y + span * 0.12,
+      z: center.z + span * 1.55,
+    },
+  };
 }
 
 function renderFallback(title: string, description: string) {

@@ -54,20 +54,11 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
       />
 
       <div className="pointer-events-none absolute inset-0">
-        <div className="pointer-events-auto absolute top-4 right-4 left-4 max-w-[min(980px,calc(100%-2rem))]">
-          <div className="rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.72)] p-4 shadow-[0_16px_56px_rgba(0,0,0,0.42)] backdrop-blur-xl">
-            <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p className="text-xs tracking-[0.28em] text-[var(--accent-soft)] uppercase">
-                  Universe explorer
-                </p>
-                <h2 className="font-display text-3xl text-white">
-                  Real ADCC graph explorer
-                </h2>
-              </div>
-              <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-[var(--text-secondary)]">
-                {scene.nodes.length} athletes · {scene.edges.length} visible
-                matches
+        <div className="pointer-events-auto absolute top-4 right-24 left-4">
+          <div className="rounded-[22px] border border-white/10 bg-[rgba(5,10,18,0.58)] px-4 py-3 shadow-[0_14px_48px_rgba(0,0,0,0.38)] backdrop-blur-xl">
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] tracking-[0.18em] text-[var(--text-secondary)] uppercase">
+                {scene.nodes.length} athletes · {scene.edges.length} matches
               </div>
             </div>
 
@@ -92,11 +83,11 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
           />
         </div>
 
-        <div className="pointer-events-auto absolute top-4 right-4 flex max-w-[calc(100%-2rem)] flex-col items-end gap-3">
+        <div className="pointer-events-auto absolute top-4 right-4 flex max-w-[calc(100%-2rem)] flex-col items-end gap-2">
           <button
             type="button"
             aria-expanded={detailOpen}
-            className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.78)] px-4 py-3 text-left shadow-[0_16px_56px_rgba(0,0,0,0.38)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.88)]"
+            className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.72)] px-4 py-2.5 text-left shadow-[0_12px_32px_rgba(0,0,0,0.32)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.84)]"
             onClick={() => setDetailOpen((value) => !value)}
           >
             <span className="block text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
@@ -122,7 +113,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
           <button
             type="button"
             aria-expanded={notesOpen}
-            className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.78)] px-4 py-3 text-left shadow-[0_16px_56px_rgba(0,0,0,0.38)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.88)]"
+            className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.72)] px-4 py-2.5 text-left shadow-[0_12px_32px_rgba(0,0,0,0.32)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.84)]"
             onClick={() => setNotesOpen((value) => !value)}
           >
             <span className="block text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">

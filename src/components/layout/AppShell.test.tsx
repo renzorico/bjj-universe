@@ -25,9 +25,10 @@ describe('AppShell', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: 'Real ADCC graph explorer',
+        name: 'Node graph explorer',
       }),
     ).toBeInTheDocument();
+    expect(screen.getByText('Real ADCC graph exploration')).toBeInTheDocument();
     expect(
       screen.getByLabelText('Interactive athlete graph'),
     ).toBeInTheDocument();

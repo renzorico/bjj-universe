@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { SceneNodeViewModel } from '@/features/graph/lib/types';
 
 type AthleteSortMode = 'matches' | 'name';
@@ -14,6 +14,7 @@ export function AthleteList({
   selectedAthleteId,
   onSelectAthlete,
 }: AthleteListProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [sortMode, setSortMode] = useState<AthleteSortMode>('matches');
@@ -41,8 +42,34 @@ export function AthleteList({
     );
   }, [athletes, query, sortMode]);
 
+  useEffect(() => {
+    const handlePointerDown = (event: MouseEvent) => {
+      if (
+        containerRef.current &&
+        event.target instanceof Node &&
+        !containerRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('mousedown', handlePointerDown);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('mousedown', handlePointerDown);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
-    <div className="relative w-full max-w-[360px]">
+    <div ref={containerRef} className="relative w-full max-w-[360px]">
       <label className="block">
         <span className="sr-only">Search athletes</span>
         <input

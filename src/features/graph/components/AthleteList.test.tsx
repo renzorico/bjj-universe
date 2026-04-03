@@ -52,11 +52,14 @@ describe('AthleteList', () => {
     const onSelectAthlete = vi.fn();
 
     render(
-      <AthleteList
-        athletes={athletes}
-        selectedAthleteId={null}
-        onSelectAthlete={onSelectAthlete}
-      />,
+      <div>
+        <AthleteList
+          athletes={athletes}
+          selectedAthleteId={null}
+          onSelectAthlete={onSelectAthlete}
+        />
+        <button type="button">Outside target</button>
+      </div>,
     );
 
     expect(
@@ -95,6 +98,17 @@ describe('AthleteList', () => {
     expect(onSelectAthlete).toHaveBeenCalledWith('athlete_1');
     expect(
       screen.queryByRole('button', { name: /nicholas meregali/i }),
+    ).not.toBeInTheDocument();
+
+    await user.click(
+      screen.getByRole('searchbox', { name: /search athletes/i }),
+    );
+    expect(
+      screen.getByRole('button', { name: /henrique cardoso/i }),
+    ).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Outside target' }));
+    expect(
+      screen.queryByRole('button', { name: /henrique cardoso/i }),
     ).not.toBeInTheDocument();
   });
 });
