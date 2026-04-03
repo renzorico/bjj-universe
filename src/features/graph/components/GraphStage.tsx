@@ -19,7 +19,6 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
   const [hoveredAthleteId, setHoveredAthleteId] = useState<string | null>(null);
   const [controlsOpen, setControlsOpen] = useState(false);
   const [detailOpen, setDetailOpen] = useState(false);
-  const [notesOpen, setNotesOpen] = useState(false);
 
   const scene = useMemo(
     () => buildGraphSceneModel(snapshot, filters),
@@ -37,11 +36,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
 
   const handleSelectAthlete = (athleteId: string | null) => {
     setSelectedAthleteId(athleteId);
-
-    if (athleteId) {
-      setDetailOpen(true);
-      setNotesOpen(false);
-    }
+    setDetailOpen(athleteId !== null);
   };
 
   return (
@@ -89,39 +84,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
             ) : null}
           </div>
 
-          <div className="pointer-events-auto flex flex-wrap gap-2 xl:max-w-[180px] xl:flex-col xl:items-end">
-            <button
-              type="button"
-              aria-label="Athlete detail"
-              aria-expanded={detailOpen}
-              className="rounded-full border border-white/8 bg-[rgba(5,10,18,0.56)] px-3 py-2 text-left shadow-[0_8px_24px_rgba(0,0,0,0.18)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.76)]"
-              onClick={() => {
-                setDetailOpen((value) => !value);
-                setNotesOpen(false);
-              }}
-            >
-              <span className="block text-[10px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
-                Athlete detail
-              </span>
-              <span className="mt-0.5 block text-sm text-white">Detail</span>
-            </button>
-
-            <button
-              type="button"
-              aria-label="Interaction notes"
-              aria-expanded={notesOpen}
-              className="rounded-full border border-white/8 bg-[rgba(5,10,18,0.56)] px-3 py-2 text-left shadow-[0_8px_24px_rgba(0,0,0,0.18)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.76)]"
-              onClick={() => {
-                setNotesOpen((value) => !value);
-                setDetailOpen(false);
-              }}
-            >
-              <span className="block text-[10px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
-                Interaction notes
-              </span>
-              <span className="mt-0.5 block text-sm text-white">Notes</span>
-            </button>
-          </div>
+          <div />
         </div>
 
         <div className="flex items-end justify-between gap-3">
@@ -143,24 +106,6 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
                 setDetailOpen(false);
               }}
             />
-          </div>
-        ) : null}
-
-        {notesOpen ? (
-          <div className="pointer-events-auto absolute top-16 right-0 w-[min(292px,calc(100vw-1.5rem))] rounded-[20px] border border-white/8 bg-[rgba(5,10,18,0.82)] p-4 shadow-[0_16px_48px_rgba(0,0,0,0.28)] backdrop-blur-xl sm:top-[4.5rem]">
-            <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-              Interaction notes
-            </p>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-[var(--text-secondary)]">
-              <li>Use the search bar to inspect an athlete profile quickly.</li>
-              <li>
-                Filters reflect the live ADCC dataset even in design mode.
-              </li>
-              <li>
-                The graph stage is intentionally static while the explorer UI is
-                being polished.
-              </li>
-            </ul>
           </div>
         ) : null}
       </div>

@@ -17,7 +17,7 @@ vi.mock('@/features/graph/components/GraphCanvas', () => ({
 }));
 
 describe('GraphStage', () => {
-  it('shows athlete details after selecting an athlete, clears them, and toggles notes', async () => {
+  it('shows athlete details after selecting an athlete and clears them', async () => {
     const user = userEvent.setup();
 
     render(<GraphStage snapshot={createUniverseSnapshot()} />);
@@ -41,24 +41,5 @@ describe('GraphStage', () => {
     expect(
       screen.queryByTestId('athlete-detail-panel'),
     ).not.toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: 'Athlete detail' }),
-    ).toBeInTheDocument();
-
-    expect(
-      screen.queryByText(
-        /Use the search bar to inspect an athlete profile quickly/i,
-      ),
-    ).not.toBeInTheDocument();
-
-    await user.click(
-      screen.getByRole('button', { name: /Interaction notes/i }),
-    );
-
-    expect(
-      screen.getByText(
-        /Use the search bar to inspect an athlete profile quickly/i,
-      ),
-    ).toBeInTheDocument();
   });
 });

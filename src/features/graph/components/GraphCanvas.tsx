@@ -138,7 +138,7 @@ export function GraphCanvas({
 
     const graph = graphRef.current;
     const fitTimer = window.setTimeout(() => {
-      resetView(graph, data, 0);
+      resetView(graph, 0);
     }, 40);
 
     return () => window.clearTimeout(fitTimer);
@@ -169,7 +169,7 @@ export function GraphCanvas({
               onClick={() => {
                 onSelectAthlete(null);
                 onHoverAthlete(null);
-                resetView(graphRef.current, data, 260);
+                resetView(graphRef.current, 260);
               }}
               className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.68)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.82)] sm:right-4 sm:bottom-4"
             >
@@ -197,7 +197,7 @@ export function GraphCanvas({
                   data.meta.mode,
                 )
               }
-              autoPauseRedraw={false}
+              autoPauseRedraw={true}
               minZoom={0.42}
               maxZoom={7}
               cooldownTicks={0}
@@ -216,6 +216,12 @@ export function GraphCanvas({
       </div>
     </div>
   );
+}
+
+function resolveLinkEndId(end: unknown): string {
+  if (typeof end === 'string') return end;
+  if (end && typeof end === 'object' && 'id' in end) return (end as ForceGraphNode).id;
+  return '';
 }
 
 function buildFocusState(
@@ -240,10 +246,12 @@ function buildFocusState(
   activeNodeIds.add(focusId);
 
   for (const link of data.links) {
-    if (link.source === focusId || link.target === focusId) {
+    const sourceId = resolveLinkEndId(link.source);
+    const targetId = resolveLinkEndId(link.target);
+    if (sourceId === focusId || targetId === focusId) {
       activeLinkIds.add(link.id);
-      activeNodeIds.add(link.source);
-      activeNodeIds.add(link.target);
+      if (sourceId) activeNodeIds.add(sourceId);
+      if (targetId) activeNodeIds.add(targetId);
     }
   }
 
@@ -489,20 +497,13 @@ function withAlpha(color: string, alpha: number) {
 
 function resetView(
   graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined,
-  data: ForceGraphData,
   durationMs: number,
 ) {
   if (!graph) {
     return;
   }
 
-  graph.centerAt(
-    data.meta.initialCamera.lookAt.x,
-    data.meta.initialCamera.lookAt.y,
-    durationMs,
-  );
-  graph.zoom(0.96, durationMs);
-  graph.zoomToFit(durationMs, 150);
+  graph.zoomToFit(durationMs, 60);
 }
 
 function renderFallback(title: string, description: string) {
