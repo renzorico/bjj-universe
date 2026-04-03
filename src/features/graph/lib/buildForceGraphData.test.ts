@@ -30,10 +30,11 @@ describe('buildForceGraphData', () => {
     expect(athlete?.x).toBeLessThanOrEqual(560);
     expect(athlete?.y).toBeGreaterThanOrEqual(-420);
     expect(athlete?.y).toBeLessThanOrEqual(420);
-    expect(athlete?.z).toBeGreaterThanOrEqual(-260);
-    expect(athlete?.z).toBeLessThanOrEqual(260);
+    expect(athlete?.z).toBeGreaterThanOrEqual(-300);
+    expect(athlete?.z).toBeLessThanOrEqual(300);
     expect(athlete?.fx).toBe(athlete?.x);
     expect(athlete?.fy).toBe(athlete?.y);
+    expect(athlete?.fz).toBe(athlete?.z);
     expect(typeof athlete?.clusterKey).toBe('string');
     expect(typeof athlete?.clusterIndex).toBe('number');
     expect(athlete?.importance).toBeGreaterThan(0);

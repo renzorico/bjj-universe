@@ -12,6 +12,7 @@ export interface ForceGraphNode {
   z: number;
   fx: number;
   fy: number;
+  fz: number;
   size: number;
   color: string;
   wins: number;
@@ -98,6 +99,7 @@ export function buildForceGraphData(
         z,
         fx: x,
         fy: y,
+        fz: z,
         size: clamp(3.4 + Math.sqrt(Math.max(1, importance)) * 1.18, 3.8, 14),
         color: clusterPalette.colorByKey.get(clusterKey) ?? '#7aa2ff',
         wins: node.wins,
@@ -137,7 +139,7 @@ export function buildForceGraphData(
     })),
     meta: {
       initialCamera: {
-        position: { x: 0, y: 0, z: 530 },
+        position: { x: 0, y: 0, z: 700 },
         lookAt: { x: 0, y: 0, z: 0 },
       },
       mode: displayMode,
@@ -286,7 +288,7 @@ function resolveEraAnchor(
   const range = Math.max(1, bounds.maxYear - bounds.minYear);
   const ratio = (averageYear - bounds.minYear) / range;
 
-  return Number(((ratio - 0.5) * 220).toFixed(3));
+  return Number(((ratio - 0.5) * 500).toFixed(3));
 }
 
 function buildRivalryRegistry(edges: SceneEdgeViewModel[]) {
