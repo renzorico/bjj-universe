@@ -47,7 +47,7 @@ const athletes: SceneNodeViewModel[] = [
 ];
 
 describe('AthleteList', () => {
-  it('filters the athlete browser and keeps selection actionable', async () => {
+  it('opens on focus, supports sorting, and keeps selection actionable', async () => {
     const user = userEvent.setup();
     const onSelectAthlete = vi.fn();
 
@@ -57,6 +57,23 @@ describe('AthleteList', () => {
         selectedAthleteId={null}
         onSelectAthlete={onSelectAthlete}
       />,
+    );
+
+    expect(
+      screen.queryByRole('button', { name: /nicholas meregali/i }),
+    ).not.toBeInTheDocument();
+
+    await user.click(
+      screen.getByRole('searchbox', { name: /search athletes/i }),
+    );
+
+    expect(
+      screen.getByRole('button', { name: /nicholas meregali/i }),
+    ).toBeInTheDocument();
+
+    await user.selectOptions(
+      screen.getByRole('combobox', { name: /athlete sort/i }),
+      'name',
     );
 
     await user.type(
@@ -76,5 +93,8 @@ describe('AthleteList', () => {
     );
 
     expect(onSelectAthlete).toHaveBeenCalledWith('athlete_1');
+    expect(
+      screen.queryByRole('button', { name: /nicholas meregali/i }),
+    ).not.toBeInTheDocument();
   });
 });

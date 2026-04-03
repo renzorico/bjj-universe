@@ -6,7 +6,6 @@ interface GraphControlsProps {
   sexes: string[];
   weightClasses: string[];
   onChange: (nextFilters: GraphFilters) => void;
-  compact?: boolean;
 }
 
 export function GraphControls({
@@ -15,47 +14,101 @@ export function GraphControls({
   sexes,
   weightClasses,
   onChange,
-  compact = false,
 }: GraphControlsProps) {
-  const containerClass = compact
-    ? 'flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between'
-    : 'grid gap-4 lg:grid-cols-[0.9fr_0.9fr_1.2fr]';
-  const fieldClass = compact
-    ? 'rounded-[18px] border border-white/10 bg-black/20 px-4 py-3'
-    : 'rounded-[20px] border border-white/10 bg-black/20 px-4 py-3';
+  const minYear = years[0] ?? 1998;
+  const maxYear = years[years.length - 1] ?? minYear;
+  const isAllYears =
+    filters.yearRange.start === minYear && filters.yearRange.end === maxYear;
 
   return (
-    <div className={containerClass}>
-      <div className="grid gap-3 md:grid-cols-3 xl:w-[640px]">
-        <label className={fieldClass}>
-          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-            Year
-          </span>
-          <select
-            aria-label="Year filter"
-            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
-            value={filters.year ?? 'all'}
-            onChange={(event) =>
-              onChange({
-                ...filters,
-                year:
-                  event.target.value === 'all'
-                    ? null
-                    : Number(event.target.value),
-              })
-            }
-          >
-            <option value="all">All years</option>
-            {years.map((year) => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
-        </label>
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <OverlayPill
+          label="Years"
+          value={formatYearRange(filters.yearRange, isAllYears)}
+        />
+        <button
+          type="button"
+          className={`rounded-full border px-3 py-2 text-xs tracking-[0.16em] uppercase transition ${
+            isAllYears
+              ? 'border-[var(--accent)] bg-[rgba(122,162,255,0.18)] text-white'
+              : 'border-white/10 bg-black/35 text-[var(--text-secondary)] hover:bg-black/50'
+          }`}
+          onClick={() =>
+            onChange({
+              ...filters,
+              yearRange: { start: minYear, end: maxYear },
+            })
+          }
+        >
+          All years
+        </button>
+      </div>
 
-        <label className={fieldClass}>
-          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+      <div className="grid gap-3 lg:grid-cols-[minmax(0,1.4fr)_auto_auto_auto]">
+        <div className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
+          <div className="flex items-center justify-between gap-3">
+            <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+              Year range
+            </span>
+            <span className="text-sm text-white">
+              {formatYearRange(filters.yearRange, isAllYears)}
+            </span>
+          </div>
+
+          <div className="mt-4 grid gap-3">
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              step={1}
+              aria-label="Year range start"
+              value={filters.yearRange.start}
+              onChange={(event) => {
+                const nextStart = Math.min(
+                  Number(event.target.value),
+                  filters.yearRange.end,
+                );
+
+                onChange({
+                  ...filters,
+                  yearRange: {
+                    start: nextStart,
+                    end: filters.yearRange.end,
+                  },
+                });
+              }}
+              className="w-full accent-[var(--accent)]"
+            />
+
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              step={1}
+              aria-label="Year range end"
+              value={filters.yearRange.end}
+              onChange={(event) => {
+                const nextEnd = Math.max(
+                  Number(event.target.value),
+                  filters.yearRange.start,
+                );
+
+                onChange({
+                  ...filters,
+                  yearRange: {
+                    start: filters.yearRange.start,
+                    end: nextEnd,
+                  },
+                });
+              }}
+              className="w-full accent-[var(--accent-soft)]"
+            />
+          </div>
+        </div>
+
+        <label className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
+          <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
             Sex
           </span>
           <select
@@ -70,7 +123,7 @@ export function GraphControls({
               })
             }
           >
-            <option value="all">All sexes</option>
+            <option value="all">All</option>
             {sexes.map((sex) => (
               <option key={sex} value={sex}>
                 {formatSexLabel(sex)}
@@ -79,9 +132,9 @@ export function GraphControls({
           </select>
         </label>
 
-        <label className={fieldClass}>
-          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-            Weight class
+        <label className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
+          <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+            Weight
           </span>
           <select
             aria-label="Weight class filter"
@@ -103,35 +156,50 @@ export function GraphControls({
             ))}
           </select>
         </label>
-      </div>
 
-      <div className={`${fieldClass} xl:min-w-[420px]`}>
-        <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-          Display mode
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          <DisplayModeButton
-            active={filters.displayMode === 'all'}
-            onClick={() => onChange({ ...filters, displayMode: 'all' })}
-          >
-            All observed matches
-          </DisplayModeButton>
-          <DisplayModeButton
-            active={filters.displayMode === 'rivalry'}
-            onClick={() => onChange({ ...filters, displayMode: 'rivalry' })}
-          >
-            Rivalry intensity
-          </DisplayModeButton>
-          <DisplayModeButton
-            active={filters.displayMode === 'era'}
-            onClick={() => onChange({ ...filters, displayMode: 'era' })}
-          >
-            Era emphasis
-          </DisplayModeButton>
+        <div className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
+          <p className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+            Mode
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <DisplayModeButton
+              active={filters.displayMode === 'all'}
+              onClick={() => onChange({ ...filters, displayMode: 'all' })}
+            >
+              All
+            </DisplayModeButton>
+            <DisplayModeButton
+              active={filters.displayMode === 'rivalry'}
+              onClick={() => onChange({ ...filters, displayMode: 'rivalry' })}
+            >
+              Rivalry
+            </DisplayModeButton>
+            <DisplayModeButton
+              active={filters.displayMode === 'era'}
+              onClick={() => onChange({ ...filters, displayMode: 'era' })}
+            >
+              Era
+            </DisplayModeButton>
+          </div>
         </div>
       </div>
     </div>
   );
+}
+
+function formatYearRange(
+  yearRange: GraphFilters['yearRange'],
+  isAllYears: boolean,
+) {
+  if (isAllYears) {
+    return 'All years';
+  }
+
+  if (yearRange.start === yearRange.end) {
+    return `${yearRange.start}`;
+  }
+
+  return `${yearRange.start}\u2013${yearRange.end}`;
 }
 
 function formatSexLabel(sex: string) {
@@ -146,6 +214,17 @@ function formatSexLabel(sex: string) {
   return sex;
 }
 
+function OverlayPill({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-full border border-white/10 bg-black/35 px-3 py-2 text-xs text-[var(--text-secondary)] backdrop-blur-xl">
+      <span className="tracking-[0.14em] text-[var(--text-muted)] uppercase">
+        {label}
+      </span>{' '}
+      <span className="text-white">{value}</span>
+    </div>
+  );
+}
+
 function DisplayModeButton({
   active,
   children,
@@ -158,7 +237,7 @@ function DisplayModeButton({
   return (
     <button
       type="button"
-      className={`rounded-full px-4 py-2 text-sm transition ${
+      className={`rounded-full px-3 py-1.5 text-xs tracking-[0.12em] uppercase transition ${
         active
           ? 'bg-[var(--accent)] text-[#05101d]'
           : 'border border-white/10 bg-white/5 text-[var(--text-secondary)] hover:bg-white/10'

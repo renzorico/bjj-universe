@@ -11,7 +11,7 @@ describe('buildForceGraphData', () => {
     const filters = createDefaultGraphFilters(snapshot);
     const scene = buildGraphSceneModel(snapshot, {
       ...filters,
-      year: 2022,
+      yearRange: { start: 2022, end: 2022 },
       sex: 'M',
       weightClass: '99KG',
       displayMode: 'all',
