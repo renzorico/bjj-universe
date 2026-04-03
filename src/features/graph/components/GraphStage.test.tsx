@@ -10,11 +10,8 @@ vi.mock('@/features/graph/components/GraphCanvas', () => ({
   }: {
     onSelectAthlete: (athleteId: string | null) => void;
   }) => (
-    <button
-      type="button"
-      onClick={() => onSelectAthlete('athlete_kade-ruotolo')}
-    >
-      Select Kade from graph
+    <button type="button" onClick={() => onSelectAthlete('athlete_7507')}>
+      Select Meregali from graph
     </button>
   ),
 }));
@@ -26,14 +23,14 @@ describe('GraphStage', () => {
     render(<GraphStage snapshot={createUniverseSnapshot()} />);
 
     await user.click(
-      screen.getByRole('button', { name: 'Select Kade from graph' }),
+      screen.getByRole('button', { name: 'Select Meregali from graph' }),
     );
 
     expect(screen.getByTestId('athlete-detail-panel')).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Kade Ruotolo' }),
+      screen.getByRole('heading', { name: 'Nicholas Meregali' }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/Won over JT Torres/i)).toBeInTheDocument();
+    expect(screen.getByText(/Won over Henrique Cardoso/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Clear' }));
 

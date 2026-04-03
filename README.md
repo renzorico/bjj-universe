@@ -29,6 +29,9 @@ BJJ Universe is a graph-first exploration platform for Brazilian Jiu-Jitsu compe
 - `npm run test` runs unit and component tests with coverage.
 - `npm run test:e2e` runs the Playwright smoke test.
 - `npm run format` formats the repo with Prettier.
+- `npm run data:adcc:download` downloads the Kaggle ADCC historical CSV into `data/raw/adcc/`.
+- `npm run data:adcc:build` validates and converts the raw ADCC CSV into processed app-ready JSON.
+- `npm run data:adcc:refresh` downloads and rebuilds the ADCC dataset in one pass.
 
 ## Project structure
 
@@ -36,15 +39,19 @@ BJJ Universe is a graph-first exploration platform for Brazilian Jiu-Jitsu compe
 - `src/components` reusable layout and presentation surfaces
 - `src/domain` core domain types
 - `src/data/fixtures` clearly marked sample fixture data
+- `src/data/processed` deterministic processed outputs used by the app
 - `src/data/normalization` raw-to-domain transforms
+- `src/data/validation` processed dataset loading
 - `src/data/metrics` derived analytics snapshots
 - `src/data/graph` UI-facing graph view models
+- `data/raw` checked-in raw source files for reproducible local dev
+- `data/processed` validation and quarantine reports
 - `docs` architecture, roadmap, data pipeline, and decisions
 - `tests/e2e` Playwright smoke coverage
 
-## Fixture policy
+## Data policy
 
-Phase 1 includes a clearly marked sample fixture in `src/data/fixtures/adcc-sample.fixture.json`. It exists to validate ingestion and graph transforms. It is not represented as a complete or authoritative ADCC production dataset.
+The app now prefers the processed real ADCC dataset in `src/data/processed/adcc-historical.processed.json`. The sample fixture in `src/data/fixtures/adcc-sample.fixture.json` remains for deterministic ingestion tests and fallback behavior. It is not represented as a complete or authoritative production dataset.
 
 ## Getting started
 
@@ -56,5 +63,6 @@ Phase 1 includes a clearly marked sample fixture in `src/data/fixtures/adcc-samp
 
 - [Architecture](./docs/architecture.md)
 - [Data pipeline](./docs/data-pipeline.md)
+- [ADCC data source](./docs/adcc-data-source.md)
 - [Roadmap](./docs/roadmap.md)
 - [Decisions](./docs/decisions.md)

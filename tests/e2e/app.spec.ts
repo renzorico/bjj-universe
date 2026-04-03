@@ -7,11 +7,11 @@ test('can select an athlete and inspect details', async ({ page }) => {
     page.getByRole('heading', { name: 'BJJ Universe', exact: true }),
   ).toBeVisible();
 
-  await page.getByTestId('athlete-list-item-athlete_kade-ruotolo').click();
+  await page.getByTestId('athlete-list-item-athlete_7507').click();
 
   await expect(page.getByTestId('athlete-detail-panel')).toBeVisible();
   await expect(
-    page.getByRole('heading', { name: 'Kade Ruotolo' }),
+    page.getByRole('heading', { name: 'Nicholas Meregali' }),
   ).toBeVisible();
-  await expect(page.getByText(/Won over JT Torres/i)).toBeVisible();
+  await expect(page.getByText(/Won over Henrique Cardoso/i)).toBeVisible();
 });
