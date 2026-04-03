@@ -5,16 +5,6 @@ import {
 } from '@/domain/types';
 import { AthleteMetricsSnapshot } from '@/data/metrics/buildAthleteMetrics';
 
-const positions = [
-  { x: 18, y: 22 },
-  { x: 42, y: 30 },
-  { x: 68, y: 20 },
-  { x: 77, y: 54 },
-  { x: 58, y: 74 },
-  { x: 27, y: 70 },
-  { x: 12, y: 50 },
-];
-
 export function buildGraphViewModel(
   normalized: NormalizedCompetitionData,
   metrics: AthleteMetricsSnapshot,
@@ -25,15 +15,19 @@ export function buildGraphViewModel(
   const eventById = new Map(
     normalized.events.map((event) => [event.id, event]),
   );
+  const positionsByAthleteId = createStableNodePositions(normalized, metrics);
   const rivalryCounts = normalized.matches.reduce((registry, match) => {
     const rivalryId = [match.winnerId, match.loserId].sort().join('__');
     registry.set(rivalryId, (registry.get(rivalryId) ?? 0) + 1);
     return registry;
   }, new Map<string, number>());
 
-  const nodes = normalized.athletes.map((athlete, index) => {
+  const nodes = normalized.athletes.map((athlete) => {
     const metric = metrics.athletes.get(athlete.id);
-    const basePosition = positions[index % positions.length];
+    const basePosition = positionsByAthleteId.get(athlete.id) ?? {
+      x: 50,
+      y: 50,
+    };
 
     return {
       id: athlete.id,
@@ -86,4 +80,54 @@ export function buildGraphViewModel(
     nodes,
     edges,
   };
+}
+
+function createStableNodePositions(
+  normalized: NormalizedCompetitionData,
+  metrics: AthleteMetricsSnapshot,
+): Map<string, { x: number; y: number }> {
+  const sortedAthletes = [...normalized.athletes].sort((left, right) => {
+    const leftMetric = metrics.athletes.get(left.id);
+    const rightMetric = metrics.athletes.get(right.id);
+    const bridgeDelta =
+      (rightMetric?.bridgeScore ?? 0) - (leftMetric?.bridgeScore ?? 0);
+
+    if (bridgeDelta !== 0) {
+      return bridgeDelta;
+    }
+
+    const winDelta = (rightMetric?.wins ?? 0) - (leftMetric?.wins ?? 0);
+
+    if (winDelta !== 0) {
+      return winDelta;
+    }
+
+    return left.name.localeCompare(right.name);
+  });
+
+  if (sortedAthletes.length === 0) {
+    return new Map();
+  }
+
+  if (sortedAthletes.length === 1) {
+    return new Map([[sortedAthletes[0].id, { x: 50, y: 50 }]]);
+  }
+
+  const positions = new Map<string, { x: number; y: number }>();
+  const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+  const radiusLimit = 42;
+
+  sortedAthletes.forEach((athlete, index) => {
+    const radius = Math.sqrt(index / (sortedAthletes.length - 1)) * radiusLimit;
+    const angle = index * goldenAngle;
+    const x = 50 + Math.cos(angle) * radius;
+    const y = 50 + Math.sin(angle) * radius * 0.82;
+
+    positions.set(athlete.id, {
+      x: Number(x.toFixed(4)),
+      y: Number(y.toFixed(4)),
+    });
+  });
+
+  return positions;
 }

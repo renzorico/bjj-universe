@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Sigma from 'sigma';
 import { MultiDirectedGraph } from 'graphology';
 import {
@@ -27,6 +27,7 @@ export function GraphCanvas({
     SigmaNodeAttributes,
     SigmaEdgeAttributes
   > | null>(null);
+  const [renderError, setRenderError] = useState(false);
   const focusStateRef = useRef(getFocusedGraphState(graph, null, null));
   const currentFocusState = useMemo(
     () => getFocusedGraphState(graph, selectedAthleteId, hoveredAthleteId),
@@ -69,38 +70,77 @@ export function GraphCanvas({
   );
 
   useEffect(() => {
+    if (graph.order === 0) {
+      return undefined;
+    }
+
     if (!containerRef.current) {
       return undefined;
     }
 
-    const sigma = new Sigma(graph, containerRef.current, {
-      allowInvalidContainer: true,
-      defaultEdgeColor: 'rgba(157, 219, 211, 0.22)',
-      defaultNodeColor: '#7aa2ff',
-      enableEdgeEvents: false,
-      hideEdgesOnMove: false,
-      itemSizesReference: 'positions',
-      labelDensity: 0.08,
-      labelRenderedSizeThreshold: 10,
-      labelColor: { color: '#dce9ff' },
-      labelFont: 'Space Grotesk',
-      nodeReducer: reducers.nodeReducer,
-      edgeReducer: reducers.edgeReducer,
-      renderEdgeLabels: false,
-      renderLabels: true,
-      stagePadding: 32,
-      zIndex: true,
-    });
+    try {
+      let renderStateTimeout: number | null = null;
+      const sigma = new Sigma(graph, containerRef.current, {
+        allowInvalidContainer: true,
+        defaultEdgeColor: 'rgba(157, 219, 211, 0.22)',
+        defaultNodeColor: '#7aa2ff',
+        enableEdgeEvents: false,
+        hideEdgesOnMove: false,
+        itemSizesReference: 'positions',
+        labelDensity: 0.06,
+        labelRenderedSizeThreshold: 14,
+        labelColor: { color: '#dce9ff' },
+        labelFont: 'Space Grotesk',
+        minCameraRatio: 0.25,
+        maxCameraRatio: 6,
+        nodeReducer: reducers.nodeReducer,
+        edgeReducer: reducers.edgeReducer,
+        renderEdgeLabels: false,
+        renderLabels: true,
+        stagePadding: 48,
+        zIndex: true,
+      });
 
-    sigma.on('clickNode', ({ node }) => onSelectAthlete(node));
-    sigma.on('clickStage', () => onSelectAthlete(null));
-    sigma.on('enterNode', ({ node }) => onHoverAthlete(node));
-    sigma.on('leaveNode', () => onHoverAthlete(null));
+      sigma.on('clickNode', ({ node }) => onSelectAthlete(node));
+      sigma.on('clickStage', () => onSelectAthlete(null));
+      sigma.on('enterNode', ({ node }) => onHoverAthlete(node));
+      sigma.on('leaveNode', () => onHoverAthlete(null));
+      void sigma.getCamera().animatedReset({ duration: 0 });
 
-    sigmaRef.current = sigma;
+      sigmaRef.current = sigma;
+      renderStateTimeout = window.setTimeout(() => setRenderError(false), 0);
+
+      const animationFrame = window.requestAnimationFrame(() => {
+        sigma.refresh();
+        void sigma.getCamera().animatedReset({ duration: 0 });
+      });
+      const resizeObserver = new ResizeObserver(() => {
+        sigma.refresh();
+      });
+      resizeObserver.observe(containerRef.current);
+
+      return () => {
+        if (renderStateTimeout !== null) {
+          window.clearTimeout(renderStateTimeout);
+        }
+        window.cancelAnimationFrame(animationFrame);
+        resizeObserver.disconnect();
+        sigma.kill();
+        sigmaRef.current = null;
+      };
+    } catch {
+      const renderStateTimeout = window.setTimeout(
+        () => setRenderError(true),
+        0,
+      );
+      sigmaRef.current = null;
+      return () => {
+        window.clearTimeout(renderStateTimeout);
+      };
+    }
 
     return () => {
-      sigma.kill();
+      sigmaRef.current?.kill();
       sigmaRef.current = null;
     };
   }, [
@@ -112,20 +152,26 @@ export function GraphCanvas({
   ]);
 
   useEffect(() => {
-    sigmaRef.current?.refresh();
+    const sigma = sigmaRef.current;
+
+    if (!sigma) {
+      return;
+    }
+
+    sigma.refresh();
   }, [currentFocusState, graph]);
 
   if (graph.order === 0) {
-    return (
-      <div className="flex h-full min-h-[420px] items-center justify-center rounded-[28px] border border-dashed border-white/15 bg-black/20 text-center">
-        <div>
-          <p className="font-display text-2xl text-white">No matches in view</p>
-          <p className="mt-3 max-w-sm text-sm leading-6 text-[var(--text-secondary)]">
-            Adjust the year or division filters to restore athletes and observed
-            match connections.
-          </p>
-        </div>
-      </div>
+    return renderFallback(
+      'No matches in view',
+      'Adjust the year or division filters to restore athletes and observed match connections.',
+    );
+  }
+
+  if (renderError) {
+    return renderFallback(
+      'Graph unavailable',
+      'The graph renderer could not initialize from the current dataset. Clear the filters or reload to retry.',
     );
   }
 
@@ -137,6 +183,19 @@ export function GraphCanvas({
         aria-label="Interactive athlete graph"
         className="h-full min-h-[440px] w-full"
       />
+    </div>
+  );
+}
+
+function renderFallback(title: string, description: string) {
+  return (
+    <div className="flex h-full min-h-[420px] items-center justify-center rounded-[28px] border border-dashed border-white/15 bg-black/20 text-center">
+      <div>
+        <p className="font-display text-2xl text-white">{title}</p>
+        <p className="mt-3 max-w-sm text-sm leading-6 text-[var(--text-secondary)]">
+          {description}
+        </p>
+      </div>
     </div>
   );
 }

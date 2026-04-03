@@ -24,14 +24,21 @@ describe('buildGraphSceneModel', () => {
 
     const sigmaGraph = buildSigmaGraph(scene.nodes, scene.edges);
     const firstEdge = scene.edges[0];
+    const nodeAttributes = sigmaGraph.getNodeAttributes('athlete_7507');
+    const uniquePositions = new Set(
+      scene.nodes.map(
+        (node) => `${node.position.x.toFixed(2)}:${node.position.y.toFixed(2)}`,
+      ),
+    );
 
     expect(sigmaGraph.order).toBe(scene.nodes.length);
     expect(sigmaGraph.size).toBe(scene.edges.length);
-    expect(sigmaGraph.getNodeAttributes('athlete_7507')).toMatchObject({
-      label: 'Nicholas Meregali',
-      x: 0.68,
-      y: 0.2,
-    });
+    expect(nodeAttributes.label).toBe('Nicholas Meregali');
+    expect(nodeAttributes.x).toBeGreaterThanOrEqual(-1);
+    expect(nodeAttributes.x).toBeLessThanOrEqual(1);
+    expect(nodeAttributes.y).toBeGreaterThanOrEqual(-1);
+    expect(nodeAttributes.y).toBeLessThanOrEqual(1);
+    expect(uniquePositions.size).toBeGreaterThan(6);
 
     expect(firstEdge).toBeDefined();
     if (!firstEdge) {
