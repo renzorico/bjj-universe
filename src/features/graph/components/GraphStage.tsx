@@ -56,25 +56,25 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
 
       <div className="pointer-events-none absolute inset-x-3 top-3 bottom-3 flex flex-col justify-between sm:inset-x-4 sm:top-4 sm:bottom-4">
         <div className="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
-          <div className="pointer-events-auto flex max-w-[min(780px,100%)] flex-col gap-3">
+          <div className="pointer-events-auto flex max-w-[min(720px,100%)] flex-col gap-2.5">
             <div className="flex flex-wrap items-center gap-2">
-              <div className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-1.5 text-[11px] tracking-[0.18em] text-[var(--text-secondary)] uppercase shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-xl">
+              <div className="rounded-full border border-white/8 bg-[rgba(5,10,18,0.64)] px-3 py-1.5 text-[10px] tracking-[0.18em] text-[var(--text-secondary)] uppercase shadow-[0_10px_28px_rgba(0,0,0,0.2)] backdrop-blur-xl">
                 {scene.nodes.length} athletes · {scene.edges.length} matches
               </div>
               <button
                 type="button"
-                className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-1.5 text-[11px] tracking-[0.18em] text-white uppercase shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.84)]"
+                className="h-8 rounded-full border border-white/8 bg-[rgba(5,10,18,0.64)] px-3 text-[10px] tracking-[0.18em] text-white uppercase shadow-[0_10px_28px_rgba(0,0,0,0.2)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.8)]"
                 onClick={() => setControlsOpen((value) => !value)}
               >
                 {controlsOpen ? 'Hide filters' : 'Filters'}
               </button>
-              <div className="hidden rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-1.5 text-[11px] text-[var(--text-secondary)] shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-xl md:block">
+              <div className="hidden rounded-full border border-white/8 bg-[rgba(5,10,18,0.58)] px-3 py-1.5 text-[10px] text-[var(--text-secondary)] shadow-[0_10px_28px_rgba(0,0,0,0.18)] backdrop-blur-xl lg:block">
                 {filterSummary}
               </div>
             </div>
 
             {controlsOpen ? (
-              <div className="max-h-[calc(100vh-14rem)] overflow-y-auto rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.72)] p-3 shadow-[0_14px_48px_rgba(0,0,0,0.38)] backdrop-blur-xl sm:p-4">
+              <div className="max-h-[calc(100vh-14rem)] overflow-y-auto rounded-[22px] border border-white/8 bg-[rgba(5,10,18,0.68)] p-3 shadow-[0_14px_48px_rgba(0,0,0,0.3)] backdrop-blur-xl sm:p-3.5">
                 <GraphControls
                   filters={filters}
                   years={scene.years}
@@ -89,12 +89,12 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
             ) : null}
           </div>
 
-          <div className="pointer-events-auto flex flex-wrap gap-2 xl:max-w-[220px] xl:flex-col xl:items-end">
+          <div className="pointer-events-auto flex flex-wrap gap-2 xl:max-w-[190px] xl:flex-col xl:items-end">
             <button
               type="button"
               aria-label="Athlete detail"
               aria-expanded={detailOpen}
-              className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-2 text-left shadow-[0_12px_32px_rgba(0,0,0,0.28)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.84)]"
+              className="rounded-full border border-white/8 bg-[rgba(5,10,18,0.64)] px-3 py-2 text-left shadow-[0_12px_32px_rgba(0,0,0,0.22)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.8)]"
               onClick={() => {
                 setDetailOpen((value) => !value);
                 setNotesOpen(false);
@@ -110,7 +110,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
               type="button"
               aria-label="Interaction notes"
               aria-expanded={notesOpen}
-              className="rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-2 text-left shadow-[0_12px_32px_rgba(0,0,0,0.28)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.84)]"
+              className="rounded-full border border-white/8 bg-[rgba(5,10,18,0.64)] px-3 py-2 text-left shadow-[0_12px_32px_rgba(0,0,0,0.22)] backdrop-blur-xl transition hover:bg-[rgba(8,14,24,0.8)]"
               onClick={() => {
                 setNotesOpen((value) => !value);
                 setDetailOpen(false);
@@ -147,7 +147,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
         ) : null}
 
         {notesOpen ? (
-          <div className="pointer-events-auto absolute top-16 right-0 w-[min(320px,calc(100vw-1.5rem))] rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.92)] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.42)] backdrop-blur-xl sm:top-[4.5rem]">
+          <div className="pointer-events-auto absolute top-16 right-0 w-[min(300px,calc(100vw-1.5rem))] rounded-[22px] border border-white/8 bg-[rgba(5,10,18,0.9)] p-4.5 shadow-[0_20px_70px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:top-[4.5rem]">
             <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
               Interaction notes
             </p>

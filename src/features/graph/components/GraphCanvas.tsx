@@ -47,6 +47,10 @@ export function GraphCanvas({
     () => new Map(data.nodes.map((node) => [node.id, node] as const)),
     [data.nodes],
   );
+  const persistentLabelIds = useMemo(
+    () => new Set(data.meta.labelNodeIds),
+    [data.meta.labelNodeIds],
+  );
   const focusState = useMemo(
     () => buildFocusState(data, selectedAthleteId, hoveredAthleteId),
     [data, hoveredAthleteId, selectedAthleteId],
@@ -147,9 +151,9 @@ export function GraphCanvas({
         onClick={() => {
           onSelectAthlete(null);
           onHoverAthlete(null);
-          resetView(graphRef.current, data, 280);
+          resetView(graphRef.current, data, 260);
         }}
-        className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.72)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.86)] sm:right-4 sm:bottom-4"
+        className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.68)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.82)] sm:right-4 sm:bottom-4"
       >
         Reset view
       </button>
@@ -166,17 +170,24 @@ export function GraphCanvas({
             height={size.height}
             graphData={data}
             backgroundColor="rgba(0,0,0,0)"
-            nodeLabel={(node) => node.label}
+            nodeLabel={() => ''}
             linkCurvature={(link) => resolveLinkCurvature(link, focusState)}
-            linkColor={(link) => resolveLinkColor(link, focusState)}
-            linkWidth={(link) => resolveLinkWidth(link, focusState)}
+            linkColor={(link) => resolveLinkColor(link, focusState, data)}
+            linkWidth={(link) => resolveLinkWidth(link, focusState, data)}
             nodePointerAreaPaint={paintNodePointerArea}
             nodeCanvasObject={(node, context, scale) =>
-              drawNode(node, context, scale, focusState)
+              drawNode(
+                node,
+                context,
+                scale,
+                focusState,
+                persistentLabelIds,
+                data.meta.mode,
+              )
             }
             autoPauseRedraw={false}
-            minZoom={0.35}
-            maxZoom={8}
+            minZoom={0.42}
+            maxZoom={7}
             cooldownTicks={0}
             enableNodeDrag={false}
             enablePointerInteraction
@@ -241,14 +252,14 @@ function resolveNodeColor(
   }
 
   if (!focusState.hasFocus) {
-    return withAlpha(node.color, 0.92);
+    return withAlpha(node.color, 0.9);
   }
 
   if (focusState.activeNodeIds.has(node.id)) {
     return withAlpha(node.color, focusState.hoveredId === node.id ? 1 : 0.98);
   }
 
-  return 'rgba(102, 120, 154, 0.16)';
+  return 'rgba(88, 101, 124, 0.1)';
 }
 
 function resolveNodeSize(
@@ -260,40 +271,45 @@ function resolveNodeSize(
   }
 
   if (focusState.selectedId === node.id) {
-    return node.size * 1.7;
+    return node.size * 2.15;
   }
 
   if (focusState.activeNodeIds.has(node.id)) {
-    return node.size * 1.16;
+    return node.size * 1.34;
   }
 
-  return Math.max(1.8, node.size * 0.54);
+  return Math.max(1.1, node.size * 0.28);
 }
 
 function resolveLinkColor(
   link: ForceGraphLink,
   focusState: ReturnType<typeof buildFocusState>,
+  data: ForceGraphData,
 ) {
   if (!focusState.hasFocus) {
-    return withAlpha(link.color, 0.3);
+    const baseAlpha = data.meta.mode === 'era' ? 0.34 : 0.22;
+    return withAlpha(link.color, baseAlpha);
   }
 
   if (focusState.activeLinkIds.has(link.id)) {
-    return withAlpha(link.color, 0.84);
+    return withAlpha(link.color, 0.94);
   }
 
-  return 'rgba(88, 102, 126, 0.04)';
+  return 'rgba(88, 102, 126, 0.012)';
 }
 
 function resolveLinkWidth(
   link: ForceGraphLink,
   focusState: ReturnType<typeof buildFocusState>,
+  data: ForceGraphData,
 ) {
   if (!focusState.hasFocus) {
-    return Math.max(0.5, link.width * 0.7);
+    return data.meta.mode === 'rivalry'
+      ? Math.max(0.6, link.width * 0.9)
+      : Math.max(0.45, link.width * 0.76);
   }
 
-  return focusState.activeLinkIds.has(link.id) ? link.width + 0.45 : 0.25;
+  return focusState.activeLinkIds.has(link.id) ? link.width + 1 : 0.06;
 }
 
 function resolveLinkCurvature(
@@ -301,10 +317,10 @@ function resolveLinkCurvature(
   focusState: ReturnType<typeof buildFocusState>,
 ) {
   if (focusState.activeLinkIds.has(link.id)) {
-    return 0.14;
+    return 0.16;
   }
 
-  return link.rivalryCount > 1 ? 0.1 : 0.04;
+  return link.rivalryCount > 1 ? 0.12 : 0.045;
 }
 
 function drawNode(
@@ -312,33 +328,59 @@ function drawNode(
   context: CanvasRenderingContext2D,
   globalScale: number,
   focusState: ReturnType<typeof buildFocusState>,
+  persistentLabelIds: Set<string>,
+  displayMode: ForceGraphData['meta']['mode'],
 ) {
   const radius = resolveNodeSize(node, focusState);
   const color = resolveNodeColor(node, focusState);
+  const isSelected = focusState.selectedId === node.id;
+  const isActiveNeighbor =
+    focusState.hasFocus && !isSelected && focusState.activeNodeIds.has(node.id);
   const shouldShowLabel =
-    focusState.selectedId === node.id ||
+    isSelected ||
     focusState.hoveredId === node.id ||
-    (!focusState.hasFocus && node.importance >= 14);
+    (!focusState.hasFocus && persistentLabelIds.has(node.id));
 
   context.save();
+
+  if (isSelected) {
+    context.beginPath();
+    context.fillStyle = 'rgba(255,255,255,0.16)';
+    context.shadowBlur = 40;
+    context.shadowColor = 'rgba(255,255,255,0.6)';
+    context.arc(node.x, node.y, radius + 9, 0, 2 * Math.PI, false);
+    context.fill();
+  } else if (isActiveNeighbor) {
+    context.beginPath();
+    context.fillStyle = withAlpha(node.color, 0.18);
+    context.shadowBlur = 20;
+    context.shadowColor = withAlpha(node.color, 0.55);
+    context.arc(node.x, node.y, radius + 5.5, 0, 2 * Math.PI, false);
+    context.fill();
+  }
+
   context.beginPath();
   context.fillStyle = color;
-  context.shadowBlur =
-    focusState.selectedId === node.id
-      ? 30
-      : focusState.activeNodeIds.has(node.id)
-        ? 18
-        : 10;
+  context.shadowBlur = isSelected
+    ? 30
+    : isActiveNeighbor
+      ? 18
+      : focusState.hasFocus
+        ? 3
+        : displayMode === 'era'
+          ? 11
+          : 8;
   context.shadowColor = color;
   context.arc(node.x, node.y, radius, 0, 2 * Math.PI, false);
   context.fill();
 
   context.beginPath();
-  context.lineWidth = focusState.selectedId === node.id ? 2.4 : 1.2;
-  context.strokeStyle =
-    focusState.selectedId === node.id
-      ? 'rgba(255,255,255,0.82)'
-      : 'rgba(255,255,255,0.16)';
+  context.lineWidth = isSelected ? 2.8 : isActiveNeighbor ? 1.7 : 0.8;
+  context.strokeStyle = isSelected
+    ? 'rgba(255,255,255,0.84)'
+    : isActiveNeighbor
+      ? 'rgba(255,255,255,0.34)'
+      : 'rgba(255,255,255,0.12)';
   context.arc(node.x, node.y, radius + 1.2, 0, 2 * Math.PI, false);
   context.stroke();
   context.restore();
@@ -347,17 +389,38 @@ function drawNode(
     return;
   }
 
-  const fontSize = Math.max(10, 12 / globalScale);
+  const fontSize = isSelected
+    ? Math.max(12.5, 15 / globalScale)
+    : Math.max(9.5, 11.5 / globalScale);
   const label = node.label;
-  context.font = `600 ${fontSize}px "Inter", system-ui, sans-serif`;
+  context.font = `${isSelected ? 700 : 600} ${fontSize}px "Inter", system-ui, sans-serif`;
   const textWidth = context.measureText(label).width;
   const textX = node.x + radius + 8;
-  const textY = node.y - radius - 2;
+  const textY = node.y - radius - 4;
 
   context.save();
-  context.fillStyle = 'rgba(5, 10, 18, 0.84)';
-  context.fillRect(textX - 6, textY - fontSize, textWidth + 12, fontSize + 8);
-  context.fillStyle = 'rgba(245, 248, 255, 0.94)';
+  context.fillStyle = isSelected
+    ? 'rgba(5, 10, 18, 0.94)'
+    : 'rgba(5, 10, 18, 0.82)';
+  context.strokeStyle = isSelected
+    ? 'rgba(255,255,255,0.18)'
+    : 'rgba(255,255,255,0.1)';
+  roundRectPath(
+    context,
+    textX - 7,
+    textY - fontSize - 4,
+    textWidth + 14,
+    fontSize + 10,
+    8,
+  );
+  context.fill();
+  context.stroke();
+  context.lineWidth = 3.2;
+  context.strokeStyle = 'rgba(5, 10, 18, 0.98)';
+  context.strokeText(label, textX, textY);
+  context.fillStyle = isSelected
+    ? 'rgba(255,255,255,0.98)'
+    : 'rgba(245, 248, 255, 0.94)';
   context.fillText(label, textX, textY);
   context.restore();
 }
@@ -371,6 +434,32 @@ function paintNodePointerArea(
   context.beginPath();
   context.arc(node.x, node.y, Math.max(node.size + 5, 10), 0, 2 * Math.PI);
   context.fill();
+}
+
+function roundRectPath(
+  context: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  radius: number,
+) {
+  context.beginPath();
+  context.moveTo(x + radius, y);
+  context.lineTo(x + width - radius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + radius);
+  context.lineTo(x + width, y + height - radius);
+  context.quadraticCurveTo(
+    x + width,
+    y + height,
+    x + width - radius,
+    y + height,
+  );
+  context.lineTo(x + radius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - radius);
+  context.lineTo(x, y + radius);
+  context.quadraticCurveTo(x, y, x + radius, y);
+  context.closePath();
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -399,8 +488,8 @@ function resetView(
     data.meta.initialCamera.lookAt.y,
     durationMs,
   );
-  graph.zoom(1.08, durationMs);
-  graph.zoomToFit(durationMs, 120);
+  graph.zoom(0.96, durationMs);
+  graph.zoomToFit(durationMs, 150);
 }
 
 function renderFallback(title: string, description: string) {

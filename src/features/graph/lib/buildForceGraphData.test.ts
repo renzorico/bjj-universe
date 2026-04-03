@@ -6,7 +6,7 @@ import {
 } from '@/features/graph/lib/buildGraphSceneModel';
 
 describe('buildForceGraphData', () => {
-  it('converts filtered scene data into stable positioned nodes and links', () => {
+  it('converts filtered scene data into stable, more separated positioned nodes and links', () => {
     const snapshot = createUniverseSnapshot();
     const filters = createDefaultGraphFilters();
     const scene = buildGraphSceneModel(snapshot, {
@@ -26,10 +26,10 @@ describe('buildForceGraphData', () => {
       id: 'athlete_7507',
       label: 'Nicholas Meregali',
     });
-    expect(athlete?.x).toBeGreaterThanOrEqual(-420);
-    expect(athlete?.x).toBeLessThanOrEqual(420);
-    expect(athlete?.y).toBeGreaterThanOrEqual(-340);
-    expect(athlete?.y).toBeLessThanOrEqual(340);
+    expect(athlete?.x).toBeGreaterThanOrEqual(-560);
+    expect(athlete?.x).toBeLessThanOrEqual(560);
+    expect(athlete?.y).toBeGreaterThanOrEqual(-420);
+    expect(athlete?.y).toBeLessThanOrEqual(420);
     expect(athlete?.z).toBeGreaterThanOrEqual(-260);
     expect(athlete?.z).toBeLessThanOrEqual(260);
     expect(athlete?.fx).toBe(athlete?.x);
@@ -41,6 +41,7 @@ describe('buildForceGraphData', () => {
     expect(typeof athlete?.anchorX).toBe('number');
     expect(typeof athlete?.anchorY).toBe('number');
     expect(typeof athlete?.anchorZ).toBe('number');
+    expect(graphData.meta.labelNodeIds.length).toBeLessThanOrEqual(9);
     expect(graphData.meta.initialCamera.position.z).toBeGreaterThan(400);
     expect(
       graphData.links.every((link) => typeof link.color === 'string'),

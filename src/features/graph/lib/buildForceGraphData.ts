@@ -51,6 +51,7 @@ export interface ForceGraphData {
       lookAt: { x: number; y: number; z: number };
     };
     mode: GraphDisplayMode;
+    labelNodeIds: string[];
   };
 }
 
@@ -82,9 +83,9 @@ export function buildForceGraphData(
         weightOffset + clusterPalette.clusterCenters[clusterIndex].y * 0.25;
       const anchorZ = eraAnchor;
       const x =
-        scalePosition(node.position.x, 50, 4.5) + anchorX + seededOffset.x;
+        scalePosition(node.position.x, 50, 2.75) + anchorX + seededOffset.x;
       const y =
-        scalePosition(node.position.y, 50, 3.5) + anchorY + seededOffset.y;
+        scalePosition(node.position.y, 50, 2.2) + anchorY + seededOffset.y;
       const z = anchorZ + seededOffset.z;
       const importance =
         node.activeMatches + node.bridgeScore * 0.12 + node.wins * 1.5;
@@ -97,7 +98,7 @@ export function buildForceGraphData(
         z,
         fx: x,
         fy: y,
-        size: clamp(3 + Math.sqrt(Math.max(1, importance)) * 1.15, 3.5, 13),
+        size: clamp(3.4 + Math.sqrt(Math.max(1, importance)) * 1.18, 3.8, 14),
         color: clusterPalette.colorByKey.get(clusterKey) ?? '#7aa2ff',
         wins: node.wins,
         bridgeScore: node.bridgeScore,
@@ -140,6 +141,11 @@ export function buildForceGraphData(
         lookAt: { x: 0, y: 0, z: 0 },
       },
       mode: displayMode,
+      labelNodeIds: nodes
+        .slice()
+        .sort((left, right) => right.activeMatches - left.activeMatches)
+        .slice(0, 9)
+        .map((node) => node.id),
     },
   };
 }
@@ -194,8 +200,8 @@ function buildClusterPalette(nodes: SceneNodeViewModel[]): ClusterPalette {
 
     const angle = (index / clusterKeys.length) * Math.PI * 2;
     return {
-      x: Number((Math.cos(angle) * 44).toFixed(3)),
-      y: Number((Math.sin(angle) * 30).toFixed(3)),
+      x: Number((Math.cos(angle) * 86).toFixed(3)),
+      y: Number((Math.sin(angle) * 60).toFixed(3)),
     };
   });
 
@@ -220,7 +226,7 @@ function buildWeightBandRegistry(nodes: SceneNodeViewModel[]) {
   const positionByKey = new Map(
     uniqueWeights.map((weightClass, index) => [
       weightClass,
-      Number(((index - midpoint) * 44).toFixed(3)),
+      Number(((index - midpoint) * 68).toFixed(3)),
     ]),
   );
 
@@ -240,12 +246,12 @@ function resolveSexOffsets(nodes: SceneNodeViewModel[]) {
 
   for (const sex of sexes) {
     if (sex === 'M') {
-      registry.set(sex, -170);
+      registry.set(sex, -270);
       continue;
     }
 
     if (sex === 'F') {
-      registry.set(sex, 170);
+      registry.set(sex, 270);
       continue;
     }
 

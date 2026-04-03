@@ -21,8 +21,8 @@ export function GraphControls({
   const activeYear = filters.year ?? maxYear;
 
   return (
-    <div className="grid gap-2 xl:grid-cols-[minmax(0,1.2fr)_minmax(150px,0.8fr)_minmax(170px,0.9fr)_minmax(200px,1fr)]">
-      <div className="rounded-[18px] border border-white/10 bg-black/38 px-4 py-3 backdrop-blur-xl">
+    <div className="grid gap-2 xl:grid-cols-[minmax(0,1.2fr)_minmax(140px,0.72fr)_minmax(160px,0.8fr)_minmax(190px,0.9fr)]">
+      <div className="rounded-[16px] border border-white/8 bg-black/32 px-4 py-3 backdrop-blur-xl">
         <div className="flex items-center justify-between gap-3">
           <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
             Year
@@ -35,7 +35,7 @@ export function GraphControls({
             </span>
             <button
               type="button"
-              className={`rounded-full border px-3 py-1.5 text-[11px] tracking-[0.16em] uppercase transition ${
+              className={`h-8 rounded-full border px-3 text-[10px] tracking-[0.18em] uppercase transition ${
                 isAllYears
                   ? 'border-[var(--accent)] bg-[rgba(122,162,255,0.18)] text-white'
                   : 'border-white/10 bg-black/35 text-[var(--text-secondary)] hover:bg-black/50'
@@ -52,7 +52,7 @@ export function GraphControls({
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-3">
           <input
             type="range"
             min={minYear}
@@ -68,14 +68,14 @@ export function GraphControls({
             }
             className={`year-slider w-full ${isAllYears ? 'opacity-45' : 'opacity-100'}`}
           />
-          <div className="mt-2 flex items-center justify-between text-[11px] text-[var(--text-muted)]">
+          <div className="mt-1.5 flex items-center justify-between text-[10px] text-[var(--text-muted)]">
             <span>{minYear}</span>
             <span>{maxYear}</span>
           </div>
         </div>
       </div>
 
-      <label className="rounded-[18px] border border-white/10 bg-black/38 px-4 py-3 backdrop-blur-xl">
+      <label className="rounded-[16px] border border-white/8 bg-black/32 px-4 py-3 backdrop-blur-xl">
         <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
           Sex
         </span>
@@ -100,7 +100,7 @@ export function GraphControls({
         </select>
       </label>
 
-      <label className="rounded-[18px] border border-white/10 bg-black/38 px-4 py-3 backdrop-blur-xl">
+      <label className="rounded-[16px] border border-white/8 bg-black/32 px-4 py-3 backdrop-blur-xl">
         <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
           Weight
         </span>
@@ -125,7 +125,7 @@ export function GraphControls({
         </select>
       </label>
 
-      <div className="rounded-[18px] border border-white/10 bg-black/38 px-4 py-3 backdrop-blur-xl">
+      <div className="rounded-[16px] border border-white/8 bg-black/32 px-4 py-3 backdrop-blur-xl">
         <p className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
           Mode
         </p>
@@ -178,7 +178,7 @@ function DisplayModeButton({
   return (
     <button
       type="button"
-      className={`rounded-full px-3 py-1.5 text-[11px] tracking-[0.12em] uppercase transition ${
+      className={`h-8 rounded-full px-3 text-[10px] tracking-[0.16em] uppercase transition ${
         active
           ? 'bg-[var(--accent)] text-[#05101d]'
           : 'border border-white/10 bg-white/5 text-[var(--text-secondary)] hover:bg-white/10'
