@@ -5,6 +5,7 @@ interface GraphControlsProps {
   years: number[];
   divisions: string[];
   onChange: (nextFilters: GraphFilters) => void;
+  compact?: boolean;
 }
 
 export function GraphControls({
@@ -12,62 +13,72 @@ export function GraphControls({
   years,
   divisions,
   onChange,
+  compact = false,
 }: GraphControlsProps) {
+  const containerClass = compact
+    ? 'flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between'
+    : 'grid gap-4 lg:grid-cols-[0.9fr_0.9fr_1.2fr]';
+  const fieldClass = compact
+    ? 'rounded-[18px] border border-white/10 bg-black/20 px-4 py-3'
+    : 'rounded-[20px] border border-white/10 bg-black/20 px-4 py-3';
+
   return (
-    <div className="grid gap-4 lg:grid-cols-[0.9fr_0.9fr_1.2fr]">
-      <label className="rounded-[20px] border border-white/10 bg-black/20 px-4 py-3">
-        <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-          Year
-        </span>
-        <select
-          aria-label="Year filter"
-          className="mt-2 w-full bg-transparent text-sm text-white outline-none"
-          value={filters.year ?? 'all'}
-          onChange={(event) =>
-            onChange({
-              ...filters,
-              year:
-                event.target.value === 'all'
-                  ? null
-                  : Number(event.target.value),
-            })
-          }
-        >
-          <option value="all">All years</option>
-          {years.map((year) => (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          ))}
-        </select>
-      </label>
+    <div className={containerClass}>
+      <div className="grid gap-3 md:grid-cols-2 xl:w-[420px]">
+        <label className={fieldClass}>
+          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+            Year
+          </span>
+          <select
+            aria-label="Year filter"
+            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
+            value={filters.year ?? 'all'}
+            onChange={(event) =>
+              onChange({
+                ...filters,
+                year:
+                  event.target.value === 'all'
+                    ? null
+                    : Number(event.target.value),
+              })
+            }
+          >
+            <option value="all">All years</option>
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </label>
 
-      <label className="rounded-[20px] border border-white/10 bg-black/20 px-4 py-3">
-        <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-          Division
-        </span>
-        <select
-          aria-label="Division filter"
-          className="mt-2 w-full bg-transparent text-sm text-white outline-none"
-          value={filters.division ?? 'all'}
-          onChange={(event) =>
-            onChange({
-              ...filters,
-              division:
-                event.target.value === 'all' ? null : event.target.value,
-            })
-          }
-        >
-          <option value="all">All divisions</option>
-          {divisions.map((division) => (
-            <option key={division} value={division}>
-              {division}
-            </option>
-          ))}
-        </select>
-      </label>
+        <label className={fieldClass}>
+          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+            Division
+          </span>
+          <select
+            aria-label="Division filter"
+            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
+            value={filters.division ?? 'all'}
+            onChange={(event) =>
+              onChange({
+                ...filters,
+                division:
+                  event.target.value === 'all' ? null : event.target.value,
+              })
+            }
+          >
+            <option value="all">All divisions</option>
+            {divisions.map((division) => (
+              <option key={division} value={division}>
+                {division}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
 
-      <div className="rounded-[20px] border border-white/10 bg-black/20 px-4 py-3">
+      <div className={`${fieldClass} xl:min-w-[420px]`}>
         <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
           Display mode
         </p>

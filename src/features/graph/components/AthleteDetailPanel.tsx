@@ -11,7 +11,7 @@ export function AthleteDetailPanel({
 }: AthleteDetailPanelProps) {
   if (!detail) {
     return (
-      <aside className="rounded-[28px] border border-white/10 bg-black/20 p-5">
+      <aside className="rounded-[28px] border border-white/10 bg-black/20 p-5 xl:h-full">
         <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
           Athlete detail
         </p>
@@ -31,7 +31,7 @@ export function AthleteDetailPanel({
   return (
     <aside
       data-testid="athlete-detail-panel"
-      className="rounded-[28px] border border-white/10 bg-black/20 p-5"
+      className="rounded-[28px] border border-white/10 bg-black/20 p-5 xl:h-full xl:overflow-y-auto"
     >
       <div className="flex items-start justify-between gap-4">
         <div>

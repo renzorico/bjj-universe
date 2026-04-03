@@ -34,38 +34,39 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
   );
 
   return (
-    <section className="relative z-10 rounded-[30px] border border-white/10 bg-white/6 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl">
-      <header className="mb-6 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <p className="text-xs tracking-[0.28em] text-[var(--accent-soft)] uppercase">
-            Live Graph
-          </p>
-          <h2 className="font-display text-3xl text-white">
-            The first interactive BJJ Universe scene
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--text-secondary)]">
-            This MVP uses Sigma.js on top of the existing typed view-model
-            layer. Filters and selection live in React; the mutable graph and
-            renderer do not.
-          </p>
-        </div>
-        <div className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm text-[var(--text-secondary)]">
-          {scene.nodes.length} athletes · {scene.edges.length} visible matches
+    <section className="relative z-10 flex min-h-[calc(100vh-7.5rem)] flex-col rounded-[30px] border border-white/10 bg-white/6 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl lg:p-5">
+      <header className="mb-4 rounded-[24px] border border-white/10 bg-black/20 p-4">
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between">
+            <div>
+              <p className="text-xs tracking-[0.28em] text-[var(--accent-soft)] uppercase">
+                Universe explorer
+              </p>
+              <h2 className="font-display text-3xl text-white">
+                Real ADCC graph explorer
+              </h2>
+            </div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-[var(--text-secondary)]">
+              {scene.nodes.length} athletes · {scene.edges.length} visible
+              matches
+            </div>
+          </div>
+
+          <GraphControls
+            compact
+            filters={filters}
+            years={scene.years}
+            divisions={scene.divisions}
+            onChange={(nextFilters) => {
+              setFilters(nextFilters);
+              setSelectedAthleteId(null);
+            }}
+          />
         </div>
       </header>
 
-      <GraphControls
-        filters={filters}
-        years={scene.years}
-        divisions={scene.divisions}
-        onChange={(nextFilters) => {
-          setFilters(nextFilters);
-          setSelectedAthleteId(null);
-        }}
-      />
-
-      <div className="mt-6 grid gap-6 xl:grid-cols-[1.45fr_0.55fr]">
-        <div className="space-y-4">
+      <div className="grid flex-1 gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="min-h-[58vh] xl:min-h-0">
           <GraphCanvas
             graph={sigmaGraph}
             selectedAthleteId={selectedAthleteId}
@@ -73,19 +74,21 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
             onSelectAthlete={setSelectedAthleteId}
             onHoverAthlete={setHoveredAthleteId}
           />
+        </div>
+
+        <aside className="grid gap-4 xl:grid-rows-[minmax(0,1fr)_auto_auto]">
+          <AthleteDetailPanel
+            detail={detail}
+            onClearSelection={() => setSelectedAthleteId(null)}
+          />
+
           <AthleteList
             athletes={scene.nodes}
             selectedAthleteId={selectedAthleteId}
             onSelectAthlete={setSelectedAthleteId}
           />
-        </div>
 
-        <div className="space-y-4">
-          <AthleteDetailPanel
-            detail={detail}
-            onClearSelection={() => setSelectedAthleteId(null)}
-          />
-          <aside className="rounded-[24px] border border-white/10 bg-black/20 p-5">
+          <div className="rounded-[24px] border border-white/10 bg-black/20 p-5">
             <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
               Interaction notes
             </p>
@@ -95,8 +98,8 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
               <li>Use rivalry mode to emphasize repeat pairings.</li>
               <li>Use era mode to tint edges by match year.</li>
             </ul>
-          </aside>
-        </div>
+          </div>
+        </aside>
       </div>
     </section>
   );

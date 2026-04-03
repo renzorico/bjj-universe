@@ -70,7 +70,7 @@ export function AthleteList({
         ) : null}
       </div>
 
-      <div className="mt-4 max-h-[340px] overflow-y-auto rounded-[20px] border border-white/8 bg-black/10 p-2">
+      <div className="mt-4 max-h-[280px] overflow-y-auto rounded-[20px] border border-white/8 bg-black/10 p-2">
         <div className="space-y-1">
           {visibleAthletes.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-white/10 px-4 py-6 text-sm text-[var(--text-secondary)]">
