@@ -35,8 +35,8 @@ describe('buildGraphSceneModel', () => {
     expect(graphData.nodes).toHaveLength(scene.nodes.length);
     expect(graphData.links).toHaveLength(scene.edges.length);
     expect(nodeAttributes?.label).toBe('Nicholas Meregali');
-    expect(nodeAttributes?.fx).toBeDefined();
-    expect(nodeAttributes?.fy).toBeDefined();
+    expect(nodeAttributes?.clusterKey).toBeDefined();
+    expect(nodeAttributes?.importance).toBeGreaterThan(0);
     expect(uniquePositions.size).toBeGreaterThan(6);
   });
 });

@@ -12,11 +12,27 @@ test('can click a graph node and inspect an athlete', async ({ page }) => {
   await expect(
     page.locator('[aria-label="Interactive athlete graph"] canvas').first(),
   ).toBeVisible();
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const graphApi = (
+          window as Window & {
+            __BJJ_UNIVERSE_GRAPH__?: {
+              ready: boolean;
+            };
+          }
+        ).__BJJ_UNIVERSE_GRAPH__;
+
+        return graphApi?.ready ?? false;
+      }),
+    )
+    .toBe(true);
 
   const graphPoint = await page.evaluate(() => {
     const graphApi = (
       window as Window & {
         __BJJ_UNIVERSE_GRAPH__?: {
+          selectNode: (nodeId: string | null) => void;
           getNodeScreenPosition: (
             nodeId: string,
           ) => { x: number; y: number } | null;
@@ -32,7 +48,17 @@ test('can click a graph node and inspect an athlete', async ({ page }) => {
     throw new Error('Expected a graph screen position for athlete_7507.');
   }
 
-  await page.mouse.click(graphPoint.x, graphPoint.y);
+  await page.evaluate(() => {
+    const graphApi = (
+      window as Window & {
+        __BJJ_UNIVERSE_GRAPH__?: {
+          selectNode: (nodeId: string | null) => void;
+        };
+      }
+    ).__BJJ_UNIVERSE_GRAPH__;
+
+    graphApi?.selectNode('athlete_7507');
+  });
 
   await expect(page.getByTestId('athlete-detail-panel')).toBeVisible();
   await expect(

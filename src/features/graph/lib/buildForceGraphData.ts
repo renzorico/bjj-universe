@@ -8,13 +8,14 @@ export interface ForceGraphNode {
   label: string;
   x: number;
   y: number;
-  fx: number;
-  fy: number;
   size: number;
   color: string;
   wins: number;
   bridgeScore: number;
   activeMatches: number;
+  clusterKey: string;
+  clusterIndex: number;
+  importance: number;
 }
 
 export interface ForceGraphLink {
@@ -37,23 +38,38 @@ export function buildForceGraphData(
   nodes: SceneNodeViewModel[],
   edges: SceneEdgeViewModel[],
 ): ForceGraphData {
+  const clusterPalette = buildClusterPalette(nodes);
+
   return {
     nodes: nodes.map((node) => {
-      const x = scalePosition(node.position.x, 50, 10);
-      const y = scalePosition(node.position.y, 50, 8);
+      const clusterKey = resolveClusterKey(node);
+      const clusterIndex =
+        clusterPalette.clusterIndexByKey.get(clusterKey) ?? 0;
+      const seededOffset = createSeededOffset(node.id);
+      const x =
+        scalePosition(node.position.x, 50, 10) +
+        clusterPalette.clusterCenters[clusterIndex].x +
+        seededOffset.x;
+      const y =
+        scalePosition(node.position.y, 50, 8) +
+        clusterPalette.clusterCenters[clusterIndex].y +
+        seededOffset.y;
+      const importance =
+        node.activeMatches + node.bridgeScore * 0.12 + node.wins * 1.5;
 
       return {
         id: node.id,
         label: node.label,
         x,
         y,
-        fx: x,
-        fy: y,
-        size: clamp(node.size, 4, 18),
-        color: resolveNodeColor(node),
+        size: clamp(3 + Math.sqrt(Math.max(1, importance)) * 1.15, 3.5, 13),
+        color: clusterPalette.colorByKey.get(clusterKey) ?? '#7aa2ff',
         wins: node.wins,
         bridgeScore: node.bridgeScore,
         activeMatches: node.activeMatches,
+        clusterKey,
+        clusterIndex,
+        importance,
       };
     }),
     links: edges.map((edge) => ({
@@ -69,6 +85,12 @@ export function buildForceGraphData(
   };
 }
 
+interface ClusterPalette {
+  colorByKey: Map<string, string>;
+  clusterIndexByKey: Map<string, number>;
+  clusterCenters: Array<{ x: number; y: number }>;
+}
+
 function scalePosition(value: number, origin: number, multiplier: number) {
   return Number(((value - origin) * multiplier).toFixed(3));
 }
@@ -77,14 +99,67 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
 }
 
-function resolveNodeColor(node: SceneNodeViewModel) {
-  if (node.bridgeScore >= 21) {
-    return '#9ddbd3';
+function buildClusterPalette(nodes: SceneNodeViewModel[]): ClusterPalette {
+  const clusterKeys = [...new Set(nodes.map(resolveClusterKey))].sort();
+  const palette = [
+    '#86b7ff',
+    '#5fe1c5',
+    '#ffd977',
+    '#ff8ac6',
+    '#c6a6ff',
+    '#ff9f7c',
+    '#8de46b',
+    '#70c8ff',
+  ];
+  const clusterIndexByKey = new Map(
+    clusterKeys.map((key, index) => [key, index] as const),
+  );
+  const colorByKey = new Map(
+    clusterKeys.map(
+      (key, index) => [key, palette[index % palette.length]] as const,
+    ),
+  );
+
+  if (clusterKeys.length === 0) {
+    return {
+      colorByKey,
+      clusterIndexByKey,
+      clusterCenters: [{ x: 0, y: 0 }],
+    };
   }
 
-  if (node.wins >= 2) {
-    return '#7aa2ff';
-  }
+  const clusterCenters = clusterKeys.map((_, index) => {
+    if (clusterKeys.length === 1) {
+      return { x: 0, y: 0 };
+    }
 
-  return '#d7e6ff';
+    const angle = (index / clusterKeys.length) * Math.PI * 2;
+    return {
+      x: Number((Math.cos(angle) * 110).toFixed(3)),
+      y: Number((Math.sin(angle) * 90).toFixed(3)),
+    };
+  });
+
+  return {
+    colorByKey,
+    clusterIndexByKey,
+    clusterCenters,
+  };
+}
+
+function resolveClusterKey(node: SceneNodeViewModel) {
+  return node.divisions[0] ?? 'Open';
+}
+
+function createSeededOffset(seed: string) {
+  const hash = seed.split('').reduce((value, character) => {
+    return (value * 31 + character.charCodeAt(0)) % 104729;
+  }, 17);
+  const angle = (hash % 360) * (Math.PI / 180);
+  const radius = 8 + (hash % 23);
+
+  return {
+    x: Number((Math.cos(angle) * radius).toFixed(3)),
+    y: Number((Math.sin(angle) * radius).toFixed(3)),
+  };
 }
