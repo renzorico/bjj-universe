@@ -1,0 +1,119 @@
+{
+  "source": "fixture",
+  "label": "ADCC sample fixture",
+  "notes": "Clearly marked sample fixture for phase 1 pipeline validation. This is not a claimed production-complete ADCC dataset.",
+  "matches": [
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2019,
+        "location": "Anaheim"
+      },
+      "division": "-77kg",
+      "winner": { "name": "JT Torres", "nationality": "USA", "team": "Atos" },
+      "loser": {
+        "name": "Lucas Lepri",
+        "nationality": "Brazil",
+        "team": "Alliance"
+      },
+      "method": "Points",
+      "round": "Final"
+    },
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2019,
+        "location": "Anaheim"
+      },
+      "division": "-77kg",
+      "winner": {
+        "name": "Lucas Lepri",
+        "nationality": "Brazil",
+        "team": "Alliance"
+      },
+      "loser": {
+        "name": "Garry Tonon",
+        "nationality": "USA",
+        "team": "Danaher Death Squad"
+      },
+      "method": "Points",
+      "round": "Semifinal"
+    },
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2022,
+        "location": "Las Vegas"
+      },
+      "division": "-77kg",
+      "winner": {
+        "name": "Kade Ruotolo",
+        "nationality": "USA",
+        "team": "Atos"
+      },
+      "loser": { "name": "JT Torres", "nationality": "USA", "team": "Atos" },
+      "method": "Submission",
+      "round": "Semifinal"
+    },
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2022,
+        "location": "Las Vegas"
+      },
+      "division": "-77kg",
+      "winner": {
+        "name": "Kade Ruotolo",
+        "nationality": "USA",
+        "team": "Atos"
+      },
+      "loser": {
+        "name": "Mica Galvao",
+        "nationality": "Brazil",
+        "team": "Melqui Galvao"
+      },
+      "method": "Points",
+      "round": "Final"
+    },
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2022,
+        "location": "Las Vegas"
+      },
+      "division": "-99kg",
+      "winner": {
+        "name": "Kaynan Duarte",
+        "nationality": "Brazil",
+        "team": "Atos"
+      },
+      "loser": {
+        "name": "Craig Jones",
+        "nationality": "Australia",
+        "team": "B-Team"
+      },
+      "method": "Points",
+      "round": "Final"
+    },
+    {
+      "event": {
+        "name": "ADCC World Championship",
+        "year": 2024,
+        "location": "Las Vegas"
+      },
+      "division": "-99kg",
+      "winner": {
+        "name": "Craig Jones",
+        "nationality": "Australia",
+        "team": "B-Team"
+      },
+      "loser": {
+        "name": "Kaynan Duarte",
+        "nationality": "Brazil",
+        "team": "Atos"
+      },
+      "method": "Decision",
+      "round": "Superfight"
+    }
+  ]
+}

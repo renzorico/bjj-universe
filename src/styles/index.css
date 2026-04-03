@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Instrument Serif', serif;
+  --font-sans: 'Space Grotesk', sans-serif;
+}
+
+:root {
+  --bg: #06121b;
+  --text-primary: #edf3ff;
+  --text-secondary: rgba(237, 243, 255, 0.74);
+  --text-muted: rgba(197, 209, 228, 0.58);
+  --accent: #7aa2ff;
+  --accent-soft: #9ddbd3;
+  --accent-secondary: #50e3c2;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at top, rgba(122, 162, 255, 0.12), transparent 28%),
+    linear-gradient(180deg, #0a1623 0%, #06121b 60%, #040a11 100%);
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
