@@ -9,16 +9,10 @@ import {
 const EDGE_BASE_COLOR = 'rgba(157, 219, 211, 0.22)';
 const RIVALRY_EDGE_COLOR = 'rgba(80, 227, 194, 0.48)';
 
-export function createDefaultGraphFilters(
-  snapshot: UniverseSnapshot,
-): GraphFilters {
-  const start = snapshot.filters.years[0] ?? 1998;
-  const end =
-    snapshot.filters.years[snapshot.filters.years.length - 1] ?? start;
-
+export function createDefaultGraphFilters(): GraphFilters {
   return {
-    yearRange: { start, end },
-    sex: snapshot.filters.sexes.length === 1 ? snapshot.filters.sexes[0] : null,
+    year: null,
+    sex: null,
     weightClass: null,
     displayMode: 'all',
   };
@@ -28,16 +22,18 @@ export function buildGraphSceneModel(
   snapshot: UniverseSnapshot,
   filters: GraphFilters,
 ): GraphSceneModel {
-  const filteredEdges = snapshot.edges.filter((edge) => {
-    const matchesYear =
-      edge.year >= filters.yearRange.start &&
-      edge.year <= filters.yearRange.end;
+  const yearFilteredEdges = snapshot.edges.filter((edge) => {
+    const matchesYear = filters.year === null || edge.year === filters.year;
     const matchesSex = filters.sex === null || edge.sex === filters.sex;
     const matchesWeightClass =
       filters.weightClass === null || edge.weightClass === filters.weightClass;
 
     return matchesYear && matchesSex && matchesWeightClass;
   });
+  const filteredEdges = resolveModeEdges(
+    yearFilteredEdges,
+    filters.displayMode,
+  );
 
   const activeNodeIds = new Set(
     filteredEdges.flatMap((edge) => [edge.source, edge.target]),
@@ -53,7 +49,7 @@ export function buildGraphSceneModel(
     .filter((node) =>
       filteredEdges.length > 0
         ? activeNodeIds.has(node.id)
-        : isFullYearRange(snapshot, filters.yearRange) &&
+        : filters.year === null &&
           filters.sex === null &&
           filters.weightClass === null,
     )
@@ -66,9 +62,10 @@ export function buildGraphSceneModel(
   const years = [...new Set(filteredEdges.map((edge) => edge.year))].sort(
     (left, right) => left - right,
   );
-  const minYear = years[0] ?? snapshot.filters.years[0] ?? 0;
+  const minYear = years[0] ?? filters.year ?? snapshot.filters.years[0] ?? 0;
   const maxYear =
     years[years.length - 1] ??
+    filters.year ??
     snapshot.filters.years[snapshot.filters.years.length - 1] ??
     minYear;
 
@@ -91,15 +88,26 @@ export function buildGraphSceneModel(
   };
 }
 
-function isFullYearRange(
-  snapshot: UniverseSnapshot,
-  yearRange: GraphFilters['yearRange'],
+function resolveModeEdges(
+  edges: GraphEdgeViewModel[],
+  displayMode: GraphFilters['displayMode'],
 ) {
-  const start = snapshot.filters.years[0] ?? yearRange.start;
-  const end =
-    snapshot.filters.years[snapshot.filters.years.length - 1] ?? yearRange.end;
+  if (displayMode !== 'rivalry') {
+    return edges;
+  }
 
-  return yearRange.start === start && yearRange.end === end;
+  const rivalryEdges = edges.filter((edge) => edge.rivalryCount > 1);
+
+  if (rivalryEdges.length > 0) {
+    return rivalryEdges;
+  }
+
+  const highestRivalryCount = Math.max(
+    1,
+    ...edges.map((edge) => edge.rivalryCount),
+  );
+
+  return edges.filter((edge) => edge.rivalryCount === highestRivalryCount);
 }
 
 export function getAthleteDetail(

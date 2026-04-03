@@ -1,18 +1,18 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
 import { GraphControls } from '@/features/graph/components/GraphControls';
 import { GraphFilters } from '@/features/graph/lib/types';
 
 const baseFilters: GraphFilters = {
-  yearRange: { start: 1998, end: 2022 },
+  year: null,
   sex: null,
   weightClass: null,
   displayMode: 'all',
 };
 
 describe('GraphControls', () => {
-  it('resets to all years and filters weight classes by sex', async () => {
+  it('switches between all years and a specific year, and filters weight classes by sex', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
 
@@ -30,6 +30,15 @@ describe('GraphControls', () => {
       screen.getByRole('button', { name: 'All years' }),
     ).toBeInTheDocument();
 
+    fireEvent.change(screen.getByRole('slider', { name: /year filter/i }), {
+      target: { value: '2021' },
+    });
+
+    expect(onChange).toHaveBeenCalledWith({
+      ...baseFilters,
+      year: 2021,
+    });
+
     await user.selectOptions(
       screen.getByRole('combobox', { name: /sex filter/i }),
       'F',
@@ -45,7 +54,7 @@ describe('GraphControls', () => {
 
     expect(onChange).toHaveBeenLastCalledWith({
       ...baseFilters,
-      yearRange: { start: 1998, end: 2022 },
+      year: null,
     });
   });
 });

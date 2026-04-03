@@ -74,10 +74,7 @@ describe('AthleteList', () => {
       screen.getByRole('button', { name: /nicholas meregali/i }),
     ).toBeInTheDocument();
 
-    await user.selectOptions(
-      screen.getByRole('combobox', { name: /athlete sort/i }),
-      'name',
-    );
+    await user.click(screen.getByRole('button', { name: 'A–Z' }));
 
     await user.type(
       screen.getByRole('searchbox', { name: /search athletes/i }),

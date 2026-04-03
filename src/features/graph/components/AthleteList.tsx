@@ -81,6 +81,7 @@ export function AthleteList({
             setIsOpen(true);
           }}
           onFocus={() => setIsOpen(true)}
+          onClick={() => setIsOpen(true)}
           placeholder="Search athletes"
           className="w-full rounded-[20px] border border-white/10 bg-[rgba(5,10,18,0.78)] px-4 py-3 text-sm text-white shadow-[0_14px_40px_rgba(0,0,0,0.32)] backdrop-blur-xl transition outline-none placeholder:text-[var(--text-muted)] focus:border-[var(--accent)]"
         />
@@ -105,20 +106,33 @@ export function AthleteList({
             <p className="text-xs text-[var(--text-secondary)]">
               {visibleAthletes.length} of {athletes.length}
             </p>
-            <label className="flex items-center gap-2 text-xs text-[var(--text-secondary)]">
+            <div className="flex items-center gap-2 text-xs text-[var(--text-secondary)]">
               <span>Sort</span>
-              <select
-                aria-label="Athlete sort"
-                className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-xs text-white outline-none"
-                value={sortMode}
-                onChange={(event) =>
-                  setSortMode(event.target.value as AthleteSortMode)
-                }
+              <button
+                type="button"
+                aria-pressed={sortMode === 'matches'}
+                className={`rounded-full px-3 py-1.5 text-[11px] tracking-[0.12em] uppercase transition ${
+                  sortMode === 'matches'
+                    ? 'bg-[var(--accent)] text-[#05101d]'
+                    : 'border border-white/10 bg-white/5 text-[var(--text-secondary)] hover:bg-white/10'
+                }`}
+                onClick={() => setSortMode('matches')}
               >
-                <option value="matches">Matches</option>
-                <option value="name">Name</option>
-              </select>
-            </label>
+                Matches
+              </button>
+              <button
+                type="button"
+                aria-pressed={sortMode === 'name'}
+                className={`rounded-full px-3 py-1.5 text-[11px] tracking-[0.12em] uppercase transition ${
+                  sortMode === 'name'
+                    ? 'bg-[var(--accent)] text-[#05101d]'
+                    : 'border border-white/10 bg-white/5 text-[var(--text-secondary)] hover:bg-white/10'
+                }`}
+                onClick={() => setSortMode('name')}
+              >
+                A–Z
+              </button>
+            </div>
           </div>
 
           <div className="mt-3 max-h-[280px] overflow-y-auto rounded-[18px] border border-white/8 bg-black/25 p-2 sm:max-h-[320px]">

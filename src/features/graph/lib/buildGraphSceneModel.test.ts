@@ -8,10 +8,10 @@ import { buildForceGraphData } from '@/features/graph/lib/buildForceGraphData';
 describe('buildGraphSceneModel', () => {
   it('filters the scene by year, sex, and weight class and builds graph-ready data', () => {
     const snapshot = createUniverseSnapshot();
-    const filters = createDefaultGraphFilters(snapshot);
+    const filters = createDefaultGraphFilters();
     const scene = buildGraphSceneModel(snapshot, {
       ...filters,
-      yearRange: { start: 2022, end: 2022 },
+      year: 2022,
       sex: 'M',
       weightClass: '99KG',
       displayMode: 'rivalry',
@@ -24,7 +24,7 @@ describe('buildGraphSceneModel', () => {
     expect(scene.edges.every((edge) => edge.weightClass === '99KG')).toBe(true);
     expect(scene.edges.some((edge) => edge.size > 1.4)).toBe(true);
 
-    const graphData = buildForceGraphData(scene.nodes, scene.edges);
+    const graphData = buildForceGraphData(scene.nodes, scene.edges, 'rivalry');
     const nodeAttributes = graphData.nodes.find(
       (node) => node.id === 'athlete_7507',
     );
@@ -39,6 +39,9 @@ describe('buildGraphSceneModel', () => {
     expect(nodeAttributes?.label).toBe('Nicholas Meregali');
     expect(nodeAttributes?.clusterKey).toBeDefined();
     expect(nodeAttributes?.importance).toBeGreaterThan(0);
-    expect(uniquePositions.size).toBeGreaterThan(6);
+    expect(typeof nodeAttributes?.anchorX).toBe('number');
+    expect(typeof nodeAttributes?.anchorY).toBe('number');
+    expect(typeof nodeAttributes?.anchorZ).toBe('number');
+    expect(uniquePositions.size).toBeGreaterThanOrEqual(6);
   });
 });

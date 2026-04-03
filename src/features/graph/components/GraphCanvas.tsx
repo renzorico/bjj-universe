@@ -32,11 +32,6 @@ interface D3ForceHandle<Value = unknown> {
   iterations?: (value: number) => unknown;
 }
 
-interface CameraViewState {
-  position: { x: number; y: number; z: number };
-  lookAt: { x: number; y: number; z: number };
-}
-
 declare global {
   interface Window {
     __BJJ_UNIVERSE_GRAPH__?: GraphTestApi;
@@ -54,8 +49,6 @@ export function GraphCanvas({
   const graphRef = useRef<
     ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined
   >(undefined);
-  const initialViewRef = useRef<CameraViewState | null>(null);
-  const hasCapturedInitialViewRef = useRef(false);
   const [size, setSize] = useState<CanvasSize>({ width: 0, height: 0 });
   const nodeById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node] as const)),
@@ -140,33 +133,37 @@ export function GraphCanvas({
       return;
     }
 
-    const chargeForce = graph.d3Force('charge') as
-      | D3ForceHandle<(node: ForceGraphNode) => number>
-      | undefined;
-    const linkForce = graph.d3Force('link') as
-      | D3ForceHandle<(link: ForceGraphLink) => number>
-      | undefined;
-    const collideForce = graph.d3Force('collide') as
-      | D3ForceHandle<(node: ForceGraphNode) => number>
-      | undefined;
+    const configureGraph = window.setTimeout(() => {
+      const chargeForce = graph.d3Force('charge') as
+        | D3ForceHandle<(node: ForceGraphNode) => number>
+        | undefined;
+      const linkForce = graph.d3Force('link') as
+        | D3ForceHandle<(link: ForceGraphLink) => number>
+        | undefined;
+      const collideForce = graph.d3Force('collide') as
+        | D3ForceHandle<(node: ForceGraphNode) => number>
+        | undefined;
 
-    chargeForce?.strength?.(
-      (node: ForceGraphNode) => -52 - node.importance * 2.2,
-    );
-    linkForce?.distance?.((link: ForceGraphLink) =>
-      Math.max(28, 118 - link.rivalryCount * 10),
-    );
-    linkForce?.strength?.((link: ForceGraphLink) =>
-      Math.min(0.28, 0.08 + link.rivalryCount * 0.045),
-    );
-    collideForce?.radius?.((node: ForceGraphNode) => node.size * 4.8);
-    collideForce?.iterations?.(2);
-    graph.d3ReheatSimulation();
-  }, [data]);
+      chargeForce?.strength?.(
+        (node: ForceGraphNode) => -50 - node.importance * 2.1,
+      );
+      linkForce?.distance?.((link: ForceGraphLink) =>
+        Math.max(24, 94 - link.rivalryCount * 11),
+      );
+      linkForce?.strength?.((link: ForceGraphLink) =>
+        Math.min(0.26, 0.08 + link.rivalryCount * 0.045),
+      );
+      collideForce?.radius?.((node: ForceGraphNode) => node.size * 4.6);
+      collideForce?.iterations?.(2);
+      graph.cameraPosition(
+        data.meta.initialCamera.position,
+        data.meta.initialCamera.lookAt,
+        0,
+      );
+      graph.d3ReheatSimulation();
+    }, 40);
 
-  useEffect(() => {
-    initialViewRef.current = null;
-    hasCapturedInitialViewRef.current = false;
+    return () => window.clearTimeout(configureGraph);
   }, [data, size.height, size.width]);
 
   if (data.nodes.length === 0 || data.links.length === 0) {
@@ -184,11 +181,8 @@ export function GraphCanvas({
         type="button"
         onClick={() => {
           onSelectAthlete(null);
-          const graph = graphRef.current;
-
-          if (graph) {
-            resetView(graph, initialViewRef.current);
-          }
+          onHoverAthlete(null);
+          resetView(graphRef.current, data);
         }}
         className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.72)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.86)] sm:right-4 sm:bottom-4"
       >
@@ -213,7 +207,8 @@ export function GraphCanvas({
             nodeLabel={(node) => node.label}
             nodeRelSize={4}
             nodeResolution={12}
-            nodeVal={(node) => node.size}
+            nodeOpacity={0.96}
+            nodeVal={(node) => resolveNodeSize(node, focusState)}
             nodeColor={(node) => resolveNodeColor(node, focusState)}
             linkColor={(link) => resolveLinkColor(link, focusState)}
             linkWidth={(link) => resolveLinkWidth(link, focusState)}
@@ -230,9 +225,9 @@ export function GraphCanvas({
               resolveLinkColor(link, focusState)
             }
             warmupTicks={90}
-            cooldownTicks={140}
+            cooldownTicks={120}
             d3AlphaDecay={0.035}
-            d3VelocityDecay={0.22}
+            d3VelocityDecay={0.24}
             enableNodeDrag={false}
             enableNavigationControls
             enablePointerInteraction
@@ -240,19 +235,6 @@ export function GraphCanvas({
             onNodeHover={(node) => onHoverAthlete(node?.id ?? null)}
             onNodeClick={(node) => onSelectAthlete(node.id)}
             onBackgroundClick={() => onSelectAthlete(null)}
-            onEngineStop={() => {
-              const graph = graphRef.current;
-
-              if (!graph || hasCapturedInitialViewRef.current) {
-                return;
-              }
-
-              const initialView = captureInitialView(graph);
-
-              initialViewRef.current = initialView;
-              hasCapturedInitialViewRef.current = true;
-              graph.cameraPosition(initialView.position, initialView.lookAt, 0);
-            }}
           />
         ) : null}
       </div>
@@ -265,7 +247,7 @@ function buildFocusState(
   selectedAthleteId: string | null,
   hoveredAthleteId: string | null,
 ) {
-  const focusId = hoveredAthleteId ?? selectedAthleteId;
+  const focusId = selectedAthleteId ?? hoveredAthleteId;
   const activeNodeIds = new Set<string>();
   const activeLinkIds = new Set<string>();
 
@@ -274,6 +256,8 @@ function buildFocusState(
       activeNodeIds,
       activeLinkIds,
       hasFocus: false,
+      selectedId: selectedAthleteId,
+      hoveredId: hoveredAthleteId,
     };
   }
 
@@ -291,6 +275,8 @@ function buildFocusState(
     activeNodeIds,
     activeLinkIds,
     hasFocus: true,
+    selectedId: selectedAthleteId,
+    hoveredId: hoveredAthleteId,
   };
 }
 
@@ -298,15 +284,38 @@ function resolveNodeColor(
   node: ForceGraphNode,
   focusState: ReturnType<typeof buildFocusState>,
 ) {
+  if (focusState.selectedId === node.id) {
+    return 'rgba(255,255,255,0.98)';
+  }
+
   if (!focusState.hasFocus) {
     return withAlpha(node.color, 0.92);
   }
 
   if (focusState.activeNodeIds.has(node.id)) {
-    return withAlpha(node.color, 0.98);
+    return withAlpha(node.color, focusState.hoveredId === node.id ? 1 : 0.98);
   }
 
   return 'rgba(102, 120, 154, 0.16)';
+}
+
+function resolveNodeSize(
+  node: ForceGraphNode,
+  focusState: ReturnType<typeof buildFocusState>,
+) {
+  if (!focusState.hasFocus) {
+    return node.size;
+  }
+
+  if (focusState.selectedId === node.id) {
+    return node.size * 1.7;
+  }
+
+  if (focusState.activeNodeIds.has(node.id)) {
+    return node.size * 1.16;
+  }
+
+  return Math.max(1.8, node.size * 0.54);
 }
 
 function resolveLinkColor(
@@ -318,10 +327,10 @@ function resolveLinkColor(
   }
 
   if (focusState.activeLinkIds.has(link.id)) {
-    return withAlpha(link.color, 0.8);
+    return withAlpha(link.color, 0.84);
   }
 
-  return 'rgba(88, 102, 126, 0.06)';
+  return 'rgba(88, 102, 126, 0.05)';
 }
 
 function resolveLinkWidth(
@@ -332,7 +341,7 @@ function resolveLinkWidth(
     return Math.max(0.4, link.width * 0.75);
   }
 
-  return focusState.activeLinkIds.has(link.id) ? link.width + 0.35 : 0.12;
+  return focusState.activeLinkIds.has(link.id) ? link.width + 0.45 : 0.12;
 }
 
 function resolveLinkCurvature(
@@ -340,7 +349,7 @@ function resolveLinkCurvature(
   focusState: ReturnType<typeof buildFocusState>,
 ) {
   if (focusState.activeLinkIds.has(link.id)) {
-    return 0.1;
+    return 0.12;
   }
 
   return link.rivalryCount > 1 ? 0.08 : 0.03;
@@ -360,40 +369,17 @@ function withAlpha(color: string, alpha: number) {
 
 function resetView(
   graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink> | undefined,
-  initialView: CameraViewState | null,
+  data: ForceGraphData,
 ) {
   if (!graph) {
     return;
   }
 
-  const targetView = initialView ?? captureInitialView(graph);
-  graph.cameraPosition(targetView.position, targetView.lookAt, 700);
-}
-
-function captureInitialView(
-  graph: ForceGraphMethods<ForceGraphNode, ForceGraphLink>,
-): CameraViewState {
-  const bbox = graph.getGraphBbox();
-  const center = {
-    x: (bbox.x[0] + bbox.x[1]) / 2,
-    y: (bbox.y[0] + bbox.y[1]) / 2,
-    z: (bbox.z[0] + bbox.z[1]) / 2,
-  };
-  const span = Math.max(
-    bbox.x[1] - bbox.x[0],
-    bbox.y[1] - bbox.y[0],
-    bbox.z[1] - bbox.z[0],
-    160,
+  graph.cameraPosition(
+    data.meta.initialCamera.position,
+    data.meta.initialCamera.lookAt,
+    700,
   );
-
-  return {
-    lookAt: center,
-    position: {
-      x: center.x,
-      y: center.y + span * 0.12,
-      z: center.z + span * 1.55,
-    },
-  };
 }
 
 function renderFallback(title: string, description: string) {

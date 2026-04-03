@@ -2,13 +2,8 @@ import { GraphEdgeViewModel, GraphNodeViewModel } from '@/domain/types';
 
 export type GraphDisplayMode = 'all' | 'rivalry' | 'era';
 
-export interface YearRangeFilter {
-  start: number;
-  end: number;
-}
-
 export interface GraphFilters {
-  yearRange: YearRangeFilter;
+  year: number | null;
   sex: string | null;
   weightClass: string | null;
   displayMode: GraphDisplayMode;

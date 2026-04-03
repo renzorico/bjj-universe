@@ -12,9 +12,7 @@ import { AthleteDetailPanel } from '@/features/graph/components/AthleteDetailPan
 import { AthleteList } from '@/features/graph/components/AthleteList';
 
 export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
-  const [filters, setFilters] = useState(() =>
-    createDefaultGraphFilters(snapshot),
-  );
+  const [filters, setFilters] = useState(() => createDefaultGraphFilters());
   const [selectedAthleteId, setSelectedAthleteId] = useState<string | null>(
     null,
   );
@@ -28,17 +26,14 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
     [filters, snapshot],
   );
   const graphData = useMemo(
-    () => buildForceGraphData(scene.nodes, scene.edges),
-    [scene.edges, scene.nodes],
+    () => buildForceGraphData(scene.nodes, scene.edges, filters.displayMode),
+    [filters.displayMode, scene.edges, scene.nodes],
   );
   const detail = useMemo(
     () => getAthleteDetail(scene, selectedAthleteId),
     [scene, selectedAthleteId],
   );
-  const filterSummary = useMemo(
-    () => formatFilterSummary(filters, scene.years),
-    [filters, scene.years],
-  );
+  const filterSummary = useMemo(() => formatFilterSummary(filters), [filters]);
 
   const handleSelectAthlete = (athleteId: string | null) => {
     setSelectedAthleteId(athleteId);
@@ -50,7 +45,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
   };
 
   return (
-    <section className="relative z-10 h-[calc(100vh-5.9rem)] min-h-[640px] overflow-hidden rounded-[28px] border border-white/10 bg-black/20 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:min-h-[720px]">
+    <section className="relative z-10 h-full min-h-0 overflow-hidden rounded-[28px] border border-white/10 bg-black/20 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl">
       <GraphCanvas
         data={graphData}
         selectedAthleteId={selectedAthleteId}
@@ -73,13 +68,13 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
               >
                 {controlsOpen ? 'Hide filters' : 'Filters'}
               </button>
-              <div className="hidden rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-1.5 text-[11px] text-[var(--text-secondary)] shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:block">
+              <div className="hidden rounded-full border border-white/10 bg-[rgba(5,10,18,0.74)] px-3 py-1.5 text-[11px] text-[var(--text-secondary)] shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-xl md:block">
                 {filterSummary}
               </div>
             </div>
 
             {controlsOpen ? (
-              <div className="rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.72)] p-3 shadow-[0_14px_48px_rgba(0,0,0,0.38)] backdrop-blur-xl sm:p-4">
+              <div className="max-h-[calc(100vh-14rem)] overflow-y-auto rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.72)] p-3 shadow-[0_14px_48px_rgba(0,0,0,0.38)] backdrop-blur-xl sm:p-4">
                 <GraphControls
                   filters={filters}
                   years={scene.years}
@@ -94,7 +89,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
             ) : null}
           </div>
 
-          <div className="pointer-events-auto flex flex-wrap gap-2 xl:max-w-[260px] xl:flex-col xl:items-end">
+          <div className="pointer-events-auto flex flex-wrap gap-2 xl:max-w-[220px] xl:flex-col xl:items-end">
             <button
               type="button"
               aria-label="Athlete detail"
@@ -140,7 +135,7 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
         </div>
 
         {detailOpen ? (
-          <div className="pointer-events-auto absolute top-16 right-0 max-h-[calc(100vh-12rem)] w-[min(400px,calc(100vw-1.5rem))] overflow-y-auto sm:top-[4.5rem]">
+          <div className="pointer-events-auto absolute top-16 right-0 max-h-[calc(100%-4rem)] w-[min(400px,calc(100vw-1.5rem))] overflow-y-auto sm:top-[4.5rem]">
             <AthleteDetailPanel
               detail={detail}
               onClearSelection={() => {
@@ -171,16 +166,8 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
 
 function formatFilterSummary(
   filters: ReturnType<typeof createDefaultGraphFilters>,
-  years: number[],
 ) {
-  const minYear = years[0] ?? filters.yearRange.start;
-  const maxYear = years[years.length - 1] ?? filters.yearRange.end;
-  const yearsLabel =
-    filters.yearRange.start === minYear && filters.yearRange.end === maxYear
-      ? 'All years'
-      : filters.yearRange.start === filters.yearRange.end
-        ? `${filters.yearRange.start}`
-        : `${filters.yearRange.start}\u2013${filters.yearRange.end}`;
+  const yearsLabel = filters.year === null ? 'All years' : `${filters.year}`;
   const sexLabel =
     filters.sex === 'M' ? 'Men' : filters.sex === 'F' ? 'Women' : 'All sexes';
 

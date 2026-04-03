@@ -7,6 +7,13 @@ test('can click a 3d graph node and inspect an athlete', async ({ page }) => {
     page.getByRole('heading', { name: 'Node graph explorer' }),
   ).toBeVisible();
   await expect(page.getByText('Real ADCC graph exploration')).toBeVisible();
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () => document.documentElement.scrollHeight <= window.innerHeight + 1,
+      ),
+    )
+    .toBe(true);
   await expect(
     page.locator('[aria-label="Interactive athlete graph"]'),
   ).toBeVisible();

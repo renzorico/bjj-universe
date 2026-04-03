@@ -14,11 +14,13 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 
 - Stabilized the graph interaction layer by simplifying camera behavior, repairing search overlay behavior, and restoring a deterministic reset view.
 - Cleaned up the live `/universe` explorer by removing overlapping overlays, tightening the search and control surfaces, and improving mobile graph readability.
+- Corrected the universe interaction layer by replacing the broken year-range filter, restoring deterministic reset behavior, and making node selection/focus states read clearly against the live 3D graph.
 
 ### Changed
 
 - Reduced overlay noise in the `/universe` explorer and moved the primary framing into a cleaner top horizontal bar.
 - Converted the graph controls into a lighter filter drawer and refined the universe header, utility chips, and search surface based on live visual QA.
+- Reworked the graph structure to use stable sex, weight-class, and era-biased positioning instead of a single undifferentiated cloud.
 
 ## [Graph UI and data refinement]
 
