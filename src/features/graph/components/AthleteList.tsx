@@ -69,7 +69,7 @@ export function AthleteList({
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-[360px]">
+    <div ref={containerRef} className="relative w-full max-w-[340px]">
       <label className="block">
         <span className="sr-only">Search athletes</span>
         <input
@@ -82,14 +82,14 @@ export function AthleteList({
           }}
           onFocus={() => setIsOpen(true)}
           placeholder="Search athletes"
-          className="w-full rounded-[22px] border border-white/10 bg-black/50 px-4 py-3 text-sm text-white shadow-[0_16px_48px_rgba(0,0,0,0.35)] backdrop-blur-xl transition outline-none placeholder:text-[var(--text-muted)] focus:border-[var(--accent)]"
+          className="w-full rounded-[20px] border border-white/10 bg-[rgba(5,10,18,0.78)] px-4 py-3 text-sm text-white shadow-[0_14px_40px_rgba(0,0,0,0.32)] backdrop-blur-xl transition outline-none placeholder:text-[var(--text-muted)] focus:border-[var(--accent)]"
         />
       </label>
 
       {(isOpen || query) && (
-        <div className="absolute top-[calc(100%+0.75rem)] right-0 left-0 z-30 rounded-[24px] border border-white/10 bg-[rgba(5,10,18,0.92)] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+        <div className="absolute top-[calc(100%+0.6rem)] right-0 left-0 z-30 rounded-[22px] border border-white/10 bg-[rgba(5,10,18,0.94)] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
           <div className="flex items-center justify-between gap-3 px-2 py-1">
-            <p className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+            <p className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
               Athlete browser
             </p>
             <button
@@ -121,7 +121,7 @@ export function AthleteList({
             </label>
           </div>
 
-          <div className="mt-3 max-h-[320px] overflow-y-auto rounded-[20px] border border-white/8 bg-black/25 p-2">
+          <div className="mt-3 max-h-[280px] overflow-y-auto rounded-[18px] border border-white/8 bg-black/25 p-2 sm:max-h-[320px]">
             <div className="space-y-1">
               {visibleAthletes.length === 0 ? (
                 <div className="rounded-2xl border border-dashed border-white/10 px-4 py-6 text-sm text-[var(--text-secondary)]">

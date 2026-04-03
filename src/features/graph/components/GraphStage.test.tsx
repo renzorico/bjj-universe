@@ -38,7 +38,12 @@ describe('GraphStage', () => {
 
     await user.click(screen.getByRole('button', { name: 'Clear' }));
 
-    expect(screen.getByText('Select an athlete')).toBeInTheDocument();
+    expect(
+      screen.queryByTestId('athlete-detail-panel'),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: 'Athlete detail' }),
+    ).toBeInTheDocument();
 
     expect(
       screen.queryByText(/Hover a node to preview/i),

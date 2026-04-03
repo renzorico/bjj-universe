@@ -3,7 +3,9 @@ import { test, expect } from '@playwright/test';
 test('can click a 3d graph node and inspect an athlete', async ({ page }) => {
   await page.goto('/universe');
 
-  await expect(page.getByRole('heading', { name: 'Node graph explorer' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Node graph explorer' }),
+  ).toBeVisible();
   await expect(page.getByText('Real ADCC graph exploration')).toBeVisible();
   await expect(
     page.locator('[aria-label="Interactive athlete graph"]'),

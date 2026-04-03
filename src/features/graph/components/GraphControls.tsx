@@ -21,42 +21,37 @@ export function GraphControls({
     filters.yearRange.start === minYear && filters.yearRange.end === maxYear;
 
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex flex-wrap items-center gap-2">
-        <OverlayPill
-          label="Years"
-          value={formatYearRange(filters.yearRange, isAllYears)}
-        />
-        <button
-          type="button"
-          className={`rounded-full border px-3 py-2 text-xs tracking-[0.16em] uppercase transition ${
-            isAllYears
-              ? 'border-[var(--accent)] bg-[rgba(122,162,255,0.18)] text-white'
-              : 'border-white/10 bg-black/35 text-[var(--text-secondary)] hover:bg-black/50'
-          }`}
-          onClick={() =>
-            onChange({
-              ...filters,
-              yearRange: { start: minYear, end: maxYear },
-            })
-          }
-        >
-          All years
-        </button>
-      </div>
-
-      <div className="grid gap-3 lg:grid-cols-[minmax(0,1.4fr)_auto_auto_auto]">
-        <div className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
+    <div className="flex flex-col gap-2">
+      <div className="grid gap-2 xl:grid-cols-[minmax(0,1.5fr)_minmax(150px,0.8fr)_minmax(170px,0.9fr)_minmax(200px,1fr)]">
+        <div className="rounded-[20px] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-xl">
           <div className="flex items-center justify-between gap-3">
-            <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+            <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
               Year range
             </span>
-            <span className="text-sm text-white">
-              {formatYearRange(filters.yearRange, isAllYears)}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-white">
+                {formatYearRange(filters.yearRange, isAllYears)}
+              </span>
+              <button
+                type="button"
+                className={`rounded-full border px-3 py-1.5 text-[11px] tracking-[0.16em] uppercase transition ${
+                  isAllYears
+                    ? 'border-[var(--accent)] bg-[rgba(122,162,255,0.18)] text-white'
+                    : 'border-white/10 bg-black/35 text-[var(--text-secondary)] hover:bg-black/50'
+                }`}
+                onClick={() =>
+                  onChange({
+                    ...filters,
+                    yearRange: { start: minYear, end: maxYear },
+                  })
+                }
+              >
+                All years
+              </button>
+            </div>
           </div>
 
-          <div className="mt-4 grid gap-3">
+          <div className="mt-3 grid gap-3">
             <input
               type="range"
               min={minYear}
@@ -107,13 +102,13 @@ export function GraphControls({
           </div>
         </div>
 
-        <label className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
-          <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+        <label className="rounded-[20px] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-xl">
+          <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
             Sex
           </span>
           <select
             aria-label="Sex filter"
-            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
+            className="mt-2 w-full appearance-none bg-transparent text-sm text-white outline-none"
             value={filters.sex ?? 'all'}
             onChange={(event) =>
               onChange({
@@ -132,13 +127,13 @@ export function GraphControls({
           </select>
         </label>
 
-        <label className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
-          <span className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+        <label className="rounded-[20px] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-xl">
+          <span className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
             Weight
           </span>
           <select
             aria-label="Weight class filter"
-            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
+            className="mt-2 w-full appearance-none bg-transparent text-sm text-white outline-none"
             value={filters.weightClass ?? 'all'}
             onChange={(event) =>
               onChange({
@@ -157,8 +152,8 @@ export function GraphControls({
           </select>
         </label>
 
-        <div className="rounded-[20px] border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-xl">
-          <p className="text-xs tracking-[0.22em] text-[var(--text-muted)] uppercase">
+        <div className="rounded-[20px] border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-xl">
+          <p className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
             Mode
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -214,17 +209,6 @@ function formatSexLabel(sex: string) {
   return sex;
 }
 
-function OverlayPill({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-full border border-white/10 bg-black/35 px-3 py-2 text-xs text-[var(--text-secondary)] backdrop-blur-xl">
-      <span className="tracking-[0.14em] text-[var(--text-muted)] uppercase">
-        {label}
-      </span>{' '}
-      <span className="text-white">{value}</span>
-    </div>
-  );
-}
-
 function DisplayModeButton({
   active,
   children,
@@ -237,7 +221,7 @@ function DisplayModeButton({
   return (
     <button
       type="button"
-      className={`rounded-full px-3 py-1.5 text-xs tracking-[0.12em] uppercase transition ${
+      className={`rounded-full px-3 py-1.5 text-[11px] tracking-[0.12em] uppercase transition ${
         active
           ? 'bg-[var(--accent)] text-[#05101d]'
           : 'border border-white/10 bg-white/5 text-[var(--text-secondary)] hover:bg-white/10'

@@ -190,7 +190,7 @@ export function GraphCanvas({
             resetView(graph, initialViewRef.current);
           }
         }}
-        className="absolute right-4 bottom-4 z-10 rounded-full border border-white/12 bg-black/40 px-3 py-2 text-xs tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-black/60"
+        className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.72)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.86)] sm:right-4 sm:bottom-4"
       >
         Reset view
       </button>

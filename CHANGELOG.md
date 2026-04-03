@@ -13,10 +13,12 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 ### Fixed
 
 - Stabilized the graph interaction layer by simplifying camera behavior, repairing search overlay behavior, and restoring a deterministic reset view.
+- Cleaned up the live `/universe` explorer by removing overlapping overlays, tightening the search and control surfaces, and improving mobile graph readability.
 
 ### Changed
 
 - Reduced overlay noise in the `/universe` explorer and moved the primary framing into a cleaner top horizontal bar.
+- Converted the graph controls into a lighter filter drawer and refined the universe header, utility chips, and search surface based on live visual QA.
 
 ## [Graph UI and data refinement]
 
