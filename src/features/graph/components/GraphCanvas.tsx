@@ -5,6 +5,7 @@ import {
   ForceGraphLink,
   ForceGraphNode,
 } from '@/features/graph/lib/buildForceGraphData';
+import { GRAPH_DESIGN_MODE } from '@/features/graph/config';
 
 interface GraphCanvasProps {
   data: ForceGraphData;
@@ -86,8 +87,16 @@ export function GraphCanvas({
 
     window.__BJJ_UNIVERSE_GRAPH__ = {
       ready: false,
-      selectNode: (nodeId: string | null) => onSelectAthlete(nodeId),
+      selectNode: (nodeId: string | null) => {
+        if (!GRAPH_DESIGN_MODE) {
+          onSelectAthlete(nodeId);
+        }
+      },
       getNodeScreenPosition: (nodeId: string) => {
+        if (GRAPH_DESIGN_MODE) {
+          return null;
+        }
+
         const node = nodeById.get(nodeId);
         const graph = graphRef.current;
 
@@ -114,7 +123,7 @@ export function GraphCanvas({
       if (window.__BJJ_UNIVERSE_GRAPH__) {
         window.__BJJ_UNIVERSE_GRAPH__.ready = true;
       }
-    }, 180);
+    }, 120);
 
     return () => {
       window.clearTimeout(readyTimer);
@@ -123,7 +132,7 @@ export function GraphCanvas({
   }, [nodeById, onSelectAthlete, size.height, size.width]);
 
   useEffect(() => {
-    if (!graphRef.current || data.nodes.length === 0) {
+    if (GRAPH_DESIGN_MODE || !graphRef.current || data.nodes.length === 0) {
       return;
     }
 
@@ -143,62 +152,66 @@ export function GraphCanvas({
   }
 
   return (
-    <div className="relative h-full min-h-[520px] overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,_rgba(255,255,255,0.05),_rgba(255,255,255,0.02))]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,162,255,0.18),_transparent_34%),radial-gradient(circle_at_20%_15%,_rgba(95,225,197,0.12),_transparent_28%),linear-gradient(180deg,_rgba(4,10,17,0.22),_rgba(4,10,17,0.08))]" />
-
-      <button
-        type="button"
-        onClick={() => {
-          onSelectAthlete(null);
-          onHoverAthlete(null);
-          resetView(graphRef.current, data, 260);
-        }}
-        className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.68)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.82)] sm:right-4 sm:bottom-4"
-      >
-        Reset view
-      </button>
+    <div className="relative h-full min-h-[520px] overflow-hidden rounded-[32px] border border-white/8 bg-[radial-gradient(circle_at_top,_rgba(122,162,255,0.14),_transparent_28%),linear-gradient(180deg,_rgba(255,255,255,0.04),_rgba(255,255,255,0.02))]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_48%,_rgba(105,129,255,0.14),_transparent_30%),radial-gradient(circle_at_22%_18%,_rgba(95,225,197,0.08),_transparent_24%),linear-gradient(180deg,_rgba(4,10,17,0.18),_rgba(4,10,17,0.04))]" />
 
       <div
         ref={containerRef}
         aria-label="Interactive athlete graph"
         className="h-full min-h-[520px] w-full"
       >
-        {size.width > 0 && size.height > 0 ? (
-          <ForceGraph2D
-            ref={graphRef}
-            width={size.width}
-            height={size.height}
-            graphData={data}
-            backgroundColor="rgba(0,0,0,0)"
-            nodeLabel={() => ''}
-            linkCurvature={(link) => resolveLinkCurvature(link, focusState)}
-            linkColor={(link) => resolveLinkColor(link, focusState, data)}
-            linkWidth={(link) => resolveLinkWidth(link, focusState, data)}
-            nodePointerAreaPaint={paintNodePointerArea}
-            nodeCanvasObject={(node, context, scale) =>
-              drawNode(
-                node,
-                context,
-                scale,
-                focusState,
-                persistentLabelIds,
-                data.meta.mode,
-              )
-            }
-            autoPauseRedraw={false}
-            minZoom={0.42}
-            maxZoom={7}
-            cooldownTicks={0}
-            enableNodeDrag={false}
-            enablePointerInteraction
-            showPointerCursor={(item) => Boolean(item)}
-            onNodeHover={(node) => onHoverAthlete(node?.id ?? null)}
-            onNodeClick={(node) => onSelectAthlete(node.id)}
-            onBackgroundClick={() => {
-              onSelectAthlete(null);
-              onHoverAthlete(null);
-            }}
-          />
+        {GRAPH_DESIGN_MODE ? (
+          <StaticUniverseStage />
+        ) : size.width > 0 && size.height > 0 ? (
+          <>
+            <button
+              type="button"
+              onClick={() => {
+                onSelectAthlete(null);
+                onHoverAthlete(null);
+                resetView(graphRef.current, data, 260);
+              }}
+              className="absolute right-3 bottom-3 z-10 rounded-full border border-white/12 bg-[rgba(5,10,18,0.68)] px-3 py-2 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase backdrop-blur-md transition hover:bg-[rgba(8,14,24,0.82)] sm:right-4 sm:bottom-4"
+            >
+              Reset view
+            </button>
+
+            <ForceGraph2D
+              ref={graphRef}
+              width={size.width}
+              height={size.height}
+              graphData={data}
+              backgroundColor="rgba(0,0,0,0)"
+              nodeLabel={() => ''}
+              linkCurvature={(link) => resolveLinkCurvature(link, focusState)}
+              linkColor={(link) => resolveLinkColor(link, focusState, data)}
+              linkWidth={(link) => resolveLinkWidth(link, focusState, data)}
+              nodePointerAreaPaint={paintNodePointerArea}
+              nodeCanvasObject={(node, context, scale) =>
+                drawNode(
+                  node,
+                  context,
+                  scale,
+                  focusState,
+                  persistentLabelIds,
+                  data.meta.mode,
+                )
+              }
+              autoPauseRedraw={false}
+              minZoom={0.42}
+              maxZoom={7}
+              cooldownTicks={0}
+              enableNodeDrag={false}
+              enablePointerInteraction
+              showPointerCursor={(item) => Boolean(item)}
+              onNodeHover={(node) => onHoverAthlete(node?.id ?? null)}
+              onNodeClick={(node) => onSelectAthlete(node.id)}
+              onBackgroundClick={() => {
+                onSelectAthlete(null);
+                onHoverAthlete(null);
+              }}
+            />
+          </>
         ) : null}
       </div>
     </div>
@@ -502,5 +515,132 @@ function renderFallback(title: string, description: string) {
         </p>
       </div>
     </div>
+  );
+}
+
+function StaticUniverseStage() {
+  return (
+    <div
+      data-testid="design-mode-stage"
+      className="relative h-full min-h-[520px] w-full overflow-hidden"
+    >
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_52%,_rgba(126,147,255,0.12),_transparent_20%),radial-gradient(circle_at_30%_42%,_rgba(80,227,194,0.08),_transparent_18%),radial-gradient(circle_at_68%_36%,_rgba(255,138,198,0.08),_transparent_14%)]" />
+      <svg
+        viewBox="0 0 1200 760"
+        preserveAspectRatio="xMidYMid slice"
+        className="absolute inset-0 h-full w-full"
+        aria-hidden="true"
+      >
+        <defs>
+          <radialGradient id="stageGlowA" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stopColor="rgba(122,162,255,0.35)" />
+            <stop offset="100%" stopColor="rgba(122,162,255,0)" />
+          </radialGradient>
+          <radialGradient id="stageGlowB" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stopColor="rgba(80,227,194,0.28)" />
+            <stop offset="100%" stopColor="rgba(80,227,194,0)" />
+          </radialGradient>
+          <radialGradient id="stageGlowC" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stopColor="rgba(255,138,198,0.26)" />
+            <stop offset="100%" stopColor="rgba(255,138,198,0)" />
+          </radialGradient>
+          <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <ellipse cx="600" cy="380" rx="280" ry="220" fill="url(#stageGlowA)" />
+        <ellipse cx="470" cy="430" rx="190" ry="150" fill="url(#stageGlowB)" />
+        <ellipse cx="760" cy="300" rx="170" ry="120" fill="url(#stageGlowC)" />
+
+        <g stroke="rgba(207,223,255,0.14)" strokeWidth="1.2" fill="none">
+          <path d="M368 442C418 370 498 338 580 330" />
+          <path d="M426 472C496 456 542 422 610 382" />
+          <path d="M535 520C624 470 712 420 818 334" />
+          <path d="M470 316C512 286 560 268 622 254" />
+          <path d="M676 316C730 300 772 290 832 310" />
+          <path d="M420 386C504 418 578 454 652 496" />
+          <path d="M646 262C676 236 718 226 766 238" />
+        </g>
+
+        <g filter="url(#softGlow)">
+          <StageCluster
+            color="#ff8ac6"
+            nodes={[
+              [428, 332, 4],
+              [452, 304, 5],
+              [486, 332, 6],
+              [512, 358, 5],
+              [544, 326, 4],
+              [520, 294, 5],
+              [470, 362, 4],
+              [564, 358, 3.5],
+            ]}
+          />
+          <StageCluster
+            color="#8de46b"
+            nodes={[
+              [438, 432, 4],
+              [474, 456, 6],
+              [506, 446, 4],
+              [532, 418, 5],
+              [564, 448, 4],
+              [520, 486, 5],
+              [470, 500, 4],
+              [416, 472, 3.5],
+            ]}
+          />
+          <StageCluster
+            color="#ffd977"
+            nodes={[
+              [512, 538, 5],
+              [556, 532, 4],
+              [590, 506, 4],
+              [622, 536, 6],
+              [652, 504, 4],
+              [604, 572, 4],
+              [548, 582, 3.5],
+            ]}
+          />
+          <StageCluster
+            color="#86b7ff"
+            nodes={[
+              [748, 278, 5],
+              [784, 300, 6],
+              [820, 288, 4],
+              [846, 322, 5],
+              [804, 352, 4],
+              [760, 340, 4],
+              [726, 314, 3.5],
+            ]}
+          />
+        </g>
+      </svg>
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(180deg,_rgba(5,10,18,0),_rgba(5,10,18,0.55)_65%,_rgba(5,10,18,0.9))]" />
+    </div>
+  );
+}
+
+function StageCluster({
+  color,
+  nodes,
+}: {
+  color: string;
+  nodes: Array<[number, number, number]>;
+}) {
+  return (
+    <g>
+      {nodes.map(([cx, cy, r], index) => (
+        <g key={`${color}-${cx}-${cy}-${index}`}>
+          <circle cx={cx} cy={cy} r={r * 2.6} fill={withAlpha(color, 0.08)} />
+          <circle cx={cx} cy={cy} r={r} fill={color} />
+        </g>
+      ))}
+    </g>
   );
 }

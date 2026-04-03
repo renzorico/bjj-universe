@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('can select a graph node and inspect an athlete', async ({ page }) => {
+test('can use design mode explorer layout and inspect an athlete from search', async ({
+  page,
+}) => {
   await page.goto('/universe');
 
   await expect(
@@ -17,9 +19,7 @@ test('can select a graph node and inspect an athlete', async ({ page }) => {
   await expect(
     page.locator('[aria-label="Interactive athlete graph"]'),
   ).toBeVisible();
-  await expect(
-    page.locator('[aria-label="Interactive athlete graph"] canvas').first(),
-  ).toBeVisible();
+  await expect(page.getByTestId('design-mode-stage')).toBeVisible();
   await expect
     .poll(() =>
       page.evaluate(() => {
@@ -36,37 +36,9 @@ test('can select a graph node and inspect an athlete', async ({ page }) => {
     )
     .toBe(true);
 
-  const graphPoint = await page.evaluate(() => {
-    const graphApi = (
-      window as Window & {
-        __BJJ_UNIVERSE_GRAPH__?: {
-          selectNode: (nodeId: string | null) => void;
-          getNodeScreenPosition: (
-            nodeId: string,
-          ) => { x: number; y: number } | null;
-        };
-      }
-    ).__BJJ_UNIVERSE_GRAPH__;
-
-    return graphApi?.getNodeScreenPosition('athlete_7507') ?? null;
-  });
-
-  expect(graphPoint !== null).toBe(true);
-  if (!graphPoint) {
-    throw new Error('Expected a graph screen position for athlete_7507.');
-  }
-
-  await page.evaluate(() => {
-    const graphApi = (
-      window as Window & {
-        __BJJ_UNIVERSE_GRAPH__?: {
-          selectNode: (nodeId: string | null) => void;
-        };
-      }
-    ).__BJJ_UNIVERSE_GRAPH__;
-
-    graphApi?.selectNode('athlete_7507');
-  });
+  await page.getByRole('searchbox', { name: /search athletes/i }).click();
+  await page.getByRole('searchbox', { name: /search athletes/i }).fill('mereg');
+  await page.getByRole('button', { name: /nicholas meregali/i }).click();
 
   await expect(page.getByTestId('athlete-detail-panel')).toBeVisible();
   await expect(

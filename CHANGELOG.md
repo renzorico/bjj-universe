@@ -12,6 +12,7 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 
 ### Fixed
 
+- Added a flag-based universe design mode and switched it on by default so the explorer can be visually polished against a static stage while the live graph renderer is temporarily decoupled.
 - Hardened the live universe renderer by switching the active graph canvas to a safer 2D force-graph path with pinned positions, restoring reliable graph visibility with the real ADCC dataset.
 - Improved the 2D graph readability by widening cluster spacing, reducing idle label clutter, and making selected-athlete versus neighbor versus background states much more explicit.
 - Stabilized the graph interaction layer by simplifying camera behavior, repairing search overlay behavior, and restoring a deterministic reset view.
@@ -20,6 +21,7 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 
 ### Changed
 
+- Reworked the `/universe` header, filter drawer, search surface, and detail chips around a static constellation-style stage so the page reads as a cleaner graph-first design composition.
 - Reduced overlay noise in the `/universe` explorer and moved the primary framing into a cleaner top horizontal bar.
 - Converted the graph controls into a lighter filter drawer and refined the universe header, utility chips, and search surface based on live visual QA.
 - Reworked the graph structure to use stable sex, weight-class, and era-biased positioning instead of a single undifferentiated cloud.

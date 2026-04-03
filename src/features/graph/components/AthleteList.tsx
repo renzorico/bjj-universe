@@ -69,7 +69,7 @@ export function AthleteList({
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-[340px]">
+    <div ref={containerRef} className="relative w-full max-w-[320px]">
       <label className="block">
         <span className="sr-only">Search athletes</span>
         <input
@@ -83,19 +83,19 @@ export function AthleteList({
           onFocus={() => setIsOpen(true)}
           onClick={() => setIsOpen(true)}
           placeholder="Search athletes"
-          className="w-full rounded-[20px] border border-white/10 bg-[rgba(5,10,18,0.78)] px-4 py-3 text-sm text-white shadow-[0_14px_40px_rgba(0,0,0,0.32)] backdrop-blur-xl transition outline-none placeholder:text-[var(--text-muted)] focus:border-[var(--accent)]"
+          className="h-12 w-full rounded-[18px] border border-white/8 bg-[rgba(5,10,18,0.64)] px-4 text-sm text-white shadow-[0_10px_28px_rgba(0,0,0,0.2)] backdrop-blur-xl transition outline-none placeholder:text-[var(--text-muted)] focus:border-[var(--accent)]"
         />
       </label>
 
       {(isOpen || query) && (
-        <div className="absolute top-[calc(100%+0.6rem)] right-0 left-0 z-30 rounded-[22px] border border-white/10 bg-[rgba(5,10,18,0.94)] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+        <div className="absolute top-[calc(100%+0.6rem)] right-0 left-0 z-30 rounded-[20px] border border-white/8 bg-[rgba(5,10,18,0.86)] p-3 shadow-[0_16px_42px_rgba(0,0,0,0.26)] backdrop-blur-xl">
           <div className="flex items-center justify-between gap-3 px-2 py-1">
             <p className="text-[11px] tracking-[0.22em] text-[var(--text-muted)] uppercase">
               Athlete browser
             </p>
             <button
               type="button"
-              className="rounded-full border border-white/10 px-3 py-1.5 text-[11px] tracking-[0.14em] text-[var(--text-secondary)] uppercase transition hover:bg-white/8"
+              className="h-8 rounded-full border border-white/10 px-3 text-[10px] tracking-[0.16em] text-[var(--text-secondary)] uppercase transition hover:bg-white/8"
               onClick={() => setIsOpen(false)}
             >
               Close

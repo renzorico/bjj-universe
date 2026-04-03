@@ -46,13 +46,19 @@ describe('GraphStage', () => {
     ).toBeInTheDocument();
 
     expect(
-      screen.queryByText(/Hover a node to preview/i),
+      screen.queryByText(
+        /Use the search bar to inspect an athlete profile quickly/i,
+      ),
     ).not.toBeInTheDocument();
 
     await user.click(
       screen.getByRole('button', { name: /Interaction notes/i }),
     );
 
-    expect(screen.getByText(/Hover a node to preview/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /Use the search bar to inspect an athlete profile quickly/i,
+      ),
+    ).toBeInTheDocument();
   });
 });

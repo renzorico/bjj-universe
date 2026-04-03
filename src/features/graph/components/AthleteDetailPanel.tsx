@@ -11,7 +11,7 @@ export function AthleteDetailPanel({
 }: AthleteDetailPanelProps) {
   if (!detail) {
     return (
-      <aside className="rounded-[28px] border border-white/10 bg-black/20 p-5 xl:h-full">
+      <aside className="rounded-[24px] border border-white/8 bg-[rgba(5,10,18,0.78)] p-5 shadow-[0_18px_48px_rgba(0,0,0,0.24)] backdrop-blur-xl xl:h-full">
         <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
           Athlete detail
         </p>
@@ -31,7 +31,7 @@ export function AthleteDetailPanel({
   return (
     <aside
       data-testid="athlete-detail-panel"
-      className="rounded-[28px] border border-white/10 bg-black/20 p-5 xl:h-full xl:overflow-y-auto"
+      className="rounded-[24px] border border-white/8 bg-[rgba(5,10,18,0.8)] p-5 shadow-[0_18px_48px_rgba(0,0,0,0.24)] backdrop-blur-xl xl:h-full xl:overflow-y-auto"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
@@ -48,7 +48,7 @@ export function AthleteDetailPanel({
         </div>
         <button
           type="button"
-          className="rounded-full border border-white/10 px-3 py-2 text-xs tracking-[0.18em] text-[var(--text-secondary)] uppercase"
+          className="h-9 rounded-full border border-white/10 px-3 text-xs tracking-[0.18em] text-[var(--text-secondary)] uppercase"
           onClick={onClearSelection}
         >
           Clear
@@ -63,7 +63,7 @@ export function AthleteDetailPanel({
       </dl>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
-        <div className="rounded-[22px] border border-white/10 bg-white/5 p-4">
+        <div className="rounded-[20px] border border-white/10 bg-white/5 p-4">
           <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
             Sex
           </p>
@@ -79,7 +79,7 @@ export function AthleteDetailPanel({
           </div>
         </div>
 
-        <div className="rounded-[22px] border border-white/10 bg-white/5 p-4">
+        <div className="rounded-[20px] border border-white/10 bg-white/5 p-4">
           <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
             Weight classes
           </p>
