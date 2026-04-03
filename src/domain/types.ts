@@ -36,6 +36,13 @@ export interface GraphNodeViewModel {
   id: AthleteId;
   label: string;
   size: number;
+  wins: number;
+  losses: number;
+  yearsActive: number[];
+  divisions: string[];
+  nationality?: string;
+  team?: string;
+  bridgeScore: number;
   position: {
     x: number;
     y: number;
@@ -47,6 +54,14 @@ export interface GraphEdgeViewModel {
   source: AthleteId;
   target: AthleteId;
   weight: number;
+  eventId: EventId;
+  eventName: string;
+  year: number;
+  division: string;
+  method?: string;
+  roundLabel?: string;
+  rivalryId: string;
+  rivalryCount: number;
   sourcePosition: {
     x: number;
     y: number;

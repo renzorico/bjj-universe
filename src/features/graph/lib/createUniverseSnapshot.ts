@@ -9,6 +9,10 @@ const metrics = buildAthleteMetrics(normalized);
 const graph = buildGraphViewModel(normalized, metrics);
 
 export type UniverseSnapshot = typeof graph & {
+  filters: {
+    years: number[];
+    divisions: string[];
+  };
   summary: {
     athleteCount: number;
     matchCount: number;
@@ -35,6 +39,12 @@ export function createUniverseSnapshot(): UniverseSnapshot {
       matchCount: normalized.matches.length,
       eventCount: normalized.events.length,
       topBridgeAthlete,
+    },
+    filters: {
+      years: [...new Set(graph.edges.map((edge) => edge.year))].sort(
+        (left, right) => left - right,
+      ),
+      divisions: [...new Set(graph.edges.map((edge) => edge.division))].sort(),
     },
     topRivalries: metrics.topRivalries,
   };

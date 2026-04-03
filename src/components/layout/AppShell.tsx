@@ -30,8 +30,11 @@ export function AppShell() {
           <InsightRail snapshot={snapshot} />
         </section>
 
-        <section className="grid flex-1 gap-6 xl:grid-cols-[1.35fr_0.65fr]">
+        <section className="flex-1">
           <GraphStage snapshot={snapshot} />
+        </section>
+
+        <section>
           <DataPipelinePanel />
         </section>
       </main>
