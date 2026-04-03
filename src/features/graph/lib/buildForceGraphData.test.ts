@@ -6,7 +6,7 @@ import {
 } from '@/features/graph/lib/buildGraphSceneModel';
 
 describe('buildForceGraphData', () => {
-  it('converts filtered scene data into cluster-aware 3d nodes and links', () => {
+  it('converts filtered scene data into stable positioned nodes and links', () => {
     const snapshot = createUniverseSnapshot();
     const filters = createDefaultGraphFilters();
     const scene = buildGraphSceneModel(snapshot, {
@@ -32,6 +32,8 @@ describe('buildForceGraphData', () => {
     expect(athlete?.y).toBeLessThanOrEqual(340);
     expect(athlete?.z).toBeGreaterThanOrEqual(-260);
     expect(athlete?.z).toBeLessThanOrEqual(260);
+    expect(athlete?.fx).toBe(athlete?.x);
+    expect(athlete?.fy).toBe(athlete?.y);
     expect(typeof athlete?.clusterKey).toBe('string');
     expect(typeof athlete?.clusterIndex).toBe('number');
     expect(athlete?.importance).toBeGreaterThan(0);

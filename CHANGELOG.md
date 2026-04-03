@@ -12,6 +12,7 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 
 ### Fixed
 
+- Hardened the live universe renderer by switching the active graph canvas to a safer 2D force-graph path with pinned positions, restoring reliable graph visibility with the real ADCC dataset.
 - Stabilized the graph interaction layer by simplifying camera behavior, repairing search overlay behavior, and restoring a deterministic reset view.
 - Cleaned up the live `/universe` explorer by removing overlapping overlays, tightening the search and control surfaces, and improving mobile graph readability.
 - Corrected the universe interaction layer by replacing the broken year-range filter, restoring deterministic reset behavior, and making node selection/focus states read clearly against the live 3D graph.

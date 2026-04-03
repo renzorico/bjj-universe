@@ -10,6 +10,8 @@ export interface ForceGraphNode {
   x: number;
   y: number;
   z: number;
+  fx: number;
+  fy: number;
   size: number;
   color: string;
   wins: number;
@@ -93,6 +95,8 @@ export function buildForceGraphData(
         x,
         y,
         z,
+        fx: x,
+        fy: y,
         size: clamp(3 + Math.sqrt(Math.max(1, importance)) * 1.15, 3.5, 13),
         color: clusterPalette.colorByKey.get(clusterKey) ?? '#7aa2ff',
         wins: node.wins,
