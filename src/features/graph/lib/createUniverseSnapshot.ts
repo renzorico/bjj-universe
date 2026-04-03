@@ -16,7 +16,9 @@ const graph = buildGraphViewModel(normalized, metrics);
 export type UniverseSnapshot = typeof graph & {
   filters: {
     years: number[];
-    divisions: string[];
+    sexes: string[];
+    weightClasses: string[];
+    weightClassesBySex: Record<string, string[]>;
   };
   summary: {
     athleteCount: number;
@@ -49,8 +51,38 @@ export function createUniverseSnapshot(): UniverseSnapshot {
       years: [...new Set(graph.edges.map((edge) => edge.year))].sort(
         (left, right) => left - right,
       ),
-      divisions: [...new Set(graph.edges.map((edge) => edge.division))].sort(),
+      sexes: [
+        ...new Set(graph.edges.map((edge) => edge.sex).filter(Boolean)),
+      ].sort() as string[],
+      weightClasses: [
+        ...new Set(graph.edges.map((edge) => edge.weightClass).filter(Boolean)),
+      ].sort() as string[],
+      weightClassesBySex: buildWeightClassesBySex(graph.edges),
     },
     topRivalries: metrics.topRivalries,
   };
+}
+
+function buildWeightClassesBySex(
+  edges: Array<{ sex?: string; weightClass?: string }>,
+) {
+  const registry = new Map<string, Set<string>>();
+
+  for (const edge of edges) {
+    if (!edge.sex || !edge.weightClass) {
+      continue;
+    }
+
+    if (!registry.has(edge.sex)) {
+      registry.set(edge.sex, new Set());
+    }
+
+    registry.get(edge.sex)?.add(edge.weightClass);
+  }
+
+  return Object.fromEntries(
+    [...registry.entries()]
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([sex, weightClasses]) => [sex, [...weightClasses].sort()]),
+  );
 }

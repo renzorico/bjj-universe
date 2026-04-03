@@ -6,6 +6,7 @@ import {
   validateAdccHistoricalSchema,
 } from '../src/data/ingestion/adccHistoricalDataset';
 import { normalizeAdccFixture } from '../src/data/normalization/normalizeAdccFixture';
+import { buildAthleteDiagnostics } from '../src/data/validation/buildAthleteDiagnostics';
 import { ProcessedCompetitionDataset } from '../src/domain/types';
 
 const projectRoot = process.cwd();
@@ -34,6 +35,7 @@ async function main(): Promise<void> {
   const buildResult = buildAdccHistoricalSourceDataset(rows, headerColumns);
   const { sourceDataset, validation, quarantine } = buildResult;
   const normalized = normalizeAdccFixture(sourceDataset);
+  const athleteDiagnostics = buildAthleteDiagnostics(normalized, 15);
 
   const processedDataset: ProcessedCompetitionDataset = {
     source: sourceDataset.source,
@@ -49,6 +51,11 @@ async function main(): Promise<void> {
       acceptedRows: validation.acceptedRows,
       quarantinedRows: validation.quarantinedRows,
       quarantineReasons: validation.quarantineReasons,
+      athleteSpanWarnings: {
+        outOfBoundsCount: athleteDiagnostics.outOfBoundsCount,
+        overlongSpanCount: athleteDiagnostics.overlongSpanCount,
+        suspiciousAthletes: athleteDiagnostics.suspiciousAthletes,
+      },
     },
     normalized,
   };
@@ -69,6 +76,10 @@ async function main(): Promise<void> {
     `${JSON.stringify(schemaCheck, null, 2)}\n`,
   );
   await writeFile(
+    path.join(processedDir, 'adcc-historical.athlete-diagnostics.json'),
+    `${JSON.stringify(athleteDiagnostics, null, 2)}\n`,
+  );
+  await writeFile(
     frontendProcessedPath,
     `${JSON.stringify(processedDataset, null, 2)}\n`,
   );
@@ -78,6 +89,7 @@ async function main(): Promise<void> {
       {
         acceptedRows: validation.acceptedRows,
         quarantinedRows: validation.quarantinedRows,
+        suspiciousAthletes: athleteDiagnostics.suspiciousAthletes.length,
         output: frontendProcessedPath,
       },
       null,

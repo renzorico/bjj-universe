@@ -158,8 +158,8 @@ export function buildAdccHistoricalSourceDataset(
         year,
         inferredName: true,
       },
-      division: `${row.sex} ${row.weight_class}`,
       sex: row.sex,
+      weightClass: row.weight_class,
       winner: {
         name: row.winner_name,
       },
@@ -196,6 +196,20 @@ export function buildAdccHistoricalSourceDataset(
     },
     quarantine,
   };
+}
+
+export function findAthleteRowsByName(
+  rows: AdccHistoricalRawRow[],
+  athleteNameFragment: string,
+): AdccHistoricalRawRow[] {
+  const normalizedFragment = athleteNameFragment.trim().toLowerCase();
+
+  return rows.filter((row) => {
+    return (
+      row.winner_name.toLowerCase().includes(normalizedFragment) ||
+      row.loser_name.toLowerCase().includes(normalizedFragment)
+    );
+  });
 }
 
 function collectQuarantineReasons(

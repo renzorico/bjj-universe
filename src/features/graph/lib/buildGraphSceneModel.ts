@@ -12,14 +12,10 @@ const RIVALRY_EDGE_COLOR = 'rgba(80, 227, 194, 0.48)';
 export function createDefaultGraphFilters(
   snapshot: UniverseSnapshot,
 ): GraphFilters {
-  const division =
-    snapshot.filters.divisions.length === 1
-      ? snapshot.filters.divisions[0]
-      : null;
-
   return {
     year: null,
-    division,
+    sex: snapshot.filters.sexes.length === 1 ? snapshot.filters.sexes[0] : null,
+    weightClass: null,
     displayMode: 'all',
   };
 }
@@ -30,10 +26,11 @@ export function buildGraphSceneModel(
 ): GraphSceneModel {
   const filteredEdges = snapshot.edges.filter((edge) => {
     const matchesYear = filters.year === null || edge.year === filters.year;
-    const matchesDivision =
-      filters.division === null || edge.division === filters.division;
+    const matchesSex = filters.sex === null || edge.sex === filters.sex;
+    const matchesWeightClass =
+      filters.weightClass === null || edge.weightClass === filters.weightClass;
 
-    return matchesYear && matchesDivision;
+    return matchesYear && matchesSex && matchesWeightClass;
   });
 
   const activeNodeIds = new Set(
@@ -50,7 +47,9 @@ export function buildGraphSceneModel(
     .filter((node) =>
       filteredEdges.length > 0
         ? activeNodeIds.has(node.id)
-        : filters.year === null && filters.division === null,
+        : filters.year === null &&
+          filters.sex === null &&
+          filters.weightClass === null,
     )
     .map((node) => ({
       ...node,
@@ -77,7 +76,12 @@ export function buildGraphSceneModel(
     nodes,
     edges,
     years: snapshot.filters.years,
-    divisions: snapshot.filters.divisions,
+    sexes: snapshot.filters.sexes,
+    weightClasses:
+      filters.sex === null
+        ? snapshot.filters.weightClasses
+        : (snapshot.filters.weightClassesBySex[filters.sex] ?? []),
+    weightClassesBySex: snapshot.filters.weightClassesBySex,
   };
 }
 

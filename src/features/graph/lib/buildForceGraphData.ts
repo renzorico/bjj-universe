@@ -28,7 +28,8 @@ export interface ForceGraphLink {
   width: number;
   rivalryCount: number;
   year: number;
-  division: string;
+  sex?: string;
+  weightClass?: string;
 }
 
 export interface ForceGraphData {
@@ -87,7 +88,8 @@ export function buildForceGraphData(
       width: clamp(edge.size, 1, 5),
       rivalryCount: edge.rivalryCount,
       year: edge.year,
-      division: edge.division,
+      sex: edge.sex,
+      weightClass: edge.weightClass,
     })),
   };
 }
@@ -155,7 +157,9 @@ function buildClusterPalette(nodes: SceneNodeViewModel[]): ClusterPalette {
 }
 
 function resolveClusterKey(node: SceneNodeViewModel) {
-  return node.divisions[0] ?? 'Open';
+  const sex = node.sexes[0] ?? 'Open';
+  const weightClass = node.weightClasses[0] ?? 'Open';
+  return `${sex}:${weightClass}`;
 }
 
 function resolveYearBounds(nodes: SceneNodeViewModel[]) {

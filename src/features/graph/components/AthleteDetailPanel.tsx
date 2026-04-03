@@ -62,19 +62,37 @@ export function AthleteDetailPanel({
         <StatCard label="Active years" value={athlete.yearsActive.join(', ')} />
       </dl>
 
-      <div className="mt-6 rounded-[22px] border border-white/10 bg-white/5 p-4">
-        <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-          Divisions
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {athlete.divisions.map((division) => (
-            <span
-              key={division}
-              className="rounded-full border border-white/10 px-3 py-1 text-xs text-[var(--text-secondary)]"
-            >
-              {division}
-            </span>
-          ))}
+      <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="rounded-[22px] border border-white/10 bg-white/5 p-4">
+          <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+            Sex
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {athlete.sexes.map((sex) => (
+              <span
+                key={sex}
+                className="rounded-full border border-white/10 px-3 py-1 text-xs text-[var(--text-secondary)]"
+              >
+                {formatSexLabel(sex)}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="rounded-[22px] border border-white/10 bg-white/5 p-4">
+          <p className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+            Weight classes
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {athlete.weightClasses.map((weightClass) => (
+              <span
+                key={weightClass}
+                className="rounded-full border border-white/10 px-3 py-1 text-xs text-[var(--text-secondary)]"
+              >
+                {weightClass}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -93,7 +111,8 @@ export function AthleteDetailPanel({
                   {match.resultLabel} {match.opponentLabel}
                 </p>
                 <p className="mt-1 text-sm text-[var(--text-secondary)]">
-                  {match.eventName} · {match.year} · {match.division}
+                  {match.eventName} · {match.year} ·{' '}
+                  {formatMatchDivision(match.sex, match.weightClass)}
                 </p>
                 <p className="mt-1 text-xs tracking-[0.18em] text-[var(--text-muted)] uppercase">
                   {match.roundLabel ?? 'Bout'} · {match.method ?? 'Decision'}
@@ -105,6 +124,26 @@ export function AthleteDetailPanel({
       </div>
     </aside>
   );
+}
+
+function formatSexLabel(sex: string) {
+  if (sex === 'M') {
+    return 'Men';
+  }
+
+  if (sex === 'F') {
+    return 'Women';
+  }
+
+  return sex;
+}
+
+function formatMatchDivision(sex?: string, weightClass?: string) {
+  if (sex && weightClass) {
+    return `${formatSexLabel(sex)} · ${weightClass}`;
+  }
+
+  return weightClass ?? sex ?? 'Unknown class';
 }
 
 function StatCard({ label, value }: { label: string; value: string }) {

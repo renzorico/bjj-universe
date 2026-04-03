@@ -6,20 +6,22 @@ import {
 import { buildForceGraphData } from '@/features/graph/lib/buildForceGraphData';
 
 describe('buildGraphSceneModel', () => {
-  it('filters the scene by year and division and builds graph-ready data', () => {
+  it('filters the scene by year, sex, and weight class and builds graph-ready data', () => {
     const snapshot = createUniverseSnapshot();
     const filters = createDefaultGraphFilters(snapshot);
     const scene = buildGraphSceneModel(snapshot, {
       ...filters,
       year: 2022,
-      division: 'M 99KG',
+      sex: 'M',
+      weightClass: '99KG',
       displayMode: 'rivalry',
     });
 
     expect(scene.nodes.length).toBeGreaterThan(0);
     expect(scene.edges.length).toBeGreaterThan(0);
     expect(scene.edges.every((edge) => edge.year === 2022)).toBe(true);
-    expect(scene.edges.every((edge) => edge.division === 'M 99KG')).toBe(true);
+    expect(scene.edges.every((edge) => edge.sex === 'M')).toBe(true);
+    expect(scene.edges.every((edge) => edge.weightClass === '99KG')).toBe(true);
     expect(scene.edges.some((edge) => edge.size > 1.4)).toBe(true);
 
     const graphData = buildForceGraphData(scene.nodes, scene.edges);

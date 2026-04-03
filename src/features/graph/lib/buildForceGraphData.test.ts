@@ -12,7 +12,8 @@ describe('buildForceGraphData', () => {
     const scene = buildGraphSceneModel(snapshot, {
       ...filters,
       year: 2022,
-      division: 'M 99KG',
+      sex: 'M',
+      weightClass: '99KG',
       displayMode: 'all',
     });
 

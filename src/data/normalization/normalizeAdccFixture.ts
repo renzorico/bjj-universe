@@ -17,13 +17,15 @@ export function normalizeAdccFixture(
     const winnerId = registerAthlete(
       athletes,
       record.winner,
-      record.division,
+      record.sex,
+      record.weightClass,
       record.winnerSourceId,
     );
     const loserId = registerAthlete(
       athletes,
       record.loser,
-      record.division,
+      record.sex,
+      record.weightClass,
       record.loserSourceId,
     );
 
@@ -41,10 +43,10 @@ export function normalizeAdccFixture(
         ? `match_${record.sourceMatchId}`
         : `match_${index + 1}`,
       eventId,
-      division: record.division,
       winnerId,
       loserId,
       sex: record.sex,
+      weightClass: record.weightClass,
       method: record.method,
       submission: record.submission,
       roundLabel: record.round,
@@ -65,17 +67,19 @@ export function normalizeAdccFixture(
 function registerAthlete(
   registry: Map<string, Athlete>,
   record: { name: string; nationality?: string; team?: string },
-  division: string,
+  sex?: string,
+  weightClass?: string,
   sourceId?: string,
 ): string {
-  const athleteId = sourceId
-    ? `athlete_${sourceId}`
-    : `athlete_${slugify(record.name)}`;
+  const athleteId = resolveAthleteId(record.name, sex, sourceId);
   const existing = registry.get(athleteId);
 
   if (existing) {
-    if (!existing.divisions.includes(division)) {
-      existing.divisions.push(division);
+    if (sex && !existing.sexes.includes(sex)) {
+      existing.sexes.push(sex);
+    }
+    if (weightClass && !existing.weightClasses.includes(weightClass)) {
+      existing.weightClasses.push(weightClass);
     }
     if (!existing.team && record.team) {
       existing.team = record.team;
@@ -91,8 +95,21 @@ function registerAthlete(
     name: record.name,
     nationality: record.nationality,
     team: record.team,
-    divisions: [division],
+    sexes: sex ? [sex] : [],
+    weightClasses: weightClass ? [weightClass] : [],
   });
 
   return athleteId;
+}
+
+function resolveAthleteId(name: string, sex?: string, sourceId?: string) {
+  // The Kaggle dataset uses "-1" as a missing-athlete sentinel. Treating it as
+  // a real source ID collapses many unrelated athletes into one impossible
+  // aggregate profile, so we fall back to a name-based canonical ID instead.
+  if (sourceId && sourceId !== '-1') {
+    return `athlete_${sourceId}`;
+  }
+
+  const suffix = sex ? `-${sex}` : '';
+  return `athlete_${slugify(`${name}${suffix}`)}`;
 }

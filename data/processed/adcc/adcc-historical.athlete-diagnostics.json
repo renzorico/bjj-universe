@@ -1,0 +1,496 @@
+{
+  "topAthletesByMatchCount": [
+    {
+      "athleteId": "athlete_4302",
+      "athleteName": "Yuji Arai",
+      "matchCount": 58,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2022,
+      "editionSpan": 12,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+99KG", "60KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_84",
+      "athleteName": "Alexandre Ribeiro",
+      "matchCount": 43,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2022,
+      "editionSpan": 10,
+      "sexes": ["M"],
+      "weightClasses": ["88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_5463",
+      "athleteName": "Tomas Szczerek",
+      "matchCount": 41,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2022,
+      "editionSpan": 13,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+60KG", "+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_16",
+      "athleteName": "Marcelo Garcia",
+      "matchCount": 32,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2011,
+      "editionSpan": 5,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_419",
+      "athleteName": "Leonardo Vieira",
+      "matchCount": 30,
+      "firstMatchYear": 2000,
+      "lastMatchYear": 2017,
+      "editionSpan": 9,
+      "sexes": ["M"],
+      "weightClasses": ["66KG", "77KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_481",
+      "athleteName": "Saulo Ribeiro",
+      "matchCount": 30,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2009,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "77KG", "88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_224",
+      "athleteName": "Roberto Abreu",
+      "matchCount": 29,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2022,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_1369",
+      "athleteName": "Dean Lister",
+      "matchCount": 28,
+      "firstMatchYear": 2001,
+      "lastMatchYear": 2015,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_733",
+      "athleteName": "Vinicius Magalhaes",
+      "matchCount": 28,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2022,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_144",
+      "athleteName": "Andre Galvao",
+      "matchCount": 27,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2022,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_573",
+      "athleteName": "Fabricio Werdum",
+      "matchCount": 26,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2011,
+      "editionSpan": 5,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_919",
+      "athleteName": "Pablo Popovitch",
+      "matchCount": 26,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2015,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_576",
+      "athleteName": "Rafael Lovato Jr",
+      "matchCount": 26,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2022,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_6438",
+      "athleteName": "Chael Sonnen",
+      "matchCount": 24,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2022,
+      "editionSpan": 12,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+    },
+    {
+      "athleteId": "athlete_6167",
+      "athleteName": "Ricco Rodriguez",
+      "matchCount": 24,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2009,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "ABS"]
+    }
+  ],
+  "outOfBoundsCount": 0,
+  "overlongSpanCount": 30,
+  "suspiciousAthletes": [
+    {
+      "athleteId": "athlete_4302",
+      "athleteName": "Yuji Arai",
+      "matchCount": 58,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2022,
+      "editionSpan": 12,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+99KG", "60KG", "66KG", "77KG", "88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_84",
+      "athleteName": "Alexandre Ribeiro",
+      "matchCount": 43,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2022,
+      "editionSpan": 10,
+      "sexes": ["M"],
+      "weightClasses": ["88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_5463",
+      "athleteName": "Tomas Szczerek",
+      "matchCount": 41,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2022,
+      "editionSpan": 13,
+      "sexes": ["F", "M"],
+      "weightClasses": [
+        "+60KG",
+        "+99KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_419",
+      "athleteName": "Leonardo Vieira",
+      "matchCount": 30,
+      "firstMatchYear": 2000,
+      "lastMatchYear": 2017,
+      "editionSpan": 9,
+      "sexes": ["M"],
+      "weightClasses": ["66KG", "77KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_481",
+      "athleteName": "Saulo Ribeiro",
+      "matchCount": 30,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2009,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "77KG", "88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_224",
+      "athleteName": "Roberto Abreu",
+      "matchCount": 29,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2022,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_1369",
+      "athleteName": "Dean Lister",
+      "matchCount": 28,
+      "firstMatchYear": 2001,
+      "lastMatchYear": 2015,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_733",
+      "athleteName": "Vinicius Magalhaes",
+      "matchCount": 28,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2022,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_144",
+      "athleteName": "Andre Galvao",
+      "matchCount": 27,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2022,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_919",
+      "athleteName": "Pablo Popovitch",
+      "matchCount": 26,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2015,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_576",
+      "athleteName": "Rafael Lovato Jr",
+      "matchCount": 26,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2022,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_6438",
+      "athleteName": "Chael Sonnen",
+      "matchCount": 24,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2022,
+      "editionSpan": 12,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_6167",
+      "athleteName": "Ricco Rodriguez",
+      "matchCount": 24,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2009,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_1023",
+      "athleteName": "Baret Yoshida",
+      "matchCount": 22,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2017,
+      "editionSpan": 10,
+      "sexes": ["M"],
+      "weightClasses": ["66KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_320",
+      "athleteName": "Romulo Barral",
+      "matchCount": 18,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2017,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_8394",
+      "athleteName": "Vagner Rocha",
+      "matchCount": 17,
+      "firstMatchYear": 2011,
+      "lastMatchYear": 2022,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_595",
+      "athleteName": "Gabrielle Garcia",
+      "matchCount": 16,
+      "firstMatchYear": 2011,
+      "lastMatchYear": 2022,
+      "editionSpan": 6,
+      "sexes": ["F"],
+      "weightClasses": ["+60KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_967",
+      "athleteName": "Jonathan Torres",
+      "matchCount": 15,
+      "firstMatchYear": 2011,
+      "lastMatchYear": 2022,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["77KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_52",
+      "athleteName": "Renzo Gracie",
+      "matchCount": 15,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2011,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_3592",
+      "athleteName": "Igor Praporschchikov",
+      "matchCount": 12,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2019,
+      "editionSpan": 11,
+      "sexes": ["M"],
+      "weightClasses": ["66KG", "88KG", "99KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_jeff-monson-m",
+      "athleteName": "Jeff Monson",
+      "matchCount": 11,
+      "firstMatchYear": 1999,
+      "lastMatchYear": 2011,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["+99KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_232",
+      "athleteName": "Jose Mario Sperry",
+      "matchCount": 11,
+      "firstMatchYear": 1998,
+      "lastMatchYear": 2013,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_484",
+      "athleteName": "Murilo Santana",
+      "matchCount": 11,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2019,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_4977",
+      "athleteName": "Nate Marquardt",
+      "matchCount": 9,
+      "firstMatchYear": 2003,
+      "lastMatchYear": 2019,
+      "editionSpan": 9,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+60KG", "+99KG", "66KG", "88KG", "99KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_195",
+      "athleteName": "Robson Moura",
+      "matchCount": 8,
+      "firstMatchYear": 2001,
+      "lastMatchYear": 2011,
+      "editionSpan": 6,
+      "sexes": ["M"],
+      "weightClasses": ["66KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_1031",
+      "athleteName": "Jake Shields",
+      "matchCount": 5,
+      "firstMatchYear": 2005,
+      "lastMatchYear": 2017,
+      "editionSpan": 7,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "99KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_4488",
+      "athleteName": "Kethe Engen",
+      "matchCount": 4,
+      "firstMatchYear": 2009,
+      "lastMatchYear": 2022,
+      "editionSpan": 7,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+99KG", "60KG", "77KG", "88KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_4759",
+      "athleteName": "Roger Neff",
+      "matchCount": 3,
+      "firstMatchYear": 2001,
+      "lastMatchYear": 2022,
+      "editionSpan": 11,
+      "sexes": ["M"],
+      "weightClasses": ["66KG", "77KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_4455",
+      "athleteName": "Yukiyasu Ozawa",
+      "matchCount": 3,
+      "firstMatchYear": 2001,
+      "lastMatchYear": 2015,
+      "editionSpan": 8,
+      "sexes": ["M"],
+      "weightClasses": ["77KG", "88KG", "99KG"],
+      "reasons": ["overlong_edition_span"]
+    },
+    {
+      "athleteId": "athlete_4980",
+      "athleteName": "Talita Treta",
+      "matchCount": 2,
+      "firstMatchYear": 2007,
+      "lastMatchYear": 2017,
+      "editionSpan": 6,
+      "sexes": ["F", "M"],
+      "weightClasses": ["+60KG", "ABS"],
+      "reasons": ["overlong_edition_span"]
+    }
+  ]
+}

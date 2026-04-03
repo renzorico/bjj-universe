@@ -28,9 +28,11 @@ Normalization is the place for deduplication, identifier creation, and source cl
 For the Kaggle ADCC source:
 
 - canonical athlete IDs prefer source athlete IDs when available
+- source athlete ID `-1` is treated as a missing-value sentinel, not a real identity
 - canonical match IDs prefer source match IDs when available
 - event names are derived because the raw source lacks an explicit event-name field
-- sex and weight class are combined into the current division label to avoid collisions
+- sex and `weightClass` remain separate canonical fields
+- athlete records retain distinct `sexes` and `weightClasses` sets for filtering and diagnostics
 
 ### 3. Derived metrics
 
@@ -44,7 +46,18 @@ For the Kaggle ADCC source:
 
 Future centrality and community-detection logic should enter here or adjacent metric modules.
 
-### 4. Graph view models
+### 4. Validation and diagnostics
+
+`buildAthleteDiagnostics` surfaces source-quality and identity-risk signals:
+
+- top athletes by match count
+- first and last active years
+- edition-span warnings
+- out-of-bounds year warnings
+
+These diagnostics are written to `data/processed/adcc/adcc-historical.athlete-diagnostics.json` and summarized in the processed dataset metadata.
+
+### 5. Graph view models
 
 `buildGraphViewModel` produces typed node and edge payloads designed for rendering layers. UI code consumes these view models rather than raw match rows.
 

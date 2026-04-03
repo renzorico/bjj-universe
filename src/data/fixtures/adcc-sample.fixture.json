@@ -9,7 +9,8 @@
         "year": 2019,
         "location": "Anaheim"
       },
-      "division": "-77kg",
+      "sex": "M",
+      "weightClass": "-77kg",
       "winner": { "name": "JT Torres", "nationality": "USA", "team": "Atos" },
       "loser": {
         "name": "Lucas Lepri",
@@ -25,7 +26,8 @@
         "year": 2019,
         "location": "Anaheim"
       },
-      "division": "-77kg",
+      "sex": "M",
+      "weightClass": "-77kg",
       "winner": {
         "name": "Lucas Lepri",
         "nationality": "Brazil",
@@ -45,7 +47,8 @@
         "year": 2022,
         "location": "Las Vegas"
       },
-      "division": "-77kg",
+      "sex": "M",
+      "weightClass": "-77kg",
       "winner": {
         "name": "Kade Ruotolo",
         "nationality": "USA",
@@ -61,7 +64,8 @@
         "year": 2022,
         "location": "Las Vegas"
       },
-      "division": "-77kg",
+      "sex": "M",
+      "weightClass": "-77kg",
       "winner": {
         "name": "Kade Ruotolo",
         "nationality": "USA",
@@ -81,7 +85,8 @@
         "year": 2022,
         "location": "Las Vegas"
       },
-      "division": "-99kg",
+      "sex": "M",
+      "weightClass": "-99kg",
       "winner": {
         "name": "Kaynan Duarte",
         "nationality": "Brazil",
@@ -101,7 +106,8 @@
         "year": 2024,
         "location": "Las Vegas"
       },
-      "division": "-99kg",
+      "sex": "M",
+      "weightClass": "-99kg",
       "winner": {
         "name": "Craig Jones",
         "nationality": "Australia",

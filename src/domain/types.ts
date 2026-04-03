@@ -7,7 +7,8 @@ export interface Athlete {
   name: string;
   nationality?: string;
   team?: string;
-  divisions: string[];
+  sexes: string[];
+  weightClasses: string[];
 }
 
 export interface Event {
@@ -20,10 +21,10 @@ export interface Event {
 export interface Match {
   id: MatchId;
   eventId: EventId;
-  division: string;
   winnerId: AthleteId;
   loserId: AthleteId;
   sex?: string;
+  weightClass?: string;
   method?: string;
   submission?: string;
   roundLabel?: string;
@@ -45,7 +46,8 @@ export interface GraphNodeViewModel {
   wins: number;
   losses: number;
   yearsActive: number[];
-  divisions: string[];
+  sexes: string[];
+  weightClasses: string[];
   nationality?: string;
   team?: string;
   bridgeScore: number;
@@ -63,7 +65,8 @@ export interface GraphEdgeViewModel {
   eventId: EventId;
   eventName: string;
   year: number;
-  division: string;
+  sex?: string;
+  weightClass?: string;
   method?: string;
   roundLabel?: string;
   rivalryId: string;
@@ -94,8 +97,8 @@ export interface RawAdccMatchRecord {
     location?: string;
     inferredName?: boolean;
   };
-  division: string;
   sex?: string;
+  weightClass?: string;
   winner: RawAdccAthleteRecord;
   loser: RawAdccAthleteRecord;
   winnerSourceId?: string;
@@ -135,6 +138,19 @@ export interface ProcessedCompetitionDataset {
     acceptedRows: number;
     quarantinedRows: number;
     quarantineReasons: Record<string, number>;
+    athleteSpanWarnings: {
+      outOfBoundsCount: number;
+      overlongSpanCount: number;
+      suspiciousAthletes: Array<{
+        athleteId: string;
+        athleteName: string;
+        matchCount: number;
+        firstMatchYear: number;
+        lastMatchYear: number;
+        editionSpan: number;
+        reasons: string[];
+      }>;
+    };
   };
   normalized: NormalizedCompetitionData;
 }

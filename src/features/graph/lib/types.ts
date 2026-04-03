@@ -4,7 +4,8 @@ export type GraphDisplayMode = 'all' | 'rivalry' | 'era';
 
 export interface GraphFilters {
   year: number | null;
-  division: string | null;
+  sex: string | null;
+  weightClass: string | null;
   displayMode: GraphDisplayMode;
 }
 
@@ -21,7 +22,9 @@ export interface GraphSceneModel {
   nodes: SceneNodeViewModel[];
   edges: SceneEdgeViewModel[];
   years: number[];
-  divisions: string[];
+  sexes: string[];
+  weightClasses: string[];
+  weightClassesBySex: Record<string, string[]>;
 }
 
 export interface GraphAthleteDetail {

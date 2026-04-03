@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import ForceGraph3D, {
-  ForceGraphMethods,
-} from 'react-force-graph-3d';
-import { ForceGraphData, ForceGraphLink, ForceGraphNode } from '@/features/graph/lib/buildForceGraphData';
+import ForceGraph3D, { ForceGraphMethods } from 'react-force-graph-3d';
+import {
+  ForceGraphData,
+  ForceGraphLink,
+  ForceGraphNode,
+} from '@/features/graph/lib/buildForceGraphData';
 
 interface GraphCanvasProps {
   data: ForceGraphData;
@@ -141,7 +143,9 @@ export function GraphCanvas({
       | D3ForceHandle<(node: ForceGraphNode) => number>
       | undefined;
 
-    chargeForce?.strength?.((node: ForceGraphNode) => -52 - node.importance * 2.2);
+    chargeForce?.strength?.(
+      (node: ForceGraphNode) => -52 - node.importance * 2.2,
+    );
     linkForce?.distance?.((link: ForceGraphLink) =>
       Math.max(28, 118 - link.rivalryCount * 10),
     );
@@ -191,7 +195,7 @@ export function GraphCanvas({
   if (data.nodes.length === 0 || data.links.length === 0) {
     return renderFallback(
       'No matches in view',
-      'Adjust the year or division filters to restore athletes and observed match connections.',
+      'Adjust the year, sex, or weight-class filters to restore athletes and observed match connections.',
     );
   }
 

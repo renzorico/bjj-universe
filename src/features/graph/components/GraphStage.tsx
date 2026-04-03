@@ -56,7 +56,8 @@ export function GraphStage({ snapshot }: { snapshot: UniverseSnapshot }) {
             compact
             filters={filters}
             years={scene.years}
-            divisions={scene.divisions}
+            sexes={scene.sexes}
+            weightClasses={scene.weightClasses}
             onChange={(nextFilters) => {
               setFilters(nextFilters);
               setSelectedAthleteId(null);

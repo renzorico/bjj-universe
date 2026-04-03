@@ -3,7 +3,8 @@ import { GraphFilters } from '@/features/graph/lib/types';
 interface GraphControlsProps {
   filters: GraphFilters;
   years: number[];
-  divisions: string[];
+  sexes: string[];
+  weightClasses: string[];
   onChange: (nextFilters: GraphFilters) => void;
   compact?: boolean;
 }
@@ -11,7 +12,8 @@ interface GraphControlsProps {
 export function GraphControls({
   filters,
   years,
-  divisions,
+  sexes,
+  weightClasses,
   onChange,
   compact = false,
 }: GraphControlsProps) {
@@ -24,7 +26,7 @@ export function GraphControls({
 
   return (
     <div className={containerClass}>
-      <div className="grid gap-3 md:grid-cols-2 xl:w-[420px]">
+      <div className="grid gap-3 md:grid-cols-3 xl:w-[640px]">
         <label className={fieldClass}>
           <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
             Year
@@ -54,24 +56,49 @@ export function GraphControls({
 
         <label className={fieldClass}>
           <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
-            Division
+            Sex
           </span>
           <select
-            aria-label="Division filter"
+            aria-label="Sex filter"
             className="mt-2 w-full bg-transparent text-sm text-white outline-none"
-            value={filters.division ?? 'all'}
+            value={filters.sex ?? 'all'}
             onChange={(event) =>
               onChange({
                 ...filters,
-                division:
+                sex: event.target.value === 'all' ? null : event.target.value,
+                weightClass: null,
+              })
+            }
+          >
+            <option value="all">All sexes</option>
+            {sexes.map((sex) => (
+              <option key={sex} value={sex}>
+                {formatSexLabel(sex)}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className={fieldClass}>
+          <span className="text-xs tracking-[0.24em] text-[var(--text-muted)] uppercase">
+            Weight class
+          </span>
+          <select
+            aria-label="Weight class filter"
+            className="mt-2 w-full bg-transparent text-sm text-white outline-none"
+            value={filters.weightClass ?? 'all'}
+            onChange={(event) =>
+              onChange({
+                ...filters,
+                weightClass:
                   event.target.value === 'all' ? null : event.target.value,
               })
             }
           >
-            <option value="all">All divisions</option>
-            {divisions.map((division) => (
-              <option key={division} value={division}>
-                {division}
+            <option value="all">All weights</option>
+            {weightClasses.map((weightClass) => (
+              <option key={weightClass} value={weightClass}>
+                {weightClass}
               </option>
             ))}
           </select>
@@ -105,6 +132,18 @@ export function GraphControls({
       </div>
     </div>
   );
+}
+
+function formatSexLabel(sex: string) {
+  if (sex === 'M') {
+    return 'Men';
+  }
+
+  if (sex === 'F') {
+    return 'Women';
+  }
+
+  return sex;
 }
 
 function DisplayModeButton({

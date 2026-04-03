@@ -14,7 +14,7 @@ describe('normalizeAdccFixture', () => {
     expect(normalized.matches).toHaveLength(6);
     expect(normalized.athletes).toHaveLength(7);
 
-    const jtTorres = metrics.athletes.get('athlete_jt-torres');
+    const jtTorres = metrics.athletes.get('athlete_jt-torres-m');
 
     expect(jtTorres).toMatchObject({
       wins: 1,
@@ -24,17 +24,17 @@ describe('normalizeAdccFixture', () => {
     });
 
     expect(metrics.topRivalries[0]).toEqual({
-      id: 'athlete_craig-jones__athlete_kaynan-duarte',
+      id: 'athlete_craig-jones-m__athlete_kaynan-duarte-m',
       label: 'Craig Jones vs Kaynan Duarte',
       matches: 2,
     });
 
     expect(graph.nodes[0]).toMatchObject({
-      id: 'athlete_jt-torres',
+      id: 'athlete_jt-torres-m',
     });
     expect(graph.edges[0]).toMatchObject({
-      source: 'athlete_jt-torres',
-      target: 'athlete_lucas-lepri',
+      source: 'athlete_jt-torres-m',
+      target: 'athlete_lucas-lepri-m',
     });
   });
 });
