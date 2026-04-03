@@ -14,8 +14,18 @@ export function normalizeAdccFixture(
   const events = new Map<string, Event>();
   const matches: Match[] = fixture.matches.map((record, index) => {
     const eventId = `event_${slugify(`${record.event.name}-${record.event.year}`)}`;
-    const winnerId = registerAthlete(athletes, record.winner, record.division);
-    const loserId = registerAthlete(athletes, record.loser, record.division);
+    const winnerId = registerAthlete(
+      athletes,
+      record.winner,
+      record.division,
+      record.winnerSourceId,
+    );
+    const loserId = registerAthlete(
+      athletes,
+      record.loser,
+      record.division,
+      record.loserSourceId,
+    );
 
     if (!events.has(eventId)) {
       events.set(eventId, {
@@ -27,13 +37,21 @@ export function normalizeAdccFixture(
     }
 
     return {
-      id: `match_${index + 1}`,
+      id: record.sourceMatchId
+        ? `match_${record.sourceMatchId}`
+        : `match_${index + 1}`,
       eventId,
       division: record.division,
       winnerId,
       loserId,
+      sex: record.sex,
       method: record.method,
+      submission: record.submission,
       roundLabel: record.round,
+      winnerPoints: record.winnerPoints,
+      loserPoints: record.loserPoints,
+      advantagePenalty: record.advantagePenalty,
+      sourceMatchId: record.sourceMatchId,
     };
   });
 
@@ -48,8 +66,11 @@ function registerAthlete(
   registry: Map<string, Athlete>,
   record: { name: string; nationality?: string; team?: string },
   division: string,
+  sourceId?: string,
 ): string {
-  const athleteId = `athlete_${slugify(record.name)}`;
+  const athleteId = sourceId
+    ? `athlete_${sourceId}`
+    : `athlete_${slugify(record.name)}`;
   const existing = registry.get(athleteId);
 
   if (existing) {

@@ -1,4 +1,4 @@
-import { DirectedGraph } from 'graphology';
+import { MultiDirectedGraph } from 'graphology';
 import {
   SigmaEdgeAttributes,
   SigmaNodeAttributes,
@@ -10,7 +10,7 @@ export interface FocusedGraphState {
 }
 
 export function getFocusedGraphState(
-  graph: DirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>,
+  graph: MultiDirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>,
   selectedNodeId: string | null,
   hoveredNodeId: string | null,
 ): FocusedGraphState {

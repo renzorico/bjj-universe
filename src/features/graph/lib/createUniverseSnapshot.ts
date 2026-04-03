@@ -1,10 +1,15 @@
-import fixture from '@/data/fixtures/adcc-sample.fixture.json';
 import { buildAthleteMetrics } from '@/data/metrics/buildAthleteMetrics';
 import { normalizeAdccFixture } from '@/data/normalization/normalizeAdccFixture';
 import { buildGraphViewModel } from '@/data/graph/buildGraphViewModel';
+import fixture from '@/data/fixtures/adcc-sample.fixture.json';
+import { loadProcessedCompetitionDataset } from '@/data/validation/loadProcessedCompetitionDataset';
 import { RawAdccFixture } from '@/domain/types';
 
-const normalized = normalizeAdccFixture(fixture as RawAdccFixture);
+const processedDataset = loadProcessedCompetitionDataset();
+const normalized =
+  processedDataset.normalized.matches.length > 0
+    ? processedDataset.normalized
+    : normalizeAdccFixture(fixture as RawAdccFixture);
 const metrics = buildAthleteMetrics(normalized);
 const graph = buildGraphViewModel(normalized, metrics);
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import Sigma from 'sigma';
-import { DirectedGraph } from 'graphology';
+import { MultiDirectedGraph } from 'graphology';
 import {
   SigmaEdgeAttributes,
   SigmaNodeAttributes,
@@ -8,7 +8,7 @@ import {
 import { getFocusedGraphState } from '@/features/graph/lib/getFocusedGraphState';
 
 interface GraphCanvasProps {
-  graph: DirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>;
+  graph: MultiDirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>;
   selectedAthleteId: string | null;
   hoveredAthleteId: string | null;
   onSelectAthlete: (athleteId: string | null) => void;

@@ -1,4 +1,4 @@
-import { DirectedGraph } from 'graphology';
+import { MultiDirectedGraph } from 'graphology';
 import {
   SceneEdgeViewModel,
   SceneNodeViewModel,
@@ -22,8 +22,11 @@ export interface SigmaEdgeAttributes {
 export function buildSigmaGraph(
   nodes: SceneNodeViewModel[],
   edges: SceneEdgeViewModel[],
-): DirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes> {
-  const graph = new DirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes>();
+): MultiDirectedGraph<SigmaNodeAttributes, SigmaEdgeAttributes> {
+  const graph = new MultiDirectedGraph<
+    SigmaNodeAttributes,
+    SigmaEdgeAttributes
+  >();
 
   for (const node of nodes) {
     graph.addNode(node.id, {

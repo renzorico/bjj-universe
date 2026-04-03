@@ -23,8 +23,14 @@ export interface Match {
   division: string;
   winnerId: AthleteId;
   loserId: AthleteId;
+  sex?: string;
   method?: string;
+  submission?: string;
   roundLabel?: string;
+  winnerPoints?: number;
+  loserPoints?: number;
+  advantagePenalty?: string;
+  sourceMatchId?: string;
 }
 
 export interface EraFilter {
@@ -81,20 +87,29 @@ export interface RawAdccAthleteRecord {
 }
 
 export interface RawAdccMatchRecord {
+  sourceMatchId?: string;
   event: {
     name: string;
     year: number;
     location?: string;
+    inferredName?: boolean;
   };
   division: string;
+  sex?: string;
   winner: RawAdccAthleteRecord;
   loser: RawAdccAthleteRecord;
+  winnerSourceId?: string;
+  loserSourceId?: string;
   method?: string;
+  submission?: string;
   round?: string;
+  winnerPoints?: number;
+  loserPoints?: number;
+  advantagePenalty?: string;
 }
 
 export interface RawAdccFixture {
-  source: 'fixture';
+  source: 'fixture' | 'adcc-historical-kaggle';
   label: string;
   notes: string;
   matches: RawAdccMatchRecord[];
@@ -104,4 +119,22 @@ export interface NormalizedCompetitionData {
   athletes: Athlete[];
   events: Event[];
   matches: Match[];
+}
+
+export interface ProcessedCompetitionDataset {
+  source: RawAdccFixture['source'];
+  label: string;
+  notes: string;
+  schema: {
+    detectedColumns: string[];
+    requiredColumns: string[];
+    optionalColumns: string[];
+  };
+  validationSummary: {
+    totalRows: number;
+    acceptedRows: number;
+    quarantinedRows: number;
+    quarantineReasons: Record<string, number>;
+  };
+  normalized: NormalizedCompetitionData;
 }

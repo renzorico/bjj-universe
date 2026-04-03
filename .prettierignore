@@ -3,4 +3,5 @@ coverage
 dist
 node_modules
 playwright-report
+scripts/download_adcc_dataset.py
 test-results

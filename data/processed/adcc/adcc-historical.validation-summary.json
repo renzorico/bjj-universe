@@ -1,0 +1,50 @@
+{
+  "detectedColumns": [
+    "match_id",
+    "winner_id",
+    "winner_name",
+    "loser_id",
+    "loser_name",
+    "win_type",
+    "submission",
+    "winner_points",
+    "loser_points",
+    "adv_pen",
+    "weight_class",
+    "sex",
+    "stage",
+    "year"
+  ],
+  "requiredColumns": [
+    "match_id",
+    "winner_id",
+    "winner_name",
+    "loser_id",
+    "loser_name",
+    "win_type",
+    "winner_points",
+    "loser_points",
+    "weight_class",
+    "sex",
+    "stage",
+    "year"
+  ],
+  "optionalColumns": ["submission", "adv_pen"],
+  "totalRows": 1028,
+  "acceptedRows": 1028,
+  "quarantinedRows": 0,
+  "quarantineReasons": {
+    "invalid_loser_points": 0,
+    "invalid_winner_points": 0,
+    "invalid_year": 0,
+    "missing_loser_id": 0,
+    "missing_loser_name": 0,
+    "missing_match_id": 0,
+    "missing_sex": 0,
+    "missing_stage": 0,
+    "missing_weight_class": 0,
+    "missing_winner_id": 0,
+    "missing_winner_name": 0,
+    "missing_year": 0
+  }
+}
