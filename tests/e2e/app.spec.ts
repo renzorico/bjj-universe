@@ -1,10 +1,17 @@
 import { test, expect } from '@playwright/test';
 
-test('can select an athlete and inspect details', async ({ page }) => {
+test('can enter the universe route and inspect an athlete', async ({
+  page,
+}) => {
   await page.goto('/');
 
   await expect(
     page.getByRole('heading', { name: 'BJJ Universe', exact: true }),
+  ).toBeVisible();
+  await page.getByRole('link', { name: /Open the universe/i }).click();
+  await expect(page).toHaveURL(/\/universe$/);
+  await expect(
+    page.getByRole('heading', { name: 'Real ADCC graph explorer' }),
   ).toBeVisible();
   await expect(
     page.locator('[aria-label="Interactive athlete graph"]'),
