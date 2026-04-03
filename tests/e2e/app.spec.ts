@@ -1,15 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('can enter the universe route and inspect an athlete', async ({
-  page,
-}) => {
-  await page.goto('/');
+test('can click a graph node and inspect an athlete', async ({ page }) => {
+  await page.goto('/universe');
 
-  await expect(
-    page.getByRole('heading', { name: 'BJJ Universe', exact: true }),
-  ).toBeVisible();
-  await page.getByRole('link', { name: /Open the universe/i }).click();
-  await expect(page).toHaveURL(/\/universe$/);
   await expect(
     page.getByRole('heading', { name: 'Real ADCC graph explorer' }),
   ).toBeVisible();
@@ -20,10 +13,26 @@ test('can enter the universe route and inspect an athlete', async ({
     page.locator('[aria-label="Interactive athlete graph"] canvas').first(),
   ).toBeVisible();
 
-  await page
-    .getByRole('searchbox', { name: 'Search athletes' })
-    .fill('Meregali');
-  await page.getByTestId('athlete-list-item-athlete_7507').click();
+  const graphPoint = await page.evaluate(() => {
+    const graphApi = (
+      window as Window & {
+        __BJJ_UNIVERSE_GRAPH__?: {
+          getNodeScreenPosition: (
+            nodeId: string,
+          ) => { x: number; y: number } | null;
+        };
+      }
+    ).__BJJ_UNIVERSE_GRAPH__;
+
+    return graphApi?.getNodeScreenPosition('athlete_7507') ?? null;
+  });
+
+  expect(graphPoint !== null).toBe(true);
+  if (!graphPoint) {
+    throw new Error('Expected a graph screen position for athlete_7507.');
+  }
+
+  await page.mouse.click(graphPoint.x, graphPoint.y);
 
   await expect(page.getByTestId('athlete-detail-panel')).toBeVisible();
   await expect(
