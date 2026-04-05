@@ -1,0 +1,875 @@
+{
+  "source": "bjj-heroes",
+  "sourceUrl": "https://www.bjjheroes.com/editorial/adcc-2024-results",
+  "sourceDescription": "BJJ Heroes comprehensive ADCC 2024 results article with quarter-final through final match data for all divisions, plus partial first-round data extracted from article narrative.",
+  "crossReferencedWith": "https://adcombat.com/adcc-events/adcc-submission-fighting-world-championship-2024/",
+  "dataQuality": {
+    "coverage": "Quarter-finals through finals: complete for all divisions. First-round (R16) data: partial, extracted from article narrative where mentioned.",
+    "matchesRecorded": 87,
+    "tournamentTotalMatches": 125,
+    "walkoverResults": 3,
+    "note": "38 first-round matches are not covered by this source. Walkover 3rd-place results are included with method 'Walkover'."
+  },
+  "event": {
+    "name": "ADCC Submission Fighting World Championship 2024",
+    "year": 2024,
+    "date": "2024-08-17",
+    "location": "T-Mobile Arena, Las Vegas, Nevada, USA"
+  },
+  "matches": [
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "R16",
+      "winner": "Gairbeg Ibragimov",
+      "loser": "Dorian Olivarez",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "R16",
+      "winner": "Owen Jones",
+      "loser": "Gabriel Sousa",
+      "method": "Armbar"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "QF",
+      "winner": "Owen Jones",
+      "loser": "Gairbeg Ibragimov",
+      "method": "Straight ankle lock"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "QF",
+      "winner": "Diego Pato",
+      "loser": "Ethan Crelinsten",
+      "method": "Kneebar"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "QF",
+      "winner": "Josh Cisneros",
+      "loser": "Kennedy Maciel",
+      "method": "Penalty"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "QF",
+      "winner": "Diogo Reis",
+      "loser": "Fabricio Andrey",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "SF",
+      "winner": "Diogo Reis",
+      "loser": "Josh Cisneros",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "SF",
+      "winner": "Diego Pato",
+      "loser": "Owen Jones",
+      "method": "Straight ankle lock"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "F",
+      "winner": "Diogo Reis",
+      "loser": "Diego Pato",
+      "method": "Katagatame"
+    },
+    {
+      "division": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "round": "3RD",
+      "winner": "Josh Cisneros",
+      "loser": "Owen Jones",
+      "method": "Walkover",
+      "methodDetail": "Owen Jones injured in semi-finals"
+    },
+
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "R16",
+      "winner": "Elijah Dorsey",
+      "loser": "Dante Leon",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "R16",
+      "winner": "Vagner Rocha",
+      "loser": "Jeremy Skinner",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "QF",
+      "winner": "Mica Galvao",
+      "loser": "Oliver Taza",
+      "method": "Points",
+      "methodDetail": "8×0"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "QF",
+      "winner": "PJ Barch",
+      "loser": "Mateusz Szczecinski",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "QF",
+      "winner": "Vagner Rocha",
+      "loser": "Jonnatas Gracie",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "QF",
+      "winner": "Elijah Dorsey",
+      "loser": "JT Torres",
+      "method": "Points",
+      "methodDetail": "4×0"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "SF",
+      "winner": "Mica Galvao",
+      "loser": "PJ Barch",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "SF",
+      "winner": "Vagner Rocha",
+      "loser": "Elijah Dorsey",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "F",
+      "winner": "Mica Galvao",
+      "loser": "Vagner Rocha",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "round": "3RD",
+      "winner": "PJ Barch",
+      "loser": "Elijah Dorsey",
+      "method": "Junny lock"
+    },
+
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "R16",
+      "winner": "Giancarlo Bodoni",
+      "loser": "Andre Porfirio",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "R16",
+      "winner": "Charles Negromonte",
+      "loser": "Izaak Michell",
+      "method": "Kneebar"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "R16",
+      "winner": "Felipe Costa",
+      "loser": "Jacob Couch",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "QF",
+      "winner": "Giancarlo Bodoni",
+      "loser": "Gabriel Almeida",
+      "method": "Points",
+      "methodDetail": "8×0"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "QF",
+      "winner": "Felipe Costa",
+      "loser": "Elder Cruz",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "QF",
+      "winner": "Jay Rodriguez",
+      "loser": "Ryan Aitken",
+      "method": "Points",
+      "methodDetail": "6×0"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "QF",
+      "winner": "Chris Wojcik",
+      "loser": "Charles Negromonte",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "SF",
+      "winner": "Giancarlo Bodoni",
+      "loser": "Felipe Costa",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "SF",
+      "winner": "Jay Rodriguez",
+      "loser": "Chris Wojcik",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "F",
+      "winner": "Giancarlo Bodoni",
+      "loser": "Jay Rodriguez",
+      "method": "Points",
+      "methodDetail": "9×0"
+    },
+    {
+      "division": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "round": "3RD",
+      "winner": "Felipe Costa",
+      "loser": "Chris Wojcik",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "QF",
+      "winner": "Kaynan Duarte",
+      "loser": "Declan Moody",
+      "method": "Guillotine"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "QF",
+      "winner": "Roberto Abreu",
+      "loser": "Javier Zaruski",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "QF",
+      "winner": "Michael Pixley",
+      "loser": "Nicolas Meregali",
+      "method": "Darce choke"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "QF",
+      "winner": "Rafael Lovato Jr.",
+      "loser": "Patrick Gaudio",
+      "method": "Guillotine"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "SF",
+      "winner": "Kaynan Duarte",
+      "loser": "Roberto Abreu",
+      "method": "Guillotine"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "SF",
+      "winner": "Rafael Lovato Jr.",
+      "loser": "Michael Pixley",
+      "method": "Decision"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "F",
+      "winner": "Kaynan Duarte",
+      "loser": "Rafael Lovato Jr.",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "round": "3RD",
+      "winner": "Roberto Abreu",
+      "loser": "Michael Pixley",
+      "method": "Points",
+      "methodDetail": "8×0"
+    },
+
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "R16",
+      "winner": "Daniel Manasoiu",
+      "loser": "Mark MacQueen",
+      "method": "Katagatame"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "QF",
+      "winner": "Daniel Manasoiu",
+      "loser": "Rida Haisam",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "QF",
+      "winner": "Felipe Pena",
+      "loser": "John Hansen",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "QF",
+      "winner": "Josh Saunders",
+      "loser": "Damon Ramos",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "QF",
+      "winner": "Luke Griffith",
+      "loser": "Roosevelt Sousa",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "SF",
+      "winner": "Felipe Pena",
+      "loser": "Josh Saunders",
+      "method": "Penalty"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "SF",
+      "winner": "Luke Griffith",
+      "loser": "Daniel Manasoiu",
+      "method": "Katagatame"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "F",
+      "winner": "Felipe Pena",
+      "loser": "Luke Griffith",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "round": "3RD",
+      "winner": "Daniel Manasoiu",
+      "loser": "Josh Saunders",
+      "method": "Straight ankle lock"
+    },
+
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Kaynan Duarte",
+      "loser": "Declan Moody",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Dante Leon",
+      "loser": "Mica Galvao",
+      "method": "Straight ankle lock"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Giancarlo Bodoni",
+      "loser": "Vagner Rocha",
+      "method": "RNC"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Roberto Abreu",
+      "loser": "Izaak Michell",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "SF",
+      "winner": "Roberto Abreu",
+      "loser": "Giancarlo Bodoni",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "SF",
+      "winner": "Kaynan Duarte",
+      "loser": "Dante Leon",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "F",
+      "winner": "Kaynan Duarte",
+      "loser": "Roberto Abreu",
+      "method": "Guillotine"
+    },
+    {
+      "division": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "round": "3RD",
+      "winner": "Dante Leon",
+      "loser": "Giancarlo Bodoni",
+      "method": "Decision"
+    },
+
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "QF",
+      "winner": "Bianca Basilio",
+      "loser": "Brenda Larissa",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "QF",
+      "winner": "Anna Rodrigues",
+      "loser": "Alex Enriquez",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "QF",
+      "winner": "Adele Fornarino",
+      "loser": "Mayssa Bastos",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "QF",
+      "winner": "Jasmine Rocha",
+      "loser": "Margot Ciccarelli",
+      "method": "Points",
+      "methodDetail": "3×0"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "SF",
+      "winner": "Adele Fornarino",
+      "loser": "Jasmine Rocha",
+      "method": "Armbar"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "SF",
+      "winner": "Bianca Basilio",
+      "loser": "Anna Rodrigues",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "F",
+      "winner": "Adele Fornarino",
+      "loser": "Bianca Basilio",
+      "method": "Mir lock"
+    },
+    {
+      "division": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "round": "3RD",
+      "winner": "Jasmine Rocha",
+      "loser": "Anna Rodrigues",
+      "method": "Walkover",
+      "methodDetail": "Anna Rodrigues unable to compete"
+    },
+
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "QF",
+      "winner": "Beatriz Mesquita",
+      "loser": "Sula Mae",
+      "method": "RNC"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "QF",
+      "winner": "Ana Carolina Vieira",
+      "loser": "Amanda Leve",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "QF",
+      "winner": "Brianna Ste-Marie",
+      "loser": "Mo Black",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "QF",
+      "winner": "Helena Crevar",
+      "loser": "Aurelie Vern",
+      "method": "Outside heel hook"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "SF",
+      "winner": "Ana Carolina Vieira",
+      "loser": "Beatriz Mesquita",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "SF",
+      "winner": "Helena Crevar",
+      "loser": "Brianna Ste-Marie",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "F",
+      "winner": "Ana Carolina Vieira",
+      "loser": "Helena Crevar",
+      "method": "Points",
+      "methodDetail": "5×0"
+    },
+    {
+      "division": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "round": "3RD",
+      "winner": "Beatriz Mesquita",
+      "loser": "Brianna Ste-Marie",
+      "method": "Decision"
+    },
+
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "QF",
+      "winner": "Amy Campo",
+      "loser": "Nikki Griffiths",
+      "method": "Arm-in RNC"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "QF",
+      "winner": "Nathiely De Jesus",
+      "loser": "Elizabeth Mitrovic",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "QF",
+      "winner": "Rafaela Guedes",
+      "loser": "Nia Blackman",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "QF",
+      "winner": "Kendall Reusing",
+      "loser": "Maria Ruffato",
+      "method": "RNC"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "SF",
+      "winner": "Rafaela Guedes",
+      "loser": "Kendall Reusing",
+      "method": "Guillotine"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "SF",
+      "winner": "Nathiely De Jesus",
+      "loser": "Amy Campo",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "F",
+      "winner": "Rafaela Guedes",
+      "loser": "Nathiely De Jesus",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "round": "3RD",
+      "winner": "Kendall Reusing",
+      "loser": "Amy Campo",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Rafaela Guedes",
+      "loser": "Bianca Basilio",
+      "method": "Points",
+      "methodDetail": "6×0"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Adele Fornarino",
+      "loser": "Brianna Ste-Marie",
+      "method": "Armbar"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Amy Campo",
+      "loser": "Amanda Leve",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "QF",
+      "winner": "Beatriz Mesquita",
+      "loser": "Kendall Reusing",
+      "method": "RNC"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "SF",
+      "winner": "Adele Fornarino",
+      "loser": "Rafaela Guedes",
+      "method": "Kneebar"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "SF",
+      "winner": "Beatriz Mesquita",
+      "loser": "Amy Campo",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "F",
+      "winner": "Adele Fornarino",
+      "loser": "Beatriz Mesquita",
+      "method": "Decision"
+    },
+    {
+      "division": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "round": "3RD",
+      "winner": "Amy Campo",
+      "loser": "Rafaela Guedes",
+      "method": "Walkover",
+      "methodDetail": "Rafaela Guedes unable to compete due to injury"
+    },
+
+    {
+      "division": "SUPERFIGHT",
+      "sex": "M",
+      "weightClass": "SUPERFIGHT",
+      "round": "SUPERFIGHT",
+      "winner": "Gordon Ryan",
+      "loser": "Felipe Pena",
+      "method": "Points",
+      "methodDetail": "2×0"
+    },
+    {
+      "division": "SUPERFIGHT",
+      "sex": "M",
+      "weightClass": "SUPERFIGHT",
+      "round": "SUPERFIGHT",
+      "winner": "Gordon Ryan",
+      "loser": "Yuri Simoes",
+      "method": "Points",
+      "methodDetail": "21×0"
+    }
+  ]
+}

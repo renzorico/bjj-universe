@@ -35,7 +35,7 @@ export interface Match {
   eventId: EventId;
   winnerId: AthleteId;
   loserId: AthleteId;
-  recordType?: 'observed_match' | 'official_result_relation';
+  recordType?: 'observed_match' | 'official_result_relation' | 'bracket_match';
   sex?: string;
   weightClass?: string;
   method?: string;
@@ -129,7 +129,7 @@ export interface RawAdccMatchRecord {
     location?: string;
     inferredName?: boolean;
   };
-  recordType?: 'observed_match' | 'official_result_relation';
+  recordType?: 'observed_match' | 'official_result_relation' | 'bracket_match';
   sex?: string;
   weightClass?: string;
   winner: RawAdccAthleteRecord;

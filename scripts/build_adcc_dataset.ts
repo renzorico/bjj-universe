@@ -20,6 +20,10 @@ import {
   renderAdccIntegrityReportMarkdown,
 } from '../src/data/validation/buildAdccIntegrityReport';
 import { ScrapedAdccOfficialResultsPage } from '../src/data/scraping/parseAdccOfficialResultsPage';
+import {
+  BracketData,
+  bracketDataToFixtureMatches,
+} from '../src/data/ingestion/loadBracketData';
 import { ProcessedCompetitionDataset } from '../src/domain/types';
 
 const projectRoot = process.cwd();
@@ -36,6 +40,10 @@ const officialResultsManifestPath = path.join(
 const frontendProcessedPath = path.join(
   projectRoot,
   'src/data/processed/adcc-historical.processed.json',
+);
+const bracketDataPath = path.join(
+  projectRoot,
+  'data/raw/adcc/adcc-worlds-2024-full-brackets.json',
 );
 
 async function main(): Promise<void> {
@@ -71,16 +79,39 @@ async function main(): Promise<void> {
     sourceDataset,
     reconciliationArtifacts.map(({ artifact }) => artifact),
   );
-  const cleaningLayer = buildAdccCleaningLayer(promotedFixture);
-  const normalized = normalizeAdccFixture(promotedFixture);
+
+  // Load full bracket data and replace promoted placement matches
+  const bracketData = JSON.parse(
+    await readFile(bracketDataPath, 'utf8'),
+  ) as BracketData;
+  const bracketMatches = bracketDataToFixtureMatches(bracketData);
+  const bracketYear = bracketData.event.year;
+
+  // Remove promoted placement-derived matches for the bracket year,
+  // keeping all other matches (Kaggle observed matches, other years)
+  const nonBracketYearMatches = promotedFixture.matches.filter(
+    (m) =>
+      m.event.year !== bracketYear ||
+      m.recordType !== 'official_result_relation',
+  );
+
+  const fixtureWithBrackets = {
+    ...promotedFixture,
+    label: `${promotedFixture.label} + full bracket data (${bracketYear})`,
+    notes: `${promotedFixture.notes} Full bracket match data for ${bracketYear} sourced from ${bracketData.source} replaces synthetic placement-derived edges.`,
+    matches: [...nonBracketYearMatches, ...bracketMatches],
+  };
+
+  const cleaningLayer = buildAdccCleaningLayer(fixtureWithBrackets);
+  const normalized = normalizeAdccFixture(fixtureWithBrackets);
   const athleteDiagnostics = buildAthleteDiagnostics(normalized, 15);
-  const integrityReport = buildAdccIntegrityReport(promotedFixture, normalized);
+  const integrityReport = buildAdccIntegrityReport(fixtureWithBrackets, normalized);
   const enrichmentTargets = buildAthleteEnrichmentTargets(normalized, 10);
 
   const processedDataset: ProcessedCompetitionDataset = {
     source: sourceDataset.source,
-    label: promotedFixture.label,
-    notes: promotedFixture.notes,
+    label: fixtureWithBrackets.label,
+    notes: fixtureWithBrackets.notes,
     schema: {
       detectedColumns: validation.detectedColumns,
       requiredColumns: validation.requiredColumns,

@@ -10280,303 +10280,903 @@
     "roundLabel": "SPF"
   },
   {
-    "matchId": "adcc-worlds-2024:F:+65KG:1-2",
+    "matchId": "bracket:2024:+65kg:3rd:kendall-reusing:amy-campo",
+    "winnerCanonicalId": "athlete_kendall-reusing-f",
+    "loserCanonicalId": "athlete_amy-campo-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:f:rafaela-guedes:nathiely-de-jesus",
     "winnerCanonicalId": "athlete_rafaela-guedes-f",
     "loserCanonicalId": "athlete_nathiely-de-jesus-f",
     "sex": "F",
     "weightClass": "+65KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "Points",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:F:+65KG:1-3",
+    "matchId": "bracket:2024:+65kg:qf:amy-campo:nikki-griffiths",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_nikki-griffiths-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "Arm-in RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:qf:kendall-reusing:maria-ruffato",
+    "winnerCanonicalId": "athlete_kendall-reusing-f",
+    "loserCanonicalId": "athlete_maria-ruffato-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:qf:nathiely-de-jesus:elizabeth-mitrovic",
+    "winnerCanonicalId": "athlete_nathiely-de-jesus-f",
+    "loserCanonicalId": "athlete_elizabeth-mitrovic-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:qf:rafaela-guedes:nia-blackman",
+    "winnerCanonicalId": "athlete_rafaela-guedes-f",
+    "loserCanonicalId": "athlete_nia-blackman-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:sf:nathiely-de-jesus:amy-campo",
+    "winnerCanonicalId": "athlete_nathiely-de-jesus-f",
+    "loserCanonicalId": "athlete_amy-campo-f",
+    "sex": "F",
+    "weightClass": "+65KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:+65kg:sf:rafaela-guedes:kendall-reusing",
     "winnerCanonicalId": "athlete_rafaela-guedes-f",
     "loserCanonicalId": "athlete_kendall-reusing-f",
     "sex": "F",
     "weightClass": "+65KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "Guillotine",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:F:+65KG:2-3",
-    "winnerCanonicalId": "athlete_nathiely-de-jesus-f",
-    "loserCanonicalId": "athlete_kendall-reusing-f",
-    "sex": "F",
-    "weightClass": "+65KG",
+    "matchId": "bracket:2024:+99kg:3rd:daniel-manasoiu:josh-saunders",
+    "winnerCanonicalId": "athlete_dan-manasoiu-m",
+    "loserCanonicalId": "athlete_josh-saunders-m",
+    "sex": "M",
+    "weightClass": "+99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Straight ankle lock",
+    "roundLabel": "3RD"
   },
   {
-    "matchId": "adcc-worlds-2024:F:55KG:1-2",
-    "winnerCanonicalId": "athlete_adele-fornarino-f",
-    "loserCanonicalId": "athlete_bianca-basilio-f",
-    "sex": "F",
-    "weightClass": "55KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:55KG:1-3",
-    "winnerCanonicalId": "athlete_adele-fornarino-f",
-    "loserCanonicalId": "athlete_jasmine-rocha-f",
-    "sex": "F",
-    "weightClass": "55KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:55KG:2-3",
-    "winnerCanonicalId": "athlete_bianca-basilio-f",
-    "loserCanonicalId": "athlete_jasmine-rocha-f",
-    "sex": "F",
-    "weightClass": "55KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:65KG:1-2",
-    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
-    "loserCanonicalId": "athlete_helena-crevar-f",
-    "sex": "F",
-    "weightClass": "65KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:65KG:1-3",
-    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
-    "loserCanonicalId": "athlete_beatriz-mesquita-f",
-    "sex": "F",
-    "weightClass": "65KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:65KG:2-3",
-    "winnerCanonicalId": "athlete_helena-crevar-f",
-    "loserCanonicalId": "athlete_beatriz-mesquita-f",
-    "sex": "F",
-    "weightClass": "65KG",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:ABS:1-2",
-    "winnerCanonicalId": "athlete_adele-fornarino-f",
-    "loserCanonicalId": "athlete_beatriz-mesquita-f",
-    "sex": "F",
-    "weightClass": "ABS",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:ABS:1-3",
-    "winnerCanonicalId": "athlete_adele-fornarino-f",
-    "loserCanonicalId": "athlete_amy-campo-f",
-    "sex": "F",
-    "weightClass": "ABS",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:F:ABS:2-3",
-    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
-    "loserCanonicalId": "athlete_amy-campo-f",
-    "sex": "F",
-    "weightClass": "ABS",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:M:+99KG:1-2",
+    "matchId": "bracket:2024:+99kg:f:felipe-pena:luke-griffith",
     "winnerCanonicalId": "athlete_felipe-pena-m",
     "loserCanonicalId": "athlete_luke-griffith-m",
     "sex": "M",
     "weightClass": "+99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "RNC",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:M:+99KG:1-3",
-    "winnerCanonicalId": "athlete_felipe-pena-m",
-    "loserCanonicalId": "athlete_dan-manasoiu-m",
+    "matchId": "bracket:2024:+99kg:qf:daniel-manasoiu:rida-haisam",
+    "winnerCanonicalId": "athlete_dan-manasoiu-m",
+    "loserCanonicalId": "athlete_rida-haisam-m",
     "sex": "M",
     "weightClass": "+99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "RNC",
+    "roundLabel": "QF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:+99KG:2-3",
+    "matchId": "bracket:2024:+99kg:qf:felipe-pena:john-hansen",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_john-hansen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+99kg:qf:josh-saunders:damon-ramos",
+    "winnerCanonicalId": "athlete_josh-saunders-m",
+    "loserCanonicalId": "athlete_damon-ramos-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+99kg:qf:luke-griffith:roosevelt-sousa",
+    "winnerCanonicalId": "athlete_luke-griffith-m",
+    "loserCanonicalId": "athlete_roosevelt-sousa-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:+99kg:r16:daniel-manasoiu:mark-macqueen",
+    "winnerCanonicalId": "athlete_dan-manasoiu-m",
+    "loserCanonicalId": "athlete_mark-macqueen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2024,
+    "method": "Katagatame",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:+99kg:sf:felipe-pena:josh-saunders",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_josh-saunders-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2024,
+    "method": "Penalty",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:+99kg:sf:luke-griffith:daniel-manasoiu",
     "winnerCanonicalId": "athlete_luke-griffith-m",
     "loserCanonicalId": "athlete_dan-manasoiu-m",
     "sex": "M",
     "weightClass": "+99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Katagatame",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:66KG:1-2",
+    "matchId": "bracket:2024:-55kg:3rd:jasmine-rocha:anna-rodrigues",
+    "winnerCanonicalId": "athlete_jasmine-rocha-f",
+    "loserCanonicalId": "athlete_anna-rodrigues-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Walkover",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:f:adele-fornarino:bianca-basilio",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_bianca-basilio-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Mir lock",
+    "roundLabel": "F"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:qf:adele-fornarino:mayssa-bastos",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_mayssa-bastos-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:qf:anna-rodrigues:alex-enriquez",
+    "winnerCanonicalId": "athlete_anna-rodrigues-f",
+    "loserCanonicalId": "athlete_alex-enriquez-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:qf:bianca-basilio:brenda-larissa",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_brenda-larissa-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:qf:jasmine-rocha:margot-ciccarelli",
+    "winnerCanonicalId": "athlete_jasmine-rocha-f",
+    "loserCanonicalId": "athlete_margot-ciccarelli-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:sf:adele-fornarino:jasmine-rocha",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_jasmine-rocha-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Armbar",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-55kg:sf:bianca-basilio:anna-rodrigues",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_anna-rodrigues-f",
+    "sex": "F",
+    "weightClass": "-55KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:3rd:beatriz-mesquita:brianna-ste-marie",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_brianna-stemarie-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:f:ana-carolina-vieira:helena-crevar",
+    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
+    "loserCanonicalId": "athlete_helena-crevar-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "F"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:qf:ana-carolina-vieira:amanda-leve",
+    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
+    "loserCanonicalId": "athlete_amanda-leve-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:qf:beatriz-mesquita:sula-mae",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_sula-mae-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:qf:brianna-ste-marie:mo-black",
+    "winnerCanonicalId": "athlete_brianna-stemarie-f",
+    "loserCanonicalId": "athlete_mo-black-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:qf:helena-crevar:aurelie-vern",
+    "winnerCanonicalId": "athlete_helena-crevar-f",
+    "loserCanonicalId": "athlete_aurelie-vern-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Outside heel hook",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:sf:ana-carolina-vieira:beatriz-mesquita",
+    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
+    "loserCanonicalId": "athlete_beatriz-mesquita-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-65kg:sf:helena-crevar:brianna-ste-marie",
+    "winnerCanonicalId": "athlete_helena-crevar-f",
+    "loserCanonicalId": "athlete_brianna-stemarie-f",
+    "sex": "F",
+    "weightClass": "-65KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:3rd:josh-cisneros:owen-jones",
+    "winnerCanonicalId": "athlete_joshua-cisneros-m",
+    "loserCanonicalId": "athlete_owen-jones-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Walkover",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:f:diogo-reis:diego-pato",
     "winnerCanonicalId": "athlete_diogo-reis-m",
     "loserCanonicalId": "athlete_diego-oliveira-m",
     "sex": "M",
-    "weightClass": "66KG",
+    "weightClass": "-66KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "Katagatame",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:M:66KG:1-3",
+    "matchId": "bracket:2024:-66kg:qf:diego-pato:ethan-crelinsten",
+    "winnerCanonicalId": "athlete_diego-oliveira-m",
+    "loserCanonicalId": "athlete_ethan-crelinsten-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Kneebar",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:qf:diogo-reis:fabricio-andrey",
+    "winnerCanonicalId": "athlete_diogo-reis-m",
+    "loserCanonicalId": "athlete_fabricio-andrey-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:qf:josh-cisneros:kennedy-maciel",
+    "winnerCanonicalId": "athlete_joshua-cisneros-m",
+    "loserCanonicalId": "athlete_kennedy-maciel-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Penalty",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:qf:owen-jones:gairbeg-ibragimov",
+    "winnerCanonicalId": "athlete_owen-jones-m",
+    "loserCanonicalId": "athlete_gairbeg-ibragimov-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Straight ankle lock",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:r16:gairbeg-ibragimov:dorian-olivarez",
+    "winnerCanonicalId": "athlete_gairbeg-ibragimov-m",
+    "loserCanonicalId": "athlete_dorian-olivarez-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:r16:owen-jones:gabriel-sousa",
+    "winnerCanonicalId": "athlete_owen-jones-m",
+    "loserCanonicalId": "athlete_gabriel-sousa-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Armbar",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:sf:diego-pato:owen-jones",
+    "winnerCanonicalId": "athlete_diego-oliveira-m",
+    "loserCanonicalId": "athlete_owen-jones-m",
+    "sex": "M",
+    "weightClass": "-66KG",
+    "year": 2024,
+    "method": "Straight ankle lock",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-66kg:sf:diogo-reis:josh-cisneros",
     "winnerCanonicalId": "athlete_diogo-reis-m",
     "loserCanonicalId": "athlete_joshua-cisneros-m",
     "sex": "M",
-    "weightClass": "66KG",
+    "weightClass": "-66KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "Points",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:66KG:2-3",
-    "winnerCanonicalId": "athlete_diego-oliveira-m",
-    "loserCanonicalId": "athlete_joshua-cisneros-m",
+    "matchId": "bracket:2024:-77kg:3rd:pj-barch:elijah-dorsey",
+    "winnerCanonicalId": "athlete_pj-barch-m",
+    "loserCanonicalId": "athlete_elijah-dorsey-m",
     "sex": "M",
-    "weightClass": "66KG",
+    "weightClass": "-77KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Junny lock",
+    "roundLabel": "3RD"
   },
   {
-    "matchId": "adcc-worlds-2024:M:77KG:1-2",
+    "matchId": "bracket:2024:-77kg:f:mica-galvao:vagner-rocha",
     "winnerCanonicalId": "athlete_micael-galvao-m",
     "loserCanonicalId": "athlete_vagner-rocha-m",
     "sex": "M",
-    "weightClass": "77KG",
+    "weightClass": "-77KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "RNC",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:M:77KG:1-3",
+    "matchId": "bracket:2024:-77kg:qf:elijah-dorsey:jt-torres",
+    "winnerCanonicalId": "athlete_elijah-dorsey-m",
+    "loserCanonicalId": "athlete_jonathan-torres-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:qf:mica-galvao:oliver-taza",
+    "winnerCanonicalId": "athlete_micael-galvao-m",
+    "loserCanonicalId": "athlete_oliver-taza-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:qf:pj-barch:mateusz-szczecinski",
+    "winnerCanonicalId": "athlete_pj-barch-m",
+    "loserCanonicalId": "athlete_mateusz-szczecinski-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:qf:vagner-rocha:jonnatas-gracie",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_jonnatas-gracie-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:r16:elijah-dorsey:dante-leon",
+    "winnerCanonicalId": "athlete_elijah-dorsey-m",
+    "loserCanonicalId": "athlete_dante-leon-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:r16:vagner-rocha:jeremy-skinner",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_jeremy-skinner-m",
+    "sex": "M",
+    "weightClass": "-77KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-77kg:sf:mica-galvao:pj-barch",
     "winnerCanonicalId": "athlete_micael-galvao-m",
     "loserCanonicalId": "athlete_pj-barch-m",
     "sex": "M",
-    "weightClass": "77KG",
+    "weightClass": "-77KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "Decision",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:77KG:2-3",
+    "matchId": "bracket:2024:-77kg:sf:vagner-rocha:elijah-dorsey",
     "winnerCanonicalId": "athlete_vagner-rocha-m",
-    "loserCanonicalId": "athlete_pj-barch-m",
+    "loserCanonicalId": "athlete_elijah-dorsey-m",
     "sex": "M",
-    "weightClass": "77KG",
+    "weightClass": "-77KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Decision",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:88KG:1-2",
+    "matchId": "bracket:2024:-88kg:3rd:felipe-costa:chris-wojcik",
+    "winnerCanonicalId": "athlete_felipe-costa-m",
+    "loserCanonicalId": "athlete_chris-wojcik-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:f:giancarlo-bodoni:jay-rodriguez",
     "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
-    "loserCanonicalId": "athlete_jay-rodriguez-m",
+    "loserCanonicalId": "athlete_jacob-rodriguez-m",
     "sex": "M",
-    "weightClass": "88KG",
+    "weightClass": "-88KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "Points",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:M:88KG:1-3",
+    "matchId": "bracket:2024:-88kg:qf:chris-wojcik:charles-negromonte",
+    "winnerCanonicalId": "athlete_chris-wojcik-m",
+    "loserCanonicalId": "athlete_charles-negromonte-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:qf:felipe-costa:elder-cruz",
+    "winnerCanonicalId": "athlete_felipe-costa-m",
+    "loserCanonicalId": "athlete_elder-cruz-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:qf:giancarlo-bodoni:gabriel-almeida",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_gabriel-almeida-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:qf:jay-rodriguez:ryan-aitken",
+    "winnerCanonicalId": "athlete_jacob-rodriguez-m",
+    "loserCanonicalId": "athlete_ryan-aitken-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:r16:charles-negromonte:izaak-michell",
+    "winnerCanonicalId": "athlete_charles-negromonte-m",
+    "loserCanonicalId": "athlete_isaak-michel-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Kneebar",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:r16:felipe-costa:jacob-couch",
+    "winnerCanonicalId": "athlete_felipe-costa-m",
+    "loserCanonicalId": "athlete_jacob-couch-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:r16:giancarlo-bodoni:andre-porfirio",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_andre-porfirio-m",
+    "sex": "M",
+    "weightClass": "-88KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "R16"
+  },
+  {
+    "matchId": "bracket:2024:-88kg:sf:giancarlo-bodoni:felipe-costa",
     "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
     "loserCanonicalId": "athlete_felipe-costa-m",
     "sex": "M",
-    "weightClass": "88KG",
+    "weightClass": "-88KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "Points",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:88KG:2-3",
-    "winnerCanonicalId": "athlete_jay-rodriguez-m",
-    "loserCanonicalId": "athlete_felipe-costa-m",
+    "matchId": "bracket:2024:-88kg:sf:jay-rodriguez:chris-wojcik",
+    "winnerCanonicalId": "athlete_jacob-rodriguez-m",
+    "loserCanonicalId": "athlete_chris-wojcik-m",
     "sex": "M",
-    "weightClass": "88KG",
+    "weightClass": "-88KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Decision",
+    "roundLabel": "SF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:99KG:1-2",
+    "matchId": "bracket:2024:-99kg:3rd:roberto-abreu:michael-pixley",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_michael-pixley-m",
+    "sex": "M",
+    "weightClass": "-99KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:-99kg:f:kaynan-duarte:rafael-lovato-jr.",
     "winnerCanonicalId": "athlete_kaynan-duarte-m",
     "loserCanonicalId": "athlete_rafael-lovato-jr-m",
     "sex": "M",
-    "weightClass": "99KG",
+    "weightClass": "-99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
+    "method": "RNC",
+    "roundLabel": "F"
   },
   {
-    "matchId": "adcc-worlds-2024:M:99KG:1-3",
+    "matchId": "bracket:2024:-99kg:qf:kaynan-duarte:declan-moody",
     "winnerCanonicalId": "athlete_kaynan-duarte-m",
-    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_declan-moody-m",
     "sex": "M",
-    "weightClass": "99KG",
+    "weightClass": "-99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
+    "method": "Guillotine",
+    "roundLabel": "QF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:99KG:2-3",
+    "matchId": "bracket:2024:-99kg:qf:michael-pixley:nicolas-meregali",
+    "winnerCanonicalId": "athlete_michael-pixley-m",
+    "loserCanonicalId": "athlete_nicholas-meregali-m",
+    "sex": "M",
+    "weightClass": "-99KG",
+    "year": 2024,
+    "method": "Darce choke",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-99kg:qf:rafael-lovato-jr.:patrick-gaudio",
     "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
-    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_patrick-gaudio-m",
     "sex": "M",
-    "weightClass": "99KG",
+    "weightClass": "-99KG",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Guillotine",
+    "roundLabel": "QF"
   },
   {
-    "matchId": "adcc-worlds-2024:M:ABS:1-2",
-    "winnerCanonicalId": "athlete_kaynan-duarte-m",
-    "loserCanonicalId": "athlete_roberto-abreu-m",
-    "sex": "M",
-    "weightClass": "ABS",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_2"
-  },
-  {
-    "matchId": "adcc-worlds-2024:M:ABS:1-3",
-    "winnerCanonicalId": "athlete_kaynan-duarte-m",
-    "loserCanonicalId": "athlete_dante-leon-m",
-    "sex": "M",
-    "weightClass": "ABS",
-    "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_1_OVER_3"
-  },
-  {
-    "matchId": "adcc-worlds-2024:M:ABS:2-3",
+    "matchId": "bracket:2024:-99kg:qf:roberto-abreu:javier-zaruski",
     "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_javier-zaruski-m",
+    "sex": "M",
+    "weightClass": "-99KG",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:-99kg:sf:kaynan-duarte:roberto-abreu",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "-99KG",
+    "year": 2024,
+    "method": "Guillotine",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:-99kg:sf:rafael-lovato-jr.:michael-pixley",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_michael-pixley-m",
+    "sex": "M",
+    "weightClass": "-99KG",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:abs:3rd:amy-campo:rafaela-guedes",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_rafaela-guedes-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Walkover",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:abs:3rd:dante-leon:giancarlo-bodoni",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_giancarlo-bodoni-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "3RD"
+  },
+  {
+    "matchId": "bracket:2024:abs:f:adele-fornarino:beatriz-mesquita",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_beatriz-mesquita-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Decision",
+    "roundLabel": "F"
+  },
+  {
+    "matchId": "bracket:2024:abs:f:kaynan-duarte:roberto-abreu",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Guillotine",
+    "roundLabel": "F"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:adele-fornarino:brianna-ste-marie",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_brianna-stemarie-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Armbar",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:amy-campo:amanda-leve",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_amanda-leve-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:beatriz-mesquita:kendall-reusing",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_kendall-reusing-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:dante-leon:mica-galvao",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_micael-galvao-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Straight ankle lock",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:giancarlo-bodoni:vagner-rocha",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:kaynan-duarte:declan-moody",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_declan-moody-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "RNC",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:rafaela-guedes:bianca-basilio",
+    "winnerCanonicalId": "athlete_rafaela-guedes-f",
+    "loserCanonicalId": "athlete_bianca-basilio-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:qf:roberto-abreu:izaak-michell",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_isaak-michel-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "QF"
+  },
+  {
+    "matchId": "bracket:2024:abs:sf:adele-fornarino:rafaela-guedes",
+    "winnerCanonicalId": "athlete_adele-fornarino-f",
+    "loserCanonicalId": "athlete_rafaela-guedes-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Kneebar",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:abs:sf:beatriz-mesquita:amy-campo",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_amy-campo-f",
+    "sex": "F",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:abs:sf:kaynan-duarte:dante-leon",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
     "loserCanonicalId": "athlete_dante-leon-m",
     "sex": "M",
     "weightClass": "ABS",
     "year": 2024,
-    "method": "OFFICIAL_RESULT_RELATION",
-    "roundLabel": "PLACE_2_OVER_3"
+    "method": "Points",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:abs:sf:roberto-abreu:giancarlo-bodoni",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_giancarlo-bodoni-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "SF"
+  },
+  {
+    "matchId": "bracket:2024:superfight:superfight:gordon-ryan:felipe-pena",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "SUPERFIGHT",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "SUPERFIGHT"
+  },
+  {
+    "matchId": "bracket:2024:superfight:superfight:gordon-ryan:yuri-simoes",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_yuri-simoes-m",
+    "sex": "M",
+    "weightClass": "SUPERFIGHT",
+    "year": 2024,
+    "method": "Points",
+    "roundLabel": "SUPERFIGHT"
   }
 ]

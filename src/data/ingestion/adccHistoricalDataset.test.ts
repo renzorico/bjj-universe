@@ -85,7 +85,7 @@ describe('adccHistoricalDataset ingestion', () => {
 
     expect(processed.validationSummary.acceptedRows).toBe(1028);
     expect(processed.validationSummary.quarantinedRows).toBe(0);
-    expect(processed.normalized.matches).toHaveLength(1058);
+    expect(processed.normalized.matches).toHaveLength(1118);
     expect(graph.edges.length).toBeLessThanOrEqual(matches.length);
     expect(graph.edges.length).toBeGreaterThan(700);
     expect(graph.nodes.length).toBeGreaterThan(200);

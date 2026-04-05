@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-03T16:37:19.153Z",
+  "generatedAt": "2026-04-05T23:18:05.736Z",
   "source": "adcc-historical-kaggle",
   "summary": {
-    "athleteCount": 531,
-    "matchCount": 1058,
+    "athleteCount": 576,
+    "matchCount": 1118,
     "observedEventYears": [
       1998,
       1999,
@@ -542,12 +542,12 @@
         ]
       },
       {
-        "athleteId": "athlete_bia-mesquita-f",
-        "athleteName": "Bia Mesquita",
-        "matchCount": 5,
-        "firstMatchYear": 2015,
+        "athleteId": "athlete_giancarlo-bodoni-m",
+        "athleteName": "Giancarlo Bodoni",
+        "matchCount": 7,
+        "firstMatchYear": 2024,
         "lastMatchYear": 2024,
-        "editionSpan": 5,
+        "editionSpan": 1,
         "reasons": [
           "out_of_bounds_year"
         ]
@@ -555,7 +555,29 @@
       {
         "athleteId": "athlete_adele-fornarino-f",
         "athleteName": "Adele Fornarino",
-        "matchCount": 4,
+        "matchCount": 6,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_amy-campo-f",
+        "athleteName": "Amy Campo",
+        "matchCount": 6,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_beatriz-mesquita-f",
+        "athleteName": "Beatriz Mesquita",
+        "matchCount": 6,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -566,6 +588,149 @@
       {
         "athleteId": "athlete_kaynan-duarte-m",
         "athleteName": "Kaynan Duarte",
+        "matchCount": 6,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_rafaela-guedes-f",
+        "athleteName": "Rafaela Guedes",
+        "matchCount": 6,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_roberto-abreu-m",
+        "athleteName": "Roberto Abreu",
+        "matchCount": 6,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_vagner-rocha-m",
+        "athleteName": "Vagner Rocha",
+        "matchCount": 5,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_bianca-basilio-f",
+        "athleteName": "Bianca Basilio",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_brianna-ste-marie-f",
+        "athleteName": "Brianna Ste-Marie",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_daniel-manasoiu-m",
+        "athleteName": "Daniel Manasoiu",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_dante-leon-m",
+        "athleteName": "Dante Leon",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_elijah-dorsey-m",
+        "athleteName": "Elijah Dorsey",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_felipe-costa-m",
+        "athleteName": "Felipe Costa",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_felipe-pena-m",
+        "athleteName": "Felipe Pena",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_john-hansen-m",
+        "athleteName": "John Hansen",
+        "matchCount": 4,
+        "firstMatchYear": 2019,
+        "lastMatchYear": 2024,
+        "editionSpan": 3,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_josh-saunders-m",
+        "athleteName": "Josh Saunders",
+        "matchCount": 4,
+        "firstMatchYear": 2022,
+        "lastMatchYear": 2024,
+        "editionSpan": 2,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_kendall-reusing-f",
+        "athleteName": "Kendall Reusing",
         "matchCount": 4,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
@@ -577,7 +742,7 @@
       {
         "athleteId": "athlete_luke-griffith-m",
         "athleteName": "Luke Griffith",
-        "matchCount": 3,
+        "matchCount": 4,
         "firstMatchYear": 2022,
         "lastMatchYear": 2024,
         "editionSpan": 2,
@@ -586,9 +751,9 @@
         ]
       },
       {
-        "athleteId": "athlete_amy-campo-f",
-        "athleteName": "Amy Campo",
-        "matchCount": 2,
+        "athleteId": "athlete_mica-galvao-m",
+        "athleteName": "Mica Galvao",
+        "matchCount": 4,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -597,9 +762,9 @@
         ]
       },
       {
-        "athleteId": "athlete_ana-vieira-f",
-        "athleteName": "Ana Vieira",
-        "matchCount": 2,
+        "athleteId": "athlete_owen-jones-m",
+        "athleteName": "Owen Jones",
+        "matchCount": 4,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -608,9 +773,9 @@
         ]
       },
       {
-        "athleteId": "athlete_bianca-basilio-f",
-        "athleteName": "Bianca Basilio",
-        "matchCount": 2,
+        "athleteId": "athlete_ana-carolina-vieira-f",
+        "athleteName": "Ana Carolina Vieira",
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -619,9 +784,9 @@
         ]
       },
       {
-        "athleteId": "athlete_cyborg-abreu-m",
-        "athleteName": "Cyborg Abreu",
-        "matchCount": 2,
+        "athleteId": "athlete_anna-rodrigues-f",
+        "athleteName": "Anna Rodrigues",
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -630,20 +795,9 @@
         ]
       },
       {
-        "athleteId": "athlete_daniel-manasoiu-m",
-        "athleteName": "Daniel Manasoiu",
-        "matchCount": 2,
-        "firstMatchYear": 2024,
-        "lastMatchYear": 2024,
-        "editionSpan": 1,
-        "reasons": [
-          "out_of_bounds_year"
-        ]
-      },
-      {
-        "athleteId": "athlete_dante-leon-m",
-        "athleteName": "Dante Leon",
-        "matchCount": 2,
+        "athleteId": "athlete_chris-wojcik-m",
+        "athleteName": "Chris Wojcik",
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -654,7 +808,7 @@
       {
         "athleteId": "athlete_diego-pato-m",
         "athleteName": "Diego Pato",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -665,40 +819,7 @@
       {
         "athleteId": "athlete_diogo-reis-m",
         "athleteName": "Diogo Reis",
-        "matchCount": 2,
-        "firstMatchYear": 2024,
-        "lastMatchYear": 2024,
-        "editionSpan": 1,
-        "reasons": [
-          "out_of_bounds_year"
-        ]
-      },
-      {
-        "athleteId": "athlete_felipe-costa-m",
-        "athleteName": "Felipe Costa",
-        "matchCount": 2,
-        "firstMatchYear": 2024,
-        "lastMatchYear": 2024,
-        "editionSpan": 1,
-        "reasons": [
-          "out_of_bounds_year"
-        ]
-      },
-      {
-        "athleteId": "athlete_felipe-pena-m",
-        "athleteName": "Felipe Pena",
-        "matchCount": 2,
-        "firstMatchYear": 2024,
-        "lastMatchYear": 2024,
-        "editionSpan": 1,
-        "reasons": [
-          "out_of_bounds_year"
-        ]
-      },
-      {
-        "athleteId": "athlete_giancarlo-bodoni-m",
-        "athleteName": "Giancarlo Bodoni",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -709,7 +830,7 @@
       {
         "athleteId": "athlete_helena-crevar-f",
         "athleteName": "Helena Crevar",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -720,7 +841,7 @@
       {
         "athleteId": "athlete_jasmine-rocha-f",
         "athleteName": "Jasmine Rocha",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -731,7 +852,7 @@
       {
         "athleteId": "athlete_jay-rodriguez-m",
         "athleteName": "Jay Rodriguez",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -742,7 +863,7 @@
       {
         "athleteId": "athlete_josh-cisneros-m",
         "athleteName": "Josh Cisneros",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -751,20 +872,9 @@
         ]
       },
       {
-        "athleteId": "athlete_kendall-reusing-f",
-        "athleteName": "Kendall Reusing",
-        "matchCount": 2,
-        "firstMatchYear": 2024,
-        "lastMatchYear": 2024,
-        "editionSpan": 1,
-        "reasons": [
-          "out_of_bounds_year"
-        ]
-      },
-      {
-        "athleteId": "athlete_mica-galvao-m",
-        "athleteName": "Mica Galvao",
-        "matchCount": 2,
+        "athleteId": "athlete_michael-pixley-m",
+        "athleteName": "Michael Pixley",
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -775,7 +885,7 @@
       {
         "athleteId": "athlete_nathiely-de-jesus-f",
         "athleteName": "Nathiely De Jesus",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -786,7 +896,7 @@
       {
         "athleteId": "athlete_pj-barch-m",
         "athleteName": "PJ Barch",
-        "matchCount": 2,
+        "matchCount": 3,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -797,6 +907,17 @@
       {
         "athleteId": "athlete_rafael-lovato-jr-m",
         "athleteName": "Rafael Lovato Jr.",
+        "matchCount": 3,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_amanda-leve-f",
+        "athleteName": "Amanda Leve",
         "matchCount": 2,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
@@ -806,8 +927,8 @@
         ]
       },
       {
-        "athleteId": "athlete_rafaela-guedes-f",
-        "athleteName": "Rafaela Guedes",
+        "athleteId": "athlete_charles-negromonte-m",
+        "athleteName": "Charles Negromonte",
         "matchCount": 2,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
@@ -817,8 +938,52 @@
         ]
       },
       {
-        "athleteId": "athlete_roberto-abreu-m",
-        "athleteName": "Roberto Abreu",
+        "athleteId": "athlete_damon-ramos-m",
+        "athleteName": "Damon Ramos",
+        "matchCount": 2,
+        "firstMatchYear": 2022,
+        "lastMatchYear": 2024,
+        "editionSpan": 2,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_declan-moody-m",
+        "athleteName": "Declan Moody",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_gairbeg-ibragimov-m",
+        "athleteName": "Gairbeg Ibragimov",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_gordon-ryan-m",
+        "athleteName": "Gordon Ryan",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_izaak-michell-m",
+        "athleteName": "Izaak Michell",
         "matchCount": 2,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
@@ -839,9 +1004,361 @@
         ]
       },
       {
-        "athleteId": "athlete_vagner-rocha-m",
-        "athleteName": "Vagner Rocha",
-        "matchCount": 2,
+        "athleteId": "athlete_alex-enriquez-f",
+        "athleteName": "Alex Enriquez",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_andre-porfirio-m",
+        "athleteName": "Andre Porfirio",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_aurelie-vern-f",
+        "athleteName": "Aurelie Vern",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_brenda-larissa-f",
+        "athleteName": "Brenda Larissa",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_dorian-olivarez-m",
+        "athleteName": "Dorian Olivarez",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_elder-cruz-m",
+        "athleteName": "Elder Cruz",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_elizabeth-mitrovic-f",
+        "athleteName": "Elizabeth Mitrovic",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_ethan-crelinsten-m",
+        "athleteName": "Ethan Crelinsten",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_fabricio-andrey-m",
+        "athleteName": "Fabricio Andrey",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_gabriel-almeida-m",
+        "athleteName": "Gabriel Almeida",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_gabriel-sousa-m",
+        "athleteName": "Gabriel Sousa",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jacob-couch-m",
+        "athleteName": "Jacob Couch",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_javier-zaruski-m",
+        "athleteName": "Javier Zaruski",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jeremy-skinner-m",
+        "athleteName": "Jeremy Skinner",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jonnatas-gracie-m",
+        "athleteName": "Jonnatas Gracie",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jt-torres-m",
+        "athleteName": "JT Torres",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_kennedy-maciel-m",
+        "athleteName": "Kennedy Maciel",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_margot-ciccarelli-f",
+        "athleteName": "Margot Ciccarelli",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_maria-ruffato-f",
+        "athleteName": "Maria Ruffato",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_mark-macqueen-m",
+        "athleteName": "Mark MacQueen",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_mateusz-szczecinski-m",
+        "athleteName": "Mateusz Szczecinski",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_mayssa-bastos-f",
+        "athleteName": "Mayssa Bastos",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_mo-black-f",
+        "athleteName": "Mo Black",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_nia-blackman-f",
+        "athleteName": "Nia Blackman",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_nicolas-meregali-m",
+        "athleteName": "Nicolas Meregali",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_nikki-griffiths-f",
+        "athleteName": "Nikki Griffiths",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_oliver-taza-m",
+        "athleteName": "Oliver Taza",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_patrick-gaudio-m",
+        "athleteName": "Patrick Gaudio",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_rida-haisam-m",
+        "athleteName": "Rida Haisam",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_roosevelt-sousa-m",
+        "athleteName": "Roosevelt Sousa",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_ryan-aitken-m",
+        "athleteName": "Ryan Aitken",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_sula-mae-f",
+        "athleteName": "Sula Mae",
+        "matchCount": 1,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_yuri-simoes-m",
+        "athleteName": "Yuri Simoes",
+        "matchCount": 1,
         "firstMatchYear": 2024,
         "lastMatchYear": 2024,
         "editionSpan": 1,
@@ -1040,7 +1557,8 @@
           "Mateusz Szczecinski"
         ],
         "years": [
-          2022
+          2022,
+          2024
         ],
         "sourceAthleteIds": [
           "4759"

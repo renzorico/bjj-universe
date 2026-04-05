@@ -50,7 +50,7 @@ describe('GraphStage', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Brazil')).toBeInTheDocument();
     expect(screen.getByText('New Wave Jiu Jitsu')).toBeInTheDocument();
-    expect(screen.getByText('8')).toBeInTheDocument();
+    expect(screen.getByText('9')).toBeInTheDocument();
     expect(screen.getAllByText('99KG').length).toBeGreaterThan(0);
     expect(screen.queryByText(/Won over Henrique Cardoso/i)).not.toBeInTheDocument();
 

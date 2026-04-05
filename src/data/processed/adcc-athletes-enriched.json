@@ -94,7 +94,7 @@
     "primaryWeightClass": "60KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 5,
+    "totalMatches": 7,
     "nationality": "Australia",
     "team": "Dominance MMA"
   },
@@ -181,8 +181,8 @@
     "sex": "F",
     "primaryWeightClass": "+60KG",
     "activeYearFirst": 2019,
-    "activeYearLast": 2019,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
     "nationality": "USA",
     "team": "Unknown"
   },
@@ -204,9 +204,9 @@
     "primaryWeightClass": "+60KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 5,
+    "totalMatches": 9,
     "nationality": "USA",
-    "team": "Zenith JJ "
+    "team": "Zenith JJ"
   },
   {
     "canonicalAthleteId": "athlete_ana-carolina-vieira-f",
@@ -215,7 +215,7 @@
     "primaryWeightClass": "+60KG",
     "activeYearFirst": 2019,
     "activeYearLast": 2024,
-    "totalMatches": 3,
+    "totalMatches": 4,
     "nationality": "Brazil",
     "team": "GFTeam / Aviv"
   },
@@ -325,7 +325,7 @@
     "primaryWeightClass": "60KG",
     "activeYearFirst": 2019,
     "activeYearLast": 2024,
-    "totalMatches": 8,
+    "totalMatches": 10,
     "nationality": "Brazil",
     "team": "Alliance"
   },
@@ -360,7 +360,7 @@
     "activeYearLast": 2019,
     "totalMatches": 1,
     "nationality": "Australia",
-    "team": "Absolute MMA / under Lachlan Giles "
+    "team": "Absolute MMA / under Lachlan Giles"
   },
   {
     "canonicalAthleteId": "athlete_bianca-basilio-f",
@@ -369,7 +369,7 @@
     "primaryWeightClass": "60KG",
     "activeYearFirst": 2017,
     "activeYearLast": 2024,
-    "totalMatches": 11,
+    "totalMatches": 13,
     "nationality": "Brazil",
     "team": "Unknown"
   },
@@ -393,7 +393,7 @@
     "activeYearLast": 2013,
     "totalMatches": 16,
     "nationality": "Brazil",
-    "team": "Gracie Barra "
+    "team": "Gracie Barra"
   },
   {
     "canonicalAthleteId": "athlete_brianna-stemarie-f",
@@ -401,8 +401,8 @@
     "sex": "F",
     "primaryWeightClass": "60KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 7,
     "nationality": "Canada",
     "team": "Unknown"
   },
@@ -555,8 +555,8 @@
     "sex": "M",
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
     "nationality": "USA",
     "team": "Unknown"
   },
@@ -567,7 +567,7 @@
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 3,
+    "totalMatches": 5,
     "nationality": "USA",
     "team": "New Wave Jiu-Jitsu"
   },
@@ -600,9 +600,9 @@
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2019,
     "activeYearLast": 2024,
-    "totalMatches": 10,
-    "nationality": "USA",
-    "team": "Atos"
+    "totalMatches": 12,
+    "nationality": "Canada",
+    "team": "GF Team"
   },
   {
     "canonicalAthleteId": "athlete_darren-andy-m",
@@ -721,7 +721,7 @@
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 6,
+    "totalMatches": 7,
     "nationality": "Brazil",
     "team": "Cicero Costa / Checkmat"
   },
@@ -754,7 +754,7 @@
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 6,
+    "totalMatches": 7,
     "nationality": "Brazil",
     "team": "Unknown"
   },
@@ -852,8 +852,8 @@
     "sex": "M",
     "primaryWeightClass": "99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Brazil",
     "team": "Alliance"
   },
@@ -940,8 +940,8 @@
     "sex": "M",
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2017,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Canada",
     "team": "B-Team"
   },
@@ -951,8 +951,8 @@
     "sex": "M",
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Brazil",
     "team": "Alliance"
   },
@@ -985,7 +985,7 @@
     "primaryWeightClass": "99KG",
     "activeYearFirst": 2015,
     "activeYearLast": 2024,
-    "totalMatches": 20,
+    "totalMatches": 22,
     "nationality": "Brazil",
     "team": "Gracie Barra / FP Team"
   },
@@ -1028,8 +1028,8 @@
     "sex": "M",
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2019,
-    "activeYearLast": 2019,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
     "nationality": "Brazil",
     "team": "Checkmat"
   },
@@ -1083,8 +1083,8 @@
     "sex": "M",
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 4,
+    "activeYearLast": 2024,
+    "totalMatches": 5,
     "nationality": "Brazil",
     "team": "Flow Academy"
   },
@@ -1150,7 +1150,7 @@
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 8,
+    "totalMatches": 13,
     "nationality": "Italy",
     "team": "New Wave Jiu\u2011Jitsu"
   },
@@ -1204,8 +1204,8 @@
     "sex": "M",
     "primaryWeightClass": "ABS",
     "activeYearFirst": 2017,
-    "activeYearLast": 2022,
-    "totalMatches": 21,
+    "activeYearLast": 2024,
+    "totalMatches": 23,
     "nationality": "United States",
     "team": "New Wave Jiu Jitsu"
   },
@@ -1240,7 +1240,7 @@
     "activeYearLast": 2003,
     "totalMatches": 2,
     "nationality": "Brazil",
-    "team": "Nova Uni\u00e3o "
+    "team": "Nova Uni\u00e3o"
   },
   {
     "canonicalAthleteId": "athlete_h-sekine-m",
@@ -1325,8 +1325,8 @@
     "sex": "M",
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
     "nationality": "Australia",
     "team": "Kingsway / B-Team"
   },
@@ -1369,8 +1369,8 @@
     "sex": "M",
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "USA",
     "team": "Renzo Gracie"
   },
@@ -1479,8 +1479,8 @@
     "sex": "M",
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 2,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
     "nationality": "Australia",
     "team": "Unknown"
   },
@@ -1589,8 +1589,8 @@
     "sex": "M",
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2019,
-    "activeYearLast": 2022,
-    "totalMatches": 4,
+    "activeYearLast": 2024,
+    "totalMatches": 5,
     "nationality": "Denmark",
     "team": "Unknown"
   },
@@ -1644,8 +1644,8 @@
     "sex": "M",
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2011,
-    "activeYearLast": 2022,
-    "totalMatches": 15,
+    "activeYearLast": 2024,
+    "totalMatches": 16,
     "nationality": "USA",
     "team": "Unknown"
   },
@@ -1688,8 +1688,8 @@
     "sex": "M",
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "USA",
     "team": "Renzo Gracie Academy"
   },
@@ -1700,7 +1700,7 @@
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 6,
+    "totalMatches": 7,
     "nationality": "USA",
     "team": "Renzo Gracie"
   },
@@ -1777,7 +1777,7 @@
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2017,
     "activeYearLast": 2024,
-    "totalMatches": 14,
+    "totalMatches": 16,
     "nationality": "Brazil",
     "team": "Atos"
   },
@@ -1832,7 +1832,7 @@
     "primaryWeightClass": "+60KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 4,
+    "totalMatches": 6,
     "nationality": "Canada",
     "team": "Unknown"
   },
@@ -1842,8 +1842,8 @@
     "sex": "M",
     "primaryWeightClass": "66KG",
     "activeYearFirst": 2019,
-    "activeYearLast": 2022,
-    "totalMatches": 6,
+    "activeYearLast": 2024,
+    "totalMatches": 7,
     "nationality": "Brazil",
     "team": "Checkmat"
   },
@@ -2030,9 +2030,9 @@
     "primaryWeightClass": "99KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 3,
-    "nationality": "USA",
-    "team": "Renzo Gracie"
+    "totalMatches": 4,
+    "nationality": "South Africa",
+    "team": "New Wave"
   },
   {
     "canonicalAthleteId": "athlete_m-perez-m",
@@ -2249,8 +2249,8 @@
     "sex": "M",
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
     "nationality": "Poland",
     "team": "Berserker's Team"
   },
@@ -2315,8 +2315,8 @@
     "sex": "F",
     "primaryWeightClass": "60KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 1,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
     "nationality": "Brazil",
     "team": "GF Team / Unity / Art of Jiu-Jitsu"
   },
@@ -2327,7 +2327,7 @@
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 6,
+    "totalMatches": 8,
     "nationality": "Brazil",
     "team": "Fight Sports"
   },
@@ -2403,8 +2403,8 @@
     "sex": "M",
     "primaryWeightClass": "99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 8,
+    "activeYearLast": 2024,
+    "totalMatches": 9,
     "nationality": "Brazil",
     "team": "New Wave Jiu Jitsu"
   },
@@ -2469,8 +2469,8 @@
     "sex": "M",
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2017,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Canada",
     "team": "Danaher Death Squad / New Wave"
   },
@@ -2557,8 +2557,8 @@
     "sex": "M",
     "primaryWeightClass": "99KG",
     "activeYearFirst": 2019,
-    "activeYearLast": 2022,
-    "totalMatches": 5,
+    "activeYearLast": 2024,
+    "totalMatches": 6,
     "nationality": "USA",
     "team": "Renzo Gracie"
   },
@@ -2668,7 +2668,7 @@
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2007,
     "activeYearLast": 2024,
-    "totalMatches": 28,
+    "totalMatches": 29,
     "nationality": "USA",
     "team": "Lovato Jiu Jitsu"
   },
@@ -2690,7 +2690,7 @@
     "primaryWeightClass": "+60KG",
     "activeYearFirst": 2022,
     "activeYearLast": 2024,
-    "totalMatches": 5,
+    "totalMatches": 9,
     "nationality": "Brazil",
     "team": "Unknown"
   },
@@ -2821,8 +2821,8 @@
     "sex": "M",
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Lebanon",
     "team": "Unknown"
   },
@@ -2866,7 +2866,7 @@
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2009,
     "activeYearLast": 2024,
-    "totalMatches": 33,
+    "totalMatches": 35,
     "nationality": "Cuba/USA",
     "team": "Fight Sports"
   },
@@ -3041,8 +3041,8 @@
     "sex": "M",
     "primaryWeightClass": "+99KG",
     "activeYearFirst": 2022,
-    "activeYearLast": 2022,
-    "totalMatches": 3,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
     "nationality": "Brazil",
     "team": "Unknown"
   },
@@ -3460,7 +3460,7 @@
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2011,
     "activeYearLast": 2024,
-    "totalMatches": 19,
+    "totalMatches": 22,
     "nationality": "Brazil",
     "team": "Unknown"
   },
@@ -3580,8 +3580,8 @@
     "sex": "M",
     "primaryWeightClass": "ABS",
     "activeYearFirst": 2015,
-    "activeYearLast": 2022,
-    "totalMatches": 19,
+    "activeYearLast": 2024,
+    "totalMatches": 20,
     "nationality": "Brazil",
     "team": "Checkmat"
   },
@@ -3614,9 +3614,9 @@
     "primaryWeightClass": "88KG",
     "activeYearFirst": 2024,
     "activeYearLast": 2024,
-    "totalMatches": 2,
+    "totalMatches": 4,
     "nationality": "Brazil",
-    "team": null
+    "team": "Six Blades"
   },
   {
     "canonicalAthleteId": "athlete_helena-crevar-f",
@@ -3625,7 +3625,7 @@
     "primaryWeightClass": "65KG",
     "activeYearFirst": 2024,
     "activeYearLast": 2024,
-    "totalMatches": 2,
+    "totalMatches": 3,
     "nationality": "Serbia",
     "team": null
   },
@@ -3636,20 +3636,9 @@
     "primaryWeightClass": "55KG",
     "activeYearFirst": 2024,
     "activeYearLast": 2024,
-    "totalMatches": 2,
+    "totalMatches": 3,
     "nationality": "USA",
     "team": "Atos"
-  },
-  {
-    "canonicalAthleteId": "athlete_jay-rodriguez-m",
-    "name": "Jay Rodriguez",
-    "sex": "M",
-    "primaryWeightClass": "88KG",
-    "activeYearFirst": 2024,
-    "activeYearLast": 2024,
-    "totalMatches": 2,
-    "nationality": "USA",
-    "team": "B-Team"
   },
   {
     "canonicalAthleteId": "athlete_nathiely-de-jesus-f",
@@ -3658,7 +3647,7 @@
     "primaryWeightClass": "+65KG",
     "activeYearFirst": 2024,
     "activeYearLast": 2024,
-    "totalMatches": 2,
+    "totalMatches": 3,
     "nationality": "Brazil",
     "team": null
   },
@@ -3669,8 +3658,283 @@
     "primaryWeightClass": "77KG",
     "activeYearFirst": 2024,
     "activeYearLast": 2024,
-    "totalMatches": 2,
+    "totalMatches": 3,
     "nationality": "USA",
     "team": "10th Planet"
+  },
+  {
+    "canonicalAthleteId": "athlete_alex-enriquez-f",
+    "name": "Alex Enriquez",
+    "sex": "F",
+    "primaryWeightClass": "55KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "USA",
+    "team": "Atos"
+  },
+  {
+    "canonicalAthleteId": "athlete_andre-porfirio-m",
+    "name": "Andre Porfirio",
+    "sex": "M",
+    "primaryWeightClass": "88KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_anna-rodrigues-f",
+    "name": "Anna Rodrigues",
+    "sex": "F",
+    "primaryWeightClass": "55KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
+    "nationality": "Brazil",
+    "team": "Dream Arts Project"
+  },
+  {
+    "canonicalAthleteId": "athlete_aurelie-vern-f",
+    "name": "Aurelie Vern",
+    "sex": "F",
+    "primaryWeightClass": "65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "France",
+    "team": "Six Blades"
+  },
+  {
+    "canonicalAthleteId": "athlete_brenda-larissa-f",
+    "name": "Brenda Larissa",
+    "sex": "F",
+    "primaryWeightClass": "55KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_charles-negromonte-m",
+    "name": "Charles Negromonte",
+    "sex": "M",
+    "primaryWeightClass": "88KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
+    "nationality": "Brazil",
+    "team": "Roger Gracie Academy"
+  },
+  {
+    "canonicalAthleteId": "athlete_chris-wojcik-m",
+    "name": "Chris Wojcik",
+    "sex": "M",
+    "primaryWeightClass": "88KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
+    "nationality": "UK",
+    "team": "B-Team"
+  },
+  {
+    "canonicalAthleteId": "athlete_declan-moody-m",
+    "name": "Declan Moody",
+    "sex": "M",
+    "primaryWeightClass": "99KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_dorian-olivarez-m",
+    "name": "Dorian Olivarez",
+    "sex": "M",
+    "primaryWeightClass": "66KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "USA",
+    "team": "Team Olivarez"
+  },
+  {
+    "canonicalAthleteId": "athlete_elijah-dorsey-m",
+    "name": "Elijah Dorsey",
+    "sex": "M",
+    "primaryWeightClass": "77KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
+    "nationality": "USA",
+    "team": "Team Lloyd Irvin"
+  },
+  {
+    "canonicalAthleteId": "athlete_elizabeth-mitrovic-f",
+    "name": "Elizabeth Mitrovic",
+    "sex": "F",
+    "primaryWeightClass": "+65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_gairbeg-ibragimov-m",
+    "name": "Gairbeg Ibragimov",
+    "sex": "M",
+    "primaryWeightClass": "66KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 2,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_jacob-couch-m",
+    "name": "Jacob Couch",
+    "sex": "M",
+    "primaryWeightClass": "88KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "USA",
+    "team": "Pedigo Submission Fighting"
+  },
+  {
+    "canonicalAthleteId": "athlete_javier-zaruski-m",
+    "name": "Javier Zaruski",
+    "sex": "M",
+    "primaryWeightClass": "99KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Uruguay",
+    "team": "Atos"
+  },
+  {
+    "canonicalAthleteId": "athlete_jonnatas-gracie-m",
+    "name": "Jonnatas Gracie",
+    "sex": "M",
+    "primaryWeightClass": "77KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Brazil",
+    "team": "Atos"
+  },
+  {
+    "canonicalAthleteId": "athlete_margot-ciccarelli-f",
+    "name": "Margot Ciccarelli",
+    "sex": "F",
+    "primaryWeightClass": "55KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "UK",
+    "team": "Unity JJ"
+  },
+  {
+    "canonicalAthleteId": "athlete_maria-ruffato-f",
+    "name": "Maria Ruffato",
+    "sex": "F",
+    "primaryWeightClass": "+65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Brazil",
+    "team": "BTT"
+  },
+  {
+    "canonicalAthleteId": "athlete_mark-macqueen-m",
+    "name": "Mark MacQueen",
+    "sex": "M",
+    "primaryWeightClass": "+99KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_michael-pixley-m",
+    "name": "Michael Pixley",
+    "sex": "M",
+    "primaryWeightClass": "99KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 3,
+    "nationality": "USA",
+    "team": "Pedigo Submission Fighting"
+  },
+  {
+    "canonicalAthleteId": "athlete_mo-black-f",
+    "name": "Mo Black",
+    "sex": "F",
+    "primaryWeightClass": "65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_nia-blackman-f",
+    "name": "Nia Blackman",
+    "sex": "F",
+    "primaryWeightClass": "+65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_nikki-griffiths-f",
+    "name": "Nikki Griffiths",
+    "sex": "F",
+    "primaryWeightClass": "+65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_owen-jones-m",
+    "name": "Owen Jones",
+    "sex": "M",
+    "primaryWeightClass": "66KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 4,
+    "nationality": "UK",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_ryan-aitken-m",
+    "name": "Ryan Aitken",
+    "sex": "M",
+    "primaryWeightClass": "88KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
+  },
+  {
+    "canonicalAthleteId": "athlete_sula-mae-f",
+    "name": "Sula Mae",
+    "sex": "F",
+    "primaryWeightClass": "65KG",
+    "activeYearFirst": 2024,
+    "activeYearLast": 2024,
+    "totalMatches": 1,
+    "nationality": "Unknown",
+    "team": "Unknown"
   }
 ]

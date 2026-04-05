@@ -21,15 +21,15 @@ describe('getAllAthletes', () => {
       'nationality',
       'team',
     ]);
-    expect(athletes).toHaveLength(334);
+    expect(athletes).toHaveLength(358);
     expect(athlete).toEqual({
       canonicalAthleteId: 'athlete_nicholas-meregali-m',
       name: 'Nicholas Meregali',
       sex: 'M',
       primaryWeightClass: '99KG',
       activeYearFirst: 2022,
-      activeYearLast: 2022,
-      totalMatches: 8,
+      activeYearLast: 2024,
+      totalMatches: 9,
       nationality: 'Brazil',
       team: 'New Wave Jiu Jitsu',
     });

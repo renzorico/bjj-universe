@@ -28,6 +28,11 @@ ATHLETE_ALIAS_MAP = {
     "athlete_josh-cisneros-m": "athlete_joshua-cisneros-m",
     "athlete_mica-galvao-m": "athlete_micael-galvao-m",
     "athlete_cyborg-abreu-m": "athlete_roberto-abreu-m",
+    "athlete_jt-torres-m": "athlete_jonathan-torres-m",
+    "athlete_izaak-michell-m": "athlete_isaak-michel-m",
+    "athlete_nicolas-meregali-m": "athlete_nicholas-meregali-m",
+    "athlete_brianna-ste-marie-f": "athlete_brianna-stemarie-f",
+    "athlete_jay-rodriguez-m": "athlete_jacob-rodriguez-m",
 }
 
 

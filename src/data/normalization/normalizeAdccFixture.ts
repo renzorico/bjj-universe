@@ -45,6 +45,7 @@ export function normalizeAdccFixture(
       eventId,
       winnerId,
       loserId,
+      recordType: record.recordType,
       sex: record.sex,
       weightClass: record.weightClass,
       method: record.method,

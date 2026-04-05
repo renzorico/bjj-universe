@@ -1,12 +1,12 @@
 # ADCC Integrity Report
 
-Generated: 2026-04-03T16:37:19.153Z
+Generated: 2026-04-05T23:18:05.736Z
 Source: adcc-historical-kaggle
 
 ## Summary
 
-- Athletes: 531
-- Matches: 1058
+- Athletes: 576
+- Matches: 1118
 - Observed event years: 1998, 1999, 2000, 2001, 2003, 2005, 2007, 2009, 2011, 2013, 2015, 2017, 2019, 2022, 2024
 - Missing known ADCC world years: None
 - Cross-sex athletes: 6
@@ -62,7 +62,7 @@ Source: adcc-historical-kaggle
 - M:sekine:h — names: H. Sekine / Hideki Sekine; years: 2013, 2015, 2017
 - M:sotiropoulos:g — names: G. Sotiropoulos / George Sotiropoulos; years: 2003, 2007
 - M:suzuki:t — names: T. Suzuki / Tetsu Suzuki; years: 2005, 2007, 2013
-- M:szczecinski:m — names: M. Szczecinski / Mateusz Szczecinski; years: 2022
+- M:szczecinski:m — names: M. Szczecinski / Mateusz Szczecinski; years: 2022, 2024
 - M:urholin:j — names: J. Urholin / Jesse Urholin; years: 2015, 2017
 - M:van:m — names: M. Van / Mike Van; years: 2001, 2003
 

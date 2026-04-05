@@ -98,6 +98,85 @@
 				"build"
 			],
 			"isBackground": false
+		},
+		{
+			"label": "data-adcc-build",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"tsx",
+				"--tsconfig",
+				"tsconfig.app.json",
+				"scripts/build_adcc_dataset.ts"
+			]
+		},
+		{
+			"label": "convert-enriched-to-json",
+			"type": "shell",
+			"command": "python3",
+			"args": [
+				"scripts/convert_enriched_to_json.py"
+			]
+		},
+		{
+			"label": "full-build",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			]
+		},
+		{
+			"label": "run-tests",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"test"
+			]
+		},
+		{
+			"label": "run-tests-v2",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"test"
+			]
+		},
+		{
+			"label": "run-tests",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"vitest",
+				"run"
+			]
+		},
+		{
+			"label": "build-verify-audit",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			]
+		},
+		{
+			"label": "rebuild-pipeline",
+			"type": "shell",
+			"command": "npx tsx --tsconfig tsconfig.app.json scripts/build_adcc_dataset.ts && python3 scripts/convert_enriched_to_json.py && echo 'Pipeline rebuilt successfully'"
+		},
+		{
+			"label": "run-tests-final",
+			"type": "shell",
+			"command": "npm run test"
+		},
+		{
+			"label": "build-final",
+			"type": "shell",
+			"command": "npm run build"
 		}
 	]
 }

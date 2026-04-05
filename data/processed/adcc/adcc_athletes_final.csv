@@ -17,7 +17,7 @@ athlete_alexandre-ribeiro-m,Alexandre Ribeiro,M,99KG,2003,2022,43,Brazil,Six Bla
 athlete_amanda-alequin-santana-f,Amanda Alequin / Santana,F,+60KG,2017,2017,1,USA,Gracie Barra / Pé de Pano
 athlete_amanda-leve-f,Amanda Leve,F,+60KG,2019,2019,1,USA,Unknown
 athlete_amaury-bitetti-m,Amaury Bitetti,M,88KG,1999,1999,2,Brazil,Bitetti Combat / BTT
-athlete_amy-campo-f,Amy Campo,F,+60KG,2022,2022,3,USA,Zenith JJ 
+athlete_amy-campo-f,Amy Campo,F,+60KG,2022,2022,3,USA,Zenith JJ
 athlete_ana-carolina-vieira-f,Ana Carolina Vieira,F,+60KG,2019,2019,2,Brazil,GFTeam / Aviv
 athlete_andre-galvao-m,Andre Galvao,M,ABS,2007,2022,27,Brazil,Atos Jiu Jitsu
 athlete_andy-varela-m,Andy Varela,M,77KG,2022,2022,2,USA,10th Planet
@@ -31,10 +31,10 @@ athlete_baret-yoshida-m,Baret Yoshida,M,66KG,1999,2017,22,USA,Cesar Gracie / Gra
 athlete_beatriz-mesquita-f,Beatriz Mesquita,F,60KG,2019,2022,4,Brazil,Alliance
 athlete_ben-dyson-m,Ben Dyson,M,88KG,2019,2019,1,England,Roll Jiu-Jitsu
 athlete_ben-henderson-m,Ben Henderson,M,77KG,2013,2015,2,USA,Unknown
-athlete_ben-hodgkinson-m,Ben Hodgkinson,M,99KG,2019,2019,1,Australia,Absolute MMA / under Lachlan Giles 
+athlete_ben-hodgkinson-m,Ben Hodgkinson,M,99KG,2019,2019,1,Australia,Absolute MMA / under Lachlan Giles
 athlete_bianca-basilio-f,Bianca Basilio,F,60KG,2017,2022,9,Brazil,Unknown
 athlete_bianca-mesquita-f,Bianca Mesquita,F,60KG,2017,2017,1,Brazil,Alliance
-athlete_braulio-estima-m,Braulio Estima,M,ABS,2005,2013,16,Brazil,Gracie Barra 
+athlete_braulio-estima-m,Braulio Estima,M,ABS,2005,2013,16,Brazil,Gracie Barra
 athlete_brianna-stemarie-f,Brianna Ste-Marie,F,60KG,2022,2022,3,Canada,Unknown
 athlete_bruno-bastos-m,Bruno Bastos,M,ABS,2009,2017,4,Brazil,Nova União / Bruno Bastos Assoc.
 athlete_bruno-frazatto-m,Bruno Frazatto,M,66KG,2011,2019,7,Brazil,Atos / BTT
@@ -53,7 +53,7 @@ athlete_damon-ramos-m,Damon Ramos,M,+99KG,2022,2022,1,USA,Unknown
 athlete_dan-manasoiu-m,Dan Manasoiu,M,+99KG,2022,2022,1,USA,New Wave Jiu-Jitsu
 athlete_dan-martinez-m,Dan Martinez,M,99KG,2019,2019,1,USA,Grappling Academy Bradenton
 athlete_daniel-simoes-m,Daniel Simoes,M,+99KG,2005,2005,2,Brazil,Renzo Gracie Academy
-athlete_dante-leon-m,Dante Leon,M,77KG,2019,2022,8,USA,Atos
+athlete_dante-leon-m,Dante Leon,M,77KG,2019,2022,8,Canada,GF Team
 athlete_darren-andy-m,Darren Andy,M,+99KG,2007,2007,2,New Zealand,Unknown
 athlete_davi-ramos-m,Davi Ramos,M,77KG,2015,2015,4,Brazil,Top Brother / Atos
 athlete_david-avellan-m,David Avellan,M,88KG,2005,2013,11,USA,Freestyle Fighting Academy
@@ -111,7 +111,7 @@ athlete_glover-teixeira-m,Glover Teixeira,M,99KG,2009,2011,3,Brazil,Team Jungle
 athlete_gordon-ryan-m,Gordon Ryan,M,ABS,2017,2022,21,United States,New Wave Jiu Jitsu
 athlete_gregor-gracie-m,Gregor Gracie,M,77KG,2009,2009,3,Brazil/USA,Renzo Gracie Academy
 athlete_gunnar-nelson-m,Gunnar Nelson,M,ABS,2009,2011,5,Iceland,Mjolnir / Renzo Gracie
-athlete_gustavo-dantas-m,Gustavo Dantas,M,66KG,2001,2003,2,Brazil,Nova União 
+athlete_gustavo-dantas-m,Gustavo Dantas,M,66KG,2001,2003,2,Brazil,Nova União
 athlete_h-sekine-m,H. Sekine,M,+99KG,2017,2017,1,Japan,Paraestra
 athlete_hayato-sakurai-m,Hayato Sakurai,M,ABS,1999,1999,3,Japan,Unknown
 athlete_heikki-jussila-m,Heikki Jussila,M,+99KG,2022,2022,1,Finland,Turku Fight Gym
@@ -183,7 +183,7 @@ athlete_livia-giles-f,Livia Giles,F,60KG,2019,2019,1,Australia,Absolute MMA
 athlete_lucas-daniel-barbosa-m,Lucas Daniel Barbosa,M,88KG,2019,2022,7,Brazil,Atos
 athlete_lucas-leite-m,Lucas Leite,M,88KG,2013,2013,2,Brazil,Checkmat
 athlete_lucas-lepri-m,Lucas Lepri,M,77KG,2013,2019,12,Brazil,Alianza / Lepri Academy
-athlete_luke-griffith-m,Luke Griffith,M,99KG,2022,2022,1,USA,Renzo Gracie
+athlete_luke-griffith-m,Luke Griffith,M,99KG,2022,2022,1,South Africa,New Wave
 athlete_m-perez-m,M. Perez,M,88KG,2015,2017,3,Brazil,Brazilian Top Team
 athlete_m-szczecinski-m,M. Szczecinski,M,77KG,2022,2022,1,Poland,Berserker's Team
 athlete_mackenzie-dern-f,Mackenzie Dern,F,60KG,2015,2017,4,Brazil/USA,Alliance
@@ -327,9 +327,33 @@ athlete_y-ozawa-m,Y. Ozawa,M,99KG,2017,2017,2,Japan,Unknown
 athlete_yuri-simoes-m,Yuri Simoes,M,ABS,2015,2022,19,Brazil,Checkmat
 athlete_yuta-shimada-m,Yuta Shimada,M,66KG,2017,2017,1,Japan,Unknown
 athlete_zbigniew-tyszka-m,Zbigniew Tyszka,M,88KG,2011,2015,3,Poland,Unknown
-athlete_felipe-costa-m,Felipe Costa,M,88KG,2024,2024,2,Brazil,
+athlete_felipe-costa-m,Felipe Costa,M,88KG,2024,2024,2,Brazil,Six Blades
 athlete_helena-crevar-f,Helena Crevar,F,65KG,2024,2024,2,Serbia,
 athlete_jasmine-rocha-f,Jasmine Rocha,F,55KG,2024,2024,2,USA,Atos
-athlete_jay-rodriguez-m,Jay Rodriguez,M,88KG,2024,2024,2,USA,B-Team
 athlete_nathiely-de-jesus-f,Nathiely De Jesus,F,+65KG,2024,2024,2,Brazil,
 athlete_pj-barch-m,PJ Barch,M,77KG,2024,2024,2,USA,10th Planet
+athlete_alex-enriquez-f,Alex Enriquez,F,55KG,2024,2024,0,USA,Atos
+athlete_andre-porfirio-m,Andre Porfirio,M,88KG,2024,2024,0,Unknown,Unknown
+athlete_anna-rodrigues-f,Anna Rodrigues,F,55KG,2024,2024,0,Brazil,Dream Arts Project
+athlete_aurelie-vern-f,Aurelie Vern,F,65KG,2024,2024,0,France,Six Blades
+athlete_brenda-larissa-f,Brenda Larissa,F,55KG,2024,2024,0,Unknown,Unknown
+athlete_charles-negromonte-m,Charles Negromonte,M,88KG,2024,2024,0,Brazil,Roger Gracie Academy
+athlete_chris-wojcik-m,Chris Wojcik,M,88KG,2024,2024,0,UK,B-Team
+athlete_declan-moody-m,Declan Moody,M,99KG,2024,2024,0,Unknown,Unknown
+athlete_dorian-olivarez-m,Dorian Olivarez,M,66KG,2024,2024,0,USA,Team Olivarez
+athlete_elijah-dorsey-m,Elijah Dorsey,M,77KG,2024,2024,0,USA,Team Lloyd Irvin
+athlete_elizabeth-mitrovic-f,Elizabeth Mitrovic,F,+65KG,2024,2024,0,Unknown,Unknown
+athlete_gairbeg-ibragimov-m,Gairbeg Ibragimov,M,66KG,2024,2024,0,Unknown,Unknown
+athlete_jacob-couch-m,Jacob Couch,M,88KG,2024,2024,0,USA,Pedigo Submission Fighting
+athlete_javier-zaruski-m,Javier Zaruski,M,99KG,2024,2024,0,Uruguay,Atos
+athlete_jonnatas-gracie-m,Jonnatas Gracie,M,77KG,2024,2024,0,Brazil,Atos
+athlete_margot-ciccarelli-f,Margot Ciccarelli,F,55KG,2024,2024,0,UK,Unity JJ
+athlete_maria-ruffato-f,Maria Ruffato,F,+65KG,2024,2024,0,Brazil,BTT
+athlete_mark-macqueen-m,Mark MacQueen,M,+99KG,2024,2024,0,Unknown,Unknown
+athlete_michael-pixley-m,Michael Pixley,M,99KG,2024,2024,0,USA,Pedigo Submission Fighting
+athlete_mo-black-f,Mo Black,F,65KG,2024,2024,0,Unknown,Unknown
+athlete_nia-blackman-f,Nia Blackman,F,+65KG,2024,2024,0,Unknown,Unknown
+athlete_nikki-griffiths-f,Nikki Griffiths,F,+65KG,2024,2024,0,Unknown,Unknown
+athlete_owen-jones-m,Owen Jones,M,66KG,2024,2024,0,UK,Unknown
+athlete_ryan-aitken-m,Ryan Aitken,M,88KG,2024,2024,0,Unknown,Unknown
+athlete_sula-mae-f,Sula Mae,F,65KG,2024,2024,0,Unknown,Unknown
