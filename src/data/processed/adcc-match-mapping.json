@@ -1,0 +1,5946 @@
+[
+  {
+    "matchId": "143",
+    "winnerCanonicalId": "athlete_alexandre-de-freitas-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 1998
+  },
+  {
+    "matchId": "165",
+    "winnerCanonicalId": "athlete_rodrigo-gracie-m",
+    "loserCanonicalId": "athlete_kareem-barkalev-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1998
+  },
+  {
+    "matchId": "182",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_ricardo-moraes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 1998
+  },
+  {
+    "matchId": "185",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_sean-alvarez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 1998
+  },
+  {
+    "matchId": "309",
+    "winnerCanonicalId": "athlete_alexandre-de-freitas-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 1999
+  },
+  {
+    "matchId": "310",
+    "winnerCanonicalId": "athlete_sasha-palvski-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 1999
+  },
+  {
+    "matchId": "311",
+    "winnerCanonicalId": "athlete_alexandre-de-freitas-m",
+    "loserCanonicalId": "athlete_sasha-palvski-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 1999
+  },
+  {
+    "matchId": "313",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 1999
+  },
+  {
+    "matchId": "316",
+    "winnerCanonicalId": "athlete_jean-jacques-machado-m",
+    "loserCanonicalId": "athlete_hayato-sakurai-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 1999
+  },
+  {
+    "matchId": "317",
+    "winnerCanonicalId": "athlete_jean-jacques-machado-m",
+    "loserCanonicalId": "athlete_caol-uno-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 1999
+  },
+  {
+    "matchId": "320",
+    "winnerCanonicalId": "athlete_ricardo-liborio-m",
+    "loserCanonicalId": "athlete_akihiro-gono-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1999
+  },
+  {
+    "matchId": "324",
+    "winnerCanonicalId": "athlete_kareem-barkalev-m",
+    "loserCanonicalId": "athlete_amaury-bitetti-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1999
+  },
+  {
+    "matchId": "325",
+    "winnerCanonicalId": "athlete_egan-inoue-m",
+    "loserCanonicalId": "athlete_renzo-gracie-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1999
+  },
+  {
+    "matchId": "328",
+    "winnerCanonicalId": "athlete_sasha-savko-m",
+    "loserCanonicalId": "athlete_ricardo-liborio-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1999
+  },
+  {
+    "matchId": "329",
+    "winnerCanonicalId": "athlete_ricardo-liborio-m",
+    "loserCanonicalId": "athlete_egan-inoue-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 1999
+  },
+  {
+    "matchId": "330",
+    "winnerCanonicalId": "athlete_rigan-machado-m",
+    "loserCanonicalId": "athlete_sanae-kikuta-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "335",
+    "winnerCanonicalId": "athlete_rigan-machado-m",
+    "loserCanonicalId": "athlete_jerry-bolander-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "336",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_roberto-traven-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "337",
+    "winnerCanonicalId": "athlete_murilo-bustamante-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "339",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_murilo-bustamante-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "340",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_rigan-machado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "341",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "342",
+    "winnerCanonicalId": "athlete_ricardo-almeida-m",
+    "loserCanonicalId": "athlete_rigan-machado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "352",
+    "winnerCanonicalId": "athlete_sean-alvarez-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 1999
+  },
+  {
+    "matchId": "361",
+    "winnerCanonicalId": "athlete_garth-taylor-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "367",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_murilo-bustamante-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "368",
+    "winnerCanonicalId": "athlete_hayato-sakurai-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "369",
+    "winnerCanonicalId": "athlete_roberto-traven-m",
+    "loserCanonicalId": "athlete_garth-taylor-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "370",
+    "winnerCanonicalId": "athlete_roberto-traven-m",
+    "loserCanonicalId": "athlete_hayato-sakurai-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "371",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_garth-taylor-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 1999
+  },
+  {
+    "matchId": "404",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2000
+  },
+  {
+    "matchId": "405",
+    "winnerCanonicalId": "athlete_alexandre-de-freitas-m",
+    "loserCanonicalId": "athlete_t-yano-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2000
+  },
+  {
+    "matchId": "413",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2000
+  },
+  {
+    "matchId": "415",
+    "winnerCanonicalId": "athlete_renzo-gracie-m",
+    "loserCanonicalId": "athlete_dennis-hallman-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "416",
+    "winnerCanonicalId": "athlete_marcio-feitosa-m",
+    "loserCanonicalId": "athlete_caol-uno-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "420",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_vitor-ribeiro-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "424",
+    "winnerCanonicalId": "athlete_renzo-gracie-m",
+    "loserCanonicalId": "athlete_marcio-feitosa-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "425",
+    "winnerCanonicalId": "athlete_jean-jacques-machado-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "426",
+    "winnerCanonicalId": "athlete_renzo-gracie-m",
+    "loserCanonicalId": "athlete_jean-jacques-machado-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "427",
+    "winnerCanonicalId": "athlete_marcio-feitosa-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2000
+  },
+  {
+    "matchId": "433",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_jerry-bolander-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2000
+  },
+  {
+    "matchId": "434",
+    "winnerCanonicalId": "athlete_ricardo-liborio-m",
+    "loserCanonicalId": "athlete_roberto-magalhaes-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2000
+  },
+  {
+    "matchId": "438",
+    "winnerCanonicalId": "athlete_ricardo-liborio-m",
+    "loserCanonicalId": "athlete_jorge-patino-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2000
+  },
+  {
+    "matchId": "439",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_sasha-savko-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2000
+  },
+  {
+    "matchId": "440",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_ricardo-liborio-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2000
+  },
+  {
+    "matchId": "442",
+    "winnerCanonicalId": "athlete_rodrigo-medeiros-m",
+    "loserCanonicalId": "athlete_travis-lutter-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "445",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_rodrigo-medeiros-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "446",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_kareem-barkalev-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "447",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_tito-ortiz-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "448",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "456",
+    "winnerCanonicalId": "athlete_mark-kerr-m",
+    "loserCanonicalId": "athlete_rigan-machado-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "457",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_ricardo-moraes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "458",
+    "winnerCanonicalId": "athlete_mark-kerr-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2000
+  },
+  {
+    "matchId": "459",
+    "winnerCanonicalId": "athlete_mark-kerr-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "460",
+    "winnerCanonicalId": "athlete_rodrigo-medeiros-m",
+    "loserCanonicalId": "athlete_roberto-magalhaes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "462",
+    "winnerCanonicalId": "athlete_ricardo-almeida-m",
+    "loserCanonicalId": "athlete_vitor-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "463",
+    "winnerCanonicalId": "athlete_mark-kerr-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "464",
+    "winnerCanonicalId": "athlete_tito-ortiz-m",
+    "loserCanonicalId": "athlete_rodrigo-medeiros-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "465",
+    "winnerCanonicalId": "athlete_ricardo-almeida-m",
+    "loserCanonicalId": "athlete_rodrigo-medeiros-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2000
+  },
+  {
+    "matchId": "492",
+    "winnerCanonicalId": "athlete_mark-kerr-m",
+    "loserCanonicalId": "athlete_jose-mario-sperry-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "497",
+    "winnerCanonicalId": "athlete_baret-yoshida-m",
+    "loserCanonicalId": "athlete_gustavo-dantas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "499",
+    "winnerCanonicalId": "athlete_alexandre-de-freitas-m",
+    "loserCanonicalId": "athlete_t-yano-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "502",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_robson-moura-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "503",
+    "winnerCanonicalId": "athlete_baret-yoshida-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "504",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "505",
+    "winnerCanonicalId": "athlete_robson-moura-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2001
+  },
+  {
+    "matchId": "513",
+    "winnerCanonicalId": "athlete_leonardo-santos-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "514",
+    "winnerCanonicalId": "athlete_matt-serra-m",
+    "loserCanonicalId": "athlete_jean-jacques-machado-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "516",
+    "winnerCanonicalId": "athlete_marcio-feitosa-m",
+    "loserCanonicalId": "athlete_rodrigo-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "517",
+    "winnerCanonicalId": "athlete_matt-serra-m",
+    "loserCanonicalId": "athlete_leonardo-santos-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "518",
+    "winnerCanonicalId": "athlete_marcio-feitosa-m",
+    "loserCanonicalId": "athlete_matt-serra-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "519",
+    "winnerCanonicalId": "athlete_leonardo-santos-m",
+    "loserCanonicalId": "athlete_rodrigo-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2001
+  },
+  {
+    "matchId": "520",
+    "winnerCanonicalId": "athlete_antonio-schembri-m",
+    "loserCanonicalId": "athlete_akihiro-gono-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "521",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_travis-lutter-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "522",
+    "winnerCanonicalId": "athlete_renzo-gracie-m",
+    "loserCanonicalId": "athlete_chris-brown-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "528",
+    "winnerCanonicalId": "athlete_egan-inoue-m",
+    "loserCanonicalId": "athlete_ricardo-liborio-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "530",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_antonio-schembri-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "532",
+    "winnerCanonicalId": "athlete_sanae-kikuta-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "533",
+    "winnerCanonicalId": "athlete_antonio-schembri-m",
+    "loserCanonicalId": "athlete_egan-inoue-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2001
+  },
+  {
+    "matchId": "536",
+    "winnerCanonicalId": "athlete_olav-einemo-m",
+    "loserCanonicalId": "athlete_rigan-machado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "543",
+    "winnerCanonicalId": "athlete_ricardo-almeida-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "544",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_olav-einemo-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "545",
+    "winnerCanonicalId": "athlete_ricardo-almeida-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "546",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "550",
+    "winnerCanonicalId": "athlete_sean-alvarez-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "551",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_roger-neff-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "556",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2001
+  },
+  {
+    "matchId": "557",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_roger-neff-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "559",
+    "winnerCanonicalId": "athlete_ricco-rodriguez-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "560",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_roberto-traven-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "561",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_t-yano-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "564",
+    "winnerCanonicalId": "athlete_jean-jacques-machado-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "565",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "566",
+    "winnerCanonicalId": "athlete_vitor-belfort-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "568",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_vitor-belfort-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "569",
+    "winnerCanonicalId": "athlete_jean-jacques-machado-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "570",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_jean-jacques-machado-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2001
+  },
+  {
+    "matchId": "762",
+    "winnerCanonicalId": "athlete_eddie-bravo-m",
+    "loserCanonicalId": "athlete_gustavo-dantas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "766",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_rany-yahya-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "767",
+    "winnerCanonicalId": "athlete_eddie-bravo-m",
+    "loserCanonicalId": "athlete_royler-gracie-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "770",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_eddie-bravo-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "771",
+    "winnerCanonicalId": "athlete_baret-yoshida-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "772",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "773",
+    "winnerCanonicalId": "athlete_royler-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-de-freitas-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2003
+  },
+  {
+    "matchId": "777",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_marcio-feitosa-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2003
+  },
+  {
+    "matchId": "779",
+    "winnerCanonicalId": "athlete_vitor-ribeiro-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2003
+  },
+  {
+    "matchId": "781",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_renzo-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2003
+  },
+  {
+    "matchId": "782",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_vitor-ribeiro-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2003
+  },
+  {
+    "matchId": "784",
+    "winnerCanonicalId": "athlete_vitor-ribeiro-m",
+    "loserCanonicalId": "athlete_chris-brown-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2003
+  },
+  {
+    "matchId": "792",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_matt-lindland-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "794",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_rodrigo-medeiros-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "795",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "796",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_david-terrell-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "797",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_ronaldo-souza-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "798",
+    "winnerCanonicalId": "athlete_david-terrell-m",
+    "loserCanonicalId": "athlete_ricardo-almeida-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2003
+  },
+  {
+    "matchId": "800",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_ilir-lafiti-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "801",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_jose-mario-sperry-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "803",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_rigan-machado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "804",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "805",
+    "winnerCanonicalId": "athlete_a-cacareco-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "806",
+    "winnerCanonicalId": "athlete_olav-einemo-m",
+    "loserCanonicalId": "athlete_roger-gracie-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "808",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "811",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "814",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_mike-van-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "815",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2003
+  },
+  {
+    "matchId": "816",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_ilir-lafiti-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "817",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_mike-van-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "818",
+    "winnerCanonicalId": "athlete_a-cacareco-m",
+    "loserCanonicalId": "athlete_rodrigo-medeiros-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "819",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "821",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_matt-lindland-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "822",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "823",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "825",
+    "winnerCanonicalId": "athlete_a-cacareco-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "826",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "827",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "828",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "829",
+    "winnerCanonicalId": "athlete_ricardo-arona-m",
+    "loserCanonicalId": "athlete_mark-kerr-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2003
+  },
+  {
+    "matchId": "1160",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_jean-jacques-machado-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1163",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_t-suzuki-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1166",
+    "winnerCanonicalId": "athlete_rany-yahya-m",
+    "loserCanonicalId": "athlete_marcio-feitosa-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1168",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_rany-yahya-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1172",
+    "winnerCanonicalId": "athlete_jake-shields-m",
+    "loserCanonicalId": "athlete_diego-sanchez-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1176",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_renzo-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1179",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_shinya-aoki-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1181",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_jake-shields-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1182",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_leonardo-santos-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1183",
+    "winnerCanonicalId": "athlete_jake-shields-m",
+    "loserCanonicalId": "athlete_leonardo-santos-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1184",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1187",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_marko-helen-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1189",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_jorge-patino-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1190",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1192",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1193",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_dennis-hallman-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1194",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_dennis-hallman-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1195",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_demian-maia-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1198",
+    "winnerCanonicalId": "athlete_eduardo-telles-m",
+    "loserCanonicalId": "athlete_antoine-joude-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1200",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_eduardo-telles-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1203",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1205",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1211",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_denis-roberts-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1213",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_daniel-simoes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1214",
+    "winnerCanonicalId": "athlete_gabriel-napao-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1215",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_marcio-corleta-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1216",
+    "winnerCanonicalId": "athlete_gabriel-napao-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1217",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1218",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_daniel-simoes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2005
+  },
+  {
+    "matchId": "1221",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_shinya-aoki-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1222",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1223",
+    "winnerCanonicalId": "athlete_gabriel-napao-m",
+    "loserCanonicalId": "athlete_eduardo-telles-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1224",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_antoine-joude-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1225",
+    "winnerCanonicalId": "athlete_a-cacareco-m",
+    "loserCanonicalId": "athlete_leonardo-santos-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1227",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1228",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_gabriel-napao-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1229",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1230",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_diego-sanchez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1231",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1232",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1233",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1234",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1235",
+    "winnerCanonicalId": "athlete_roger-gracie-m",
+    "loserCanonicalId": "athlete_ronaldo-souza-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2005
+  },
+  {
+    "matchId": "1657",
+    "winnerCanonicalId": "athlete_tarsis-humpreys-m",
+    "loserCanonicalId": "athlete_braulio-estima-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1658",
+    "winnerCanonicalId": "athlete_david-avellan-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1660",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1662",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_rolles-gracie-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1663",
+    "winnerCanonicalId": "athlete_a-cacareco-m",
+    "loserCanonicalId": "athlete_tarsis-humpreys-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1665",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1666",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1667",
+    "winnerCanonicalId": "athlete_robert-drysdale-m",
+    "loserCanonicalId": "athlete_andre-galvao-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1668",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1669",
+    "winnerCanonicalId": "athlete_robert-drysdale-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2007
+  },
+  {
+    "matchId": "1678",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_jeff-glover-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1679",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_t-suzuki-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1680",
+    "winnerCanonicalId": "athlete_rany-yahya-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1681",
+    "winnerCanonicalId": "athlete_rany-yahya-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1687",
+    "winnerCanonicalId": "athlete_mike-fowler-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1690",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_mike-fowler-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1691",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_andre-galvao-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1692",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1693",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_mike-fowler-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1696",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_marko-helen-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1700",
+    "winnerCanonicalId": "athlete_tarsis-humpreys-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1701",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1703",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_tarsis-humpreys-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1704",
+    "winnerCanonicalId": "athlete_flavio-almeida-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1705",
+    "winnerCanonicalId": "athlete_tarsis-humpreys-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1706",
+    "winnerCanonicalId": "athlete_demian-maia-m",
+    "loserCanonicalId": "athlete_flavio-almeida-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1711",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_cristiano-lazzarini-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1713",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_a-cacareco-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1714",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_robert-drysdale-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1715",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_braulio-estima-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1718",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_j-pietkainen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1720",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_darren-andy-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1721",
+    "winnerCanonicalId": "athlete_rolles-gracie-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "1722",
+    "winnerCanonicalId": "athlete_marcio-cruz-m",
+    "loserCanonicalId": "athlete_darren-andy-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2007
+  },
+  {
+    "matchId": "2229",
+    "winnerCanonicalId": "athlete_justin-rader-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2231",
+    "winnerCanonicalId": "athlete_jeff-glover-m",
+    "loserCanonicalId": "athlete_timojuhani-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2236",
+    "winnerCanonicalId": "athlete_rany-yahya-m",
+    "loserCanonicalId": "athlete_jeff-glover-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2238",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_justin-rader-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2239",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_ryan-hall-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2240",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2241",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_rany-yahya-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2242",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_rubens-charles-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2243",
+    "winnerCanonicalId": "athlete_ryan-hall-m",
+    "loserCanonicalId": "athlete_jeff-glover-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2246",
+    "winnerCanonicalId": "athlete_gregor-gracie-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2247",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_don-ortega-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2251",
+    "winnerCanonicalId": "athlete_gregor-gracie-m",
+    "loserCanonicalId": "athlete_leonardo-santos-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2252",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_kron-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2254",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_gregor-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2257",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2263",
+    "winnerCanonicalId": "athlete_david-avellan-m",
+    "loserCanonicalId": "athlete_tarsis-humpreys-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2265",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_james-brasco-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2266",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_bruno-bastos-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2267",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2268",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2269",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_andre-galvao-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2270",
+    "winnerCanonicalId": "athlete_david-avellan-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2273",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_rodrigo-cavaca-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2276",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_radoslaw-turek-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2277",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_marcio-cruz-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2278",
+    "winnerCanonicalId": "athlete_glover-teixeira-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2280",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2282",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_gerardi-rinaldi-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2283",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_glover-teixeira-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2285",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_denis-roberts-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2287",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_thomas-deblass-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2289",
+    "winnerCanonicalId": "athlete_saulo-ribeiro-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2291",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2292",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2293",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2294",
+    "winnerCanonicalId": "athlete_jeff-monson-m",
+    "loserCanonicalId": "athlete_saulo-ribeiro-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2009
+  },
+  {
+    "matchId": "2296",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2297",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_ricco-rodriguez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2298",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_bruno-bastos-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2299",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_jannepekka-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2301",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_andre-galvao-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2303",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_marcelo-garcia-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2305",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_gunnar-nelson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2306",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2307",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2308",
+    "winnerCanonicalId": "athlete_ronaldo-souza-m",
+    "loserCanonicalId": "athlete_robert-drysdale-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "2309",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_gunnar-nelson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2009
+  },
+  {
+    "matchId": "3220",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_bruno-frazatto-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3221",
+    "winnerCanonicalId": "athlete_justin-rader-m",
+    "loserCanonicalId": "athlete_timojuhani-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3225",
+    "winnerCanonicalId": "athlete_baret-yoshida-m",
+    "loserCanonicalId": "athlete_nicolas-renier-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3233",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3234",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_enrico-cocco-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3235",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_clark-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3239",
+    "winnerCanonicalId": "athlete_kyle-griffin-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3240",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_zbigniew-tyszka-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3242",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_don-ortega-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3247",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_james-puopolo-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3260",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_justin-rader-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3261",
+    "winnerCanonicalId": "athlete_robson-moura-m",
+    "loserCanonicalId": "athlete_ryan-hall-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3262",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3263",
+    "winnerCanonicalId": "athlete_jeff-glover-m",
+    "loserCanonicalId": "athlete_mark-ramos-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3264",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_victor-estima-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3265",
+    "winnerCanonicalId": "athlete_kron-gracie-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3266",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_augusto-mendes-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3267",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_jonathan-torres-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3268",
+    "winnerCanonicalId": "athlete_rousimar-palhares-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3269",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_kyle-griffin-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3270",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_sergio-moraes-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3271",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_gunnar-nelson-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3273",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_antonio-braga-neto-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3274",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_antonio-peinado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3275",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_radoslaw-turek-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3276",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3277",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_glover-teixeira-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3280",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_jeff-glover-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3281",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_robson-moura-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3282",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_kron-gracie-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3283",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_claudio-calasans-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3284",
+    "winnerCanonicalId": "athlete_rousimar-palhares-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3285",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3286",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_rodolfo-vieira-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3287",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3288",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_gerardi-rinaldi-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3289",
+    "winnerCanonicalId": "athlete_fabricio-werdum-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3290",
+    "winnerCanonicalId": "athlete_jeff-glover-m",
+    "loserCanonicalId": "athlete_robson-moura-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3291",
+    "winnerCanonicalId": "athlete_kron-gracie-m",
+    "loserCanonicalId": "athlete_claudio-calasans-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3292",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3293",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_antonio-peinado-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3294",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_gerardi-rinaldi-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3295",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_rubens-charles-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3296",
+    "winnerCanonicalId": "athlete_marcelo-garcia-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3297",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_rousimar-palhares-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3298",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_joao-assis-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3299",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_fabricio-werdum-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2011
+  },
+  {
+    "matchId": "3304",
+    "winnerCanonicalId": "athlete_gunnar-nelson-m",
+    "loserCanonicalId": "athlete_bruno-frazatto-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3306",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_jannepekka-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3307",
+    "winnerCanonicalId": "athlete_victor-estima-m",
+    "loserCanonicalId": "athlete_joao-assis-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3308",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_bruno-bastos-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3309",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3310",
+    "winnerCanonicalId": "athlete_sergio-moraes-m",
+    "loserCanonicalId": "athlete_antonio-braga-neto-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3311",
+    "winnerCanonicalId": "athlete_murilo-santana-m",
+    "loserCanonicalId": "athlete_marko-helen-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3312",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_victor-estima-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3313",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_gunnar-nelson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3314",
+    "winnerCanonicalId": "athlete_murilo-santana-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3315",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_sergio-moraes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3316",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3317",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3318",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3319",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3320",
+    "winnerCanonicalId": "athlete_jose-mario-sperry-m",
+    "loserCanonicalId": "athlete_renzo-gracie-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "3321",
+    "winnerCanonicalId": "athlete_braulio-estima-m",
+    "loserCanonicalId": "athlete_ronaldo-souza-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2011
+  },
+  {
+    "matchId": "4978",
+    "winnerCanonicalId": "athlete_joao-miyao-m",
+    "loserCanonicalId": "athlete_mark-ramos-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4981",
+    "winnerCanonicalId": "athlete_justin-rader-m",
+    "loserCanonicalId": "athlete_augusto-mendes-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4982",
+    "winnerCanonicalId": "athlete_nicolas-renier-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4983",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_marcio-andre-barbosa-junior-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4984",
+    "winnerCanonicalId": "athlete_justin-rader-m",
+    "loserCanonicalId": "athlete_nicolas-renier-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4986",
+    "winnerCanonicalId": "athlete_joao-miyao-m",
+    "loserCanonicalId": "athlete_ricardo-vieira-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4987",
+    "winnerCanonicalId": "athlete_rafael-mendes-m",
+    "loserCanonicalId": "athlete_joao-miyao-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4988",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_justin-rader-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4989",
+    "winnerCanonicalId": "athlete_justin-rader-m",
+    "loserCanonicalId": "athlete_joao-miyao-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4990",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_rafael-mendes-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4991",
+    "winnerCanonicalId": "athlete_aj-agazarm-m",
+    "loserCanonicalId": "athlete_dealonzio-jackson-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4994",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_tero-pyylampi-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "4999",
+    "winnerCanonicalId": "athlete_otavio-sousa-m",
+    "loserCanonicalId": "athlete_ben-henderson-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5000",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_lucas-lepri-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5001",
+    "winnerCanonicalId": "athlete_leonardo-vieira-m",
+    "loserCanonicalId": "athlete_aj-agazarm-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5002",
+    "winnerCanonicalId": "athlete_kron-gracie-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5003",
+    "winnerCanonicalId": "athlete_kron-gracie-m",
+    "loserCanonicalId": "athlete_jonathan-torres-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5004",
+    "winnerCanonicalId": "athlete_otavio-sousa-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5005",
+    "winnerCanonicalId": "athlete_kron-gracie-m",
+    "loserCanonicalId": "athlete_otavio-sousa-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5006",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_clark-gracie-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5011",
+    "winnerCanonicalId": "athlete_oskar-piechota-m",
+    "loserCanonicalId": "athlete_claudio-calasans-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5014",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_oskar-piechota-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5015",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5017",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_lucas-leite-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5018",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5019",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_keenan-cornelius-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5020",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_pablo-popovitch-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5021",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5030",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_tomasz-narkun-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5033",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_cristiano-lazzarini-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5034",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_leonardo-nogueira-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5035",
+    "winnerCanonicalId": "athlete_leonardo-nogueira-m",
+    "loserCanonicalId": "athlete_cristiano-lazzarini-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5036",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5045",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5047",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_hideki-sekine-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5048",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_orlando-sanchez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5049",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5050",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5051",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5052",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2013
+  },
+  {
+    "matchId": "5054",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_hideki-sekine-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5055",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_david-avellan-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5056",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_leonardo-nogueira-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5058",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5059",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_oskar-piechota-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5060",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5061",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5062",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_keenan-cornelius-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5063",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5064",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5065",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_marcus-almeida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "5067",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_braulio-estima-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2013
+  },
+  {
+    "matchId": "7893",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_paul-ardilaibarra-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7895",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_jannepekka-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7897",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_gabriel-lucas-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7898",
+    "winnerCanonicalId": "athlete_rodrigo-cavaca-m",
+    "loserCanonicalId": "athlete_hideki-sekine-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7902",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7903",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_abraham-marte-messina-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7904",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_rodrigo-cavaca-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7905",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7906",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7907",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7908",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7909",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_tomasz-narkun-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7919",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_cassio-francis-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7921",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7922",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_joao-assis-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7923",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7924",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7926",
+    "winnerCanonicalId": "athlete_pablo-popovitch-m",
+    "loserCanonicalId": "athlete_zbigniew-tyszka-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7927",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_ricardo-mesquita-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7931",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_m-perez-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7933",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_claudio-calasans-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7934",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_zbigniew-tyszka-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7936",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7939",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_keenan-cornelius-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7940",
+    "winnerCanonicalId": "athlete_otavio-sousa-m",
+    "loserCanonicalId": "athlete_aj-agazarm-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7943",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_dillon-danis-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7946",
+    "winnerCanonicalId": "athlete_gilbert-burns-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7947",
+    "winnerCanonicalId": "athlete_gabriel-rollo-m",
+    "loserCanonicalId": "athlete_enrico-cocco-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7948",
+    "winnerCanonicalId": "athlete_otavio-sousa-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7949",
+    "winnerCanonicalId": "athlete_davi-ramos-m",
+    "loserCanonicalId": "athlete_gabriel-rollo-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7950",
+    "winnerCanonicalId": "athlete_gilbert-burns-m",
+    "loserCanonicalId": "athlete_abdulkadirov-magomed-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7951",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7952",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_otavio-sousa-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7953",
+    "winnerCanonicalId": "athlete_davi-ramos-m",
+    "loserCanonicalId": "athlete_gilbert-burns-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7954",
+    "winnerCanonicalId": "athlete_gilbert-burns-m",
+    "loserCanonicalId": "athlete_otavio-sousa-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7955",
+    "winnerCanonicalId": "athlete_davi-ramos-m",
+    "loserCanonicalId": "athlete_lucas-lepri-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7956",
+    "winnerCanonicalId": "athlete_bruno-frazatto-m",
+    "loserCanonicalId": "athlete_mark-ramos-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7964",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_gianni-grippo-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7965",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_edward-cummings-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7967",
+    "winnerCanonicalId": "athlete_geovanny-martinez-m",
+    "loserCanonicalId": "athlete_jeff-glover-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7968",
+    "winnerCanonicalId": "athlete_bruno-frazatto-m",
+    "loserCanonicalId": "athlete_geovanny-martinez-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7969",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_augusto-mendes-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7970",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_geovanny-martinez-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7971",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_bruno-frazatto-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2015
+  },
+  {
+    "matchId": "7985",
+    "winnerCanonicalId": "athlete_dean-lister-m",
+    "loserCanonicalId": "athlete_ricardo-mesquita-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7986",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7987",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_gabriel-lucas-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7988",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_hideki-sekine-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7989",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_ben-henderson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7990",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_abdulkadirov-magomed-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7991",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7992",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_aj-agazarm-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7993",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_dean-lister-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7994",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7995",
+    "winnerCanonicalId": "athlete_rodolfo-vieira-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7996",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7997",
+    "winnerCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "loserCanonicalId": "athlete_rodolfo-vieira-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7998",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_yuri-simoes-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "7999",
+    "winnerCanonicalId": "athlete_claudio-calasans-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "8000",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2015
+  },
+  {
+    "matchId": "13845",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_h-sekine-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13846",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_bruno-bastos-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13847",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_abdulaev-ruslan-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13848",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_a-zhanpeisov-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13849",
+    "winnerCanonicalId": "athlete_tim-spriggs-m",
+    "loserCanonicalId": "athlete_j-pietkainen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13850",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_khazmat-stambulov-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13851",
+    "winnerCanonicalId": "athlete_victor-honorio-m",
+    "loserCanonicalId": "athlete_jesseray-childrey-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13852",
+    "winnerCanonicalId": "athlete_jared-dopp-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13853",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_tim-spriggs-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13854",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_thomas-deblass-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13855",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_victor-honorio-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13856",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13857",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13858",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13859",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_orlando-sanchez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13860",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_y-ozawa-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13861",
+    "winnerCanonicalId": "athlete_abdurakhman-bilarov-m",
+    "loserCanonicalId": "athlete_jake-shields-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13862",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_eliott-kelly-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13864",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_roman-dolidze-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13865",
+    "winnerCanonicalId": "athlete_joao-assis-m",
+    "loserCanonicalId": "athlete_jeff-monson-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13867",
+    "winnerCanonicalId": "athlete_jackson-sousa-m",
+    "loserCanonicalId": "athlete_paul-ardilaibarra-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13868",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_abdurakhman-bilarov-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13869",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13870",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_m-perez-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13871",
+    "winnerCanonicalId": "athlete_jackson-sousa-m",
+    "loserCanonicalId": "athlete_joao-assis-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13872",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13873",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_jackson-sousa-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13874",
+    "winnerCanonicalId": "athlete_jackson-sousa-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13875",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13876",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_piotr-frechowicz-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13877",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_leandro-lo-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13878",
+    "winnerCanonicalId": "athlete_murilo-santana-m",
+    "loserCanonicalId": "athlete_james-brasco-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13879",
+    "winnerCanonicalId": "athlete_ruslam-chsiev-m",
+    "loserCanonicalId": "athlete_jesse-urholin-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13881",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_john-salter-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13882",
+    "winnerCanonicalId": "athlete_romulo-barral-m",
+    "loserCanonicalId": "athlete_kit-dale-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13883",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_dillon-danis-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13884",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_kaynan-duarte-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13885",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13887",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_romulo-barral-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13888",
+    "winnerCanonicalId": "athlete_keenan-cornelius-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13889",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13890",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13891",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_keenan-cornelius-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13892",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_osman-kasimov-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13893",
+    "winnerCanonicalId": "athlete_mansher-khera-m",
+    "loserCanonicalId": "athlete_sergio-ardilaibarra-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13894",
+    "winnerCanonicalId": "athlete_dealonzio-jackson-m",
+    "loserCanonicalId": "athlete_leonardo-saggioro-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13895",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_tero-pyylampi-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13896",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13897",
+    "winnerCanonicalId": "athlete_celso-vinicius-m",
+    "loserCanonicalId": "athlete_enrico-cocco-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13898",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_felipe-cesar-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13899",
+    "winnerCanonicalId": "athlete_marcelo-mafra-m",
+    "loserCanonicalId": "athlete_oliver-taza-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13900",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_mansher-khera-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13901",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_dealonzio-jackson-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13902",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_celso-vinicius-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13903",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_marcelo-mafra-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13904",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13905",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13906",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13907",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_lucas-lepri-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13908",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_u-zhakshylyk-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13909",
+    "winnerCanonicalId": "athlete_kuba-witkowski-m",
+    "loserCanonicalId": "athlete_baret-yoshida-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13910",
+    "winnerCanonicalId": "athlete_paulo-miyao-m",
+    "loserCanonicalId": "athlete_janus-andrejczuk-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13911",
+    "winnerCanonicalId": "athlete_geovanny-martinez-m",
+    "loserCanonicalId": "athlete_kamil-wilk-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13912",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_yuta-shimada-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13913",
+    "winnerCanonicalId": "athlete_aj-agazarm-m",
+    "loserCanonicalId": "athlete_nicky-ryan-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13914",
+    "winnerCanonicalId": "athlete_pablo-mantovani-m",
+    "loserCanonicalId": "athlete_e-elgland-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13915",
+    "winnerCanonicalId": "athlete_ethan-crelinsten-m",
+    "loserCanonicalId": "athlete_nicollas-renier-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13916",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_kuba-witkowski-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13917",
+    "winnerCanonicalId": "athlete_paulo-miyao-m",
+    "loserCanonicalId": "athlete_geovanny-martinez-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13918",
+    "winnerCanonicalId": "athlete_pablo-mantovani-m",
+    "loserCanonicalId": "athlete_augusto-mendes-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13919",
+    "winnerCanonicalId": "athlete_aj-agazarm-m",
+    "loserCanonicalId": "athlete_ethan-crelinsten-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13920",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_paulo-miyao-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13921",
+    "winnerCanonicalId": "athlete_aj-agazarm-m",
+    "loserCanonicalId": "athlete_pablo-mantovani-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13922",
+    "winnerCanonicalId": "athlete_paulo-miyao-m",
+    "loserCanonicalId": "athlete_pablo-mantovani-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13923",
+    "winnerCanonicalId": "athlete_rubens-charles-m",
+    "loserCanonicalId": "athlete_aj-agazarm-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13924",
+    "winnerCanonicalId": "athlete_alexandre-ribeiro-m",
+    "loserCanonicalId": "athlete_t-pyylampi-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13925",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_celso-vinicius-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13926",
+    "winnerCanonicalId": "athlete_victor-honorio-m",
+    "loserCanonicalId": "athlete_a-zhanpeisov-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13927",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_m-perez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13928",
+    "winnerCanonicalId": "athlete_dillon-danis-m",
+    "loserCanonicalId": "athlete_y-ozawa-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13929",
+    "winnerCanonicalId": "athlete_mahamed-aly-m",
+    "loserCanonicalId": "athlete_eliott-kelly-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13930",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_chael-sonnen-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13931",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13932",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13933",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_victor-honorio-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13934",
+    "winnerCanonicalId": "athlete_mahamed-aly-m",
+    "loserCanonicalId": "athlete_dillon-danis-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13935",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13936",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13937",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_marcus-almeida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13938",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13939",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_gordon-ryan-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13944",
+    "winnerCanonicalId": "athlete_gabrielle-garcia-f",
+    "loserCanonicalId": "athlete_jessica-flowers-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13947",
+    "winnerCanonicalId": "athlete_gabrielle-garcia-f",
+    "loserCanonicalId": "athlete_talita-treta-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13951",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_talita-alencar-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13955",
+    "winnerCanonicalId": "athlete_bianca-mesquita-f",
+    "loserCanonicalId": "athlete_bianca-basilio-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2017
+  },
+  {
+    "matchId": "13956",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_claudio-calasans-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "13957",
+    "winnerCanonicalId": "athlete_chael-sonnen-m",
+    "loserCanonicalId": "athlete_leonardo-vieira-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2017
+  },
+  {
+    "matchId": "21813",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_elliot-marshal-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21814",
+    "winnerCanonicalId": "athlete_victor-hugo-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21815",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_antonio-braga-neto-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21816",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21817",
+    "winnerCanonicalId": "athlete_orlando-sanchez-m",
+    "loserCanonicalId": "athlete_mateusz-juskowiak-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21818",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_eldar-rafigaev-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21819",
+    "winnerCanonicalId": "athlete_john-hansen-m",
+    "loserCanonicalId": "athlete_max-gimenis-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21820",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_hudson-taylor-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21821",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_victor-hugo-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21822",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_orlando-sanchez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21823",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_yuri-simoes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21824",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_john-hansen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21825",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_ben-hodgkinson-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21826",
+    "winnerCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "loserCanonicalId": "athlete_perttu-tepponen-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21827",
+    "winnerCanonicalId": "athlete_tim-spriggs-m",
+    "loserCanonicalId": "athlete_fellipe-andrew-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21828",
+    "winnerCanonicalId": "athlete_patrick-gaudio-m",
+    "loserCanonicalId": "athlete_mraz-avdoyan-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21829",
+    "winnerCanonicalId": "athlete_james-puopolo-m",
+    "loserCanonicalId": "athlete_aaron-johnson-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21830",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_dan-martinez-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21831",
+    "winnerCanonicalId": "athlete_jackson-sousa-m",
+    "loserCanonicalId": "athlete_paulo-pinto-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21832",
+    "winnerCanonicalId": "athlete_vinicius-ferreira-m",
+    "loserCanonicalId": "athlete_paul-ardilaibarra-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21833",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_tim-spriggs-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21834",
+    "winnerCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "loserCanonicalId": "athlete_patrick-gaudio-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21835",
+    "winnerCanonicalId": "athlete_vinicius-magalhaes-m",
+    "loserCanonicalId": "athlete_james-puopolo-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21836",
+    "winnerCanonicalId": "athlete_vinicius-ferreira-m",
+    "loserCanonicalId": "athlete_jackson-sousa-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21837",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_ben-dyson-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21838",
+    "winnerCanonicalId": "athlete_murilo-santana-m",
+    "loserCanonicalId": "athlete_keller-sodhi-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21840",
+    "winnerCanonicalId": "athlete_josh-hinger-m",
+    "loserCanonicalId": "athlete_gabriel-almeida-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21841",
+    "winnerCanonicalId": "athlete_mason-fowler-m",
+    "loserCanonicalId": "athlete_valdir-araujo-junior-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21842",
+    "winnerCanonicalId": "athlete_adam-wardzinski-m",
+    "loserCanonicalId": "athlete_michael-perez-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21843",
+    "winnerCanonicalId": "athlete_gabriel-arges-m",
+    "loserCanonicalId": "athlete_alec-baulding-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21844",
+    "winnerCanonicalId": "athlete_matheus-diniz-m",
+    "loserCanonicalId": "athlete_pedro-marinho-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21845",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_mason-fowler-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21846",
+    "winnerCanonicalId": "athlete_jon-blank-m",
+    "loserCanonicalId": "athlete_murilo-santana-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21847",
+    "winnerCanonicalId": "athlete_josh-hinger-m",
+    "loserCanonicalId": "athlete_adam-wardzinski-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21848",
+    "winnerCanonicalId": "athlete_matheus-diniz-m",
+    "loserCanonicalId": "athlete_gabriel-arges-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21849",
+    "winnerCanonicalId": "athlete_dealonzio-jackson-m",
+    "loserCanonicalId": "athlete_john-combs-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21850",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_ross-nicholls-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21851",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_mateusz-garmot-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21852",
+    "winnerCanonicalId": "athlete_renato-forasieppi-canuto-m",
+    "loserCanonicalId": "athlete_oliver-taza-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21853",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_jonathan-satava-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21854",
+    "winnerCanonicalId": "athlete_lucas-lepri-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21855",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_servio-tulio-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21856",
+    "winnerCanonicalId": "athlete_celso-vinicius-m",
+    "loserCanonicalId": "athlete_edwin-najmi-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21857",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_dealonzio-jackson-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21858",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_renato-forasieppi-canuto-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21859",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_lucas-lepri-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21860",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_celso-vinicius-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21862",
+    "winnerCanonicalId": "athlete_nicky-ryan-m",
+    "loserCanonicalId": "athlete_shane-hilltaylor-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21863",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_keith-krikorian-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21864",
+    "winnerCanonicalId": "athlete_pablo-mantovani-m",
+    "loserCanonicalId": "athlete_thomas-halpin-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21865",
+    "winnerCanonicalId": "athlete_matheus-gabriel-barros-m",
+    "loserCanonicalId": "athlete_geovanny-martinez-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21866",
+    "winnerCanonicalId": "athlete_tye-ruotolo-m",
+    "loserCanonicalId": "athlete_bruno-frazatto-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21867",
+    "winnerCanonicalId": "athlete_richard-alarcon-m",
+    "loserCanonicalId": "athlete_gianni-grippo-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21868",
+    "winnerCanonicalId": "athlete_kennedy-maciel-m",
+    "loserCanonicalId": "athlete_r-alvarenga-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21869",
+    "winnerCanonicalId": "athlete_tye-ruotolo-m",
+    "loserCanonicalId": "athlete_pablo-mantovani-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21870",
+    "winnerCanonicalId": "athlete_paulo-miyao-m",
+    "loserCanonicalId": "athlete_nicky-ryan-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21871",
+    "winnerCanonicalId": "athlete_kennedy-maciel-m",
+    "loserCanonicalId": "athlete_richard-alarcon-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21872",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_matheus-gabriel-barros-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21873",
+    "winnerCanonicalId": "athlete_ffion-davies-f",
+    "loserCanonicalId": "athlete_rikako-yuasa-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21874",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_livia-giles-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21875",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_elvira-karppinen-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21876",
+    "winnerCanonicalId": "athlete_ffion-davies-f",
+    "loserCanonicalId": "athlete_beatriz-mesquita-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21877",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_ffion-davies-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21878",
+    "winnerCanonicalId": "athlete_ana-carolina-vieira-f",
+    "loserCanonicalId": "athlete_amanda-leve-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21879",
+    "winnerCanonicalId": "athlete_gabrielle-garcia-f",
+    "loserCanonicalId": "athlete_stefanie-egger-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21881",
+    "winnerCanonicalId": "athlete_gabrielle-garcia-f",
+    "loserCanonicalId": "athlete_carina-santi-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21882",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_marcus-almeida-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21883",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21884",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_nick-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21885",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21886",
+    "winnerCanonicalId": "athlete_vinicius-ferreira-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21887",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_vinicius-ferreira-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21888",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_jon-blank-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21889",
+    "winnerCanonicalId": "athlete_matheus-diniz-m",
+    "loserCanonicalId": "athlete_josh-hinger-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21890",
+    "winnerCanonicalId": "athlete_josh-hinger-m",
+    "loserCanonicalId": "athlete_jon-blank-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21891",
+    "winnerCanonicalId": "athlete_matheus-diniz-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21892",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21893",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_dante-leon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21894",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_dante-leon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21895",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21896",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_paulo-miyao-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21897",
+    "winnerCanonicalId": "athlete_kennedy-maciel-m",
+    "loserCanonicalId": "athlete_tye-ruotolo-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21898",
+    "winnerCanonicalId": "athlete_paulo-miyao-m",
+    "loserCanonicalId": "athlete_tye-ruotolo-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21899",
+    "winnerCanonicalId": "athlete_augusto-mendes-m",
+    "loserCanonicalId": "athlete_kennedy-maciel-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2019
+  },
+  {
+    "matchId": "21900",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_keith-krikorian-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21901",
+    "winnerCanonicalId": "athlete_aaron-johnson-m",
+    "loserCanonicalId": "athlete_jon-blank-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21902",
+    "winnerCanonicalId": "athlete_mahamed-aly-m",
+    "loserCanonicalId": "athlete_jon-hansen-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21903",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_pedro-marinho-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21904",
+    "winnerCanonicalId": "athlete_tim-spriggs-m",
+    "loserCanonicalId": "athlete_jared-dopp-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21905",
+    "winnerCanonicalId": "athlete_lachlan-giles-m",
+    "loserCanonicalId": "athlete_kaynan-duarte-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21906",
+    "winnerCanonicalId": "athlete_gary-tonon-m",
+    "loserCanonicalId": "athlete_edwin-najmi-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21907",
+    "winnerCanonicalId": "athlete_patrick-gaudio-m",
+    "loserCanonicalId": "athlete_michael-perez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21908",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_aaron-johnson-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21909",
+    "winnerCanonicalId": "athlete_mahamed-aly-m",
+    "loserCanonicalId": "athlete_tim-spriggs-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21910",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21911",
+    "winnerCanonicalId": "athlete_lachlan-giles-m",
+    "loserCanonicalId": "athlete_patrick-gaudio-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21912",
+    "winnerCanonicalId": "athlete_marcus-almeida-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21913",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21914",
+    "winnerCanonicalId": "athlete_lachlan-giles-m",
+    "loserCanonicalId": "athlete_mahamed-aly-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21915",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_marcus-almeida-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "21916",
+    "winnerCanonicalId": "athlete_andre-galvao-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2019
+  },
+  {
+    "matchId": "34994",
+    "winnerCanonicalId": "athlete_diogo-reis-m",
+    "loserCanonicalId": "athlete_ashley-williams-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "34995",
+    "winnerCanonicalId": "athlete_sam-mcnally-m",
+    "loserCanonicalId": "athlete_gary-tonon-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "34996",
+    "winnerCanonicalId": "athlete_gabriel-sousa-m",
+    "loserCanonicalId": "athlete_ruan-alvarenga-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "34997",
+    "winnerCanonicalId": "athlete_jeremy-skinner-m",
+    "loserCanonicalId": "athlete_aj-agazarm-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "34998",
+    "winnerCanonicalId": "athlete_fabricio-andrey-m",
+    "loserCanonicalId": "athlete_cole-abate-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "34999",
+    "winnerCanonicalId": "athlete_diego-oliveira-m",
+    "loserCanonicalId": "athlete_keith-krikorian-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35000",
+    "winnerCanonicalId": "athlete_joshua-cisneros-m",
+    "loserCanonicalId": "athlete_ethan-crelinsten-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35001",
+    "winnerCanonicalId": "athlete_kennedy-maciel-m",
+    "loserCanonicalId": "athlete_geovanny-martinez-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35002",
+    "winnerCanonicalId": "athlete_diogo-reis-m",
+    "loserCanonicalId": "athlete_fabricio-andrey-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35003",
+    "winnerCanonicalId": "athlete_joshua-cisneros-m",
+    "loserCanonicalId": "athlete_sam-mcnally-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35004",
+    "winnerCanonicalId": "athlete_diego-oliveira-m",
+    "loserCanonicalId": "athlete_kennedy-maciel-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35005",
+    "winnerCanonicalId": "athlete_gabriel-sousa-m",
+    "loserCanonicalId": "athlete_jeremy-skinner-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35006",
+    "winnerCanonicalId": "athlete_gabriel-sousa-m",
+    "loserCanonicalId": "athlete_diego-oliveira-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35007",
+    "winnerCanonicalId": "athlete_diogo-reis-m",
+    "loserCanonicalId": "athlete_joshua-cisneros-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35008",
+    "winnerCanonicalId": "athlete_diogo-reis-m",
+    "loserCanonicalId": "athlete_gabriel-sousa-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35009",
+    "winnerCanonicalId": "athlete_diego-oliveira-m",
+    "loserCanonicalId": "athlete_joshua-cisneros-m",
+    "sex": "M",
+    "weightClass": "66KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35010",
+    "winnerCanonicalId": "athlete_jonathan-torres-m",
+    "loserCanonicalId": "athlete_keita-iwamoto-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35011",
+    "winnerCanonicalId": "athlete_mateusz-szczecinski-m",
+    "loserCanonicalId": "athlete_william-tackett-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35012",
+    "winnerCanonicalId": "athlete_paul-schreiner-m",
+    "loserCanonicalId": "athlete_tommy-langaker-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35013",
+    "winnerCanonicalId": "athlete_micael-galvao-m",
+    "loserCanonicalId": "athlete_oliver-taza-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35014",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_magid-hage-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35015",
+    "winnerCanonicalId": "athlete_renato-forasieppi-canuto-m",
+    "loserCanonicalId": "athlete_nicky-ryan-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35016",
+    "winnerCanonicalId": "athlete_kade-ruotolo-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35017",
+    "winnerCanonicalId": "athlete_roberto-jimenez-m",
+    "loserCanonicalId": "athlete_andy-varela-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35018",
+    "winnerCanonicalId": "athlete_paul-schreiner-m",
+    "loserCanonicalId": "athlete_jonathan-torres-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35019",
+    "winnerCanonicalId": "athlete_kade-ruotolo-m",
+    "loserCanonicalId": "athlete_roberto-jimenez-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35020",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_m-szczecinski-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35021",
+    "winnerCanonicalId": "athlete_micael-galvao-m",
+    "loserCanonicalId": "athlete_renato-forasieppi-canuto-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35022",
+    "winnerCanonicalId": "athlete_micael-galvao-m",
+    "loserCanonicalId": "athlete_dante-leon-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35023",
+    "winnerCanonicalId": "athlete_kade-ruotolo-m",
+    "loserCanonicalId": "athlete_paul-schreiner-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35024",
+    "winnerCanonicalId": "athlete_kade-ruotolo-m",
+    "loserCanonicalId": "athlete_micael-galvao-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35025",
+    "winnerCanonicalId": "athlete_dante-leon-m",
+    "loserCanonicalId": "athlete_paul-schreiner-m",
+    "sex": "M",
+    "weightClass": "77KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35026",
+    "winnerCanonicalId": "athlete_matheus-diniz-m",
+    "loserCanonicalId": "athlete_rodrigo-dib-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35027",
+    "winnerCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "loserCanonicalId": "athlete_santeri-lilius-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35028",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_isaque-bahiense-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35029",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_isaak-michel-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35030",
+    "winnerCanonicalId": "athlete_eoghan-oflanagan-m",
+    "loserCanonicalId": "athlete_alexandre-ribeiro-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35031",
+    "winnerCanonicalId": "athlete_mason-fowler-m",
+    "loserCanonicalId": "athlete_alexandre-jesus-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35032",
+    "winnerCanonicalId": "athlete_pedro-marinho-m",
+    "loserCanonicalId": "athlete_jacob-rodriguez-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35033",
+    "winnerCanonicalId": "athlete_josh-hinger-m",
+    "loserCanonicalId": "athlete_tye-ruotolo-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35034",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_matheus-diniz-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35035",
+    "winnerCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "loserCanonicalId": "athlete_josh-hinger-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35036",
+    "winnerCanonicalId": "athlete_eoghan-oflanagan-m",
+    "loserCanonicalId": "athlete_mason-fowler-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35037",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_pedro-marinho-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35038",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_eoghan-oflanagan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35039",
+    "winnerCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "loserCanonicalId": "athlete_vagner-rocha-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35040",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_lucas-daniel-barbosa-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35041",
+    "winnerCanonicalId": "athlete_vagner-rocha-m",
+    "loserCanonicalId": "athlete_eoghan-oflanagan-m",
+    "sex": "M",
+    "weightClass": "88KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35042",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_owen-livesey-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35043",
+    "winnerCanonicalId": "athlete_elder-cruz-m",
+    "loserCanonicalId": "athlete_patrick-gaudio-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35044",
+    "winnerCanonicalId": "athlete_vinicius-ferreira-m",
+    "loserCanonicalId": "athlete_paul-ardilaibarra-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35045",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_joao-costa-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35046",
+    "winnerCanonicalId": "athlete_kyle-boehm-m",
+    "loserCanonicalId": "athlete_devhonte-johnson-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35048",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_luke-griffith-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35049",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_henrique-cardoso-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35050",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_elder-cruz-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35051",
+    "winnerCanonicalId": "athlete_rafael-lovato-jr-m",
+    "loserCanonicalId": "athlete_vinicius-ferreira-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35052",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_kyle-boehm-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35053",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_yuri-simoes-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35054",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35055",
+    "winnerCanonicalId": "athlete_craig-jones-m",
+    "loserCanonicalId": "athlete_nicholas-meregali-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35056",
+    "winnerCanonicalId": "athlete_kaynan-duarte-m",
+    "loserCanonicalId": "athlete_craig-jones-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35057",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_rafael-lovato-jr-m",
+    "sex": "M",
+    "weightClass": "99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35058",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_heikki-jussila-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35059",
+    "winnerCanonicalId": "athlete_john-hansen-m",
+    "loserCanonicalId": "athlete_vinicius-magalhaes-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35060",
+    "winnerCanonicalId": "athlete_roosevelt-sousa-m",
+    "loserCanonicalId": "athlete_joao-gabriel-rocha-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35061",
+    "winnerCanonicalId": "athlete_victor-hugo-m",
+    "loserCanonicalId": "athlete_dan-manasoiu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35062",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_damon-ramos-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35063",
+    "winnerCanonicalId": "athlete_max-gimenis-m",
+    "loserCanonicalId": "athlete_orlando-sanchez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35064",
+    "winnerCanonicalId": "athlete_rida-haisam-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35065",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_josh-saunders-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35066",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_victor-hugo-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35067",
+    "winnerCanonicalId": "athlete_roosevelt-sousa-m",
+    "loserCanonicalId": "athlete_rida-haisam-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35068",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_max-gimenis-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35069",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_john-hansen-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35070",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_roosevelt-sousa-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35071",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35072",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_nick-rodriguez-m",
+    "sex": "M",
+    "weightClass": "+99KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35073",
+    "winnerCanonicalId": "athlete_bianca-basilio-f",
+    "loserCanonicalId": "athlete_julia-maele-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35074",
+    "winnerCanonicalId": "athlete_brianna-stemarie-f",
+    "loserCanonicalId": "athlete_elvira-karppinen-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35075",
+    "winnerCanonicalId": "athlete_ffion-davies-f",
+    "loserCanonicalId": "athlete_adele-fornarino-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35076",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_mayssa-bastos-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35077",
+    "winnerCanonicalId": "athlete_ffion-davies-f",
+    "loserCanonicalId": "athlete_beatriz-mesquita-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35078",
+    "winnerCanonicalId": "athlete_brianna-stemarie-f",
+    "loserCanonicalId": "athlete_bianca-basilio-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35079",
+    "winnerCanonicalId": "athlete_ffion-davies-f",
+    "loserCanonicalId": "athlete_brianna-stemarie-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35080",
+    "winnerCanonicalId": "athlete_beatriz-mesquita-f",
+    "loserCanonicalId": "athlete_bianca-basilio-f",
+    "sex": "F",
+    "weightClass": "60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35082",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_elisabeth-clay-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35083",
+    "winnerCanonicalId": "athlete_kendall-reusing-f",
+    "loserCanonicalId": "athlete_giovanna-jara-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35084",
+    "winnerCanonicalId": "athlete_rafaela-guedes-f",
+    "loserCanonicalId": "athlete_eleftheria-christodoulou-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35085",
+    "winnerCanonicalId": "athlete_rafaela-guedes-f",
+    "loserCanonicalId": "athlete_kendall-reusing-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35086",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_gabrielle-garcia-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35087",
+    "winnerCanonicalId": "athlete_amy-campo-f",
+    "loserCanonicalId": "athlete_rafaela-guedes-f",
+    "sex": "F",
+    "weightClass": "+60KG",
+    "year": 2022
+  },
+  {
+    "matchId": "35088",
+    "winnerCanonicalId": "athlete_nick-rodriguez-m",
+    "loserCanonicalId": "athlete_andy-varela-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35089",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_lachlan-giles-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35090",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_elder-cruz-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35091",
+    "winnerCanonicalId": "athlete_victor-hugo-m",
+    "loserCanonicalId": "athlete_fabricio-andrey-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35092",
+    "winnerCanonicalId": "athlete_felipe-pena-m",
+    "loserCanonicalId": "athlete_roberto-jimenez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35093",
+    "winnerCanonicalId": "athlete_tye-ruotolo-m",
+    "loserCanonicalId": "athlete_pedro-marinho-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35094",
+    "winnerCanonicalId": "athlete_giancarlo-bodoni-m",
+    "loserCanonicalId": "athlete_rida-haisam-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35095",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_vinicius-ferreira-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35096",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_giancarlo-bodoni-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35097",
+    "winnerCanonicalId": "athlete_tye-ruotolo-m",
+    "loserCanonicalId": "athlete_felipe-pena-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35098",
+    "winnerCanonicalId": "athlete_roberto-abreu-m",
+    "loserCanonicalId": "athlete_victor-hugo-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35099",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_nick-rodriguez-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35100",
+    "winnerCanonicalId": "athlete_nicholas-meregali-m",
+    "loserCanonicalId": "athlete_tye-ruotolo-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35101",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_roberto-abreu-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35102",
+    "winnerCanonicalId": "athlete_yuri-simoes-m",
+    "loserCanonicalId": "athlete_nicholas-meregali-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  },
+  {
+    "matchId": "35103",
+    "winnerCanonicalId": "athlete_gordon-ryan-m",
+    "loserCanonicalId": "athlete_andre-galvao-m",
+    "sex": "M",
+    "weightClass": "ABS",
+    "year": 2022
+  }
+]

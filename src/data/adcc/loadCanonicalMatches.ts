@@ -1,7 +1,14 @@
-import { loadProcessedCompetitionDataset } from '@/data/validation/loadProcessedCompetitionDataset';
+import matchMapping from '../processed/adcc-match-mapping.json';
 import { CanonicalAdccMatch } from '@/domain/types';
 
-const processedDataset = loadProcessedCompetitionDataset();
+interface MatchMappingEntry {
+  matchId: string;
+  winnerCanonicalId: string;
+  loserCanonicalId: string;
+  sex: string;
+  weightClass: string;
+  year: number;
+}
 
 let cachedMatches: CanonicalAdccMatch[] | null = null;
 
@@ -10,35 +17,18 @@ export function getAllCanonicalMatches(): CanonicalAdccMatch[] {
     return cachedMatches;
   }
 
-  const eventById = new Map(
-    processedDataset.normalized.events.map((event) => [event.id, event]),
-  );
-  cachedMatches = processedDataset.normalized.matches
-    .map((match) => {
-      const sourceMatchId = match.sourceMatchId ?? match.id;
-      const event = eventById.get(match.eventId);
-
-      return {
-        id: match.id,
-        sourceMatchId,
-        eventId: match.eventId,
-        eventName: event?.name ?? 'ADCC World Championship',
-        year: event?.year ?? 0,
-        winnerCanonicalId: match.winnerId,
-        loserCanonicalId: match.loserId,
-        sex: match.sex,
-        weightClass: match.weightClass,
-        method: match.method,
-        roundLabel: match.roundLabel,
-      };
-    })
-    .sort((left, right) => {
-      if (left.year !== right.year) {
-        return left.year - right.year;
-      }
-
-      return left.sourceMatchId.localeCompare(right.sourceMatchId);
-    });
+  // Already sorted by year then matchId in the JSON
+  cachedMatches = (matchMapping as MatchMappingEntry[]).map((m) => ({
+    id: `match_${m.matchId}`,
+    sourceMatchId: m.matchId,
+    eventId: `event_adcc-world-championship-${m.year}`,
+    eventName: 'ADCC World Championship',
+    year: m.year,
+    winnerCanonicalId: m.winnerCanonicalId,
+    loserCanonicalId: m.loserCanonicalId,
+    sex: m.sex,
+    weightClass: m.weightClass,
+  }));
 
   return cachedMatches;
 }
