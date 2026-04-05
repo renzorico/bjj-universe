@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 export type AppRoute = '/' | '/universe';
 
 const supportedRoutes = new Set<AppRoute>(['/', '/universe']);
+const basePath = normalizeBasePath(import.meta.env.BASE_URL);
 
 export function useAppRoute() {
   const [route, setRoute] = useState<AppRoute>(() =>
@@ -23,7 +24,7 @@ export function useAppRoute() {
       return;
     }
 
-    window.history.pushState({}, '', nextRoute);
+    window.history.pushState({}, '', withBasePath(nextRoute));
     setRoute(nextRoute);
   };
 
@@ -34,7 +35,42 @@ export function useAppRoute() {
 }
 
 function normalizeRoute(pathname: string): AppRoute {
-  return supportedRoutes.has(pathname as AppRoute)
-    ? (pathname as AppRoute)
+  const pathWithoutBase = stripBasePath(pathname);
+
+  return supportedRoutes.has(pathWithoutBase as AppRoute)
+    ? (pathWithoutBase as AppRoute)
     : '/';
+}
+
+function normalizeBasePath(rawBasePath: string): string {
+  if (!rawBasePath || rawBasePath === '/') {
+    return '';
+  }
+
+  const withLeadingSlash = rawBasePath.startsWith('/')
+    ? rawBasePath
+    : `/${rawBasePath}`;
+  return withLeadingSlash.endsWith('/')
+    ? withLeadingSlash.slice(0, -1)
+    : withLeadingSlash;
+}
+
+function stripBasePath(pathname: string): string {
+  if (!basePath) {
+    return pathname;
+  }
+
+  if (pathname === basePath) {
+    return '/';
+  }
+
+  if (pathname.startsWith(`${basePath}/`)) {
+    return pathname.slice(basePath.length);
+  }
+
+  return pathname;
+}
+
+function withBasePath(route: AppRoute): string {
+  return basePath ? `${basePath}${route}` : route;
 }
