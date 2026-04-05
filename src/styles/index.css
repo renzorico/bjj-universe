@@ -1,25 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --font-display: 'Instrument Serif', serif;
+  --font-display: 'Barlow Condensed', sans-serif;
   --font-sans: 'Space Grotesk', sans-serif;
+  --font-mono: 'DM Mono', monospace;
 }
 
+/* == Design tokens =========================================================== */
+
 :root {
-  --bg: #06121b;
-  --text-primary: #edf3ff;
-  --text-secondary: rgba(237, 243, 255, 0.74);
-  --text-muted: rgba(197, 209, 228, 0.58);
-  --accent: #7aa2ff;
-  --accent-soft: #9ddbd3;
-  --accent-secondary: #50e3c2;
+  /* Background layers */
+  --bg: #09090b;
+  --bg-deep: #040406;
+  --bg-surface: rgba(12, 12, 14, 0.9);
+  --bg-surface-deep: rgba(10, 10, 12, 0.95);
+  --bg-elevated: rgba(20, 18, 18, 0.78);
+  --bg-bar: rgba(12, 11, 12, 0.88);
+
+  /* Text hierarchy */
+  --text-primary: #f4f2ef;
+  --text-secondary: rgba(231, 225, 218, 0.76);
+  --text-muted: rgba(191, 181, 171, 0.58);
+  --text-dim: rgba(160, 149, 139, 0.38);
+  --text-ghost: rgba(140, 130, 122, 0.2);
+
+  /* ADCC-inspired accents */
+  --accent: #c92d28;
+  --accent-soft: #de6a60;
+  --accent-secondary: #eadfcd;
+  --accent-teal: #c92d28;
+  --accent-strong: #f05c4f;
+  --accent-warm: #d2ab73;
+
+  /* Borders */
+  --border-hairline: rgba(255, 255, 255, 0.04);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-mid: rgba(255, 255, 255, 0.14);
+  --border-accent: rgba(201, 45, 40, 0.34);
+
+  /* Shadows */
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 16px 48px rgba(0, 0, 0, 0.44);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.56);
+
+  /* Glow */
+  --glow-color: rgba(201, 45, 40, 0.24);
+  --glow-strong: rgba(201, 45, 40, 0.42);
+
+  /* Panel geometry */
+  --panel-blur: 24px;
+  --panel-radius: 4px;
+  --panel-radius-sm: 2px;
+
+  /* Base */
   color: var(--text-primary);
   background:
-    radial-gradient(circle at top, rgba(122, 162, 255, 0.12), transparent 28%),
-    linear-gradient(180deg, #0a1623 0%, #06121b 60%, #040a11 100%);
+    radial-gradient(circle at top, rgba(185, 56, 49, 0.12), transparent 30%),
+    linear-gradient(180deg, #131113 0%, #09090b 56%, #040406 100%);
   font-family: var(--font-sans);
 }
+
+/* == Base resets ============================================================= */
 
 * {
   box-sizing: border-box;
@@ -27,14 +69,13 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -50,56 +91,398 @@ select {
 
 #root {
   min-height: 100vh;
-  height: 100vh;
 }
+
+/* == Keyframe animations ===================================================== */
+
+@keyframes universeDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(var(--drift-x, 18px), var(--drift-y, -20px), 0)
+      scale(var(--drift-scale, 1.03));
+  }
+}
+
+@keyframes universePulse {
+  0%,
+  100% {
+    opacity: 0.52;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      0 20px 48px rgba(0, 0, 0, 0.22);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      0 32px 80px rgba(0, 0, 0, 0.42),
+      0 0 64px rgba(130, 182, 255, 0.38);
+  }
+}
+
+@keyframes universeLineFlash {
+  0%,
+  100% {
+    opacity: 0.12;
+  }
+
+  50% {
+    opacity: 0.38;
+  }
+}
+
+@keyframes pageReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hudReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* == Existing animated utilities ============================================= */
+
+.page-reveal {
+  animation: pageReveal 0.52s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.universe-bubble {
+  animation:
+    universeDrift var(--drift-duration, 18s) ease-in-out infinite,
+    universePulse var(--pulse-duration, 11s) ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.universe-bubble::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  right: 12%;
+  height: 0;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.055);
+  pointer-events: none;
+}
+
+.universe-bubble::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  bottom: 12%;
+  width: 0;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.055);
+  pointer-events: none;
+}
+
+.universe-line {
+  animation: universeLineFlash 5s ease-in-out infinite;
+}
+
+/* == HUD utility classes ===================================================== */
+
+/*
+ * .hud-panel
+ * Primary glass panel surface. Apply to AthleteDetailPanel <aside>,
+ * AthleteList, and any floating overlay card.
+ */
+.hud-panel {
+  background: var(--bg-surface);
+  backdrop-filter: blur(var(--panel-blur));
+  -webkit-backdrop-filter: blur(var(--panel-blur));
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--shadow-md);
+}
+
+/*
+ * .hud-surface
+ * Lighter surface for secondary containers: instrument bars,
+ * filter strips, secondary info rows.
+ */
+.hud-surface {
+  background: var(--bg-bar);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-hairline);
+}
+
+/*
+ * .hud-label
+ * Tiny uppercase mono category label (9px, 0.28em tracking).
+ * Matches the DataRow label style used across the HUD.
+ */
+.hud-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  line-height: 1.2;
+}
+
+/*
+ * .hud-value
+ * Compact mono data value, paired with .hud-label in DataRow-style layouts.
+ */
+.hud-value {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(232, 240, 255, 0.80);
+  line-height: 1.3;
+}
+
+/*
+ * .hud-dim
+ * Muted helper / caption text for secondary descriptions and empty state copy.
+ */
+.hud-dim {
+  font-size: 10px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/*
+ * .hud-divider
+ * Accent-tinted horizontal rule. Use as <hr /> or an empty <div />.
+ */
+.hud-divider {
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-accent) 35%,
+    var(--border-accent) 65%,
+    transparent 100%
+  );
+  margin: 0;
+}
+
+.hud-zone-divider {
+  display: block;
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 28%,
+    rgba(255, 255, 255, 0.07) 50%,
+    rgba(255, 255, 255, 0.12) 72%,
+    transparent 100%
+  );
+}
+
+/*
+ * .hud-focus
+ * Composable focus-visible ring using the teal accent.
+ * Pair with Tailwind outline-none to suppress the default browser ring.
+ */
+.hud-focus {
+  outline: none;
+}
+
+.hud-focus:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 1.5px var(--accent-teal),
+    0 0 10px var(--glow-color);
+}
+
+/*
+ * .hud-select
+ * Minimal native select polish for compact HUD controls.
+ */
+.hud-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M2 3.5 5 6.5 8 3.5' stroke='rgba(170,190,220,0.72)' stroke-width='1.1' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E");
+  background-position: right 0.6rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 9px;
+}
+
+.hud-select option {
+  background: #08121b;
+  color: var(--text-primary);
+}
+
+/*
+ * Unified space backdrop layers used by Universe and Landing screens.
+ * Keep these subtle, visible, and neutral so UI remains the primary focus.
+ */
+.space-depth {
+  background:
+    radial-gradient(ellipse 116% 78% at 50% -10%, rgba(174, 58, 49, 0.12), transparent 58%),
+    radial-gradient(ellipse 88% 64% at 84% 80%, rgba(115, 72, 44, 0.08), transparent 64%),
+    linear-gradient(180deg, #110f11 0%, #09090b 56%, #040406 100%);
+}
+
+.stage-starfield,
+.space-starfield {
+  background-image:
+    radial-gradient(circle at center, rgba(245, 239, 232, 0.5) 0 0.82px, transparent 1px),
+    radial-gradient(circle at center, rgba(226, 216, 204, 0.3) 0 0.72px, transparent 1px),
+    radial-gradient(circle at center, rgba(205, 190, 176, 0.2) 0 0.64px, transparent 1px);
+  background-size: 270px 270px, 360px 360px, 440px 440px;
+  background-position: 18px 20px, 150px 84px, 64px 166px;
+}
+
+.stage-starfield-fine,
+.space-starfield-fine {
+  background-image:
+    radial-gradient(circle at center, rgba(238, 230, 221, 0.24) 0 0.56px, transparent 1px),
+    radial-gradient(circle at center, rgba(218, 205, 191, 0.16) 0 0.52px, transparent 1px),
+    radial-gradient(circle at center, rgba(198, 183, 169, 0.12) 0 0.5px, transparent 1px);
+  background-size: 92px 92px, 136px 136px, 190px 190px;
+  background-position: 12px 10px, 56px 40px, 20px 82px;
+}
+
+/*
+ * .hud-search-shell
+ * Retheme AthleteList without moving layout ownership out of GraphStage.
+ */
+.hud-search-shell [data-testid='athlete-results-panel'] {
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(4, 9, 17, 0.9);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.38);
+}
+
+.hud-search-shell [aria-label='Sort by matches'],
+.hud-search-shell [aria-label='Sort by name'] {
+  height: 24px;
+  padding-inline: 5px;
+  font-size: 12.5px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(232, 240, 255, 0.3);
+}
+
+[aria-label='Interactive athlete graph'] > button {
+  bottom: 1rem;
+  right: 1rem;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(3, 7, 14, 0.64);
+  padding: 0.25rem 0.6rem;
+  font-size: 8.5px;
+  letter-spacing: 0.17em;
+  color: rgba(232, 240, 255, 0.46);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[aria-label='Interactive athlete graph'] > button:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  color: rgba(232, 240, 255, 0.62);
+}
+
+@media (min-width: 640px) {
+  [aria-label='Interactive athlete graph'] > button {
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+}
+
+/*
+ * .hud-reveal
+ * Short upward-fade entrance animation for panels and overlays.
+ */
+.hud-reveal {
+  animation: hudReveal 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* == Year slider ============================================================= */
 
 .year-slider {
   -webkit-appearance: none;
   appearance: none;
-  height: 26px;
+  height: 20px;
   border-radius: 999px;
   background: transparent;
+  accent-color: var(--accent);
 }
 
 .year-slider::-webkit-slider-runnable-track {
-  height: 4px;
+  height: 3px;
   border-radius: 999px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.12),
-    rgba(122, 162, 255, 0.78),
-    rgba(157, 219, 211, 0.92)
+    rgba(201, 45, 40, 0.8) 0%,
+    rgba(201, 45, 40, 0.55) var(--year-slider-progress, 0%),
+    rgba(255, 255, 255, 0.08) var(--year-slider-progress, 0%),
+    rgba(255, 255, 255, 0.08) 100%
   );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.26),
+    0 0 14px rgba(201, 45, 40, 0.12);
 }
 
 .year-slider::-moz-range-track {
-  height: 4px;
+  height: 3px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.26);
+}
+
+.year-slider::-moz-range-progress {
+  height: 3px;
   border-radius: 999px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.12),
-    rgba(122, 162, 255, 0.78),
-    rgba(157, 219, 211, 0.92)
+    rgba(201, 45, 40, 0.85),
+    rgba(201, 45, 40, 0.56)
   );
+  box-shadow: 0 0 12px rgba(201, 45, 40, 0.16);
 }
 
 .year-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  margin-top: -8px;
-  height: 20px;
-  width: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.72);
+  margin-top: -6px;
+  height: 14px;
+  width: 14px;
+  border: 1.5px solid rgba(240, 92, 79, 0.9);
   border-radius: 999px;
-  background: #06121b;
-  box-shadow: 0 0 0 4px rgba(122, 162, 255, 0.18);
+  background: linear-gradient(180deg, rgba(28, 11, 11, 0.98), rgba(13, 8, 8, 0.98));
+  box-shadow:
+    0 0 0 2px rgba(201, 45, 40, 0.16),
+    0 0 16px rgba(201, 45, 40, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .year-slider::-moz-range-thumb {
-  height: 20px;
-  width: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.72);
+  height: 14px;
+  width: 14px;
+  border: 1.5px solid rgba(240, 92, 79, 0.9);
   border-radius: 999px;
-  background: #06121b;
-  box-shadow: 0 0 0 4px rgba(122, 162, 255, 0.18);
+  background: linear-gradient(180deg, rgba(28, 11, 11, 0.98), rgba(13, 8, 8, 0.98));
+  box-shadow:
+    0 0 0 2px rgba(201, 45, 40, 0.16),
+    0 0 16px rgba(201, 45, 40, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }

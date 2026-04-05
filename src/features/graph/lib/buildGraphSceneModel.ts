@@ -38,6 +38,11 @@ export function buildGraphSceneModel(
   const activeNodeIds = new Set(
     filteredEdges.flatMap((edge) => [edge.source, edge.target]),
   );
+  const showAllNodes =
+    filters.year === null &&
+    filters.sex === null &&
+    filters.weightClass === null &&
+    filters.displayMode === 'all';
 
   const activityCounts = filteredEdges.reduce((registry, edge) => {
     registry.set(edge.source, (registry.get(edge.source) ?? 0) + 1);
@@ -46,13 +51,7 @@ export function buildGraphSceneModel(
   }, new Map<string, number>());
 
   const nodes = snapshot.nodes
-    .filter((node) =>
-      filteredEdges.length > 0
-        ? activeNodeIds.has(node.id)
-        : filters.year === null &&
-          filters.sex === null &&
-          filters.weightClass === null,
-    )
+    .filter((node) => (showAllNodes ? true : activeNodeIds.has(node.id)))
     .map((node) => ({
       ...node,
       activeMatches: activityCounts.get(node.id) ?? 0,

@@ -29,7 +29,10 @@
     "stage",
     "year"
   ],
-  "optionalColumns": ["submission", "adv_pen"],
+  "optionalColumns": [
+    "submission",
+    "adv_pen"
+  ],
   "totalRows": 1028,
   "acceptedRows": 1028,
   "quarantinedRows": 0,

@@ -7,8 +7,19 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2022,
       "editionSpan": 12,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+99KG", "60KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "60KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_84",
@@ -17,8 +28,14 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2022,
       "editionSpan": 10,
-      "sexes": ["M"],
-      "weightClasses": ["88KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_5463",
@@ -27,8 +44,19 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2022,
       "editionSpan": 13,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+60KG", "+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+60KG",
+        "+99KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_16",
@@ -37,8 +65,13 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2011,
       "editionSpan": 5,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_419",
@@ -47,8 +80,14 @@
       "firstMatchYear": 2000,
       "lastMatchYear": 2017,
       "editionSpan": 9,
-      "sexes": ["M"],
-      "weightClasses": ["66KG", "77KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG",
+        "77KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_481",
@@ -57,8 +96,16 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2009,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "77KG", "88KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_224",
@@ -67,8 +114,13 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2022,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_1369",
@@ -77,8 +129,14 @@
       "firstMatchYear": 2001,
       "lastMatchYear": 2015,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_733",
@@ -87,8 +145,14 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2022,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_144",
@@ -97,8 +161,14 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2022,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_573",
@@ -107,8 +177,13 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2011,
       "editionSpan": 5,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_919",
@@ -117,8 +192,14 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2015,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_576",
@@ -127,8 +208,14 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2022,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["88KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_6438",
@@ -137,8 +224,17 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2022,
       "editionSpan": 12,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ]
     },
     {
       "athleteId": "athlete_6167",
@@ -147,11 +243,16 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2009,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "ABS"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "ABS"
+      ]
     }
   ],
-  "outOfBoundsCount": 0,
+  "outOfBoundsCount": 27,
   "overlongSpanCount": 30,
   "suspiciousAthletes": [
     {
@@ -161,9 +262,22 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2022,
       "editionSpan": 12,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+99KG", "60KG", "66KG", "77KG", "88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "60KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_84",
@@ -172,9 +286,17 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2022,
       "editionSpan": 10,
-      "sexes": ["M"],
-      "weightClasses": ["88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_5463",
@@ -183,7 +305,10 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2022,
       "editionSpan": 13,
-      "sexes": ["F", "M"],
+      "sexes": [
+        "F",
+        "M"
+      ],
       "weightClasses": [
         "+60KG",
         "+99KG",
@@ -193,7 +318,9 @@
         "99KG",
         "ABS"
       ],
-      "reasons": ["overlong_edition_span"]
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_419",
@@ -202,9 +329,17 @@
       "firstMatchYear": 2000,
       "lastMatchYear": 2017,
       "editionSpan": 9,
-      "sexes": ["M"],
-      "weightClasses": ["66KG", "77KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG",
+        "77KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_481",
@@ -213,9 +348,19 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2009,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "77KG", "88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_224",
@@ -224,9 +369,16 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2022,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_1369",
@@ -235,9 +387,17 @@
       "firstMatchYear": 2001,
       "lastMatchYear": 2015,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_733",
@@ -246,9 +406,17 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2022,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_144",
@@ -257,9 +425,17 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2022,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_919",
@@ -268,9 +444,17 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2015,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_576",
@@ -279,9 +463,17 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2022,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_6438",
@@ -290,9 +482,20 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2022,
       "editionSpan": 12,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "66KG",
+        "77KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_6167",
@@ -301,9 +504,16 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2009,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_1023",
@@ -312,9 +522,16 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2017,
       "editionSpan": 10,
-      "sexes": ["M"],
-      "weightClasses": ["66KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_320",
@@ -323,9 +540,17 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2017,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_8394",
@@ -334,9 +559,17 @@
       "firstMatchYear": 2011,
       "lastMatchYear": 2022,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_595",
@@ -345,9 +578,15 @@
       "firstMatchYear": 2011,
       "lastMatchYear": 2022,
       "editionSpan": 6,
-      "sexes": ["F"],
-      "weightClasses": ["+60KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "+60KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_967",
@@ -356,9 +595,15 @@
       "firstMatchYear": 2011,
       "lastMatchYear": 2022,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["77KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_52",
@@ -367,9 +612,17 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2011,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_3592",
@@ -378,9 +631,17 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2019,
       "editionSpan": 11,
-      "sexes": ["M"],
-      "weightClasses": ["66KG", "88KG", "99KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG",
+        "88KG",
+        "99KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_jeff-monson-m",
@@ -389,9 +650,17 @@
       "firstMatchYear": 1999,
       "lastMatchYear": 2011,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["+99KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_232",
@@ -400,9 +669,16 @@
       "firstMatchYear": 1998,
       "lastMatchYear": 2013,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_484",
@@ -411,9 +687,17 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2019,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_4977",
@@ -422,9 +706,21 @@
       "firstMatchYear": 2003,
       "lastMatchYear": 2019,
       "editionSpan": 9,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+60KG", "+99KG", "66KG", "88KG", "99KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+60KG",
+        "+99KG",
+        "66KG",
+        "88KG",
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_195",
@@ -433,9 +729,34 @@
       "firstMatchYear": 2001,
       "lastMatchYear": 2011,
       "editionSpan": 6,
-      "sexes": ["M"],
-      "weightClasses": ["66KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
+    },
+    {
+      "athleteId": "athlete_bia-mesquita-f",
+      "athleteName": "Bia Mesquita",
+      "matchCount": 5,
+      "firstMatchYear": 2015,
+      "lastMatchYear": 2024,
+      "editionSpan": 5,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "60KG",
+        "65KG",
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
     },
     {
       "athleteId": "athlete_1031",
@@ -444,9 +765,52 @@
       "firstMatchYear": 2005,
       "lastMatchYear": 2017,
       "editionSpan": 7,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "99KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "99KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
+    },
+    {
+      "athleteId": "athlete_adele-fornarino-f",
+      "athleteName": "Adele Fornarino",
+      "matchCount": 4,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "55KG",
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_kaynan-duarte-m",
+      "athleteName": "Kaynan Duarte",
+      "matchCount": 4,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "99KG",
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
     },
     {
       "athleteId": "athlete_4488",
@@ -455,9 +819,37 @@
       "firstMatchYear": 2009,
       "lastMatchYear": 2022,
       "editionSpan": 7,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+99KG", "60KG", "77KG", "88KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "60KG",
+        "77KG",
+        "88KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
+    },
+    {
+      "athleteId": "athlete_luke-griffith-m",
+      "athleteName": "Luke Griffith",
+      "matchCount": 3,
+      "firstMatchYear": 2022,
+      "lastMatchYear": 2024,
+      "editionSpan": 2,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG",
+        "99KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
     },
     {
       "athleteId": "athlete_4759",
@@ -466,9 +858,17 @@
       "firstMatchYear": 2001,
       "lastMatchYear": 2022,
       "editionSpan": 11,
-      "sexes": ["M"],
-      "weightClasses": ["66KG", "77KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG",
+        "77KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
     },
     {
       "athleteId": "athlete_4455",
@@ -477,9 +877,391 @@
       "firstMatchYear": 2001,
       "lastMatchYear": 2015,
       "editionSpan": 8,
-      "sexes": ["M"],
-      "weightClasses": ["77KG", "88KG", "99KG"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG",
+        "88KG",
+        "99KG"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
+    },
+    {
+      "athleteId": "athlete_amy-campo-f",
+      "athleteName": "Amy Campo",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_ana-vieira-f",
+      "athleteName": "Ana Vieira",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "65KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_bianca-basilio-f",
+      "athleteName": "Bianca Basilio",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "55KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_cyborg-abreu-m",
+      "athleteName": "Cyborg Abreu",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_daniel-manasoiu-m",
+      "athleteName": "Daniel Manasoiu",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_dante-leon-m",
+      "athleteName": "Dante Leon",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "ABS"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_diego-pato-m",
+      "athleteName": "Diego Pato",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_diogo-reis-m",
+      "athleteName": "Diogo Reis",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_felipe-costa-m",
+      "athleteName": "Felipe Costa",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_felipe-pena-m",
+      "athleteName": "Felipe Pena",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "+99KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_giancarlo-bodoni-m",
+      "athleteName": "Giancarlo Bodoni",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_helena-crevar-f",
+      "athleteName": "Helena Crevar",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "65KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_jasmine-rocha-f",
+      "athleteName": "Jasmine Rocha",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "55KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_jay-rodriguez-m",
+      "athleteName": "Jay Rodriguez",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "88KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_josh-cisneros-m",
+      "athleteName": "Josh Cisneros",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "66KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_kendall-reusing-f",
+      "athleteName": "Kendall Reusing",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "+65KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_mica-galvao-m",
+      "athleteName": "Mica Galvao",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_nathiely-de-jesus-f",
+      "athleteName": "Nathiely De Jesus",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "+65KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_pj-barch-m",
+      "athleteName": "PJ Barch",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_rafael-lovato-jr-m",
+      "athleteName": "Rafael Lovato Jr.",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "99KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_rafaela-guedes-f",
+      "athleteName": "Rafaela Guedes",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "F"
+      ],
+      "weightClasses": [
+        "+65KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
+    },
+    {
+      "athleteId": "athlete_roberto-abreu-m",
+      "athleteName": "Roberto Abreu",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "99KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
     },
     {
       "athleteId": "athlete_4980",
@@ -488,9 +1270,34 @@
       "firstMatchYear": 2007,
       "lastMatchYear": 2017,
       "editionSpan": 6,
-      "sexes": ["F", "M"],
-      "weightClasses": ["+60KG", "ABS"],
-      "reasons": ["overlong_edition_span"]
+      "sexes": [
+        "F",
+        "M"
+      ],
+      "weightClasses": [
+        "+60KG",
+        "ABS"
+      ],
+      "reasons": [
+        "overlong_edition_span"
+      ]
+    },
+    {
+      "athleteId": "athlete_vagner-rocha-m",
+      "athleteName": "Vagner Rocha",
+      "matchCount": 2,
+      "firstMatchYear": 2024,
+      "lastMatchYear": 2024,
+      "editionSpan": 1,
+      "sexes": [
+        "M"
+      ],
+      "weightClasses": [
+        "77KG"
+      ],
+      "reasons": [
+        "out_of_bounds_year"
+      ]
     }
   ]
 }

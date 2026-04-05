@@ -1,17 +1,11 @@
-import { buildAthleteMetrics } from '@/data/metrics/buildAthleteMetrics';
-import { normalizeAdccFixture } from '@/data/normalization/normalizeAdccFixture';
+import { getAllAthletes } from '@/data/adcc/loadAthletes';
+import { getAllCanonicalMatches } from '@/data/adcc/loadCanonicalMatches';
+import { buildCanonicalAthleteMetrics } from '@/data/metrics/buildCanonicalAthleteMetrics';
 import { buildGraphViewModel } from '@/data/graph/buildGraphViewModel';
-import fixture from '@/data/fixtures/adcc-sample.fixture.json';
-import { loadProcessedCompetitionDataset } from '@/data/validation/loadProcessedCompetitionDataset';
-import { RawAdccFixture } from '@/domain/types';
-
-const processedDataset = loadProcessedCompetitionDataset();
-const normalized =
-  processedDataset.normalized.matches.length > 0
-    ? processedDataset.normalized
-    : normalizeAdccFixture(fixture as RawAdccFixture);
-const metrics = buildAthleteMetrics(normalized);
-const graph = buildGraphViewModel(normalized, metrics);
+const athletes = getAllAthletes();
+const canonicalMatches = getAllCanonicalMatches();
+const metrics = buildCanonicalAthleteMetrics(athletes, canonicalMatches);
+const graph = buildGraphViewModel(athletes, canonicalMatches, metrics, athletes);
 
 export type UniverseSnapshot = typeof graph & {
   filters: {
@@ -25,6 +19,7 @@ export type UniverseSnapshot = typeof graph & {
     matchCount: number;
     eventCount: number;
     topBridgeAthlete: string;
+    submissionRate: number;
   };
   topRivalries: {
     id: string;
@@ -42,10 +37,11 @@ export function createUniverseSnapshot(): UniverseSnapshot {
   return {
     ...graph,
     summary: {
-      athleteCount: normalized.athletes.length,
-      matchCount: normalized.matches.length,
-      eventCount: normalized.events.length,
+      athleteCount: athletes.length,
+      matchCount: canonicalMatches.length,
+      eventCount: new Set(canonicalMatches.map((match) => match.eventId)).size,
       topBridgeAthlete,
+      submissionRate: computeSubmissionRate(canonicalMatches),
     },
     filters: {
       years: [...new Set(graph.edges.map((edge) => edge.year))].sort(
@@ -61,6 +57,13 @@ export function createUniverseSnapshot(): UniverseSnapshot {
     },
     topRivalries: metrics.topRivalries,
   };
+}
+
+function computeSubmissionRate(matches: ReturnType<typeof getAllCanonicalMatches>): number {
+  const withMethod = matches.filter((match) => match.method != null);
+  if (withMethod.length === 0) return 0;
+  const submissions = withMethod.filter((match) => match.method === 'SUBMISSION').length;
+  return Math.round((submissions / withMethod.length) * 100);
 }
 
 function buildWeightClassesBySex(

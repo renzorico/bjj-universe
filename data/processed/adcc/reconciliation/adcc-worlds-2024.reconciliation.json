@@ -1,0 +1,949 @@
+{
+  "generatedAt": "2026-04-03T16:37:19.123Z",
+  "event": {
+    "slug": "adcc-worlds-2024",
+    "year": 2024,
+    "eventType": "worlds",
+    "title": "ADCC Submission Fighting World Championship 2024",
+    "sourceUrl": "https://adcombat.com/adcc-events/adcc-submission-fighting-world-championship-2024/"
+  },
+  "sourcePrecedence": [
+    {
+      "role": "official_event_results",
+      "rank": 1,
+      "trust": "authoritative",
+      "usage": "Official ADCC event results pages are the highest-trust source for event, division, placement, and result-row truth."
+    },
+    {
+      "role": "historical_bootstrap",
+      "rank": 2,
+      "trust": "secondary",
+      "usage": "The Kaggle historical dataset is a secondary bootstrap source for historical rows and comparison, not the final authority when an official event page exists."
+    },
+    {
+      "role": "athlete_metadata",
+      "rank": 3,
+      "trust": "metadata_only",
+      "usage": "Athlete enrichment sources may supply metadata such as nationality or academy, but they must not be used as match-truth or event-result sources."
+    }
+  ],
+  "summary": {
+    "officialRows": 30,
+    "kaggleRows": 0,
+    "exactMatches": 0,
+    "likelyMatches": 0,
+    "mismatches": 0,
+    "officialOnly": 30,
+    "kaggleOnly": 0,
+    "manualReviewCount": 30,
+    "kaggleEventRowsInYear": 0
+  },
+  "exactMatches": [],
+  "likelyMatches": [],
+  "mismatches": [],
+  "officialOnlyRows": [
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -66KG:1:diogo-reis",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "66KG",
+      "athleteName": "Diogo Reis",
+      "athleteKey": "diogo-reis",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:66KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -66KG:2:diego-pato",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "66KG",
+      "athleteName": "Diego Pato",
+      "athleteKey": "diego-pato",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:66KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -66KG:3:josh-cisneros",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "66KG",
+      "athleteName": "Josh Cisneros",
+      "athleteKey": "josh-cisneros",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:66KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -77KG:1:mica-galvao",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "77KG",
+      "athleteName": "Mica Galvao",
+      "athleteKey": "mica-galvao",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:77KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -77KG:2:vagner-rocha",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "77KG",
+      "athleteName": "Vagner Rocha",
+      "athleteKey": "vagner-rocha",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:77KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -77KG:3:pj-barch",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "77KG",
+      "athleteName": "PJ Barch",
+      "athleteKey": "pj-barch",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:77KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -88KG:1:giancarlo-bodoni",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "88KG",
+      "athleteName": "Giancarlo Bodoni",
+      "athleteKey": "giancarlo-bodoni",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:88KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -88KG:2:jay-rodriguez",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "88KG",
+      "athleteName": "Jay Rodriguez",
+      "athleteKey": "jay-rodriguez",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:88KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -88KG:3:felipe-costa",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "88KG",
+      "athleteName": "Felipe Costa",
+      "athleteKey": "felipe-costa",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:88KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -99KG:1:kaynan-duarte",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Kaynan Duarte",
+      "athleteKey": "kaynan-duarte",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -99KG:2:rafael-lovato-jr",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Rafael Lovato Jr.",
+      "athleteKey": "rafael-lovato-jr",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE -99KG:3:roberto-abreu",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Roberto Abreu",
+      "athleteKey": "roberto-abreu",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE +99KG:1:felipe-pena",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "+99KG",
+      "athleteName": "Felipe Pena",
+      "athleteKey": "felipe-pena",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:+99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE +99KG:2:luke-griffith",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "+99KG",
+      "athleteName": "Luke Griffith",
+      "athleteKey": "luke-griffith",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:+99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE +99KG:3:daniel-manasoiu",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "+99KG",
+      "athleteName": "Daniel Manasoiu",
+      "athleteKey": "daniel-manasoiu",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:+99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -55KG:1:adele-fornarino",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "55KG",
+      "athleteName": "Adele Fornarino",
+      "athleteKey": "adele-fornarino",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "F:55KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -55KG:2:bianca-basilio",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "55KG",
+      "athleteName": "Bianca Basilio",
+      "athleteKey": "bianca-basilio",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "F:55KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -55KG:3:jasmine-rocha",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "55KG",
+      "athleteName": "Jasmine Rocha",
+      "athleteKey": "jasmine-rocha",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:55KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -65KG:1:ana-vieira",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "65KG",
+      "athleteName": "Ana Vieira",
+      "athleteKey": "ana-vieira",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "F:65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -65KG:2:helena-crevar",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "65KG",
+      "athleteName": "Helena Crevar",
+      "athleteKey": "helena-crevar",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "F:65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE -65KG:3:bia-mesquita",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "65KG",
+      "athleteName": "Bia Mesquita",
+      "athleteKey": "bia-mesquita",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE +65KG:1:rafaela-guedes",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "+65KG",
+      "athleteName": "Rafaela Guedes",
+      "athleteKey": "rafaela-guedes",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "F:+65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE +65KG:2:nathiely-de-jesus",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "+65KG",
+      "athleteName": "Nathiely De Jesus",
+      "athleteKey": "nathiely-de-jesus",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "F:+65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE +65KG:3:kendall-reusing",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "+65KG",
+      "athleteName": "Kendall Reusing",
+      "athleteKey": "kendall-reusing",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:+65KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:1:kaynan-duarte",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Kaynan Duarte",
+      "athleteKey": "kaynan-duarte",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "M:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:2:cyborg-abreu",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Cyborg Abreu",
+      "athleteKey": "cyborg-abreu",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:3:dante-leon",
+      "eventYear": 2024,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Dante Leon",
+      "athleteKey": "dante-leon",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "M:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:1:adele-fornarino",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "ABS",
+      "athleteName": "Adele Fornarino",
+      "athleteKey": "adele-fornarino",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "F:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:2:bia-mesquita",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "ABS",
+      "athleteName": "Bia Mesquita",
+      "athleteKey": "bia-mesquita",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "F:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:3:amy-campo",
+      "eventYear": 2024,
+      "sex": "F",
+      "weightClass": "ABS",
+      "athleteName": "Amy Campo",
+      "athleteKey": "amy-campo",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:ABS",
+      "notes": []
+    }
+  ],
+  "kaggleOnlyRows": [],
+  "manualReview": [
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -66KG:1:diogo-reis",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Diogo Reis",
+        "athleteKey": "diogo-reis",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -66KG:2:diego-pato",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Diego Pato",
+        "athleteKey": "diego-pato",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -66KG:3:josh-cisneros",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Josh Cisneros",
+        "athleteKey": "josh-cisneros",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -77KG:1:mica-galvao",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Mica Galvao",
+        "athleteKey": "mica-galvao",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -77KG:2:vagner-rocha",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Vagner Rocha",
+        "athleteKey": "vagner-rocha",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -77KG:3:pj-barch",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "PJ Barch",
+        "athleteKey": "pj-barch",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -88KG:1:giancarlo-bodoni",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Giancarlo Bodoni",
+        "athleteKey": "giancarlo-bodoni",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -88KG:2:jay-rodriguez",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Jay Rodriguez",
+        "athleteKey": "jay-rodriguez",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -88KG:3:felipe-costa",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Felipe Costa",
+        "athleteKey": "felipe-costa",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -99KG:1:kaynan-duarte",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Kaynan Duarte",
+        "athleteKey": "kaynan-duarte",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -99KG:2:rafael-lovato-jr",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Rafael Lovato Jr.",
+        "athleteKey": "rafael-lovato-jr",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE -99KG:3:roberto-abreu",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Roberto Abreu",
+        "athleteKey": "roberto-abreu",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE +99KG:1:felipe-pena",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Felipe Pena",
+        "athleteKey": "felipe-pena",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE +99KG:2:luke-griffith",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Luke Griffith",
+        "athleteKey": "luke-griffith",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE +99KG:3:daniel-manasoiu",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Daniel Manasoiu",
+        "athleteKey": "daniel-manasoiu",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -55KG:1:adele-fornarino",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "55KG",
+        "athleteName": "Adele Fornarino",
+        "athleteKey": "adele-fornarino",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:55KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -55KG:2:bianca-basilio",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "55KG",
+        "athleteName": "Bianca Basilio",
+        "athleteKey": "bianca-basilio",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:55KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -55KG:3:jasmine-rocha",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "55KG",
+        "athleteName": "Jasmine Rocha",
+        "athleteKey": "jasmine-rocha",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:55KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -65KG:1:ana-vieira",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "65KG",
+        "athleteName": "Ana Vieira",
+        "athleteKey": "ana-vieira",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -65KG:2:helena-crevar",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "65KG",
+        "athleteName": "Helena Crevar",
+        "athleteKey": "helena-crevar",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE -65KG:3:bia-mesquita",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "65KG",
+        "athleteName": "Bia Mesquita",
+        "athleteKey": "bia-mesquita",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE +65KG:1:rafaela-guedes",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "+65KG",
+        "athleteName": "Rafaela Guedes",
+        "athleteKey": "rafaela-guedes",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:+65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE +65KG:2:nathiely-de-jesus",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "+65KG",
+        "athleteName": "Nathiely De Jesus",
+        "athleteKey": "nathiely-de-jesus",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:+65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE +65KG:3:kendall-reusing",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "+65KG",
+        "athleteName": "Kendall Reusing",
+        "athleteKey": "kendall-reusing",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:+65KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:1:kaynan-duarte",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Kaynan Duarte",
+        "athleteKey": "kaynan-duarte",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:2:cyborg-abreu",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Cyborg Abreu",
+        "athleteKey": "cyborg-abreu",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:MALE ABSOLUTE:3:dante-leon",
+        "eventYear": 2024,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Dante Leon",
+        "athleteKey": "dante-leon",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:1:adele-fornarino",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "ABS",
+        "athleteName": "Adele Fornarino",
+        "athleteKey": "adele-fornarino",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:2:bia-mesquita",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "ABS",
+        "athleteName": "Bia Mesquita",
+        "athleteKey": "bia-mesquita",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2024:official:FEMALE ABSOLUTE:3:amy-campo",
+        "eventYear": 2024,
+        "sex": "F",
+        "weightClass": "ABS",
+        "athleteName": "Amy Campo",
+        "athleteKey": "amy-campo",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle rows exist for this event year/division."
+      ]
+    }
+  ]
+}

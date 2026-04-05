@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
 import { GraphControls } from '@/features/graph/components/GraphControls';
@@ -12,7 +12,7 @@ const baseFilters: GraphFilters = {
 };
 
 describe('GraphControls', () => {
-  it('switches between all years and a specific year, and filters weight classes by sex', async () => {
+  it('updates year, sex, weight class, and display mode filters', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
 
@@ -30,24 +30,39 @@ describe('GraphControls', () => {
       screen.getByRole('button', { name: 'All years' }),
     ).toBeInTheDocument();
 
-    fireEvent.change(screen.getByRole('slider', { name: /year filter/i }), {
-      target: { value: '2021' },
-    });
+    await user.selectOptions(
+      screen.getByRole('combobox', { name: /year filter/i }),
+      '2022',
+    );
 
     expect(onChange).toHaveBeenCalledWith({
       ...baseFilters,
-      year: 2021,
+      year: 2022,
     });
 
-    await user.selectOptions(
-      screen.getByRole('combobox', { name: /sex filter/i }),
-      'F',
-    );
+    await user.click(screen.getByRole('button', { name: 'Women' }));
 
     expect(onChange).toHaveBeenCalledWith({
       ...baseFilters,
       sex: 'F',
       weightClass: null,
+    });
+
+    await user.selectOptions(
+      screen.getByRole('combobox', { name: /weight class filter/i }),
+      '77KG',
+    );
+
+    expect(onChange).toHaveBeenCalledWith({
+      ...baseFilters,
+      weightClass: '77KG',
+    });
+
+    await user.click(screen.getByRole('button', { name: 'Rivalry' }));
+
+    expect(onChange).toHaveBeenCalledWith({
+      ...baseFilters,
+      displayMode: 'rivalry',
     });
 
     await user.click(screen.getByRole('button', { name: 'All years' }));

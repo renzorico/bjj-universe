@@ -1,15 +1,56 @@
+# ─── Dependencies ──────────────────────────────────────────────────────────────
 node_modules
+
+# ─── Build & cache ─────────────────────────────────────────────────────────────
 dist
+.vite
+*.tsbuildinfo
+
+# ─── Test output ───────────────────────────────────────────────────────────────
 coverage
 playwright-report
 test-results
-.vite
-.DS_Store
-*.log
-*.tsbuildinfo
-*.d.ts
+
+# ─── Compiled JS (TypeScript sources only, keep real .js files) ────────────────
 playwright.config.js
-src/**/*.js
-tests/e2e/**/*.js
 vite.config.js
 vitest.config.js
+src/**/*.js
+tests/e2e/**/*.js
+
+# ─── Type declaration outputs ──────────────────────────────────────────────────
+*.d.ts
+
+# ─── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ─── Python artifacts ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ─── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Editor / IDE ──────────────────────────────────────────────────────────────
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# ─── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Generated data artifacts in src/ ─────────────────────────────────────────
+# These CSVs are pipeline outputs that land in src/data/processed/ by mistake.
+# The actual processed dataset (adcc-historical.processed.json) is tracked.
+src/data/processed/*.csv

@@ -1,0 +1,217 @@
+{
+  "sourceUrl": "https://adcombat.com/adcc-events/adcc-submission-fighting-world-championship-2019/",
+  "scrapedAt": "2026-04-03T16:37:06.898Z",
+  "eventTitle": "ADCC Submission Fighting World Championship 2019",
+  "organizer": "ADCC Federation",
+  "location": "Anaheim Convention Center, 800 West Katella Avenue, Anaheim, CA 92802,",
+  "eventDate": "Sep 28, 2019",
+  "divisions": [
+    {
+      "divisionLabel": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Augusto Mendes"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Kennedy Maciel"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Paulo Miyao"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Tye Ruotolo"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "JT Torres"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Vagner Rocha"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Garry Tonon"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Dante Leon"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Matheus Diniz"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Craig Jones"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Josh Hinger"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Jon Blank"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Gordon Ryan"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Vinicius Gazola"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Lucas Barbosa"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Vinny Magalhaes"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Kaynan Duarte"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Nick Rodriguez"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Marcus Buchecha Almeida"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Roberto Abreu"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE -60KG",
+      "sex": "F",
+      "weightClass": "-60KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Bianca Basilio"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Ffion Davies"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Elvira Karppinen"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Beatriz Mesquita"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE +60KG",
+      "sex": "F",
+      "weightClass": "+60KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Gabi Garcia"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Carina Santi"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Tayane Porfirio"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Ana Carolina Vieira"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "ABSOLUTE",
+      "sex": null,
+      "weightClass": "ABS",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Gordon Ryan"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Marcus Buchecha Almeida"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Lachlan Giles (AUS)"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Mahamed Aly (BRA)"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "SUPERFIGHT",
+      "sex": null,
+      "weightClass": "SUPERFIGHT",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Andre Galvao (BRA)"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Felipe Pena (BRA)"
+        },
+        {
+          "rank": 3,
+          "athleteName": "ORGANIZER"
+        },
+        {
+          "rank": 4,
+          "athleteName": "Mo Jassim & ADCC Federation"
+        }
+      ]
+    }
+  ]
+}

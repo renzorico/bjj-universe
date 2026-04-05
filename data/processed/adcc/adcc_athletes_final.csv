@@ -1,0 +1,329 @@
+canonical_athlete_id,name,sex,primary_weight_class,active_year_first,active_year_last,total_matches,nationality,team
+athlete_a-cacareco-m,A. Cacareco,M,ABS,2001,2007,13,Brazil,Brazilian Top Team (BTT)
+athlete_a-zhanpeisov-m,A. Zhanpeisov,M,+99KG,2017,2017,2,Kazakhstan,Qazaqstan Top Team
+athlete_aaron-johnson-m,Aaron Johnson,M,ABS,2019,2019,3,USA,Unity JJ / Fight Sports
+athlete_abdulaev-ruslan-m,Abdulaev Ruslan,M,+99KG,2017,2017,1,Russia,Universal Fighters
+athlete_abdulkadirov-magomed-m,Abdulkadirov Magomed,M,77KG,2015,2015,2,Russia,Club S. Abubakarov / Team Nogueira
+athlete_abdurakhman-bilarov-m,Abdurakhman Bilarov,M,99KG,2017,2017,2,Russia,Team Nogueira
+athlete_abraham-marte-messina-m,Abraham Marte Messina,M,+99KG,2015,2015,2,Dominican,Basico BJJ / GF Team
+athlete_adam-wardzinski-m,Adam Wardzinski,M,88KG,2019,2019,2,Poland,Checkmat
+athlete_adele-fornarino-f,Adele Fornarino,F,60KG,2022,2022,1,Australia,Dominance MMA
+athlete_aj-agazarm-m,AJ Agazarm,M,66KG,2013,2022,9,USA,Gracie Barra
+athlete_akihiro-gono-m,Akihiro Gono,M,88KG,1999,2001,2,Japan,Unknown
+athlete_alec-baulding-m,Alec Baulding,M,88KG,2019,2019,1,USA,Alliance / Valhalla Jiu Jitsu
+athlete_alexandre-de-freitas-m,Alexandre de Freitas,M,66KG,1998,2003,19,Brazil,Gracie Barra
+athlete_alexandre-jesus-m,Alexandre Jesus,M,88KG,2022,2022,1,Brazil,Fight Sports
+athlete_alexandre-ribeiro-m,Alexandre Ribeiro,M,99KG,2003,2022,43,Brazil,Six Blades Jiu-Jitsu
+athlete_amanda-alequin-santana-f,Amanda Alequin / Santana,F,+60KG,2017,2017,1,USA,Gracie Barra / Pé de Pano
+athlete_amanda-leve-f,Amanda Leve,F,+60KG,2019,2019,1,USA,Unknown
+athlete_amaury-bitetti-m,Amaury Bitetti,M,88KG,1999,1999,2,Brazil,Bitetti Combat / BTT
+athlete_amy-campo-f,Amy Campo,F,+60KG,2022,2022,3,USA,Zenith JJ 
+athlete_ana-carolina-vieira-f,Ana Carolina Vieira,F,+60KG,2019,2019,2,Brazil,GFTeam / Aviv
+athlete_andre-galvao-m,Andre Galvao,M,ABS,2007,2022,27,Brazil,Atos Jiu Jitsu
+athlete_andy-varela-m,Andy Varela,M,77KG,2022,2022,2,USA,10th Planet
+athlete_antoine-joude-m,Antoine Joude,M,99KG,2005,2005,2,Brazil,Unknown
+athlete_antonio-braga-neto-m,Antonio Braga Neto,M,99KG,2011,2019,4,Brazil,Alliance / Evolve
+athlete_antonio-peinado-m,Antonio Peinado,M,99KG,2011,2011,2,Brazil,Alliance
+athlete_antonio-schembri-m,Antonio Schembri,M,88KG,2001,2001,4,Brazil,Gracie Barra / Chute Boxe
+athlete_ashley-williams-m,Ashley Williams,M,66KG,2022,2022,1,UK,Unknown
+athlete_augusto-mendes-m,Augusto Mendes,M,66KG,2011,2019,13,Brazil,Atos
+athlete_baret-yoshida-m,Baret Yoshida,M,66KG,1999,2017,22,USA,Cesar Gracie / Grappling Unlimited
+athlete_beatriz-mesquita-f,Beatriz Mesquita,F,60KG,2019,2022,4,Brazil,Alliance
+athlete_ben-dyson-m,Ben Dyson,M,88KG,2019,2019,1,England,Roll Jiu-Jitsu
+athlete_ben-henderson-m,Ben Henderson,M,77KG,2013,2015,2,USA,Unknown
+athlete_ben-hodgkinson-m,Ben Hodgkinson,M,99KG,2019,2019,1,Australia,Absolute MMA / under Lachlan Giles 
+athlete_bianca-basilio-f,Bianca Basilio,F,60KG,2017,2022,9,Brazil,Unknown
+athlete_bianca-mesquita-f,Bianca Mesquita,F,60KG,2017,2017,1,Brazil,Alliance
+athlete_braulio-estima-m,Braulio Estima,M,ABS,2005,2013,16,Brazil,Gracie Barra 
+athlete_brianna-stemarie-f,Brianna Ste-Marie,F,60KG,2022,2022,3,Canada,Unknown
+athlete_bruno-bastos-m,Bruno Bastos,M,ABS,2009,2017,4,Brazil,Nova União / Bruno Bastos Assoc.
+athlete_bruno-frazatto-m,Bruno Frazatto,M,66KG,2011,2019,7,Brazil,Atos / BTT
+athlete_caol-uno-m,Caol Uno,M,77KG,1999,2000,2,Japan,Unknown
+athlete_carina-santi-f,Carina Santi,F,+60KG,2019,2019,1,Brazil,G13 / Júlio Pinheiro
+athlete_cassio-francis-m,Cassio Francis,M,99KG,2015,2015,2,Brazil,Gracie Barra BH
+athlete_celso-vinicius-m,Celso Vinicius,M,77KG,2017,2019,5,Brazil,Ryan Gracie / XCOACH
+athlete_chael-sonnen-m,Chael Sonnen,M,ABS,2017,2017,2,USA,Unknown
+athlete_chris-brown-m,Chris Brown,M,77KG,2001,2003,2,Australia,Adrenaline MMA
+athlete_clark-gracie-m,Clark Gracie,M,77KG,2011,2013,2,USA,Gracie Jiu-Jitsu
+athlete_claudio-calasans-m,Claudio Calasans,M,ABS,2011,2017,12,Brazil,Checkmat
+athlete_cole-abate-m,Cole Abate,M,66KG,2022,2022,1,USA,AOJ (Art of Jiu-Jitsu)
+athlete_craig-jones-m,Craig Jones,M,88KG,2017,2022,14,Australia,B Team Jiu-Jitsu
+athlete_cristiano-lazzarini-m,Cristiano Lazzarini,M,99KG,2007,2013,3,Brazil,Unknown
+athlete_damon-ramos-m,Damon Ramos,M,+99KG,2022,2022,1,USA,Unknown
+athlete_dan-manasoiu-m,Dan Manasoiu,M,+99KG,2022,2022,1,USA,New Wave Jiu-Jitsu
+athlete_dan-martinez-m,Dan Martinez,M,99KG,2019,2019,1,USA,Grappling Academy Bradenton
+athlete_daniel-simoes-m,Daniel Simoes,M,+99KG,2005,2005,2,Brazil,Renzo Gracie Academy
+athlete_dante-leon-m,Dante Leon,M,77KG,2019,2022,8,USA,Atos
+athlete_darren-andy-m,Darren Andy,M,+99KG,2007,2007,2,New Zealand,Unknown
+athlete_davi-ramos-m,Davi Ramos,M,77KG,2015,2015,4,Brazil,Top Brother / Atos
+athlete_david-avellan-m,David Avellan,M,88KG,2005,2013,11,USA,Freestyle Fighting Academy
+athlete_david-terrell-m,David Terrell,M,88KG,2003,2003,4,USA,Cesar Gracie Jiu-Jitsu
+athlete_dealonzio-jackson-m,DeAlonzio Jackson,M,77KG,2013,2019,5,USA,Lloyd Irvin / Thailand-based
+athlete_dean-lister-m,Dean Lister,M,99KG,2001,2015,28,USA,Unknown
+athlete_demian-maia-m,Demian Maia,M,88KG,2005,2007,8,Brazil,Team Nova União
+athlete_denis-roberts-m,Denis Roberts,M,+99KG,2005,2009,2,Australia,Unknown
+athlete_dennis-hallman-m,Dennis Hallman,M,88KG,2000,2005,3,USA,Unknown
+athlete_devhonte-johnson-m,Devhonte Johnson,M,99KG,2022,2022,1,USA,Unknown
+athlete_diego-oliveira-m,Diego Oliveira,M,66KG,2022,2022,4,Brazil,Cicero Costa / Checkmat
+athlete_diego-sanchez-m,Diego Sanchez,M,77KG,2005,2005,2,USA,Unknown
+athlete_dillon-danis-m,Dillon Danis,M,ABS,2015,2017,4,USA,New Wave / Renzo Gracie NY
+athlete_diogo-reis-m,Diogo Reis,M,66KG,2022,2022,4,Brazil,Unknown
+athlete_don-ortega-m,Don Ortega,M,77KG,2009,2011,2,USA,Gracie Barra NM
+athlete_e-elgland-m,E. Elgland,M,66KG,2017,2017,1,Finland,Hilti Academy
+athlete_eddie-bravo-m,Eddie Bravo,M,66KG,2003,2003,3,United States,10th Planet Jiu Jitsu
+athlete_eduardo-telles-m,Eduardo Telles,M,99KG,2005,2005,3,Brazil,Brazilian Top Team
+athlete_edward-cummings-m,Edward Cummings,M,66KG,2015,2015,2,USA,El Dorado / Elevation Fight Team
+athlete_edwin-najmi-m,Edwin Najmi,M,77KG,2019,2019,2,USA,Renzo Gracie Academy
+athlete_egan-inoue-m,Egan Inoue,M,88KG,1999,2001,4,USA,Gracie Humaitá
+athlete_eldar-rafigaev-m,Eldar Rafigaev,M,+99KG,2019,2019,1,Russia,Unknown
+athlete_elder-cruz-m,Elder Cruz,M,99KG,2022,2022,3,Brazil,Alliance
+athlete_eleftheria-christodoulou-f,Eleftheria Christodoulou,F,+60KG,2022,2022,1,Greece,Unknown
+athlete_eliott-kelly-m,Eliott Kelly,M,99KG,2017,2017,2,USA,Renzo Gracie PA
+athlete_elisabeth-clay-f,Elisabeth Clay,F,+60KG,2022,2022,1,USA,Unknown
+athlete_elliot-marshal-m,Elliot Marshal,M,+99KG,2019,2019,1,USA,Unknown
+athlete_elvira-karppinen-f,Elvira Karppinen,F,60KG,2017,2022,4,Finland,Hilti
+athlete_enrico-cocco-m,Enrico Cocco,M,77KG,2011,2017,3,Italy,Gracie Barra Roma
+athlete_eoghan-oflanagan-m,Eoghan OFlanagan,M,88KG,2022,2022,4,Ireland,SBG
+athlete_ethan-crelinsten-m,Ethan Crelinsten,M,66KG,2017,2022,3,Canada,B-Team
+athlete_fabricio-andrey-m,Fabricio Andrey,M,66KG,2022,2022,3,Brazil,Alliance
+athlete_fabricio-werdum-m,Fabricio Werdum,M,+99KG,2003,2011,26,Brazil,Werdum Combat Team / Behring
+athlete_felipe-cesar-m,Felipe Cesar,M,77KG,2017,2017,1,Brazil,Barbosa JJ (B9) / Unity
+athlete_felipe-pena-m,Felipe Pena,M,99KG,2015,2022,18,Brazil,Gracie Barra / FP Team
+athlete_fellipe-andrew-m,Fellipe Andrew,M,99KG,2019,2019,1,Brazil,Checkmat
+athlete_ffion-davies-f,Ffion Davies,F,60KG,2019,2022,6,Wales (UK),ARMA
+athlete_flavio-almeida-m,Flavio Almeida,M,88KG,2007,2007,2,Brazil,Gracie Barra
+athlete_gabriel-almeida-m,Gabriel Almeida,M,88KG,2019,2019,1,Brazil,Checkmat
+athlete_gabriel-arges-m,Gabriel Arges,M,88KG,2019,2019,2,Brazil,Gracie Barra
+athlete_gabriel-lucas-m,Gabriel Lucas,M,+99KG,2015,2015,2,Brazil,Alliance
+athlete_gabriel-napao-m,Gabriel Napao,M,+99KG,2005,2005,4,Brazil,Alliance
+athlete_gabriel-rollo-m,Gabriel Rollo,M,77KG,2015,2015,2,Brazil,Unknown
+athlete_gabriel-sousa-m,Gabriel Sousa,M,66KG,2022,2022,4,Brazil,Flow Academy
+athlete_gabrielle-garcia-f,Gabrielle Garcia,F,+60KG,2011,2022,16,Brazil,Alliance
+athlete_garth-taylor-m,Garth Taylor,M,ABS,1999,1999,3,South Africa,Miletich Fighting Systems
+athlete_gary-tonon-m,Gary Tonon,M,77KG,2013,2022,18,USA,New Wave / Renzo Gracie
+athlete_geovanny-martinez-m,Geovanny Martinez,M,66KG,2015,2022,8,USA,10th Planet Jiu‑Jitsu
+athlete_gerardi-rinaldi-m,Gerardi Rinaldi,M,+99KG,2009,2011,3,Brazil,Alliance
+athlete_giancarlo-bodoni-m,Giancarlo Bodoni,M,88KG,2022,2022,6,Italy,New Wave Jiu‑Jitsu
+athlete_gianni-grippo-m,Gianni Grippo,M,66KG,2015,2019,3,USA,Renzo Gracie NY
+athlete_gilbert-burns-m,Gilbert Burns,M,77KG,2015,2015,4,Brazil,Nova União
+athlete_giovanna-jara-f,Giovanna Jara,F,+60KG,2022,2022,1,Peru,Unknown
+athlete_glover-teixeira-m,Glover Teixeira,M,99KG,2009,2011,3,Brazil,Team Jungle
+athlete_gordon-ryan-m,Gordon Ryan,M,ABS,2017,2022,21,United States,New Wave Jiu Jitsu
+athlete_gregor-gracie-m,Gregor Gracie,M,77KG,2009,2009,3,Brazil/USA,Renzo Gracie Academy
+athlete_gunnar-nelson-m,Gunnar Nelson,M,ABS,2009,2011,5,Iceland,Mjolnir / Renzo Gracie
+athlete_gustavo-dantas-m,Gustavo Dantas,M,66KG,2001,2003,2,Brazil,Nova União 
+athlete_h-sekine-m,H. Sekine,M,+99KG,2017,2017,1,Japan,Paraestra
+athlete_hayato-sakurai-m,Hayato Sakurai,M,ABS,1999,1999,3,Japan,Unknown
+athlete_heikki-jussila-m,Heikki Jussila,M,+99KG,2022,2022,1,Finland,Turku Fight Gym
+athlete_henrique-cardoso-m,Henrique Cardoso,M,99KG,2022,2022,1,Brazil,Ceconi KMKZ
+athlete_hideki-sekine-m,Hideki Sekine,M,+99KG,2013,2015,3,Japan,Paraestra
+athlete_hudson-taylor-m,Hudson Taylor,M,+99KG,2019,2019,1,USA,Maryland Wrestling / Flow
+athlete_ilir-lafiti-m,Ilir Lafiti,M,99KG,2003,2003,2,Sweden,Pancrase Gym
+athlete_isaak-michel-m,Isaak Michel,M,88KG,2022,2022,1,Australia,Kingsway / B-Team
+athlete_isaque-bahiense-m,Isaque Bahiense,M,88KG,2022,2022,1,Brazil,Alliance
+athlete_j-pietkainen-m,J. Pietkainen,M,+99KG,2017,2017,1,Finland,Unknown
+athlete_jackson-sousa-m,Jackson Sousa,M,99KG,2017,2019,6,Brazil,Unknown
+athlete_jacob-rodriguez-m,Jacob Rodriguez,M,88KG,2022,2022,1,USA,Renzo Gracie
+athlete_jake-shields-m,Jake Shields,M,77KG,2005,2017,5,USA,Cesar Gracie Jiu-Jitsu
+athlete_james-brasco-m,James Brasco,M,88KG,2009,2017,2,USA,Renzo Gracie Academy
+athlete_james-puopolo-m,James Puopolo,M,99KG,2013,2019,3,USA,Unknown
+athlete_jannepekka-m,Janne-Pekka,M,ABS,2009,2015,3,Finland,Fight Club 90
+athlete_janus-andrejczuk-m,Janus Andrejczuk,M,66KG,2017,2017,1,Poland,Unknown
+athlete_jared-dopp-m,Jared Dopp,M,+99KG,2013,2019,15,USA,Unknown
+athlete_jean-jacques-machado-m,Jean Jacques Machado,M,77KG,1999,2005,15,Brazil,Machado Academy
+athlete_jeff-glover-m,Jeff Glover,M,66KG,2007,2015,11,USA,Fightzone Academy
+athlete_jeff-monson-m,Jeff Monson,M,99KG,1999,2017,13,USA,Unknown
+athlete_jeremy-skinner-m,Jeremy Skinner,M,66KG,2022,2022,2,Australia,Unknown
+athlete_jerry-bolander-m,Jerry Bolander,M,88KG,1999,2000,2,USA,Unknown
+athlete_jesse-urholin-m,Jesse Urholin,M,88KG,2017,2017,1,Finland,Turku Fight Gym
+athlete_jesseray-childrey-m,Jesseray Childrey,M,+99KG,2017,2017,1,USA,Unknown
+athlete_jessica-flowers-f,Jessica Flowers,F,+60KG,2017,2017,1,USA,Unknown
+athlete_joao-assis-m,Joao Assis,M,99KG,2011,2017,14,Brazil,Checkmat
+athlete_joao-costa-m,Joao Costa,M,99KG,2022,2022,1,Brazil,Fight Sports Miami
+athlete_joao-gabriel-rocha-m,Joao Gabriel Rocha,M,+99KG,2013,2022,15,Brazil,Soul Fighters
+athlete_joao-miyao-m,Joao Miyao,M,66KG,2013,2013,4,Brazil,PSLPB / Unity Jiu-Jitsu
+athlete_john-combs-m,John Combs,M,77KG,2019,2019,1,USA,Easton Training Center
+athlete_john-hansen-m,John Hansen,M,+99KG,2019,2022,4,Denmark,Unknown
+athlete_john-salter-m,John Salter,M,88KG,2017,2017,1,USA,Unknown
+athlete_jon-blank-m,Jon Blank,M,88KG,2019,2019,5,USA,Atos
+athlete_jon-hansen-m,Jon Hansen,M,ABS,2019,2019,1,USA,Unknown
+athlete_jonathan-satava-m,Jonathan Satava,M,77KG,2019,2019,1,USA,Unknown
+athlete_jonathan-torres-m,Jonathan Torres,M,77KG,2011,2022,15,USA,Unknown
+athlete_jorge-patino-m,Jorge Patino,M,88KG,2000,2005,5,Brazil,Brazilian Top Team
+athlete_jose-mario-sperry-m,Jose Mario Sperry,M,ABS,1998,2013,11,Brazil,Brazilian Top Team
+athlete_josh-hinger-m,Josh Hinger,M,88KG,2019,2022,6,USA,Atos
+athlete_josh-saunders-m,Josh Saunders,M,+99KG,2022,2022,1,USA,Renzo Gracie Academy
+athlete_joshua-cisneros-m,Joshua Cisneros,M,66KG,2022,2022,4,USA,Renzo Gracie
+athlete_julia-maele-f,Julia Maele,F,60KG,2022,2022,1,Norway,Unknown
+athlete_justin-rader-m,Justin Rader,M,66KG,2009,2013,8,USA,Unknown
+athlete_kade-ruotolo-m,Kade Ruotolo,M,77KG,2022,2022,4,USA,Art of Jiu‑Jitsu (AOJ)
+athlete_kamil-uminski-m,Kamil Uminski,M,99KG,2013,2017,3,Poland,Berserker CE
+athlete_kamil-wilk-m,Kamil Wilk,M,66KG,2017,2017,1,Poland,Unknown
+athlete_kareem-barkalev-m,Kareem Barkalev,M,88KG,1998,2000,3,Russia,Unknown
+athlete_kaynan-duarte-m,Kaynan Duarte,M,+99KG,2017,2022,10,Brazil,Atos
+athlete_keenan-cornelius-m,Keenan Cornelius,M,88KG,2013,2017,16,USA,Legion AJJ
+athlete_keita-iwamoto-m,Kenta Iwamoto,M,77KG,2019,2022,2,Japan,B‑Team
+athlete_keith-krikorian-m,Keith Krikorian,M,66KG,2019,2022,3,USA,Renzo Gracie Academy
+athlete_keller-sodhi-m,Keller Sodhi,M,88KG,2019,2019,1,USA,Renzo Gracie Academy
+athlete_kendall-reusing-f,Kendall Reusing,F,+60KG,2022,2022,2,Canada,Unknown
+athlete_kennedy-maciel-m,Kennedy Maciel,M,66KG,2019,2022,6,Brazil,Checkmat
+athlete_khazmat-stambulov-m,Khazmat Stambulov,M,+99KG,2017,2017,1,Russia,Unknown
+athlete_kit-dale-m,Kit Dale,M,88KG,2017,2017,1,Australia,Kit Dale Academy
+athlete_kron-gracie-m,Kron Gracie,M,77KG,2009,2013,10,Brazil,Gracie Jiu-Jitsu
+athlete_kuba-witkowski-m,Kuba Witkowski,M,66KG,2017,2017,2,Poland,Flow Fighters Academy
+athlete_kyle-boehm-m,Kyle Boehm,M,99KG,2022,2022,2,USA,10th Planet Jiu-Jitsu
+athlete_kyle-griffin-m,Kyle Griffin,M,88KG,2011,2011,2,USA,Drysdale Jiu-Jitsu
+athlete_lachlan-giles-m,Lachlan Giles,M,ABS,2015,2022,9,Australia,Absolute MMA
+athlete_leandro-lo-m,Leandro Lo,M,88KG,2017,2017,1,Brazil,NS Brotherhood
+athlete_leonardo-nogueira-m,Leonardo Nogueira,M,99KG,2013,2013,5,Brazil,Alliance
+athlete_leonardo-saggioro-m,Leonardo Saggioro,M,77KG,2017,2017,1,Brazil,Checkmat
+athlete_leonardo-santos-m,Leonardo Santos,M,77KG,2001,2009,10,Brazil,Checkmat
+athlete_leonardo-vieira-m,Leonardo Vieira,M,66KG,2000,2017,30,Brazil,Checkmat
+athlete_livia-giles-f,Livia Giles,F,60KG,2019,2019,1,Australia,Absolute MMA
+athlete_lucas-daniel-barbosa-m,Lucas Daniel Barbosa,M,88KG,2019,2022,7,Brazil,Atos
+athlete_lucas-leite-m,Lucas Leite,M,88KG,2013,2013,2,Brazil,Checkmat
+athlete_lucas-lepri-m,Lucas Lepri,M,77KG,2013,2019,12,Brazil,Alianza / Lepri Academy
+athlete_luke-griffith-m,Luke Griffith,M,99KG,2022,2022,1,USA,Renzo Gracie
+athlete_m-perez-m,M. Perez,M,88KG,2015,2017,3,Brazil,Brazilian Top Team
+athlete_m-szczecinski-m,M. Szczecinski,M,77KG,2022,2022,1,Poland,Berserker's Team
+athlete_mackenzie-dern-f,Mackenzie Dern,F,60KG,2015,2017,4,Brazil/USA,Alliance
+athlete_magid-hage-m,Magid Hage,M,77KG,2022,2022,1,USA,Renzo Gracie
+athlete_mahamed-aly-m,Mahamed Aly,M,ABS,2017,2019,11,Egypt,Unknown
+athlete_mansher-khera-m,Mansher Khera,M,77KG,2017,2017,2,India,Unknown
+athlete_marcelo-garcia-m,Marcelo Garcia,M,77KG,2003,2011,32,Brazil,Alliance Jiu Jitsu
+athlete_marcelo-mafra-m,Marcelo Mafra,M,77KG,2017,2017,2,Brazil,Checkmat
+athlete_marcio-andre-barbosa-junior-m,Marcio Andre Barbosa Junior,M,66KG,2013,2013,2,Brazil,Brazilian Top Team
+athlete_marcio-corleta-m,Marcio Corleta,M,+99KG,2005,2005,2,Brazil,Brazilian Top Team
+athlete_marcio-cruz-m,Marcio Cruz,M,+99KG,2001,2009,22,Brazil,Brazilian Top Team
+athlete_marcio-feitosa-m,Marcio Feitosa,M,77KG,2000,2005,11,Brazil,Alliance
+athlete_marcus-almeida-m,Marcus Almeida,M,+99KG,2013,2019,22,Brazil,Checkmat
+athlete_mark-kerr-m,Mark Kerr,M,ABS,2000,2003,6,USA,Unknown
+athlete_mark-ramos-m,Mark Ramos,M,66KG,2011,2015,3,USA,Renzo Gracie Academy
+athlete_marko-helen-m,Marko Helen,M,88KG,2005,2011,3,Finland,Turku Fight Gym
+athlete_mason-fowler-m,Mason Fowler,M,88KG,2019,2022,4,USA,Caio Terra Association (CTA)
+athlete_mateusz-garmot-m,Mateusz Garmot,M,77KG,2019,2019,1,Poland,Unknown
+athlete_mateusz-juskowiak-m,Mateusz Juskowiak,M,+99KG,2019,2019,1,Poland,Unknown
+athlete_mateusz-szczecinski-m,Mateusz Szczecinski,M,77KG,2022,2022,1,Poland,Berserker's Team
+athlete_matheus-diniz-m,Matheus Diniz,M,88KG,2019,2022,6,Brazil,Marcelo Garcia Academy
+athlete_matheus-gabriel-barros-m,Matheus Gabriel Barros,M,66KG,2019,2019,2,Brazil,Unknown
+athlete_matt-lindland-m,Matt Lindland,M,88KG,2003,2003,2,USA,Team Quest
+athlete_matt-serra-m,Matt Serra,M,77KG,2001,2001,4,USA,Renzo Gracie Academy
+athlete_max-gimenis-m,Max Gimenis,M,+99KG,2019,2022,3,Brazil,Checkmat
+athlete_mayssa-bastos-f,Mayssa Bastos,F,60KG,2022,2022,1,Brazil,GF Team / Unity / Art of Jiu-Jitsu
+athlete_micael-galvao-m,Micael Galvao,M,77KG,2022,2022,4,Brazil,Fight Sports
+athlete_michael-perez-m,Michael Perez,M,88KG,2019,2019,2,USA,Renzo Gracie
+athlete_mike-fowler-m,Mike Fowler,M,77KG,2007,2007,3,England,Balance Jiu-Jitsu
+athlete_mike-van-m,Mike Van,M,+99KG,2003,2003,2,USA,Atos
+athlete_mraz-avdoyan-m,Mraz Avdoyan,M,99KG,2019,2019,1,Armenia/USA,Unknown
+athlete_murilo-bustamante-m,Murilo Bustamante,M,99KG,1999,1999,3,Brazil,Brazilian Top Team (BTT)
+athlete_murilo-santana-m,Murilo Santana,M,88KG,2009,2019,11,Brazil,Unity Jiu-Jitsu Academy
+athlete_nicholas-meregali-m,Nicholas Meregali,M,99KG,2022,2022,8,Brazil,New Wave Jiu Jitsu
+athlete_nick-rodriguez-m,Nick Rodriguez,M,+99KG,2019,2022,10,USA,B-Team
+athlete_nicky-ryan-m,Nicky Ryan,M,66KG,2017,2022,4,USA,B-Team
+athlete_nicolas-renier-m,Nicolas Renier,M,66KG,2011,2013,3,France,Team Pequeno / Luta Livre
+athlete_nicollas-renier-m,Nicollas Renier,M,66KG,2017,2017,1,France,Team Pequeno
+athlete_olav-einemo-m,Olav Einemo,M,99KG,2001,2003,3,Norway,Holmenkollen Kampklubb
+athlete_oliver-taza-m,Oliver Taza,M,77KG,2017,2022,3,Canada,Danaher Death Squad / New Wave
+athlete_orlando-sanchez-m,Orlando Sanchez,M,+99KG,2013,2022,13,USA,Gracie Barra Pasadena
+athlete_oskar-piechota-m,Oskar Piechota,M,88KG,2013,2013,3,Poland,Berserker's Team
+athlete_osman-kasimov-m,Osman Kasimov,M,77KG,2017,2017,1,Azerbaijan,Unknown
+athlete_otavio-sousa-m,Otavio Sousa,M,77KG,2013,2015,8,Brazil,Checkmat
+athlete_owen-livesey-m,Owen Livesey,M,99KG,2022,2022,1,England,Unknown
+athlete_pablo-mantovani-m,Pablo Mantovani,M,66KG,2017,2019,6,Argentina,Unknown
+athlete_pablo-popovitch-m,Pablo Popovitch,M,77KG,2003,2015,26,Serbia/Brazil,Alliance
+athlete_patrick-gaudio-m,Patrick Gaudio,M,99KG,2019,2022,5,USA,Renzo Gracie
+athlete_paul-ardilaibarra-m,Paul Ardila-Ibarra,M,99KG,2017,2022,3,Colombia,Unknown
+athlete_paul-schreiner-m,Paul Schreiner,M,77KG,2022,2022,4,USA,Renzo Gracie
+athlete_paulo-miyao-m,Paulo Miyao,M,66KG,2017,2019,8,Brazil,PSLPB / Unity Jiu-Jitsu
+athlete_paulo-pinto-m,Paulo Pinto,M,99KG,2019,2019,1,Brazil,Alliance
+athlete_pedro-marinho-m,Pedro Marinho,M,88KG,2019,2022,5,Portugal,Checkmat
+athlete_perttu-tepponen-m,Perttu Tepponen,M,99KG,2019,2022,2,Finland,Fight Club 90
+athlete_piotr-frechowicz-m,Piotr Frechowicz,M,88KG,2017,2017,1,Poland,Berserker's Team
+athlete_r-alvarenga-m,R. Alvarenga,M,66KG,2019,2019,1,Brazil,Atos
+athlete_radoslaw-turek-m,Radoslaw Turek,M,99KG,2009,2011,2,Poland,Unknown
+athlete_rafael-lovato-jr-m,Rafael Lovato Jr,M,88KG,2007,2022,26,USA,Lovato Jiu Jitsu
+athlete_rafael-mendes-m,Rafael Mendes,M,66KG,2009,2013,12,Brazil,Art of Jiu Jitsu
+athlete_rafaela-guedes-f,Rafaela Guedes,F,+60KG,2022,2022,3,Brazil,Unknown
+athlete_rany-yahya-m,Rany Yahya,M,66KG,2003,2009,13,Brazil,Team Alpha Male
+athlete_renato-forasieppi-canuto-m,Renato Forasieppi Canuto,M,77KG,2019,2022,4,Brazil,Unknown
+athlete_renzo-gracie-m,Renzo Gracie,M,77KG,1998,2011,15,Brazil/USA,Renzo Gracie Academy
+athlete_ricardo-almeida-m,Ricardo Almeida,M,99KG,1999,2003,19,Brazil/USA,New Jersey BTT
+athlete_ricardo-arona-m,Ricardo Arona,M,99KG,2000,2003,13,Brazil,Brazilian Top Team (BTT)
+athlete_ricardo-liborio-m,Ricardo Liborio,M,88KG,1999,2001,10,Brazil,Brazilian Top Team (BTT)
+athlete_ricardo-mesquita-m,Ricardo Mesquita,M,88KG,2015,2015,2,Brazil,Brazilian Top Team
+athlete_ricardo-moraes-m,Ricardo Moraes,M,+99KG,1998,2000,2,Brazil,Balance Jiu-Jitsu
+athlete_ricardo-vieira-m,Ricardo Vieira,M,66KG,2013,2013,2,Brazil,Checkmat
+athlete_ricco-rodriguez-m,Ricco Rodriguez,M,+99KG,1998,2009,24,USA,Unknown
+athlete_richard-alarcon-m,Richard Alarcon,M,66KG,2019,2019,2,USA,Renzo Gracie
+athlete_rida-haisam-m,Rida Haisam,M,+99KG,2022,2022,3,Lebanon,Unknown
+athlete_rigan-machado-m,Rigan Machado,M,99KG,1999,2003,10,Brazil,Machado Jiu-Jitsu Academy
+athlete_rikako-yuasa-f,Rikako Yuasa,F,60KG,2019,2019,1,Japan,Unknown
+athlete_robert-drysdale-m,Robert Drysdale,M,ABS,2007,2009,4,USA/Brazil,Brasa / Drysdale Jiu-Jitsu
+athlete_roberto-abreu-m,Roberto Abreu,M,+99KG,2009,2022,29,Cuba/USA,Fight Sports
+athlete_roberto-jimenez-m,Roberto Jimenez,M,77KG,2022,2022,3,Spain,Unknown
+athlete_roberto-magalhaes-m,Roberto Magalhaes,M,88KG,2000,2000,3,Brazil,Alliance
+athlete_roberto-traven-m,Roberto Traven,M,ABS,1999,2001,7,Brazil,Brazilian Top Team
+athlete_robson-moura-m,Robson Moura,M,66KG,2001,2011,8,Brazil,Robson Moura Academy
+athlete_rodolfo-vieira-m,Rodolfo Vieira,M,99KG,2011,2015,10,Brazil,Grappling Fight Team (GFT)
+athlete_rodrigo-cavaca-m,Rodrigo Cavaca,M,+99KG,2009,2015,3,Brazil,Cavaca Jiu-Jitsu
+athlete_rodrigo-dib-m,Rodrigo Dib,M,88KG,2022,2022,1,Brazil,Checkmat
+athlete_rodrigo-gracie-m,Rodrigo Gracie,M,77KG,1998,2001,8,Brazil,Renzo Gracie
+athlete_rodrigo-medeiros-m,Rodrigo Medeiros,M,ABS,2000,2003,8,Brazil,Medeiros BJJ
+athlete_roger-gracie-m,Roger Gracie,M,99KG,2003,2007,13,Brazil/UK,Gracie Barra
+athlete_roger-neff-m,Roger Neff,M,+99KG,2001,2001,2,USA,Team Lloyd Irvin
+athlete_rolles-gracie-m,Rolles Gracie,M,+99KG,2007,2007,2,Brazil,Renzo Gracie
+athlete_roman-dolidze-m,Roman Dolidze,M,99KG,2017,2017,1,Georgia,Unknown
+athlete_romulo-barral-m,Romulo Barral,M,88KG,2007,2017,18,Brazil,Gracie Barra / Barral Jiu-Jitsu
+athlete_ronaldo-souza-m,Ronaldo Souza,M,88KG,2003,2011,14,Brazil,Brazilian Top Team
+athlete_roosevelt-sousa-m,Roosevelt Sousa,M,+99KG,2022,2022,3,Brazil,Unknown
+athlete_ross-nicholls-m,Ross Nicholls,M,77KG,2019,2019,1,England,Ross Academy
+athlete_rousimar-palhares-m,Rousimar Palhares,M,88KG,2011,2011,4,Brazil,Unknown
+athlete_royler-gracie-m,Royler Gracie,M,66KG,1999,2003,15,Brazil,Royler Gracie Academy
+athlete_ruan-alvarenga-m,Ruan Alvarenga,M,66KG,2022,2022,1,Brazil,Atos
+athlete_rubens-charles-m,Rubens Charles,M,66KG,2009,2017,20,Brazil,Alliance
+athlete_ruslam-chsiev-m,Ruslam Chsiev,M,88KG,2013,2019,7,Russia,K-Dojo
+athlete_ryan-hall-m,Ryan Hall,M,66KG,2009,2011,5,USA,50/50 Jiu-Jitsu
+athlete_sam-mcnally-m,Sam McNally,M,66KG,2022,2022,2,Ireland,Unknown
+athlete_sanae-kikuta-m,Sanae Kikuta,M,88KG,1999,2001,2,Japan,Pancrase / Shooto
+athlete_santeri-lilius-m,Santeri Lilius,M,88KG,2022,2022,1,Finland,Fight Club 90
+athlete_sasha-palvski-m,Sasha Palvski,M,66KG,1999,1999,2,Estonia,Unknown
+athlete_sasha-savko-m,Sasha Savko,M,88KG,1999,2000,2,Belarus,Unknown
+athlete_saulo-ribeiro-m,Saulo Ribeiro,M,88KG,1999,2009,30,Brazil,Ribeiro Jiu Jitsu
+athlete_sean-alvarez-m,Sean Alvarez,M,+99KG,1998,2001,3,USA,Renzo Gracie Jiu-Jitsu
+athlete_sergio-ardilaibarra-m,Sergio Ardila-Ibarra,M,77KG,2017,2017,1,Colombia,Unknown
+athlete_sergio-moraes-m,Sergio Moraes,M,88KG,2011,2011,4,Brazil,Alliance
+athlete_servio-tulio-m,Servio Tulio,M,77KG,2019,2019,1,Brazil,Unknown
+athlete_shane-hilltaylor-m,Shane Hill-Taylor,M,66KG,2019,2019,1,England,Unknown
+athlete_shinya-aoki-m,Shinya Aoki,M,77KG,2005,2005,2,Japan,Paraestra Tokyo / Nippon Top Team
+athlete_stefanie-egger-f,Stefanie Egger,F,+60KG,2019,2019,1,Austria,Unknown
+athlete_t-pyylampi-m,T. Pyylampi,M,ABS,2017,2017,1,Finland,Fight Club 90
+athlete_t-suzuki-m,T. Suzuki,M,66KG,2005,2007,2,Japan,Unknown
+athlete_t-yano-m,T. Yano,M,66KG,2000,2001,3,Japan,Unknown
+athlete_talita-alencar-f,Talita Alencar,F,60KG,2017,2017,1,Brazil,Alliance
+athlete_talita-treta-f,Talita Treta,F,+60KG,2017,2017,1,Brazil,Checkmat
+athlete_tarsis-humpreys-m,Tarsis Humpreys,M,88KG,2007,2009,8,Brazil,Brazilian Top Team
+athlete_tero-pyylampi-m,Tero Pyylampi,M,77KG,2013,2017,2,Finland,Fight Club 90
+athlete_thomas-deblass-m,Thomas DeBlass,M,+99KG,2009,2017,2,USA,Renzo Gracie
+athlete_thomas-halpin-m,Thomas Halpin,M,66KG,2019,2019,1,USA,Unknown
+athlete_tim-spriggs-m,Tim Spriggs,M,+99KG,2017,2019,6,USA,Unknown
+athlete_timojuhani-m,Timo-Juhani,M,66KG,2009,2011,2,Finland,Unknown
+athlete_tito-ortiz-m,Tito Ortiz,M,99KG,2000,2000,2,USA,Unknown
+athlete_tomasz-narkun-m,Tomasz Narkun,M,99KG,2013,2015,2,Poland,Ankos MMA
+athlete_tommy-langaker-m,Tommy Langaker,M,77KG,2022,2022,1,Norway,Unknown
+athlete_travis-lutter-m,Travis Lutter,M,88KG,2000,2001,2,USA,Team Quest
+athlete_tye-ruotolo-m,Tye Ruotolo,M,66KG,2019,2022,8,USA,New Wave Jiu-Jitsu
+athlete_u-zhakshylyk-m,U. Zhakshylyk,M,66KG,2017,2017,1,Kazakhstan,Unknown
+athlete_vagner-rocha-m,Vagner Rocha,M,77KG,2011,2022,17,Brazil,Unknown
+athlete_valdir-araujo-junior-m,Valdir Araujo Junior,M,88KG,2019,2019,1,Brazil,Unknown
+athlete_victor-estima-m,Victor Estima,M,77KG,2011,2011,4,Brazil,Checkmat
+athlete_victor-honorio-m,Victor Honorio,M,+99KG,2017,2017,4,Brazil,Brazilian Top Team
+athlete_victor-hugo-m,Victor Hugo,M,+99KG,2019,2022,6,Brazil,Unknown
+athlete_vinicius-ferreira-m,Vinicius Ferreira,M,99KG,2019,2022,7,Brazil,Unknown
+athlete_vinicius-magalhaes-m,Vinicius Magalhaes,M,+99KG,1999,2022,29,Brazil,Alliance
+athlete_vitor-belfort-m,Vitor Belfort,M,ABS,2001,2001,2,Brazil,Unknown
+athlete_vitor-ribeiro-m,Vitor Ribeiro,M,77KG,2000,2003,7,Brazil,Unknown
+athlete_william-tackett-m,William Tackett,M,77KG,2022,2022,1,USA,Unknown
+athlete_y-ozawa-m,Y. Ozawa,M,99KG,2017,2017,2,Japan,Unknown
+athlete_yuri-simoes-m,Yuri Simoes,M,ABS,2015,2022,19,Brazil,Checkmat
+athlete_yuta-shimada-m,Yuta Shimada,M,66KG,2017,2017,1,Japan,Unknown
+athlete_zbigniew-tyszka-m,Zbigniew Tyszka,M,88KG,2011,2015,3,Poland,Unknown

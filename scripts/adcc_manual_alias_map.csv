@@ -1,0 +1,25 @@
+alias_name,canonical_name,action,confidence,note
+Akira Shouji,Akira Shoji,merge_alias,high,
+Akira Soji,Akira Shoji,merge_alias,high,
+Amanda Alequin / Santana,Amanda Santana,merge_alias,high,
+Ana Carolina Viera,Ana Carolina Vieira,merge_alias,high,
+C. Jones,Craig Jones,merge_alias,high,
+Chris Wideman,Chris Weidman,merge_alias,high,
+E. Karpinen,E. Karppinen,merge_alias,high,
+Elvira Karpinnen,Elvira Karppinen,merge_alias,high,
+Eoghan OFlannagan,Eoghan OFlanagan,merge_alias,high,
+Hannette Staack,Hanette Staack,merge_alias,high,
+Hideki Shrek,Hideki Sekine,merge_alias,high,
+I. Praporshchikov,Igor Praporschchikov,merge_alias,high,
+J. Pietlainen,J. Pietkainen,merge_alias,high,
+James Poupolo,James Puopolo,merge_alias,high,
+Jimmy Freidrich,Jimmy Friedrich,merge_alias,high,
+Kamil Uminski,Kamil Huminski,merge_alias,high,
+Kaynan D.,Kaynan Duarte,merge_alias,high,
+Marc,Marcelo Garcia,merge_alias,high,
+P. Ardilla,Paul Ardila-Ibarra,merge_alias,high,
+Tetsu Suzuko,Tetsu Suzuki,merge_alias,high,
+Ilir Lafiti,Ilir Lafiti,dedupe_exact_name,high,Same display name appears more than once; collapse exact duplicates after inspecting years/sex/weight.
+Sasha Palvski,Sasha Palvski,dedupe_exact_name,high,Same display name appears more than once; collapse exact duplicates after inspecting years/sex/weight.
+Keita Iwamoto,Keita Iwamoto,merge_alias,high,Confirmed same person as Kenta Iwamoto
+Kenta Iwamoto,Kenta Iwamoto,merge_alias,high,Confirmed same person as Kenta Iwamoto

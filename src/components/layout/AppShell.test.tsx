@@ -15,7 +15,7 @@ describe('AppShell', () => {
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', {
-        name: /A dedicated network explorer for rivalry, eras, and hidden structure in ADCC history/i,
+        name: /Every rivalry/i,
       }),
     ).toBeInTheDocument();
   });

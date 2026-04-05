@@ -10,14 +10,17 @@ vi.mock('@/features/graph/components/GraphCanvas', () => ({
   }: {
     onSelectAthlete: (athleteId: string | null) => void;
   }) => (
-    <button type="button" onClick={() => onSelectAthlete('athlete_7507')}>
+    <button
+      type="button"
+      onClick={() => onSelectAthlete('athlete_nicholas-meregali-m')}
+    >
       Select Meregali from graph
     </button>
   ),
 }));
 
 describe('GraphStage', () => {
-  it('shows athlete details after selecting an athlete and clears them', async () => {
+  it('supports search selection and collapsed match history in the detail panel', async () => {
     const user = userEvent.setup();
 
     render(<GraphStage snapshot={createUniverseSnapshot()} />);
@@ -27,6 +30,46 @@ describe('GraphStage', () => {
     ).not.toBeInTheDocument();
 
     await user.click(
+      screen.getByRole('searchbox', { name: /search athletes/i }),
+    );
+    expect(screen.getByRole('listbox', { name: /athlete results/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /sort by name/i }));
+    await user.type(
+      screen.getByRole('searchbox', { name: /search athletes/i }),
+      'meregali',
+    );
+
+    await user.click(
+      screen.getByTestId('athlete-list-item-athlete_nicholas-meregali-m'),
+    );
+
+    expect(screen.getByTestId('athlete-detail-panel')).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Nicholas Meregali' }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Brazil')).toBeInTheDocument();
+    expect(screen.getByText('New Wave Jiu Jitsu')).toBeInTheDocument();
+    expect(screen.getByText('8')).toBeInTheDocument();
+    expect(screen.getAllByText('99KG').length).toBeGreaterThan(0);
+    expect(screen.queryByText(/Won over Henrique Cardoso/i)).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /show/i }));
+    expect(screen.getByText(/Won over Henrique Cardoso/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Clear' }));
+
+    expect(
+      screen.queryByTestId('athlete-detail-panel'),
+    ).not.toBeInTheDocument();
+  });
+
+  it('shows athlete details after selecting an athlete from the graph and clears them', async () => {
+    const user = userEvent.setup();
+
+    render(<GraphStage snapshot={createUniverseSnapshot()} />);
+
+    await user.click(
       screen.getByRole('button', { name: 'Select Meregali from graph' }),
     );
 
@@ -34,7 +77,6 @@ describe('GraphStage', () => {
     expect(
       screen.getByRole('heading', { name: 'Nicholas Meregali' }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/Won over Henrique Cardoso/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Clear' }));
 

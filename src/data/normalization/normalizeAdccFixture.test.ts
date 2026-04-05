@@ -1,3 +1,4 @@
+import { getAllAthletes } from '@/data/adcc/loadAthletes';
 import fixture from '@/data/fixtures/adcc-sample.fixture.json';
 import { normalizeAdccFixture } from '@/data/normalization/normalizeAdccFixture';
 import { buildAthleteMetrics } from '@/data/metrics/buildAthleteMetrics';
@@ -8,7 +9,7 @@ describe('normalizeAdccFixture', () => {
   it('creates normalized athletes, events, and graph-ready metrics from the sample fixture', () => {
     const normalized = normalizeAdccFixture(fixture as RawAdccFixture);
     const metrics = buildAthleteMetrics(normalized);
-    const graph = buildGraphViewModel(normalized, metrics);
+    const graph = buildGraphViewModel(normalized, metrics, getAllAthletes());
 
     expect(normalized.events).toHaveLength(3);
     expect(normalized.matches).toHaveLength(6);

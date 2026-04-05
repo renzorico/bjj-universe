@@ -1,0 +1,1414 @@
+{
+  "generatedAt": "2026-04-03T16:37:19.153Z",
+  "source": "adcc-historical-kaggle",
+  "summary": {
+    "athleteCount": 531,
+    "matchCount": 1058,
+    "observedEventYears": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2003,
+      2005,
+      2007,
+      2009,
+      2011,
+      2013,
+      2015,
+      2017,
+      2019,
+      2022,
+      2024
+    ],
+    "knownWorldEventYears": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2003,
+      2005,
+      2007,
+      2009,
+      2011,
+      2013,
+      2015,
+      2017,
+      2019,
+      2022,
+      2024
+    ],
+    "missingKnownWorldEventYears": [],
+    "crossSexAthleteCount": 6,
+    "suspiciousActivityCount": 28,
+    "initialsCollisionCount": 13,
+    "sourceIdentityConflictCount": 10
+  },
+  "anomalies": {
+    "crossSexAthletes": [
+      {
+        "athleteId": "athlete_4302",
+        "athleteName": "Yuji Arai",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "60KG",
+          "66KG",
+          "77KG",
+          "88KG",
+          "99KG",
+          "ABS"
+        ],
+        "matchCount": 58,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2022
+      },
+      {
+        "athleteId": "athlete_5463",
+        "athleteName": "Tomas Szczerek",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "+99KG",
+          "66KG",
+          "77KG",
+          "88KG",
+          "99KG",
+          "ABS"
+        ],
+        "matchCount": 41,
+        "firstMatchYear": 1998,
+        "lastMatchYear": 2022
+      },
+      {
+        "athleteId": "athlete_4977",
+        "athleteName": "Nate Marquardt",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "+99KG",
+          "66KG",
+          "88KG",
+          "99KG",
+          "ABS"
+        ],
+        "matchCount": 9,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2019
+      },
+      {
+        "athleteId": "athlete_4488",
+        "athleteName": "Kethe Engen",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "60KG",
+          "77KG",
+          "88KG"
+        ],
+        "matchCount": 4,
+        "firstMatchYear": 2009,
+        "lastMatchYear": 2022
+      },
+      {
+        "athleteId": "athlete_4282",
+        "athleteName": "Yurika Nakakura",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "66KG",
+          "88KG"
+        ],
+        "matchCount": 3,
+        "firstMatchYear": 2005,
+        "lastMatchYear": 2013
+      },
+      {
+        "athleteId": "athlete_4980",
+        "athleteName": "Talita Treta",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "ABS"
+        ],
+        "matchCount": 2,
+        "firstMatchYear": 2007,
+        "lastMatchYear": 2017
+      }
+    ],
+    "suspiciousAthleteActivity": [
+      {
+        "athleteId": "athlete_4302",
+        "athleteName": "Yuji Arai",
+        "matchCount": 58,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2022,
+        "editionSpan": 12,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_84",
+        "athleteName": "Alexandre Ribeiro",
+        "matchCount": 43,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2022,
+        "editionSpan": 10,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_5463",
+        "athleteName": "Tomas Szczerek",
+        "matchCount": 41,
+        "firstMatchYear": 1998,
+        "lastMatchYear": 2022,
+        "editionSpan": 13,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_16",
+        "athleteName": "Marcelo Garcia",
+        "matchCount": 32,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2011,
+        "editionSpan": 5,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_419",
+        "athleteName": "Leonardo Vieira",
+        "matchCount": 30,
+        "firstMatchYear": 2000,
+        "lastMatchYear": 2017,
+        "editionSpan": 9,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_481",
+        "athleteName": "Saulo Ribeiro",
+        "matchCount": 30,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2009,
+        "editionSpan": 6,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_224",
+        "athleteName": "Roberto Abreu",
+        "matchCount": 29,
+        "firstMatchYear": 2009,
+        "lastMatchYear": 2022,
+        "editionSpan": 7,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_733",
+        "athleteName": "Vinicius Magalhaes",
+        "matchCount": 28,
+        "firstMatchYear": 2009,
+        "lastMatchYear": 2022,
+        "editionSpan": 7,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_1369",
+        "athleteName": "Dean Lister",
+        "matchCount": 28,
+        "firstMatchYear": 2001,
+        "lastMatchYear": 2015,
+        "editionSpan": 8,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_144",
+        "athleteName": "Andre Galvao",
+        "matchCount": 27,
+        "firstMatchYear": 2007,
+        "lastMatchYear": 2022,
+        "editionSpan": 8,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_576",
+        "athleteName": "Rafael Lovato Jr",
+        "matchCount": 26,
+        "firstMatchYear": 2007,
+        "lastMatchYear": 2022,
+        "editionSpan": 8,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_919",
+        "athleteName": "Pablo Popovitch",
+        "matchCount": 26,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2015,
+        "editionSpan": 7,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_573",
+        "athleteName": "Fabricio Werdum",
+        "matchCount": 26,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2011,
+        "editionSpan": 5,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_6167",
+        "athleteName": "Ricco Rodriguez",
+        "matchCount": 24,
+        "firstMatchYear": 1998,
+        "lastMatchYear": 2009,
+        "editionSpan": 6,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_6438",
+        "athleteName": "Chael Sonnen",
+        "matchCount": 24,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2022,
+        "editionSpan": 12,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_984",
+        "athleteName": "Marcus Almeida",
+        "matchCount": 22,
+        "firstMatchYear": 2013,
+        "lastMatchYear": 2019,
+        "editionSpan": 4,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_9",
+        "athleteName": "Marcio Cruz",
+        "matchCount": 22,
+        "firstMatchYear": 2001,
+        "lastMatchYear": 2009,
+        "editionSpan": 5,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_1023",
+        "athleteName": "Baret Yoshida",
+        "matchCount": 22,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2017,
+        "editionSpan": 10,
+        "reasons": [
+          "high_match_count",
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_6550",
+        "athleteName": "Gordon Ryan",
+        "matchCount": 21,
+        "firstMatchYear": 2017,
+        "lastMatchYear": 2022,
+        "editionSpan": 3,
+        "reasons": [
+          "high_match_count"
+        ]
+      },
+      {
+        "athleteId": "athlete_52",
+        "athleteName": "Renzo Gracie",
+        "matchCount": 15,
+        "firstMatchYear": 1998,
+        "lastMatchYear": 2011,
+        "editionSpan": 7,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_3592",
+        "athleteName": "Igor Praporschchikov",
+        "matchCount": 12,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2019,
+        "editionSpan": 11,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_232",
+        "athleteName": "Jose Mario Sperry",
+        "matchCount": 11,
+        "firstMatchYear": 1998,
+        "lastMatchYear": 2013,
+        "editionSpan": 8,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_jeff-monson-m",
+        "athleteName": "Jeff Monson",
+        "matchCount": 11,
+        "firstMatchYear": 1999,
+        "lastMatchYear": 2011,
+        "editionSpan": 7,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_4977",
+        "athleteName": "Nate Marquardt",
+        "matchCount": 9,
+        "firstMatchYear": 2003,
+        "lastMatchYear": 2019,
+        "editionSpan": 9,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_1031",
+        "athleteName": "Jake Shields",
+        "matchCount": 5,
+        "firstMatchYear": 2005,
+        "lastMatchYear": 2017,
+        "editionSpan": 7,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_4488",
+        "athleteName": "Kethe Engen",
+        "matchCount": 4,
+        "firstMatchYear": 2009,
+        "lastMatchYear": 2022,
+        "editionSpan": 7,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_4455",
+        "athleteName": "Yukiyasu Ozawa",
+        "matchCount": 3,
+        "firstMatchYear": 2001,
+        "lastMatchYear": 2015,
+        "editionSpan": 8,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_4759",
+        "athleteName": "Roger Neff",
+        "matchCount": 3,
+        "firstMatchYear": 2001,
+        "lastMatchYear": 2022,
+        "editionSpan": 11,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_320",
+        "athleteName": "Romulo Barral",
+        "matchCount": 18,
+        "firstMatchYear": 2007,
+        "lastMatchYear": 2017,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_8394",
+        "athleteName": "Vagner Rocha",
+        "matchCount": 17,
+        "firstMatchYear": 2011,
+        "lastMatchYear": 2022,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_595",
+        "athleteName": "Gabrielle Garcia",
+        "matchCount": 16,
+        "firstMatchYear": 2011,
+        "lastMatchYear": 2022,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_967",
+        "athleteName": "Jonathan Torres",
+        "matchCount": 15,
+        "firstMatchYear": 2011,
+        "lastMatchYear": 2022,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_484",
+        "athleteName": "Murilo Santana",
+        "matchCount": 11,
+        "firstMatchYear": 2009,
+        "lastMatchYear": 2019,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_195",
+        "athleteName": "Robson Moura",
+        "matchCount": 8,
+        "firstMatchYear": 2001,
+        "lastMatchYear": 2011,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_bia-mesquita-f",
+        "athleteName": "Bia Mesquita",
+        "matchCount": 5,
+        "firstMatchYear": 2015,
+        "lastMatchYear": 2024,
+        "editionSpan": 5,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_adele-fornarino-f",
+        "athleteName": "Adele Fornarino",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_kaynan-duarte-m",
+        "athleteName": "Kaynan Duarte",
+        "matchCount": 4,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_luke-griffith-m",
+        "athleteName": "Luke Griffith",
+        "matchCount": 3,
+        "firstMatchYear": 2022,
+        "lastMatchYear": 2024,
+        "editionSpan": 2,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_amy-campo-f",
+        "athleteName": "Amy Campo",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_ana-vieira-f",
+        "athleteName": "Ana Vieira",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_bianca-basilio-f",
+        "athleteName": "Bianca Basilio",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_cyborg-abreu-m",
+        "athleteName": "Cyborg Abreu",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_daniel-manasoiu-m",
+        "athleteName": "Daniel Manasoiu",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_dante-leon-m",
+        "athleteName": "Dante Leon",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_diego-pato-m",
+        "athleteName": "Diego Pato",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_diogo-reis-m",
+        "athleteName": "Diogo Reis",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_felipe-costa-m",
+        "athleteName": "Felipe Costa",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_felipe-pena-m",
+        "athleteName": "Felipe Pena",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_giancarlo-bodoni-m",
+        "athleteName": "Giancarlo Bodoni",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_helena-crevar-f",
+        "athleteName": "Helena Crevar",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jasmine-rocha-f",
+        "athleteName": "Jasmine Rocha",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_jay-rodriguez-m",
+        "athleteName": "Jay Rodriguez",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_josh-cisneros-m",
+        "athleteName": "Josh Cisneros",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_kendall-reusing-f",
+        "athleteName": "Kendall Reusing",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_mica-galvao-m",
+        "athleteName": "Mica Galvao",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_nathiely-de-jesus-f",
+        "athleteName": "Nathiely De Jesus",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_pj-barch-m",
+        "athleteName": "PJ Barch",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_rafael-lovato-jr-m",
+        "athleteName": "Rafael Lovato Jr.",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_rafaela-guedes-f",
+        "athleteName": "Rafaela Guedes",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_roberto-abreu-m",
+        "athleteName": "Roberto Abreu",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      },
+      {
+        "athleteId": "athlete_4980",
+        "athleteName": "Talita Treta",
+        "matchCount": 2,
+        "firstMatchYear": 2007,
+        "lastMatchYear": 2017,
+        "editionSpan": 6,
+        "reasons": [
+          "overlong_edition_span"
+        ]
+      },
+      {
+        "athleteId": "athlete_vagner-rocha-m",
+        "athleteName": "Vagner Rocha",
+        "matchCount": 2,
+        "firstMatchYear": 2024,
+        "lastMatchYear": 2024,
+        "editionSpan": 1,
+        "reasons": [
+          "out_of_bounds_year"
+        ]
+      }
+    ],
+    "initialsCollisions": [
+      {
+        "collisionKey": "F:karppinen:e",
+        "sex": "F",
+        "surname": "karppinen",
+        "firstInitial": "e",
+        "names": [
+          "E. Karppinen",
+          "Elvira Karppinen"
+        ],
+        "years": [
+          2017,
+          2022
+        ],
+        "sourceAthleteIds": []
+      },
+      {
+        "collisionKey": "M:alvarenga:r",
+        "sex": "M",
+        "surname": "alvarenga",
+        "firstInitial": "r",
+        "names": [
+          "R. Alvarenga",
+          "Ruan Alvarenga"
+        ],
+        "years": [
+          2019,
+          2022
+        ],
+        "sourceAthleteIds": [
+          "12080",
+          "3592"
+        ]
+      },
+      {
+        "collisionKey": "M:jones:c",
+        "sex": "M",
+        "surname": "jones",
+        "firstInitial": "c",
+        "names": [
+          "C. Jones",
+          "Craig Jones"
+        ],
+        "years": [
+          2015,
+          2017,
+          2019,
+          2022
+        ],
+        "sourceAthleteIds": [
+          "4977",
+          "8346"
+        ]
+      },
+      {
+        "collisionKey": "M:marinakis:d",
+        "sex": "M",
+        "surname": "marinakis",
+        "firstInitial": "d",
+        "names": [
+          "D. Marinakis",
+          "David Marinakis"
+        ],
+        "years": [
+          2009,
+          2011
+        ],
+        "sourceAthleteIds": [
+          "3592"
+        ]
+      },
+      {
+        "collisionKey": "M:ozawa:y",
+        "sex": "M",
+        "surname": "ozawa",
+        "firstInitial": "y",
+        "names": [
+          "Y. Ozawa",
+          "Yuki Ozawa",
+          "Yukissyu Ozawa",
+          "Yukiyasu Ozawa"
+        ],
+        "years": [
+          2003,
+          2007,
+          2015,
+          2017
+        ],
+        "sourceAthleteIds": [
+          "4455",
+          "5463"
+        ]
+      },
+      {
+        "collisionKey": "M:perez:m",
+        "sex": "M",
+        "surname": "perez",
+        "firstInitial": "m",
+        "names": [
+          "M. Perez",
+          "Michael Perez"
+        ],
+        "years": [
+          2015,
+          2017,
+          2019
+        ],
+        "sourceAthleteIds": [
+          "8427"
+        ]
+      },
+      {
+        "collisionKey": "M:pyylampi:t",
+        "sex": "M",
+        "surname": "pyylampi",
+        "firstInitial": "t",
+        "names": [
+          "T. Pyylampi",
+          "Tero Pyylampi"
+        ],
+        "years": [
+          2013,
+          2017
+        ],
+        "sourceAthleteIds": [
+          "5463"
+        ]
+      },
+      {
+        "collisionKey": "M:sekine:h",
+        "sex": "M",
+        "surname": "sekine",
+        "firstInitial": "h",
+        "names": [
+          "H. Sekine",
+          "Hideki Sekine"
+        ],
+        "years": [
+          2013,
+          2015,
+          2017
+        ],
+        "sourceAthleteIds": [
+          "4977",
+          "6438"
+        ]
+      },
+      {
+        "collisionKey": "M:sotiropoulos:g",
+        "sex": "M",
+        "surname": "sotiropoulos",
+        "firstInitial": "g",
+        "names": [
+          "G. Sotiropoulos",
+          "George Sotiropoulos"
+        ],
+        "years": [
+          2003,
+          2007
+        ],
+        "sourceAthleteIds": []
+      },
+      {
+        "collisionKey": "M:suzuki:t",
+        "sex": "M",
+        "surname": "suzuki",
+        "firstInitial": "t",
+        "names": [
+          "T. Suzuki",
+          "Tetsu Suzuki"
+        ],
+        "years": [
+          2005,
+          2007,
+          2013
+        ],
+        "sourceAthleteIds": [
+          "5463"
+        ]
+      },
+      {
+        "collisionKey": "M:szczecinski:m",
+        "sex": "M",
+        "surname": "szczecinski",
+        "firstInitial": "m",
+        "names": [
+          "M. Szczecinski",
+          "Mateusz Szczecinski"
+        ],
+        "years": [
+          2022
+        ],
+        "sourceAthleteIds": [
+          "4759"
+        ]
+      },
+      {
+        "collisionKey": "M:urholin:j",
+        "sex": "M",
+        "surname": "urholin",
+        "firstInitial": "j",
+        "names": [
+          "J. Urholin",
+          "Jesse Urholin"
+        ],
+        "years": [
+          2015,
+          2017
+        ],
+        "sourceAthleteIds": [
+          "7608"
+        ]
+      },
+      {
+        "collisionKey": "M:van:m",
+        "sex": "M",
+        "surname": "van",
+        "firstInitial": "m",
+        "names": [
+          "M. Van",
+          "Mike Van"
+        ],
+        "years": [
+          2001,
+          2003
+        ],
+        "sourceAthleteIds": [
+          "4302",
+          "5463"
+        ]
+      }
+    ],
+    "sourceIdentityConflicts": [
+      {
+        "sourceAthleteId": "3592",
+        "sexes": [
+          "M"
+        ],
+        "names": [
+          "A. Cacareco",
+          "Andreas Olsen",
+          "David Marinakis",
+          "Igor Praporschchikov",
+          "Jayson Patino",
+          "Juan Valles",
+          "Kyle Griffin",
+          "N. Uematsu",
+          "R. Alvarenga",
+          "Robert Sulski",
+          "Rustam Chsiev",
+          "Yoshitomi Mishima"
+        ],
+        "years": [
+          1999,
+          2001,
+          2005,
+          2007,
+          2009,
+          2011,
+          2013,
+          2019
+        ]
+      },
+      {
+        "sourceAthleteId": "4282",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "Mario Delgado",
+          "Oskar Piechota",
+          "Yurika Nakakura"
+        ],
+        "years": [
+          2005,
+          2013
+        ]
+      },
+      {
+        "sourceAthleteId": "4302",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "A. Cacareco",
+          "A. Zhanpeisov",
+          "Adele Fornarino",
+          "Akihiro Gono",
+          "Andy Wang",
+          "Ben Hodgkinson",
+          "Bianca Mesquita",
+          "Bob Schirmer",
+          "Caol Uno",
+          "Charles Pearson",
+          "D. Hemmings",
+          "Dave Menne",
+          "David Avellan",
+          "Don Ortega",
+          "Eddie Sanchez",
+          "Erico Cocco",
+          "Gabriel Napao",
+          "Hayato Sakurai",
+          "Heikki Jussila",
+          "Hiroyuko Abe",
+          "Jason Ramsterrer",
+          "Jeon Doo",
+          "Joe Gilbert",
+          "Joel Tudor",
+          "John Hansen",
+          "Justin Garcia",
+          "K. Toida",
+          "Kitner Mendoga",
+          "Kiuma Kunioku",
+          "Kurt Pellegrino",
+          "Lucio Lagarto",
+          "M. Yano",
+          "Marcio Cromado",
+          "Martin Brown",
+          "Mateusz Garmot",
+          "Micah Pittman",
+          "Michael Wilson",
+          "Mike Mrkulic",
+          "Mike Van",
+          "Miodrag Petkovic",
+          "Nicolas Renier",
+          "Osman Kasimov",
+          "Otto Olsen",
+          "Perttu Terpponnen",
+          "Ryan Harvey",
+          "Satori Kitaoka",
+          "Serguei Onishuk",
+          "Shinzo Ansai",
+          "Takanori Gomi",
+          "Tezekbaev Rasul",
+          "Toshiyuki Oyama",
+          "Vitor Viana",
+          "Y. Setsenko",
+          "Young-Ahm",
+          "Youngnam Noh",
+          "Yuji Arai",
+          "Zbigniew Tyszka"
+        ],
+        "years": [
+          1999,
+          2000,
+          2001,
+          2003,
+          2005,
+          2007,
+          2009,
+          2011,
+          2013,
+          2015,
+          2017,
+          2019,
+          2022
+        ]
+      },
+      {
+        "sourceAthleteId": "4455",
+        "sexes": [
+          "M"
+        ],
+        "names": [
+          "Alexander Savko",
+          "Ben Henderson",
+          "Yukiyasu Ozawa"
+        ],
+        "years": [
+          2001,
+          2013,
+          2015
+        ]
+      },
+      {
+        "sourceAthleteId": "4488",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "Ben Askren",
+          "Eoghan OFlanagan",
+          "Jimmy Freidrich",
+          "Kethe Engen"
+        ],
+        "years": [
+          2009,
+          2013,
+          2015,
+          2022
+        ]
+      },
+      {
+        "sourceAthleteId": "4759",
+        "sexes": [
+          "M"
+        ],
+        "names": [
+          "Mateusz Szczecinski",
+          "Mike Cardosa",
+          "Roger Neff"
+        ],
+        "years": [
+          2001,
+          2022
+        ]
+      },
+      {
+        "sourceAthleteId": "4977",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "C. Jones",
+          "Carina Santi",
+          "David Bielkheden",
+          "Hideki Sekine",
+          "Nate Marquardt",
+          "Nieman Gracie",
+          "Rogent Lorent",
+          "Tim Carpenter",
+          "Y. Takahito"
+        ],
+        "years": [
+          2003,
+          2005,
+          2007,
+          2009,
+          2013,
+          2015,
+          2019
+        ]
+      },
+      {
+        "sourceAthleteId": "4980",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "Mario Rinaldi",
+          "Talita Treta"
+        ],
+        "years": [
+          2007,
+          2017
+        ]
+      },
+      {
+        "sourceAthleteId": "5463",
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "names": [
+          "Ahmad Faraj",
+          "Akira Soji",
+          "Alison Tremblay",
+          "Chris Wideman",
+          "Dennis Hallman",
+          "Diego Sanchez",
+          "Elliot Marshal",
+          "Elvis Sinosic",
+          "Firas Nakdali",
+          "George St",
+          "Hiroshi Nakamura",
+          "J. Pietlainen",
+          "Janne-Pekka",
+          "Jeff Monson",
+          "Jorge Britto",
+          "Joseph Lee",
+          "Kuba Witkowski",
+          "Larry Parker",
+          "M. Van",
+          "Magid Hage",
+          "Marc",
+          "Marko Helen",
+          "Matt Lindland",
+          "Michael Groth",
+          "Mike Martelle",
+          "Mike Van",
+          "Peter Angerer",
+          "Rocky Batastini",
+          "Rustam Chsiev",
+          "Sekine Hideki",
+          "T. Hirono",
+          "T. Pyylampi",
+          "Tamura",
+          "Tetsu Suzuki",
+          "Tomas Szczerek",
+          "Trevor Lally",
+          "Y. Kohsaka",
+          "Y. Ozawa",
+          "Y. Yatso"
+        ],
+        "years": [
+          1998,
+          1999,
+          2001,
+          2003,
+          2005,
+          2007,
+          2009,
+          2011,
+          2013,
+          2015,
+          2017,
+          2019,
+          2022
+        ]
+      },
+      {
+        "sourceAthleteId": "6438",
+        "sexes": [
+          "M"
+        ],
+        "names": [
+          "A. Cacareco",
+          "Asadulaev Surkhay",
+          "Ben Dyson",
+          "Chael Sonnen",
+          "Dan Schon",
+          "Daniel Hortegas",
+          "David Avellan",
+          "Eoghan Oflanagan",
+          "Erza Lennon",
+          "Ezra Lenon",
+          "Hayato Sakurai",
+          "Hideki Sekine",
+          "James Poupolo",
+          "Jeff Monson",
+          "Jia Jang",
+          "Jon Hansen",
+          "Kaynan D.",
+          "Mark Bocek",
+          "P. Ardilla",
+          "Reese Andy",
+          "Ricardo Mesquita",
+          "Rustam Chsiev",
+          "Wang Yan"
+        ],
+        "years": [
+          1999,
+          2003,
+          2005,
+          2007,
+          2011,
+          2013,
+          2015,
+          2017,
+          2019,
+          2022
+        ]
+      }
+    ],
+    "missingWorldEvents": []
+  }
+}

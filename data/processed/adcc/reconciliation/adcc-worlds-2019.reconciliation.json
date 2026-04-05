@@ -1,0 +1,1820 @@
+{
+  "generatedAt": "2026-04-03T16:37:19.130Z",
+  "event": {
+    "slug": "adcc-worlds-2019",
+    "year": 2019,
+    "eventType": "worlds",
+    "title": "ADCC Submission Fighting World Championship 2019",
+    "sourceUrl": "https://adcombat.com/adcc-events/adcc-submission-fighting-world-championship-2019/"
+  },
+  "sourcePrecedence": [
+    {
+      "role": "official_event_results",
+      "rank": 1,
+      "trust": "authoritative",
+      "usage": "Official ADCC event results pages are the highest-trust source for event, division, placement, and result-row truth."
+    },
+    {
+      "role": "historical_bootstrap",
+      "rank": 2,
+      "trust": "secondary",
+      "usage": "The Kaggle historical dataset is a secondary bootstrap source for historical rows and comparison, not the final authority when an official event page exists."
+    },
+    {
+      "role": "athlete_metadata",
+      "rank": 3,
+      "trust": "metadata_only",
+      "usage": "Athlete enrichment sources may supply metadata such as nationality or academy, but they must not be used as match-truth or event-result sources."
+    }
+  ],
+  "summary": {
+    "officialRows": 36,
+    "kaggleRows": 32,
+    "exactMatches": 13,
+    "likelyMatches": 6,
+    "mismatches": 5,
+    "officialOnly": 12,
+    "kaggleOnly": 9,
+    "manualReviewCount": 32,
+    "kaggleEventRowsInYear": 104
+  },
+  "exactMatches": [
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -66KG:1:augusto-mendes",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Augusto Mendes",
+        "athleteKey": "augusto-mendes",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:66KG:augusto-mendes",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Augusto Mendes",
+        "athleteKey": "augusto-mendes",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:66KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -66KG:2:kennedy-maciel",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Kennedy Maciel",
+        "athleteKey": "kennedy-maciel",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:66KG:kennedy-maciel",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Kennedy Maciel",
+        "athleteKey": "kennedy-maciel",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:66KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -66KG:3:paulo-miyao",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Paulo Miyao",
+        "athleteKey": "paulo-miyao",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:66KG:paulo-miyao",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Paulo Miyao",
+        "athleteKey": "paulo-miyao",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:66KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in bronze-place round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:2:vagner-rocha",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Vagner Rocha",
+        "athleteKey": "vagner-rocha",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:vagner-rocha",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Vagner Rocha",
+        "athleteKey": "vagner-rocha",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -88KG:1:matheus-diniz",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Matheus Diniz",
+        "athleteKey": "matheus-diniz",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:88KG:matheus-diniz",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Matheus Diniz",
+        "athleteKey": "matheus-diniz",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:88KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -88KG:2:craig-jones",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Craig Jones",
+        "athleteKey": "craig-jones",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:88KG:craig-jones",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Craig Jones",
+        "athleteKey": "craig-jones",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:88KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -88KG:3:josh-hinger",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Josh Hinger",
+        "athleteKey": "josh-hinger",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:88KG:josh-hinger",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Josh Hinger",
+        "athleteKey": "josh-hinger",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:88KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in bronze-place round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -99KG:1:gordon-ryan",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Gordon Ryan",
+        "athleteKey": "gordon-ryan",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:99KG:gordon-ryan",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Gordon Ryan",
+        "athleteKey": "gordon-ryan",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:99KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:1:kaynan-duarte",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Kaynan Duarte",
+        "athleteKey": "kaynan-duarte",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:kaynan-duarte",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Kaynan Duarte",
+        "athleteKey": "kaynan-duarte",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:2:nick-rodriguez",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Nick Rodriguez",
+        "athleteKey": "nick-rodriguez",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:nick-rodriguez",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Nick Rodriguez",
+        "athleteKey": "nick-rodriguez",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE -60KG:1:bianca-basilio",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Bianca Basilio",
+        "athleteKey": "bianca-basilio",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:60KG:bianca-basilio",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Bianca Basilio",
+        "athleteKey": "bianca-basilio",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "F:60KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE -60KG:2:ffion-davies",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Ffion Davies",
+        "athleteKey": "ffion-davies",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:60KG:ffion-davies",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Ffion Davies",
+        "athleteKey": "ffion-davies",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "F:60KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:2:carina-santi",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Carina Santi",
+        "athleteKey": "carina-santi",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:carina-santi",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Carina Santi",
+        "athleteKey": "carina-santi",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "reason": "Same athlete, division, and inferred placement rank."
+    }
+  ],
+  "likelyMatches": [
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:1:jt-torres",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "JT Torres",
+        "athleteKey": "jt-torres",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:jonathan-torres",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Jonathan Torres",
+        "athleteKey": "jonathan-torres",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Athlete name alignment is likely rather than exact, but placement rank agrees."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:3:garry-tonon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Garry Tonon",
+        "athleteKey": "garry-tonon",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:gary-tonon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Gary Tonon",
+        "athleteKey": "gary-tonon",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in bronze-place round."
+        ]
+      },
+      "reason": "Athlete name alignment is likely rather than exact, but placement rank agrees."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -99KG:3:lucas-barbosa",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Lucas Barbosa",
+        "athleteKey": "lucas-barbosa",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:99KG:lucas-daniel-barbosa",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Lucas Daniel Barbosa",
+        "athleteKey": "lucas-daniel-barbosa",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Athlete name alignment is likely rather than exact, but placement rank agrees."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:3:marcus-buchecha-almeida",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Marcus Buchecha Almeida",
+        "athleteKey": "marcus-buchecha-almeida",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:marcus-almeida",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Marcus Almeida",
+        "athleteKey": "marcus-almeida",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Athlete name alignment is likely rather than exact, but placement rank agrees."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:1:gabi-garcia",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Gabi Garcia",
+        "athleteKey": "gabi-garcia",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:gabrielle-garcia",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Gabrielle Garcia",
+        "athleteKey": "gabrielle-garcia",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "reason": "Athlete name alignment is likely rather than exact, but placement rank agrees."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:4:ana-carolina-vieira",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Ana Carolina Vieira",
+        "athleteKey": "ana-carolina-vieira",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:ana-carolina-vieira",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Ana Carolina Vieira",
+        "athleteKey": "ana-carolina-vieira",
+        "rank": null,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "presence_only",
+        "notes": [
+          "Athlete is present in Kaggle rows for this division, but finish is not inferred confidently."
+        ]
+      },
+      "reason": "Same division and athlete name pattern, but Kaggle only confirms athlete presence in the event."
+    }
+  ],
+  "mismatches": [
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -66KG:4:tye-ruotolo",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Tye Ruotolo",
+        "athleteKey": "tye-ruotolo",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:66KG:tye-ruotolo",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Tye Ruotolo",
+        "athleteKey": "tye-ruotolo",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:66KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:4:dante-leon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Dante Leon",
+        "athleteKey": "dante-leon",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:dante-leon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Dante Leon",
+        "athleteKey": "dante-leon",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -88KG:4:jon-blank",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Jon Blank",
+        "athleteKey": "jon-blank",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:88KG:jon-blank",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Jon Blank",
+        "athleteKey": "jon-blank",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:88KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:4:roberto-abreu",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Roberto Abreu",
+        "athleteKey": "roberto-abreu",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:roberto-abreu",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Roberto Abreu",
+        "athleteKey": "roberto-abreu",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+    },
+    {
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE -60KG:4:beatriz-mesquita",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Beatriz Mesquita",
+        "athleteKey": "beatriz-mesquita",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "F:60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:60KG:beatriz-mesquita",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Beatriz Mesquita",
+        "athleteKey": "beatriz-mesquita",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "F:60KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "reason": "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+    }
+  ],
+  "officialOnlyRows": [
+    {
+      "rowId": "adcc-worlds-2019:official:MALE -99KG:2:vinicius-gazola",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Vinicius Gazola",
+      "athleteKey": "vinicius-gazola",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "M:99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:MALE -99KG:4:vinny-magalhaes",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Vinny Magalhaes",
+      "athleteKey": "vinny-magalhaes",
+      "rank": 4,
+      "source": "official",
+      "divisionLabel": "M:99KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:FEMALE -60KG:3:elvira-karppinen",
+      "eventYear": 2019,
+      "sex": "F",
+      "weightClass": "60KG",
+      "athleteName": "Elvira Karppinen",
+      "athleteKey": "elvira-karppinen",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:60KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:FEMALE +60KG:3:tayane-porfirio",
+      "eventYear": 2019,
+      "sex": "F",
+      "weightClass": "+60KG",
+      "athleteName": "Tayane Porfirio",
+      "athleteKey": "tayane-porfirio",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "F:+60KG",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:ABSOLUTE:1:gordon-ryan",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "ABS",
+      "athleteName": "Gordon Ryan",
+      "athleteKey": "gordon-ryan",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "U:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:ABSOLUTE:2:marcus-buchecha-almeida",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "ABS",
+      "athleteName": "Marcus Buchecha Almeida",
+      "athleteKey": "marcus-buchecha-almeida",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "U:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:ABSOLUTE:3:lachlan-giles-aus",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "ABS",
+      "athleteName": "Lachlan Giles (AUS)",
+      "athleteKey": "lachlan-giles-aus",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "U:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:ABSOLUTE:4:mahamed-aly-bra",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "ABS",
+      "athleteName": "Mahamed Aly (BRA)",
+      "athleteKey": "mahamed-aly-bra",
+      "rank": 4,
+      "source": "official",
+      "divisionLabel": "U:ABS",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:SUPERFIGHT:1:andre-galvao-bra",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "SUPERFIGHT",
+      "athleteName": "Andre Galvao (BRA)",
+      "athleteKey": "andre-galvao-bra",
+      "rank": 1,
+      "source": "official",
+      "divisionLabel": "U:SUPERFIGHT",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:SUPERFIGHT:2:felipe-pena-bra",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "SUPERFIGHT",
+      "athleteName": "Felipe Pena (BRA)",
+      "athleteKey": "felipe-pena-bra",
+      "rank": 2,
+      "source": "official",
+      "divisionLabel": "U:SUPERFIGHT",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:SUPERFIGHT:3:organizer",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "SUPERFIGHT",
+      "athleteName": "ORGANIZER",
+      "athleteKey": "organizer",
+      "rank": 3,
+      "source": "official",
+      "divisionLabel": "U:SUPERFIGHT",
+      "notes": []
+    },
+    {
+      "rowId": "adcc-worlds-2019:official:SUPERFIGHT:4:mo-jassim-adcc-federation",
+      "eventYear": 2019,
+      "sex": null,
+      "weightClass": "SUPERFIGHT",
+      "athleteName": "Mo Jassim & ADCC Federation",
+      "athleteKey": "mo-jassim-adcc-federation",
+      "rank": 4,
+      "source": "official",
+      "divisionLabel": "U:SUPERFIGHT",
+      "notes": []
+    }
+  ],
+  "kaggleOnlyRows": [
+    {
+      "rowId": "kaggle:2019:F:+60KG:ana-carolina",
+      "eventYear": 2019,
+      "sex": "F",
+      "weightClass": "+60KG",
+      "athleteName": "Ana Carolina",
+      "athleteKey": "ana-carolina",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "F:+60KG",
+      "confidence": "likely",
+      "notes": [
+        "Kaggle semifinal loss suggests bronze-place finish candidate."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:F:60KG:elvira-karpinnen",
+      "eventYear": 2019,
+      "sex": "F",
+      "weightClass": "60KG",
+      "athleteName": "Elvira Karpinnen",
+      "athleteKey": "elvira-karpinnen",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "F:60KG",
+      "confidence": "likely",
+      "notes": [
+        "Kaggle semifinal loss suggests bronze-place finish candidate."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:99KG:vinicius-ferreira",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Vinicius Ferreira",
+      "athleteKey": "vinicius-ferreira",
+      "rank": 2,
+      "source": "kaggle",
+      "divisionLabel": "M:99KG",
+      "confidence": "exact",
+      "notes": [
+        "Kaggle loser in final round."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:99KG:vinicius-magalhaes",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "99KG",
+      "athleteName": "Vinicius Magalhaes",
+      "athleteKey": "vinicius-magalhaes",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "M:99KG",
+      "confidence": "likely",
+      "notes": [
+        "Kaggle semifinal loss suggests bronze-place finish candidate."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:ABS:gordon-ryan",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Gordon Ryan",
+      "athleteKey": "gordon-ryan",
+      "rank": 1,
+      "source": "kaggle",
+      "divisionLabel": "M:ABS",
+      "confidence": "exact",
+      "notes": [
+        "Kaggle winner in final round."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:ABS:marcus-almeida",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Marcus Almeida",
+      "athleteKey": "marcus-almeida",
+      "rank": 2,
+      "source": "kaggle",
+      "divisionLabel": "M:ABS",
+      "confidence": "exact",
+      "notes": [
+        "Kaggle loser in final round."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:ABS:felipe-pena",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Felipe Pena",
+      "athleteKey": "felipe-pena",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "M:ABS",
+      "confidence": "likely",
+      "notes": [
+        "Kaggle semifinal loss suggests bronze-place finish candidate."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:ABS:lachlan-giles",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Lachlan Giles",
+      "athleteKey": "lachlan-giles",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "M:ABS",
+      "confidence": "exact",
+      "notes": [
+        "Kaggle winner in bronze-place round."
+      ]
+    },
+    {
+      "rowId": "kaggle:2019:M:ABS:mahamed-aly",
+      "eventYear": 2019,
+      "sex": "M",
+      "weightClass": "ABS",
+      "athleteName": "Mahamed Aly",
+      "athleteKey": "mahamed-aly",
+      "rank": 3,
+      "source": "kaggle",
+      "divisionLabel": "M:ABS",
+      "confidence": "likely",
+      "notes": [
+        "Kaggle semifinal loss suggests bronze-place finish candidate."
+      ]
+    }
+  ],
+  "manualReview": [
+    {
+      "status": "mismatch",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -66KG:4:tye-ruotolo",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Tye Ruotolo",
+        "athleteKey": "tye-ruotolo",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:66KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:66KG:tye-ruotolo",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "66KG",
+        "athleteName": "Tye Ruotolo",
+        "athleteKey": "tye-ruotolo",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:66KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:1:jt-torres",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "JT Torres",
+        "athleteKey": "jt-torres",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:jonathan-torres",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Jonathan Torres",
+        "athleteKey": "jonathan-torres",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "notes": [
+        "Athlete name alignment is likely rather than exact, but placement rank agrees."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:3:garry-tonon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Garry Tonon",
+        "athleteKey": "garry-tonon",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:gary-tonon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Gary Tonon",
+        "athleteKey": "gary-tonon",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in bronze-place round."
+        ]
+      },
+      "notes": [
+        "Athlete name alignment is likely rather than exact, but placement rank agrees."
+      ]
+    },
+    {
+      "status": "mismatch",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -77KG:4:dante-leon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Dante Leon",
+        "athleteKey": "dante-leon",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:77KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:77KG:dante-leon",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "77KG",
+        "athleteName": "Dante Leon",
+        "athleteKey": "dante-leon",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:77KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+      ]
+    },
+    {
+      "status": "mismatch",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -88KG:4:jon-blank",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Jon Blank",
+        "athleteKey": "jon-blank",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:88KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:88KG:jon-blank",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "88KG",
+        "athleteName": "Jon Blank",
+        "athleteKey": "jon-blank",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:88KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -99KG:2:vinicius-gazola",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Vinicius Gazola",
+        "athleteKey": "vinicius-gazola",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -99KG:3:lucas-barbosa",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Lucas Barbosa",
+        "athleteKey": "lucas-barbosa",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:99KG:lucas-daniel-barbosa",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Lucas Daniel Barbosa",
+        "athleteKey": "lucas-daniel-barbosa",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Athlete name alignment is likely rather than exact, but placement rank agrees."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE -99KG:4:vinny-magalhaes",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Vinny Magalhaes",
+        "athleteKey": "vinny-magalhaes",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:99KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:3:marcus-buchecha-almeida",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Marcus Buchecha Almeida",
+        "athleteKey": "marcus-buchecha-almeida",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:marcus-almeida",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Marcus Almeida",
+        "athleteKey": "marcus-almeida",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Athlete name alignment is likely rather than exact, but placement rank agrees."
+      ]
+    },
+    {
+      "status": "mismatch",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:MALE +99KG:4:roberto-abreu",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Roberto Abreu",
+        "athleteKey": "roberto-abreu",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "M:+99KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:+99KG:roberto-abreu",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "+99KG",
+        "athleteName": "Roberto Abreu",
+        "athleteKey": "roberto-abreu",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:+99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE -60KG:3:elvira-karppinen",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Elvira Karppinen",
+        "athleteKey": "elvira-karppinen",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:60KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "mismatch",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE -60KG:4:beatriz-mesquita",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Beatriz Mesquita",
+        "athleteKey": "beatriz-mesquita",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "F:60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:60KG:beatriz-mesquita",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Beatriz Mesquita",
+        "athleteKey": "beatriz-mesquita",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "F:60KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Same athlete and division, but inferred Kaggle rank differs from the official placement."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:1:gabi-garcia",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Gabi Garcia",
+        "athleteKey": "gabi-garcia",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:gabrielle-garcia",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Gabrielle Garcia",
+        "athleteKey": "gabrielle-garcia",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "notes": [
+        "Athlete name alignment is likely rather than exact, but placement rank agrees."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:3:tayane-porfirio",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Tayane Porfirio",
+        "athleteKey": "tayane-porfirio",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "likely_match",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:FEMALE +60KG:4:ana-carolina-vieira",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Ana Carolina Vieira",
+        "athleteKey": "ana-carolina-vieira",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "F:+60KG",
+        "notes": []
+      },
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:ana-carolina-vieira",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Ana Carolina Vieira",
+        "athleteKey": "ana-carolina-vieira",
+        "rank": null,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "presence_only",
+        "notes": [
+          "Athlete is present in Kaggle rows for this division, but finish is not inferred confidently."
+        ]
+      },
+      "notes": [
+        "Same division and athlete name pattern, but Kaggle only confirms athlete presence in the event."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:ABSOLUTE:1:gordon-ryan",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "ABS",
+        "athleteName": "Gordon Ryan",
+        "athleteKey": "gordon-ryan",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "U:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:ABSOLUTE:2:marcus-buchecha-almeida",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "ABS",
+        "athleteName": "Marcus Buchecha Almeida",
+        "athleteKey": "marcus-buchecha-almeida",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "U:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:ABSOLUTE:3:lachlan-giles-aus",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "ABS",
+        "athleteName": "Lachlan Giles (AUS)",
+        "athleteKey": "lachlan-giles-aus",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "U:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:ABSOLUTE:4:mahamed-aly-bra",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "ABS",
+        "athleteName": "Mahamed Aly (BRA)",
+        "athleteKey": "mahamed-aly-bra",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "U:ABS",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:SUPERFIGHT:1:andre-galvao-bra",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "SUPERFIGHT",
+        "athleteName": "Andre Galvao (BRA)",
+        "athleteKey": "andre-galvao-bra",
+        "rank": 1,
+        "source": "official",
+        "divisionLabel": "U:SUPERFIGHT",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:SUPERFIGHT:2:felipe-pena-bra",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "SUPERFIGHT",
+        "athleteName": "Felipe Pena (BRA)",
+        "athleteKey": "felipe-pena-bra",
+        "rank": 2,
+        "source": "official",
+        "divisionLabel": "U:SUPERFIGHT",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:SUPERFIGHT:3:organizer",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "SUPERFIGHT",
+        "athleteName": "ORGANIZER",
+        "athleteKey": "organizer",
+        "rank": 3,
+        "source": "official",
+        "divisionLabel": "U:SUPERFIGHT",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "official_only",
+      "officialRow": {
+        "rowId": "adcc-worlds-2019:official:SUPERFIGHT:4:mo-jassim-adcc-federation",
+        "eventYear": 2019,
+        "sex": null,
+        "weightClass": "SUPERFIGHT",
+        "athleteName": "Mo Jassim & ADCC Federation",
+        "athleteKey": "mo-jassim-adcc-federation",
+        "rank": 4,
+        "source": "official",
+        "divisionLabel": "U:SUPERFIGHT",
+        "notes": []
+      },
+      "notes": [
+        "No Kaggle candidate aligned to this official result row."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:+60KG:ana-carolina",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "+60KG",
+        "athleteName": "Ana Carolina",
+        "athleteKey": "ana-carolina",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "F:+60KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:F:60KG:elvira-karpinnen",
+        "eventYear": 2019,
+        "sex": "F",
+        "weightClass": "60KG",
+        "athleteName": "Elvira Karpinnen",
+        "athleteKey": "elvira-karpinnen",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "F:60KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:99KG:vinicius-ferreira",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Vinicius Ferreira",
+        "athleteKey": "vinicius-ferreira",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:99KG",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:99KG:vinicius-magalhaes",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "99KG",
+        "athleteName": "Vinicius Magalhaes",
+        "athleteKey": "vinicius-magalhaes",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:99KG",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:ABS:gordon-ryan",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Gordon Ryan",
+        "athleteKey": "gordon-ryan",
+        "rank": 1,
+        "source": "kaggle",
+        "divisionLabel": "M:ABS",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in final round."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:ABS:marcus-almeida",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Marcus Almeida",
+        "athleteKey": "marcus-almeida",
+        "rank": 2,
+        "source": "kaggle",
+        "divisionLabel": "M:ABS",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle loser in final round."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:ABS:felipe-pena",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Felipe Pena",
+        "athleteKey": "felipe-pena",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:ABS",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:ABS:lachlan-giles",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Lachlan Giles",
+        "athleteKey": "lachlan-giles",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:ABS",
+        "confidence": "exact",
+        "notes": [
+          "Kaggle winner in bronze-place round."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    },
+    {
+      "status": "kaggle_only",
+      "kaggleRow": {
+        "rowId": "kaggle:2019:M:ABS:mahamed-aly",
+        "eventYear": 2019,
+        "sex": "M",
+        "weightClass": "ABS",
+        "athleteName": "Mahamed Aly",
+        "athleteKey": "mahamed-aly",
+        "rank": 3,
+        "source": "kaggle",
+        "divisionLabel": "M:ABS",
+        "confidence": "likely",
+        "notes": [
+          "Kaggle semifinal loss suggests bronze-place finish candidate."
+        ]
+      },
+      "notes": [
+        "Kaggle inferred a placement with no official row alignment."
+      ]
+    }
+  ]
+}

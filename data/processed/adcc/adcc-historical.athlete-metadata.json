@@ -1,0 +1,32 @@
+[
+  {
+    "athleteId": "athlete_6550",
+    "athleteName": "Gordon Ryan",
+    "sourceName": "bjjheroes",
+    "sourceUrl": "https://www.bjjheroes.com/bjj-fighters/gordon-ryan",
+    "status": "blocked",
+    "notes": [
+      "HTTP 403 Forbidden"
+    ]
+  },
+  {
+    "athleteId": "athlete_144",
+    "athleteName": "Andre Galvao",
+    "sourceName": "bjjheroes",
+    "sourceUrl": "https://www.bjjheroes.com/bjj-fighters/andre-galvao",
+    "status": "blocked",
+    "notes": [
+      "HTTP 403 Forbidden"
+    ]
+  },
+  {
+    "athleteId": "athlete_16",
+    "athleteName": "Marcelo Garcia",
+    "sourceName": "bjjheroes",
+    "sourceUrl": "https://www.bjjheroes.com/bjj-fighters/marcelo-garcia",
+    "status": "blocked",
+    "notes": [
+      "HTTP 403 Forbidden"
+    ]
+  }
+]

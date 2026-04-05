@@ -1,3 +1,4 @@
+import { getAllAthletes } from '@/data/adcc/loadAthletes';
 import {
   buildAdccHistoricalSourceDataset,
   findAthleteRowsByName,
@@ -77,14 +78,19 @@ describe('adccHistoricalDataset ingestion', () => {
   it('exports graph-ready data from the real processed dataset', () => {
     const processed = processedDataset as ProcessedCompetitionDataset;
     const metrics = buildAthleteMetrics(processed.normalized);
-    const graph = buildGraphViewModel(processed.normalized, metrics);
+    const graph = buildGraphViewModel(
+      processed.normalized,
+      metrics,
+      getAllAthletes(),
+    );
 
     expect(processed.validationSummary.acceptedRows).toBe(1028);
     expect(processed.validationSummary.quarantinedRows).toBe(0);
-    expect(processed.normalized.matches).toHaveLength(1028);
-    expect(graph.edges).toHaveLength(1028);
+    expect(processed.normalized.matches).toHaveLength(1058);
+    expect(graph.edges).toHaveLength(1058);
     expect(graph.nodes.length).toBeGreaterThan(200);
     expect(graph.edges.some((edge) => edge.year === 2022)).toBe(true);
+    expect(graph.edges.some((edge) => edge.year === 2024)).toBe(true);
     expect(graph.edges.some((edge) => edge.sex === 'F')).toBe(true);
     expect(graph.edges.some((edge) => edge.weightClass === '60KG')).toBe(true);
   });

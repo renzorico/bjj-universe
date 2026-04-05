@@ -18,12 +18,14 @@ describe('buildForceGraphData', () => {
     });
 
     const graphData = buildForceGraphData(scene.nodes, scene.edges, 'all');
-    const athlete = graphData.nodes.find((node) => node.id === 'athlete_7507');
+    const athlete = graphData.nodes.find(
+      (node) => node.id === 'athlete_nicholas-meregali-m',
+    );
 
     expect(graphData.nodes.length).toBe(scene.nodes.length);
     expect(graphData.links.length).toBe(scene.edges.length);
     expect(athlete).toMatchObject({
-      id: 'athlete_7507',
+      id: 'athlete_nicholas-meregali-m',
       label: 'Nicholas Meregali',
     });
     expect(athlete?.x).toBeGreaterThanOrEqual(-560);

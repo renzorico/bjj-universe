@@ -11,6 +11,18 @@ export interface Athlete {
   weightClasses: string[];
 }
 
+export interface AdccAthlete {
+  canonicalAthleteId: string;
+  name: string;
+  sex: string;
+  primaryWeightClass: string;
+  activeYearFirst: number;
+  activeYearLast: number;
+  totalMatches: number;
+  nationality: string | null;
+  team: string | null;
+}
+
 export interface Event {
   id: EventId;
   name: string;
@@ -23,6 +35,7 @@ export interface Match {
   eventId: EventId;
   winnerId: AthleteId;
   loserId: AthleteId;
+  recordType?: 'observed_match' | 'official_result_relation';
   sex?: string;
   weightClass?: string;
   method?: string;
@@ -34,6 +47,20 @@ export interface Match {
   sourceMatchId?: string;
 }
 
+export interface CanonicalAdccMatch {
+  id: MatchId;
+  sourceMatchId: string;
+  eventId: EventId;
+  eventName: string;
+  year: number;
+  winnerCanonicalId: AthleteId;
+  loserCanonicalId: AthleteId;
+  sex?: string;
+  weightClass?: string;
+  method?: string;
+  roundLabel?: string;
+}
+
 export interface EraFilter {
   startYear: number;
   endYear: number;
@@ -42,6 +69,11 @@ export interface EraFilter {
 export interface GraphNodeViewModel {
   id: AthleteId;
   label: string;
+  displaySex: string | null;
+  displayPrimaryWeightClass: string | null;
+  displayActiveYearFirst: number | null;
+  displayActiveYearLast: number | null;
+  displayTotalMatches: number | null;
   size: number;
   wins: number;
   losses: number;
@@ -97,6 +129,7 @@ export interface RawAdccMatchRecord {
     location?: string;
     inferredName?: boolean;
   };
+  recordType?: 'observed_match' | 'official_result_relation';
   sex?: string;
   weightClass?: string;
   winner: RawAdccAthleteRecord;

@@ -17,7 +17,12 @@
     "test:e2e": "playwright test",
     "data:adcc:download": "python3 scripts/download_adcc_dataset.py",
     "data:adcc:build": "tsx --tsconfig tsconfig.app.json scripts/build_adcc_dataset.ts",
-    "data:adcc:refresh": "npm run data:adcc:download && npm run data:adcc:build"
+    "data:adcc:refresh": "npm run data:adcc:download && npm run data:adcc:build",
+    "data:adcc:reconcile": "tsx --tsconfig tsconfig.app.json scripts/build_adcc_dataset.ts",
+    "data:adcc:scrape:event": "tsx --tsconfig tsconfig.app.json scripts/scrape_adcc_event.ts",
+    "data:adcc:enrichment:targets": "tsx --tsconfig tsconfig.app.json scripts/build_athlete_enrichment_targets.ts",
+    "data:adcc:enrichment:run": "tsx --tsconfig tsconfig.app.json scripts/enrich_athlete_metadata.ts",
+    "data:adcc:export:athletes": "tsx --tsconfig tsconfig.app.json scripts/export_adcc_athletes_for_manual_enrichment.ts"
   },
   "keywords": [
     "bjj",

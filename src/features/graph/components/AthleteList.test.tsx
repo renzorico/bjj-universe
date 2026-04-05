@@ -6,106 +6,74 @@ import { SceneNodeViewModel } from '@/features/graph/lib/types';
 
 const athletes: SceneNodeViewModel[] = [
   {
-    id: 'athlete_1',
+    id: 'a1',
     label: 'Nicholas Meregali',
-    size: 22,
-    wins: 4,
+    displaySex: 'M',
+    displayPrimaryWeightClass: '99KG',
+    displayActiveYearFirst: 2022,
+    displayActiveYearLast: 2024,
+    displayTotalMatches: 8,
+    size: 10,
+    wins: 3,
     losses: 1,
-    yearsActive: [2022],
+    yearsActive: [2022, 2024],
     sexes: ['M'],
     weightClasses: ['99KG'],
-    bridgeScore: 31,
-    position: { x: 50, y: 50 },
-    activeMatches: 5,
+    nationality: 'Brazil',
+    team: 'Alliance',
+    bridgeScore: 5,
+    activeMatches: 4,
+    position: { x: 0, y: 0 },
   },
   {
-    id: 'athlete_2',
-    label: 'Henrique Cardoso',
-    size: 16,
-    wins: 1,
-    losses: 2,
-    yearsActive: [2022],
+    id: 'a2',
+    label: 'Gordon Ryan',
+    displaySex: 'M',
+    displayPrimaryWeightClass: '99KG',
+    displayActiveYearFirst: 2019,
+    displayActiveYearLast: 2024,
+    displayTotalMatches: 21,
+    size: 10,
+    wins: 6,
+    losses: 0,
+    yearsActive: [2019, 2024],
     sexes: ['M'],
     weightClasses: ['99KG'],
-    bridgeScore: 12,
-    position: { x: 62, y: 54 },
-    activeMatches: 3,
-  },
-  {
-    id: 'athlete_3',
-    label: 'Ronaldo Junior',
-    size: 16,
-    wins: 1,
-    losses: 1,
-    yearsActive: [2022],
-    sexes: ['M'],
-    weightClasses: ['99KG'],
-    bridgeScore: 10,
-    position: { x: 40, y: 60 },
-    activeMatches: 2,
+    nationality: 'USA',
+    team: 'New Wave',
+    bridgeScore: 7,
+    activeMatches: 8,
+    position: { x: 1, y: 1 },
   },
 ];
 
 describe('AthleteList', () => {
-  it('opens on focus, supports sorting, and keeps selection actionable', async () => {
+  it('opens the results panel above the search input and keeps search interactions intact', async () => {
     const user = userEvent.setup();
     const onSelectAthlete = vi.fn();
 
     render(
-      <div>
-        <AthleteList
-          athletes={athletes}
-          selectedAthleteId={null}
-          onSelectAthlete={onSelectAthlete}
-        />
-        <button type="button">Outside target</button>
-      </div>,
+      <AthleteList
+        athletes={athletes}
+        selectedAthleteId={null}
+        onSelectAthlete={onSelectAthlete}
+      />,
     );
 
-    expect(
-      screen.queryByRole('button', { name: /nicholas meregali/i }),
-    ).not.toBeInTheDocument();
+    await user.click(screen.getByRole('searchbox', { name: /search athletes/i }));
 
-    await user.click(
-      screen.getByRole('searchbox', { name: /search athletes/i }),
+    expect(screen.getByTestId('athlete-results-panel')).toHaveClass(
+      'bottom-[calc(100%+0.35rem)]',
     );
+    expect(screen.getByRole('listbox', { name: /athlete results/i })).toBeInTheDocument();
 
-    expect(
-      screen.getByRole('button', { name: /nicholas meregali/i }),
-    ).toBeInTheDocument();
-
-    await user.click(screen.getByRole('button', { name: 'A–Z' }));
-
+    await user.click(screen.getByRole('button', { name: /sort by name/i }));
     await user.type(
       screen.getByRole('searchbox', { name: /search athletes/i }),
-      'mereg',
+      'meregali',
     );
+    await user.click(screen.getByTestId('athlete-list-item-a1'));
 
-    expect(
-      screen.getByRole('button', { name: /nicholas meregali/i }),
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByRole('button', { name: /henrique cardoso/i }),
-    ).not.toBeInTheDocument();
-
-    await user.click(
-      screen.getByRole('button', { name: /nicholas meregali/i }),
-    );
-
-    expect(onSelectAthlete).toHaveBeenCalledWith('athlete_1');
-    expect(
-      screen.queryByRole('button', { name: /nicholas meregali/i }),
-    ).not.toBeInTheDocument();
-
-    await user.click(
-      screen.getByRole('searchbox', { name: /search athletes/i }),
-    );
-    expect(
-      screen.getByRole('button', { name: /henrique cardoso/i }),
-    ).toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: 'Outside target' }));
-    expect(
-      screen.queryByRole('button', { name: /henrique cardoso/i }),
-    ).not.toBeInTheDocument();
+    expect(onSelectAthlete).toHaveBeenCalledWith('a1');
   });
 });

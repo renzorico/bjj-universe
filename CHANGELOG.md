@@ -6,9 +6,24 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 
 ## [Unreleased]
 
+### Changed
+
+- Introduced a "Precision Observatory" design system: added DM Mono as a dedicated font for all data readouts, filter labels, eyebrow text, and meta spans — Barlow Condensed stays for display, Space Grotesk for readable athlete names.
+- Sharpened every interactive surface: filter cluster containers `rounded-[2px]`, segment buttons no-radius with a bottom-border "selected channel" indicator, search input `rounded-[2px]`, sort buttons changed from `rounded-full` pills to sharp rectangles, athlete detail panel `rounded-[4px]`.
+- Added a `page-reveal` CSS entry animation (scale + fade) so navigating between `/` and `/universe` feels like zooming into the same world rather than a hard cut.
+- Added subtle crosshair pseudo-elements inside constellation bubbles so they read as precision data nodes.
+- Applied mono font consistently across GraphStage counts, nav hint, GraphControls segments and selects, AthleteList sort/count labels, AthleteDetailPanel labels and data values, LandingPage eyebrow and stat pill labels.
+- Major concept redesign — "Spatial Observatory" pass: redesigned the landing page around a dominant `BJJ UNIVERSE` hero title (fluid `clamp(4.8rem, 13vw, 13rem)`) with a thin data-source label strip replacing the previous SaaS header, curated 6-bubble constellation with size hierarchy (dominant Athletes/Matches hubs vs satellites), bottom-flush "Enter Observatory" interaction replacing two competing CTA buttons, and a clean vertical-divider two-column layout at lg breakpoint.
+- Replaced the `LandingPage` "Enter Universe" button architecture with a cinematic veil transition system in `App.tsx`: a full-screen `#030709` overlay fades in during navigation then out after the new page mounts, creating a smooth cross-page transition.
+- Rebuilt `GraphStage` instrument bar: removed the identity title block from the visual hierarchy (moved to `sr-only` headings for test compliance), promoted the live counter to the center with larger Barlow number glyphs, replaced "Overview ←" with a minimal "← BJJ Universe" back-link in DM Mono.
+- Added dual orbital-ring SVG groups around both Athletes and Matches bubbles for a more layered celestial feel; tuned bubble sizing (252px/220px dominant hubs vs 104–150px satellites); constellation connection lines dimmed slightly.
+
 ### Added
 
 - Started maintaining `CHANGELOG.md` from this stabilization pass onward.
+- Added an ADCC integrity-report pipeline, cleaning-layer scaffold, official-results scraper scaffold, and athlete metadata enrichment scaffold with provenance-aware outputs.
+- Added an ADCC source-precedence and reconciliation layer that compares official event results against Kaggle-derived rows before canonical athlete merging.
+- Added a canonical-athlete CSV export for manual nationality and team enrichment from the post-reconciliation processed ADCC dataset.
 
 ### Fixed
 
@@ -25,6 +40,9 @@ The format follows a lightweight Keep a Changelog structure. Earlier entries are
 - Reduced overlay noise in the `/universe` explorer and moved the primary framing into a cleaner top horizontal bar.
 - Converted the graph controls into a lighter filter drawer and refined the universe header, utility chips, and search surface based on live visual QA.
 - Reworked the graph structure to use stable sex, weight-class, and era-biased positioning instead of a single undifferentiated cloud.
+- Extended the ADCC build pipeline to emit machine-readable and markdown anomaly reports, a provenance-rich cleaning artifact, and metadata-enrichment targets without changing the current app-facing graph data.
+- Reordered the ADCC data pipeline so official-event reconciliation runs before canonical normalization and now emits per-event reconciliation artifacts.
+- Promoted reconciled ADCC Worlds 2024 official-only results into the app-facing processed dataset as auditable `official_result_relation` records and added ADCC Worlds 2019 to the official-results manifest for historical reconciliation against Kaggle rows.
 
 ## [Graph UI and data refinement]
 

@@ -19,6 +19,7 @@
     "eslint.config.js",
     "playwright.config.ts",
     "scripts/**/*.ts",
+    "src/**/*.d.ts",
     "src/data/**/*.ts",
     "src/domain/types.ts",
     "src/lib/slugify.ts",

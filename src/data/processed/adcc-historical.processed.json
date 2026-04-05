@@ -1,7 +1,7 @@
 {
   "source": "adcc-historical-kaggle",
-  "label": "ADCC historical dataset",
-  "notes": "Kaggle source: bjagrelli/adcc-historical-dataset. Event names are derived from the source year because the raw CSV does not include an event name or location column.",
+  "label": "ADCC historical dataset + promoted official results",
+  "notes": "Kaggle source: bjagrelli/adcc-historical-dataset. Event names are derived from the source year because the raw CSV does not include an event name or location column. Promoted official-only ADCC result rows are converted into auditable official_result_relation records when Kaggle has no event rows for that year.",
   "schema": {
     "detectedColumns": [
       "match_id",
@@ -33,7 +33,10 @@
       "stage",
       "year"
     ],
-    "optionalColumns": ["submission", "adv_pen"]
+    "optionalColumns": [
+      "submission",
+      "adv_pen"
+    ]
   },
   "validationSummary": {
     "totalRows": 1028,
@@ -54,7 +57,7 @@
       "missing_year": 0
     },
     "athleteSpanWarnings": {
-      "outOfBoundsCount": 0,
+      "outOfBoundsCount": 27,
       "overlongSpanCount": 30,
       "suspiciousAthletes": [
         {
@@ -64,7 +67,10 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2022,
           "editionSpan": 12,
-          "sexes": ["F", "M"],
+          "sexes": [
+            "F",
+            "M"
+          ],
           "weightClasses": [
             "+99KG",
             "60KG",
@@ -74,7 +80,9 @@
             "99KG",
             "ABS"
           ],
-          "reasons": ["overlong_edition_span"]
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_84",
@@ -83,9 +91,17 @@
           "firstMatchYear": 2003,
           "lastMatchYear": 2022,
           "editionSpan": 10,
-          "sexes": ["M"],
-          "weightClasses": ["88KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "88KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_5463",
@@ -94,7 +110,10 @@
           "firstMatchYear": 1998,
           "lastMatchYear": 2022,
           "editionSpan": 13,
-          "sexes": ["F", "M"],
+          "sexes": [
+            "F",
+            "M"
+          ],
           "weightClasses": [
             "+60KG",
             "+99KG",
@@ -104,7 +123,9 @@
             "99KG",
             "ABS"
           ],
-          "reasons": ["overlong_edition_span"]
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_419",
@@ -113,9 +134,17 @@
           "firstMatchYear": 2000,
           "lastMatchYear": 2017,
           "editionSpan": 9,
-          "sexes": ["M"],
-          "weightClasses": ["66KG", "77KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG",
+            "77KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_481",
@@ -124,9 +153,19 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2009,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "77KG", "88KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "77KG",
+            "88KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_224",
@@ -135,9 +174,16 @@
           "firstMatchYear": 2009,
           "lastMatchYear": 2022,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_1369",
@@ -146,9 +192,17 @@
           "firstMatchYear": 2001,
           "lastMatchYear": 2015,
           "editionSpan": 8,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_733",
@@ -157,9 +211,17 @@
           "firstMatchYear": 2009,
           "lastMatchYear": 2022,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_144",
@@ -168,9 +230,17 @@
           "firstMatchYear": 2007,
           "lastMatchYear": 2022,
           "editionSpan": 8,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_919",
@@ -179,9 +249,17 @@
           "firstMatchYear": 2003,
           "lastMatchYear": 2015,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_576",
@@ -190,9 +268,17 @@
           "firstMatchYear": 2007,
           "lastMatchYear": 2022,
           "editionSpan": 8,
-          "sexes": ["M"],
-          "weightClasses": ["88KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "88KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_6438",
@@ -201,9 +287,20 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2022,
           "editionSpan": 12,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "66KG", "77KG", "88KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "66KG",
+            "77KG",
+            "88KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_6167",
@@ -212,9 +309,16 @@
           "firstMatchYear": 1998,
           "lastMatchYear": 2009,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_1023",
@@ -223,9 +327,16 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2017,
           "editionSpan": 10,
-          "sexes": ["M"],
-          "weightClasses": ["66KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_320",
@@ -234,9 +345,17 @@
           "firstMatchYear": 2007,
           "lastMatchYear": 2017,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_8394",
@@ -245,9 +364,17 @@
           "firstMatchYear": 2011,
           "lastMatchYear": 2022,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_595",
@@ -256,9 +383,15 @@
           "firstMatchYear": 2011,
           "lastMatchYear": 2022,
           "editionSpan": 6,
-          "sexes": ["F"],
-          "weightClasses": ["+60KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "+60KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_967",
@@ -267,9 +400,15 @@
           "firstMatchYear": 2011,
           "lastMatchYear": 2022,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["77KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_52",
@@ -278,9 +417,17 @@
           "firstMatchYear": 1998,
           "lastMatchYear": 2011,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_3592",
@@ -289,9 +436,17 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2019,
           "editionSpan": 11,
-          "sexes": ["M"],
-          "weightClasses": ["66KG", "88KG", "99KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG",
+            "88KG",
+            "99KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_jeff-monson-m",
@@ -300,9 +455,17 @@
           "firstMatchYear": 1999,
           "lastMatchYear": 2011,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["+99KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_232",
@@ -311,9 +474,16 @@
           "firstMatchYear": 1998,
           "lastMatchYear": 2013,
           "editionSpan": 8,
-          "sexes": ["M"],
-          "weightClasses": ["99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_484",
@@ -322,9 +492,17 @@
           "firstMatchYear": 2009,
           "lastMatchYear": 2019,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_4977",
@@ -333,9 +511,21 @@
           "firstMatchYear": 2003,
           "lastMatchYear": 2019,
           "editionSpan": 9,
-          "sexes": ["F", "M"],
-          "weightClasses": ["+60KG", "+99KG", "66KG", "88KG", "99KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "F",
+            "M"
+          ],
+          "weightClasses": [
+            "+60KG",
+            "+99KG",
+            "66KG",
+            "88KG",
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_195",
@@ -344,9 +534,34 @@
           "firstMatchYear": 2001,
           "lastMatchYear": 2011,
           "editionSpan": 6,
-          "sexes": ["M"],
-          "weightClasses": ["66KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
+        },
+        {
+          "athleteId": "athlete_bia-mesquita-f",
+          "athleteName": "Bia Mesquita",
+          "matchCount": 5,
+          "firstMatchYear": 2015,
+          "lastMatchYear": 2024,
+          "editionSpan": 5,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "60KG",
+            "65KG",
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
         },
         {
           "athleteId": "athlete_1031",
@@ -355,9 +570,52 @@
           "firstMatchYear": 2005,
           "lastMatchYear": 2017,
           "editionSpan": 7,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "99KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "99KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
+        },
+        {
+          "athleteId": "athlete_adele-fornarino-f",
+          "athleteName": "Adele Fornarino",
+          "matchCount": 4,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "55KG",
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_kaynan-duarte-m",
+          "athleteName": "Kaynan Duarte",
+          "matchCount": 4,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "99KG",
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
         },
         {
           "athleteId": "athlete_4488",
@@ -366,9 +624,37 @@
           "firstMatchYear": 2009,
           "lastMatchYear": 2022,
           "editionSpan": 7,
-          "sexes": ["F", "M"],
-          "weightClasses": ["+99KG", "60KG", "77KG", "88KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "F",
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "60KG",
+            "77KG",
+            "88KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
+        },
+        {
+          "athleteId": "athlete_luke-griffith-m",
+          "athleteName": "Luke Griffith",
+          "matchCount": 3,
+          "firstMatchYear": 2022,
+          "lastMatchYear": 2024,
+          "editionSpan": 2,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG",
+            "99KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
         },
         {
           "athleteId": "athlete_4759",
@@ -377,9 +663,17 @@
           "firstMatchYear": 2001,
           "lastMatchYear": 2022,
           "editionSpan": 11,
-          "sexes": ["M"],
-          "weightClasses": ["66KG", "77KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG",
+            "77KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
         },
         {
           "athleteId": "athlete_4455",
@@ -388,9 +682,391 @@
           "firstMatchYear": 2001,
           "lastMatchYear": 2015,
           "editionSpan": 8,
-          "sexes": ["M"],
-          "weightClasses": ["77KG", "88KG", "99KG"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG",
+            "88KG",
+            "99KG"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
+        },
+        {
+          "athleteId": "athlete_amy-campo-f",
+          "athleteName": "Amy Campo",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_ana-vieira-f",
+          "athleteName": "Ana Vieira",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "65KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_bianca-basilio-f",
+          "athleteName": "Bianca Basilio",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "55KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_cyborg-abreu-m",
+          "athleteName": "Cyborg Abreu",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_daniel-manasoiu-m",
+          "athleteName": "Daniel Manasoiu",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_dante-leon-m",
+          "athleteName": "Dante Leon",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "ABS"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_diego-pato-m",
+          "athleteName": "Diego Pato",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_diogo-reis-m",
+          "athleteName": "Diogo Reis",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_felipe-costa-m",
+          "athleteName": "Felipe Costa",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "88KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_felipe-pena-m",
+          "athleteName": "Felipe Pena",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "+99KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_giancarlo-bodoni-m",
+          "athleteName": "Giancarlo Bodoni",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "88KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_helena-crevar-f",
+          "athleteName": "Helena Crevar",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "65KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_jasmine-rocha-f",
+          "athleteName": "Jasmine Rocha",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "55KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_jay-rodriguez-m",
+          "athleteName": "Jay Rodriguez",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "88KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_josh-cisneros-m",
+          "athleteName": "Josh Cisneros",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "66KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_kendall-reusing-f",
+          "athleteName": "Kendall Reusing",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "+65KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_mica-galvao-m",
+          "athleteName": "Mica Galvao",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_nathiely-de-jesus-f",
+          "athleteName": "Nathiely De Jesus",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "+65KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_pj-barch-m",
+          "athleteName": "PJ Barch",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_rafael-lovato-jr-m",
+          "athleteName": "Rafael Lovato Jr.",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "99KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_rafaela-guedes-f",
+          "athleteName": "Rafaela Guedes",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "F"
+          ],
+          "weightClasses": [
+            "+65KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
+        },
+        {
+          "athleteId": "athlete_roberto-abreu-m",
+          "athleteName": "Roberto Abreu",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "99KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
         },
         {
           "athleteId": "athlete_4980",
@@ -399,9 +1075,34 @@
           "firstMatchYear": 2007,
           "lastMatchYear": 2017,
           "editionSpan": 6,
-          "sexes": ["F", "M"],
-          "weightClasses": ["+60KG", "ABS"],
-          "reasons": ["overlong_edition_span"]
+          "sexes": [
+            "F",
+            "M"
+          ],
+          "weightClasses": [
+            "+60KG",
+            "ABS"
+          ],
+          "reasons": [
+            "overlong_edition_span"
+          ]
+        },
+        {
+          "athleteId": "athlete_vagner-rocha-m",
+          "athleteName": "Vagner Rocha",
+          "matchCount": 2,
+          "firstMatchYear": 2024,
+          "lastMatchYear": 2024,
+          "editionSpan": 1,
+          "sexes": [
+            "M"
+          ],
+          "weightClasses": [
+            "77KG"
+          ],
+          "reasons": [
+            "out_of_bounds_year"
+          ]
         }
       ]
     }
@@ -411,1315 +1112,2313 @@
       {
         "id": "athlete_484",
         "name": "Murilo Santana",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_733",
         "name": "Vinicius Magalhaes",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_7507",
         "name": "Nicholas Meregali",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_9554",
         "name": "Henrique Cardoso",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_1740",
         "name": "Yuri Simoes",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS", "88KG", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS",
+          "88KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_576",
         "name": "Rafael Lovato Jr",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11797",
         "name": "Giancarlo Bodoni",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12003",
         "name": "Tye Ruotolo",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "66KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "66KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12110",
         "name": "Nick Rodriguez",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_5842",
         "name": "Mahamed Aly",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_2452",
         "name": "Orlando Sanchez",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_224",
         "name": "Roberto Abreu",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_2416",
         "name": "Felipe Pena",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_12703",
         "name": "Andy Varela",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_2107",
         "name": "Otavio Sousa",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_419",
         "name": "Leonardo Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_8394",
         "name": "Vagner Rocha",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_1369",
         "name": "Dean Lister",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_5861",
         "name": "Jared Dopp",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_8069",
         "name": "Pablo Mantovani",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_188",
         "name": "Augusto Mendes",
-        "sexes": ["M"],
-        "weightClasses": ["66KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8866",
         "name": "Thomas Halpin",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_919",
         "name": "Pablo Popovitch",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_687",
         "name": "Marcio Feitosa",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "66KG"
+        ]
       },
       {
         "id": "athlete_52",
         "name": "Renzo Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_1031",
         "name": "Jake Shields",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_144",
         "name": "Andre Galvao",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_16",
         "name": "Marcelo Garcia",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_138",
         "name": "Sergio Moraes",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_1617",
         "name": "Victor Estima",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_9344",
         "name": "Paul Schreiner",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8105",
         "name": "Tommy Langaker",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_2999",
         "name": "Paulo Miyao",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_4996",
         "name": "Geovanny Martinez",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9559",
         "name": "Rida Haisam",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_5649",
         "name": "Gary Tonon",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG", "66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG",
+          "66KG"
+        ]
       },
       {
         "id": "athlete_3009",
         "name": "Keenan Cornelius",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_984",
         "name": "Marcus Almeida",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_5509",
         "name": "Victor Honorio",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_12922",
         "name": "Elder Cruz",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_10880",
         "name": "Roberto Jimenez",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_195",
         "name": "Robson Moura",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_727",
         "name": "Alexandre de Freitas",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_247",
         "name": "Rodolfo Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_6792",
         "name": "Cassio Francis",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_559",
         "name": "Rodrigo Medeiros",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_550",
         "name": "Roberto Magalhaes",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_505",
         "name": "Roger Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_232",
         "name": "Jose Mario Sperry",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_1817",
         "name": "Rigan Machado",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_562",
         "name": "Eduardo Telles",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_117",
         "name": "Ronaldo Souza",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_320",
         "name": "Romulo Barral",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_278",
         "name": "Ricardo Almeida",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_112",
         "name": "Demian Maia",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_11499",
         "name": "Roosevelt Sousa",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_2403",
         "name": "Joao Gabriel Rocha",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_7478",
         "name": "Adam Wardzinski",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_8427",
         "name": "Michael Perez",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_422",
         "name": "Braulio Estima",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_428",
         "name": "Celso Vinicius",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_7247",
         "name": "Enrico Cocco",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_5238",
         "name": "Edwin Najmi",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_410",
         "name": "Claudio Calasans",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_8560",
         "name": "Gabriel Lucas",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_174",
         "name": "Bruno Frazatto",
-        "sexes": ["M"],
-        "weightClasses": ["66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_8346",
         "name": "Craig Jones",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11789",
         "name": "Mason Fowler",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_10588",
         "name": "Jon Blank",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_10705",
         "name": "Kyle Boehm",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_12599",
         "name": "Brianna Ste-Marie",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_7535",
         "name": "Bianca Basilio",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_8116",
         "name": "Dante Leon",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_6354",
         "name": "Jonathan Satava",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_358",
         "name": "Lucas Lepri",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_1386",
         "name": "Davi Ramos",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_446",
         "name": "Gilbert Burns",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_4965",
         "name": "David Terrell",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_477",
         "name": "Tarsis Humpreys",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_10840",
         "name": "Diego Oliveira",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_12491",
         "name": "Keith Krikorian",
-        "sexes": ["M"],
-        "weightClasses": ["66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11568",
         "name": "Joshua Cisneros",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_11823",
         "name": "Diogo Reis",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_11497",
         "name": "Fabricio Andrey",
-        "sexes": ["M"],
-        "weightClasses": ["66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_9051",
         "name": "Gabriel Sousa",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_4317",
         "name": "Eddie Bravo",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_515",
         "name": "Royler Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9",
         "name": "Marcio Cruz",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_644",
         "name": "Joao Assis",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_2226",
         "name": "DeAlonzio Jackson",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8231",
         "name": "Leonardo Saggioro",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_6836",
         "name": "John Combs",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_6071",
         "name": "Gabriel Arges",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_6351",
         "name": "Alec Baulding",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12080",
         "name": "Ruan Alvarenga",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_12259",
         "name": "Jeremy Skinner",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_5258",
         "name": "Dillon Danis",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_9706",
         "name": "Marcelo Mafra",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_7539",
         "name": "Renato Forasieppi Canuto",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_7552",
         "name": "Isaque Bahiense",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_5655",
         "name": "Lucas Daniel Barbosa",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_4248",
         "name": "Gianni Grippo",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_7698",
         "name": "Gabriel Marangoni",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_8682",
         "name": "Lachlan Giles",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_6550",
         "name": "Gordon Ryan",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS", "99KG", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS",
+          "99KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_4310",
         "name": "Tim Spriggs",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11991",
         "name": "Pedro Marinho",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_1398",
         "name": "Justin Rader",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1023",
         "name": "Baret Yoshida",
-        "sexes": ["M"],
-        "weightClasses": ["66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_2997",
         "name": "Joao Miyao",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1523",
         "name": "Clark Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_788",
         "name": "Kron Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_6095",
         "name": "Mansher Khera",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_9959",
         "name": "Perttu Tepponen",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_4430",
         "name": "Patrick Gaudio",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11111",
         "name": "Santeri Lilius",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_7096",
         "name": "Josh Hinger",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_5423",
         "name": "Matheus Diniz",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_9002",
         "name": "Matheus Gabriel Barros",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_10579",
         "name": "Rodrigo Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_387",
         "name": "Antonio Braga Neto",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_179",
         "name": "Rafael Mendes",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_147",
         "name": "Rubens Charles",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_11707",
         "name": "Oliver Taza",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_725",
         "name": "Ryan Hall",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_610",
         "name": "Jeff Glover",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_3200",
         "name": "Jackson Sousa",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_8525",
         "name": "Alexandre Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1272",
         "name": "Leonardo Nogueira",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_543",
         "name": "Rodrigo Cavaca",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_7686",
         "name": "Sergio Ardila-Ibarra",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_88",
         "name": "Jean Jacques Machado",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8494",
         "name": "Abdurakhman Bilarov",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_4328",
         "name": "AJ Agazarm",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "66KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "66KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_11223",
         "name": "Ethan Crelinsten",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_84",
         "name": "Alexandre Ribeiro",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_6167",
         "name": "Ricco Rodriguez",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_10531",
         "name": "John Salter",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12639",
         "name": "Amy Campo",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_11762",
         "name": "Elisabeth Clay",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_595",
         "name": "Gabrielle Garcia",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_573",
         "name": "Fabricio Werdum",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_431",
         "name": "Rousimar Palhares",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_7442",
         "name": "Edward Cummings",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_12950",
         "name": "Cole Abate",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_3099",
         "name": "Marcio Corleta",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_1757",
         "name": "Alexander Trans",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_9404",
         "name": "Ffion Davies",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_926",
         "name": "Roberto Alencar",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_481",
         "name": "Saulo Ribeiro",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS", "88KG", "99KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS",
+          "88KG",
+          "99KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_7502",
         "name": "Paul Ardila-Ibarra",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_1827",
         "name": "James Puopolo",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_9246",
         "name": "Aaron Johnson",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_292",
         "name": "Leonardo Santos",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_338",
         "name": "Ricardo Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_3083",
         "name": "Abraham Marte Messina",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_9250",
         "name": "Gabriel Almeida",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12751",
         "name": "Sam McNally",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_967",
         "name": "Jonathan Torres",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_9261",
         "name": "Ross Nicholls",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_12005",
         "name": "Kade Ruotolo",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8974",
         "name": "Kaynan Duarte",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_10318",
         "name": "Eldar Rafigaev",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_9031",
         "name": "Kennedy Maciel",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9157",
         "name": "Devhonte Johnson",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_81",
         "name": "Vitor Ribeiro",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_177",
         "name": "Rany Yahya",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1204",
         "name": "Roberto Traven",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_10501",
         "name": "Valdir Araujo Junior",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_9793",
         "name": "Alexandre Jesus",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_1858",
         "name": "Matt Serra",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_12122",
         "name": "Micael Galvao",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_9180",
         "name": "Vinicius Ferreira",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_11656",
         "name": "Rafaela Guedes",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_13095",
         "name": "Eleftheria Christodoulou",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_10885",
         "name": "Kendall Reusing",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_93",
         "name": "Ricardo Arona",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_591",
         "name": "Ricardo Liborio",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_720",
         "name": "Jorge Patino",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_10357",
         "name": "Richard Alarcon",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_10159",
         "name": "Victor Hugo",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_875",
         "name": "Lucas Leite",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_4163",
         "name": "Marcio Andre Barbosa Junior",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_12",
         "name": "Antonio Schembri",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_11735",
         "name": "Nicky Ryan",
-        "sexes": ["M"],
-        "weightClasses": ["77KG", "66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG",
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9401",
         "name": "Ashley Williams",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_6805",
         "name": "Max Gimenis",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_8536",
         "name": "Yuta Shimada",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9758",
         "name": "Kit Dale",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_4542",
         "name": "Felipe Cesar",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_7002",
         "name": "Shane Hill-Taylor",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1188",
         "name": "Leandro Lo",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_12236",
         "name": "Joao Costa",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_8528",
         "name": "Servio Tulio",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_1526",
         "name": "James Brasco",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_1322",
         "name": "Gregor Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_3357",
         "name": "Jose Mario Queiroga",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_1329",
         "name": "Gerardi Rinaldi",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_911",
         "name": "Antonio Peinado",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_1319",
         "name": "Shinya Aoki",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_7808",
         "name": "Christian Moriarty",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_6683",
         "name": "Ryan Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_378",
         "name": "Robert Drysdale",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_7106",
         "name": "Talita Alencar",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_1774",
         "name": "Mark Ramos",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_5061",
         "name": "Gabriel Rollo",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_1044",
         "name": "Flavio Almeida",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_620",
         "name": "Gustavo Dantas",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1167",
         "name": "Augusto Ferrari",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_8241",
         "name": "Radoslaw Turek",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_1050",
         "name": "Penny Thomas",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_7012",
         "name": "Amanda Alequin / Santana",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_2444",
         "name": "Mackenzie Dern",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_823",
         "name": "Michelle Nicolini",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_745",
         "name": "Carlos Machado",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_8514",
         "name": "Fellipe Andrew",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_e-karppinen-f",
         "name": "E. Karppinen",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_3592",
         "name": "Igor Praporschchikov",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "66KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "66KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_5463",
         "name": "Tomas Szczerek",
-        "sexes": ["M", "F"],
+        "sexes": [
+          "M",
+          "F"
+        ],
         "weightClasses": [
           "99KG",
           "ABS",
@@ -1733,7 +3432,10 @@
       {
         "id": "athlete_4302",
         "name": "Yuji Arai",
-        "sexes": ["M", "F"],
+        "sexes": [
+          "M",
+          "F"
+        ],
         "weightClasses": [
           "88KG",
           "77KG",
@@ -1747,1718 +3449,3169 @@
       {
         "id": "athlete_daniel-strauss-m",
         "name": "Daniel Strauss",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_m-perez-m",
         "name": "M. Perez",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_elvira-karpinnen-f",
         "name": "Elvira Karpinnen",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_julia-maele-f",
         "name": "Julia Maele",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_6438",
         "name": "Chael Sonnen",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG", "99KG", "77KG", "66KG", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG",
+          "99KG",
+          "77KG",
+          "66KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_elvira-karppinen-f",
         "name": "Elvira Karppinen",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_m-szczecinski-m",
         "name": "M. Szczecinski",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_akira-shoji-m",
         "name": "Akira Shoji",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_marko-helen-m",
         "name": "Marko Helen",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_david-avellan-m",
         "name": "David Avellan",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_yushin-okami-m",
         "name": "Yushin Okami",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_ilir-lafiti-m",
         "name": "Ilir Lafiti",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_4977",
         "name": "Nate Marquardt",
-        "sexes": ["M", "F"],
-        "weightClasses": ["ABS", "+60KG", "+99KG", "66KG", "99KG", "88KG"]
+        "sexes": [
+          "M",
+          "F"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+60KG",
+          "+99KG",
+          "66KG",
+          "99KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_lee-hyoung-m",
         "name": "Lee Hyoung",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_hannette-staack-f",
         "name": "Hannette Staack",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_4282",
         "name": "Yurika Nakakura",
-        "sexes": ["F", "M"],
-        "weightClasses": ["+60KG", "66KG", "88KG"]
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "66KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_tammy-griego-f",
         "name": "Tammy Griego",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_fernanda-mazelli-f",
         "name": "Fernanda Mazelli",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_amanda-santana-f",
         "name": "Amanda Santana",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_4980",
         "name": "Talita Treta",
-        "sexes": ["F", "M"],
-        "weightClasses": ["+60KG", "ABS"]
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "+60KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_stefanie-egger-f",
         "name": "Stefanie Egger",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_ana-carolina-f",
         "name": "Ana Carolina",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_eoghan-oflanagan-m",
         "name": "Eoghan OFlanagan",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_timo-juhani-m",
         "name": "Timo-Juhani",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_j-urholin-m",
         "name": "J. Urholin",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_rustam-chsiev-m",
         "name": "Rustam Chsiev",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_piotr-frechowicz-m",
         "name": "Piotr Frechowicz",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_jason-manly-m",
         "name": "Jason Manly",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_tero-pyylampi-m",
         "name": "Tero Pyylampi",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_gamrot-mateusz-m",
         "name": "Gamrot Mateusz",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_4488",
         "name": "Kethe Engen",
-        "sexes": ["F", "M"],
-        "weightClasses": ["60KG", "+99KG", "77KG", "88KG"]
+        "sexes": [
+          "F",
+          "M"
+        ],
+        "weightClasses": [
+          "60KG",
+          "+99KG",
+          "77KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_bia-mesquita-f",
         "name": "Bia Mesquita",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG",
+          "65KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_rodrigo-dib-m",
         "name": "Rodrigo Dib",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_josh-hayden-m",
         "name": "Josh Hayden",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_caol-uno-m",
         "name": "Caol Uno",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_f-vasconcelos-m",
         "name": "F. Vasconcelos",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_urija-faber-m",
         "name": "Urija Faber",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_jeff-curran-m",
         "name": "Jeff Curran",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_tetsu-hadario-m",
         "name": "Tetsu Hadario",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_j-pietkainen-m",
         "name": "J. Pietkainen",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_ricardo-mesquita-m",
         "name": "Ricardo Mesquita",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_hideki-shrek-m",
         "name": "Hideki Shrek",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_luke-griffith-m",
         "name": "Luke Griffith",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_kamil-wilk-m",
         "name": "Kamil Wilk",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_jesseray-childrey-m",
         "name": "Jesseray Childrey",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_a-zhanpeisov-m",
         "name": "A. Zhanpeisov",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_amir-allam-m",
         "name": "Amir Allam",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_abdulaev-ruslan-m",
         "name": "Abdulaev Ruslan",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_kamil-uminski-m",
         "name": "Kamil Uminski",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_eliott-kelly-m",
         "name": "Eliott Kelly",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_yousef-elzien-m",
         "name": "Yousef Elzien",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_ricardo-moraes-m",
         "name": "Ricardo Moraes",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_sean-alvarez-m",
         "name": "Sean Alvarez",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_kim-mason-m",
         "name": "Kim Mason",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_carlos-barreto-m",
         "name": "Carlos Barreto",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_a-cacareco-m",
         "name": "A. Cacareco",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_halm-gocalli-m",
         "name": "Halm Gocalli",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_y-ozawa-m",
         "name": "Y. Ozawa",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_nicolas-renier-m",
         "name": "Nicolas Renier",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_374",
         "name": "Vinicius Magalhaes",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1388",
         "name": "Gunnar Nelson",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_juskowiak-mateusz-m",
         "name": "Juskowiak Mateusz",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_robin-gracie-m",
         "name": "Robin Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_sasha-plavski-m",
         "name": "Sasha Plavski",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_y-kinishi-m",
         "name": "Y. Kinishi",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_k-hirate-m",
         "name": "K. Hirate",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_joaquim-hansen-m",
         "name": "Joaquim Hansen",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_erik-paulson-m",
         "name": "Erik Paulson",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_jamal-peterson-m",
         "name": "Jamal Peterson",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_john-einimo-m",
         "name": "John Einimo",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_antoine-joude-m",
         "name": "Antoine Joude",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_yukissyu-ozawa-m",
         "name": "Yukissyu Ozawa",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_ilir-latifi-m",
         "name": "Ilir Latifi",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_jeff-monson-m",
         "name": "Jeff Monson",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_4455",
         "name": "Yukiyasu Ozawa",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_6518",
         "name": "Egan Inoue",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_613",
         "name": "Wellington Dias",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_486",
         "name": "Amaury Bitetti",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_akira-shouji-m",
         "name": "Akira Shouji",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_chris-bright-m",
         "name": "Chris Bright",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_kassim-anan-m",
         "name": "Kassim Anan",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_chris-weidman-m",
         "name": "Chris Weidman",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_tom-bass-m",
         "name": "Tom Bass",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_don-ortega-m",
         "name": "Don Ortega",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_nicholas-renier-m",
         "name": "Nicholas Renier",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_tetsu-suzuko-m",
         "name": "Tetsu Suzuko",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_5761",
         "name": "Rikako Yuasa",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_1119",
         "name": "Beatriz Mesquita",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_nicollas-renier-m",
         "name": "Nicollas Renier",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_t-kosaka-m",
         "name": "T. Kosaka",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_jehad-hamdan-m",
         "name": "Jehad Hamdan",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_denis-roberts-m",
         "name": "Denis Roberts",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_1736",
         "name": "Daniel Simoes",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_darren-andy-m",
         "name": "Darren Andy",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_tomasz-janiszewski-m",
         "name": "Tomasz Janiszewski",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_jimmy-friedrich-m",
         "name": "Jimmy Friedrich",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_josh-saunders-m",
         "name": "Josh Saunders",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_paulo-pinto-m",
         "name": "Paulo Pinto",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_diego-sanchez-m",
         "name": "Diego Sanchez",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_cameron-earle-m",
         "name": "Cameron Earle",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_4658",
         "name": "Mikey Burnet",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_jamie-ballard-m",
         "name": "Jamie Ballard",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_liu-wen-m",
         "name": "Liu Wen",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_tomasz-narkun-m",
         "name": "Tomasz Narkun",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_jason-lees-m",
         "name": "Jason Lees",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_9587",
         "name": "Eduardo Rios",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_322",
         "name": "Fabio Gurgel",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_karl-webber-m",
         "name": "Karl Webber",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_egan-inoe-m",
         "name": "Egan Inoe",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_take-hanai-m",
         "name": "Take Hanai",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_muhammad-saleh-m",
         "name": "Muhammad Saleh",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_renato-verissimo-m",
         "name": "Renato Verissimo",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_oleg-taktarov-m",
         "name": "Oleg Taktarov",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_simon-siasi-m",
         "name": "Simon Siasi",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_enson-inoe-m",
         "name": "Enson Inoe",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_keita-iwamoto-m",
         "name": "Keita Iwamoto",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_owen-livesey-m",
         "name": "Owen Livesey",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_13016",
         "name": "Giovanna Jara",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_2956",
         "name": "Cristiano Lazzarini",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_alian-drueco-m",
         "name": "Alian Drueco",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_mikael-knutsson-m",
         "name": "Mikael Knutsson",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_yoshiyuki-yoshida-m",
         "name": "Yoshiyuki Yoshida",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_morris-clifoni-m",
         "name": "Morris Clifoni",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_allan-teo-m",
         "name": "Allan Teo",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_t-suzuki-m",
         "name": "T. Suzuki",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_joey-gilbert-m",
         "name": "Joey Gilbert",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_rob-di-m",
         "name": "Rob Di",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_d-marinakis-m",
         "name": "D. Marinakis",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_sotaro-yamada-m",
         "name": "Sotaro Yamada",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_70",
         "name": "Rolles Gracie",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_1583",
         "name": "Mike Fowler",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_1065",
         "name": "Rodney Ellis",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_637",
         "name": "Bruno Bastos",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_5702",
         "name": "Marcos Oliveira",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_1104",
         "name": "Anthony Perosh",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_mario-miranda-m",
         "name": "Mario Miranda",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_george-sotiropoulos-m",
         "name": "George Sotiropoulos",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_keita-nakamura-m",
         "name": "Keita Nakamura",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_robert-sabaruddin-m",
         "name": "Robert Sabaruddin",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_van-arsdale-m",
         "name": "Van Arsdale",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_mike-whitehead-m",
         "name": "Mike Whitehead",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_alex-negao-m",
         "name": "Alex Negao",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_5324",
         "name": "Thomas DeBlass",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_keller-sodhi-m",
         "name": "Keller Sodhi",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_h-sekine-m",
         "name": "H. Sekine",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_mateusz-juskowiak-m",
         "name": "Mateusz Juskowiak",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_e-elgland-m",
         "name": "E. Elgland",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_eric-dahlberg-m",
         "name": "Eric Dahlberg",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_doorwang-jeon-m",
         "name": "Doorwang Jeon",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_janus-andrejczuk-m",
         "name": "Janus Andrejczuk",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_kenta-iwamoto-m",
         "name": "Kenta Iwamoto",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_2175",
         "name": "Wagnney Fabiano",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_jacob-rodriguez-m",
         "name": "Jacob Rodriguez",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_tom-lawlor-m",
         "name": "Tom Lawlor",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_shinsho-anzai-m",
         "name": "Shinsho Anzai",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_hidemi-mihara-m",
         "name": "Hidemi Mihara",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_abdulkadirov-magomed-m",
         "name": "Abdulkadirov Magomed",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_teemu-launis-m",
         "name": "Teemu Launis",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_darrel-moodley-m",
         "name": "Darrel Moodley",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_kouhei-yasumi-m",
         "name": "Kouhei Yasumi",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_frank-trigg-m",
         "name": "Frank Trigg",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_rodrigo-modrias-m",
         "name": "Rodrigo Modrias",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_fabiano-iha-m",
         "name": "Fabiano Iha",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_israel-albuquerque-m",
         "name": "Israel Albuquerque",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_chris-brown-m",
         "name": "Chris Brown",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_g-sotiropoulos-m",
         "name": "G. Sotiropoulos",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_josh-barnet-m",
         "name": "Josh Barnet",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_marshurenko-m",
         "name": "Marshurenko",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_andy-reese-m",
         "name": "Andy Reese",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_kareem-barkalev-m",
         "name": "Kareem Barkalev",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_r-babalu-m",
         "name": "R. Babalu",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_4759",
         "name": "Roger Neff",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "66KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "66KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_vitor-belfort-m",
         "name": "Vitor Belfort",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_akihiro-gono-m",
         "name": "Akihiro Gono",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_luis-orlando-m",
         "name": "Luis Orlando",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_yuta-sasaki-m",
         "name": "Yuta Sasaki",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_1696",
         "name": "Garth Taylor",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_1994",
         "name": "Travis Lutter",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_sanae-kikuta-m",
         "name": "Sanae Kikuta",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_jerry-bolander-m",
         "name": "Jerry Bolander",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_pete-williams-m",
         "name": "Pete Williams",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_yuki-ozawa-m",
         "name": "Yuki Ozawa",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_asa-fuller-m",
         "name": "Asa Fuller",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_kamil-huminski-m",
         "name": "Kamil Huminski",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_khazmat-stambulov-m",
         "name": "Khazmat Stambulov",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_john-hansen-m",
         "name": "John Hansen",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_jurie-rachel-m",
         "name": "Jurie Rachel",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_luis-roberto-m",
         "name": "Luis Roberto",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_hayato-sakurai-m",
         "name": "Hayato Sakurai",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_joe-guilbert-m",
         "name": "Joe Guilbert",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_greger-forsel-m",
         "name": "Greger Forsel",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_ben-henderson-m",
         "name": "Ben Henderson",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_adrian-serrano-m",
         "name": "Adrian Serrano",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_carlos-newton-m",
         "name": "Carlos Newton",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_gavin-kulper-m",
         "name": "Gavin Kulper",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_nathan-marquardt-m",
         "name": "Nathan Marquardt",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_jon-einemo-m",
         "name": "Jon Einemo",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_travers-grubb-m",
         "name": "Travers Grubb",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_kim-dong-m",
         "name": "Kim Dong",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_952",
         "name": "Joao Roque",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_627",
         "name": "Murilo Bustamante",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_1768",
         "name": "James Harbison",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_melchor-m-m",
         "name": "Melchor M.",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_a-hamlet-m",
         "name": "A. Hamlet",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_u-zhakshylyk-m",
         "name": "U. Zhakshylyk",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_vernon-white-m",
         "name": "Vernon White",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_r-anderson-m",
         "name": "R. Anderson",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_t-yano-m",
         "name": "T. Yano",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "66KG"
+        ]
       },
       {
         "id": "athlete_yuki-sasaki-m",
         "name": "Yuki Sasaki",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_l-papadopoulis-m",
         "name": "L. Papadopoulis",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_dennis-hallman-m",
         "name": "Dennis Hallman",
-        "sexes": ["M"],
-        "weightClasses": ["88KG", "77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG",
+          "77KG"
+        ]
       },
       {
         "id": "athlete_kouji-kanechika-m",
         "name": "Kouji Kanechika",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_jorge-santiago-m",
         "name": "Jorge Santiago",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_i-praporshchikov-m",
         "name": "I. Praporshchikov",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_1548",
         "name": "Jose Junior",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_milton-vieira-m",
         "name": "Milton Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_isaak-michel-m",
         "name": "Isaak Michel",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_sanshiro-nakamura-m",
         "name": "Sanshiro Nakamura",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_luke-costello-m",
         "name": "Luke Costello",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_rumina-sato-m",
         "name": "Rumina Sato",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_86",
         "name": "Fernando Vieira",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_258",
         "name": "Hanette Staack",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_7817",
         "name": "Jessica Flowers",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_olav-einemo-m",
         "name": "Olav Einemo",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_renan-sancar-m",
         "name": "Renan Sancar",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_oskar-piechota-m",
         "name": "Oskar Piechota",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "88KG"
+        ]
       },
       {
         "id": "athlete_mraz-avdoyan-m",
         "name": "Mraz Avdoyan",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_rodrigo-minotauro-m",
         "name": "Rodrigo Minotauro",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_roger-neff-m",
         "name": "Roger Neff",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_tobias-g-m",
         "name": "Tobias G",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_sasha-palvski-m",
         "name": "Sasha Palvski",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_kari-petola-m",
         "name": "Kari Petola",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_tom-barlow-m",
         "name": "Tom Barlow",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_janne-pietilainen-m",
         "name": "Janne Pietilainen",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_ricardo-alves-m",
         "name": "Ricardo Alves",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_1508",
         "name": "Sim Go",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_jason-white-m",
         "name": "Jason White",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_damon-ramos-m",
         "name": "Damon Ramos",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_janne-pekka-m",
         "name": "Janne-Pekka",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_roan-jucao-m",
         "name": "Roan Jucao",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_bruno-chavez-m",
         "name": "Bruno Chavez",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_luis-brito-m",
         "name": "Luis Brito",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_fan-yi-m",
         "name": "Fan Yi",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_h-kanehara-m",
         "name": "H. Kanehara",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_tito-ortiz-m",
         "name": "Tito Ortiz",
-        "sexes": ["M"],
-        "weightClasses": ["99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_r-mashurenko-m",
         "name": "R. Mashurenko",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_hudson-taylor-m",
         "name": "Hudson Taylor",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_f-capoane-m",
         "name": "F. Capoane",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_adam-sachnoff-m",
         "name": "Adam Sachnoff",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_hideki-sekine-m",
         "name": "Hideki Sekine",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_genki-sudo-m",
         "name": "Genki Sudo",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_j-wakabayashi-m",
         "name": "J. Wakabayashi",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_takefuni-hanai-m",
         "name": "Takefuni Hanai",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_dan-manasoiu-m",
         "name": "Dan Manasoiu",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_livia-giles-f",
         "name": "Livia Giles",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_roman-dolidze-m",
         "name": "Roman Dolidze",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_hector-lombard-m",
         "name": "Hector Lombard",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_chris-brennan-m",
         "name": "Chris Brennan",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_gao-hua-m",
         "name": "Gao Hua",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_mark-kerr-m",
         "name": "Mark Kerr",
-        "sexes": ["M"],
-        "weightClasses": ["ABS", "+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS",
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_glover-teixeira-m",
         "name": "Glover Teixeira",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "99KG"
+        ]
       },
       {
         "id": "athlete_mourat-ozov-m",
         "name": "Mourat Ozov",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_rodrigo-artilheiro-m",
         "name": "Rodrigo Artilheiro",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_davis-heart-m",
         "name": "Davis Heart",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_zbigniew-tyszka-m",
         "name": "Zbigniew Tyszka",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_davion-peterson-m",
         "name": "Davion Peterson",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_manu-garcia-m",
         "name": "Manu Garcia",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_dan-martinez-m",
         "name": "Dan Martinez",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_jason-brudvik-m",
         "name": "Jason Brudvik",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_sasha-savko-m",
         "name": "Sasha Savko",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_jessica-oliveira-f",
         "name": "Jessica Oliveira",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_ruslam-chsiev-m",
         "name": "Ruslam Chsiev",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_7608",
         "name": "Jesse Urholin",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_mark-robinson-m",
         "name": "Mark Robinson",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
       },
       {
         "id": "athlete_gabriel-napao-m",
         "name": "Gabriel Napao",
-        "sexes": ["M"],
-        "weightClasses": ["+99KG", "ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG",
+          "ABS"
+        ]
       },
       {
         "id": "athlete_eoghan-oflannagan-m",
         "name": "Eoghan OFlannagan",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_6979",
         "name": "Ana Carolina Vieira",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_12064",
         "name": "Amanda Leve",
-        "sexes": ["F"],
-        "weightClasses": ["+60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+60KG"
+        ]
       },
       {
         "id": "athlete_chael-sonnen-m",
         "name": "Chael Sonnen",
-        "sexes": ["M"],
-        "weightClasses": ["ABS"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       },
       {
         "id": "athlete_matt-hughes-m",
         "name": "Matt Hughes",
-        "sexes": ["M"],
-        "weightClasses": ["99KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
       },
       {
         "id": "athlete_631",
         "name": "Rodrigo Caporal",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_kyle-griffin-m",
         "name": "Kyle Griffin",
-        "sexes": ["M"],
-        "weightClasses": ["88KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
       },
       {
         "id": "athlete_11771",
         "name": "William Tackett",
-        "sexes": ["M"],
-        "weightClasses": ["77KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
       },
       {
         "id": "athlete_e-karpinen-f",
         "name": "E. Karpinen",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
       },
       {
         "id": "athlete_kuba-witkowski-m",
         "name": "Kuba Witkowski",
-        "sexes": ["M"],
-        "weightClasses": ["66KG"]
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
       },
       {
         "id": "athlete_9271",
         "name": "Mayssa Bastos",
-        "sexes": ["F"],
-        "weightClasses": ["60KG"]
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "60KG"
+        ]
+      },
+      {
+        "id": "athlete_diogo-reis-m",
+        "name": "Diogo Reis",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
+      },
+      {
+        "id": "athlete_diego-pato-m",
+        "name": "Diego Pato",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
+      },
+      {
+        "id": "athlete_josh-cisneros-m",
+        "name": "Josh Cisneros",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "66KG"
+        ]
+      },
+      {
+        "id": "athlete_mica-galvao-m",
+        "name": "Mica Galvao",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
+      },
+      {
+        "id": "athlete_vagner-rocha-m",
+        "name": "Vagner Rocha",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
+      },
+      {
+        "id": "athlete_pj-barch-m",
+        "name": "PJ Barch",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "77KG"
+        ]
+      },
+      {
+        "id": "athlete_giancarlo-bodoni-m",
+        "name": "Giancarlo Bodoni",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
+      },
+      {
+        "id": "athlete_jay-rodriguez-m",
+        "name": "Jay Rodriguez",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
+      },
+      {
+        "id": "athlete_felipe-costa-m",
+        "name": "Felipe Costa",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "88KG"
+        ]
+      },
+      {
+        "id": "athlete_kaynan-duarte-m",
+        "name": "Kaynan Duarte",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG",
+          "ABS"
+        ]
+      },
+      {
+        "id": "athlete_rafael-lovato-jr-m",
+        "name": "Rafael Lovato Jr.",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
+      },
+      {
+        "id": "athlete_roberto-abreu-m",
+        "name": "Roberto Abreu",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "99KG"
+        ]
+      },
+      {
+        "id": "athlete_felipe-pena-m",
+        "name": "Felipe Pena",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
+      },
+      {
+        "id": "athlete_daniel-manasoiu-m",
+        "name": "Daniel Manasoiu",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "+99KG"
+        ]
+      },
+      {
+        "id": "athlete_adele-fornarino-f",
+        "name": "Adele Fornarino",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "55KG",
+          "ABS"
+        ]
+      },
+      {
+        "id": "athlete_bianca-basilio-f",
+        "name": "Bianca Basilio",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "55KG"
+        ]
+      },
+      {
+        "id": "athlete_jasmine-rocha-f",
+        "name": "Jasmine Rocha",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "55KG"
+        ]
+      },
+      {
+        "id": "athlete_ana-vieira-f",
+        "name": "Ana Vieira",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "65KG"
+        ]
+      },
+      {
+        "id": "athlete_helena-crevar-f",
+        "name": "Helena Crevar",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "65KG"
+        ]
+      },
+      {
+        "id": "athlete_rafaela-guedes-f",
+        "name": "Rafaela Guedes",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+65KG"
+        ]
+      },
+      {
+        "id": "athlete_nathiely-de-jesus-f",
+        "name": "Nathiely De Jesus",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+65KG"
+        ]
+      },
+      {
+        "id": "athlete_kendall-reusing-f",
+        "name": "Kendall Reusing",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "+65KG"
+        ]
+      },
+      {
+        "id": "athlete_cyborg-abreu-m",
+        "name": "Cyborg Abreu",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
+      },
+      {
+        "id": "athlete_dante-leon-m",
+        "name": "Dante Leon",
+        "sexes": [
+          "M"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
+      },
+      {
+        "id": "athlete_amy-campo-f",
+        "name": "Amy Campo",
+        "sexes": [
+          "F"
+        ],
+        "weightClasses": [
+          "ABS"
+        ]
       }
     ],
     "events": [
@@ -3531,6 +6684,11 @@
         "id": "event_adcc-world-championship-1998",
         "name": "ADCC World Championship",
         "year": 1998
+      },
+      {
+        "id": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "name": "ADCC Submission Fighting World Championship 2024",
+        "year": 2024
       }
     ],
     "matches": [
@@ -17326,6 +20484,336 @@
         "winnerPoints": -1,
         "loserPoints": -1,
         "sourceMatchId": "340"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:66KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_diogo-reis-m",
+        "loserId": "athlete_diego-pato-m",
+        "sex": "M",
+        "weightClass": "66KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:66KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:66KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_diogo-reis-m",
+        "loserId": "athlete_josh-cisneros-m",
+        "sex": "M",
+        "weightClass": "66KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:66KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:66KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_diego-pato-m",
+        "loserId": "athlete_josh-cisneros-m",
+        "sex": "M",
+        "weightClass": "66KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:66KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:77KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_mica-galvao-m",
+        "loserId": "athlete_vagner-rocha-m",
+        "sex": "M",
+        "weightClass": "77KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:77KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:77KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_mica-galvao-m",
+        "loserId": "athlete_pj-barch-m",
+        "sex": "M",
+        "weightClass": "77KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:77KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:77KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_vagner-rocha-m",
+        "loserId": "athlete_pj-barch-m",
+        "sex": "M",
+        "weightClass": "77KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:77KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:88KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_giancarlo-bodoni-m",
+        "loserId": "athlete_jay-rodriguez-m",
+        "sex": "M",
+        "weightClass": "88KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:88KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:88KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_giancarlo-bodoni-m",
+        "loserId": "athlete_felipe-costa-m",
+        "sex": "M",
+        "weightClass": "88KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:88KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:88KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_jay-rodriguez-m",
+        "loserId": "athlete_felipe-costa-m",
+        "sex": "M",
+        "weightClass": "88KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:88KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:99KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_kaynan-duarte-m",
+        "loserId": "athlete_rafael-lovato-jr-m",
+        "sex": "M",
+        "weightClass": "99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:99KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:99KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_kaynan-duarte-m",
+        "loserId": "athlete_roberto-abreu-m",
+        "sex": "M",
+        "weightClass": "99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:99KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:99KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_rafael-lovato-jr-m",
+        "loserId": "athlete_roberto-abreu-m",
+        "sex": "M",
+        "weightClass": "99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:99KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:+99KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_felipe-pena-m",
+        "loserId": "athlete_luke-griffith-m",
+        "sex": "M",
+        "weightClass": "+99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:+99KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:+99KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_felipe-pena-m",
+        "loserId": "athlete_daniel-manasoiu-m",
+        "sex": "M",
+        "weightClass": "+99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:+99KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:+99KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_luke-griffith-m",
+        "loserId": "athlete_daniel-manasoiu-m",
+        "sex": "M",
+        "weightClass": "+99KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:+99KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:55KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_adele-fornarino-f",
+        "loserId": "athlete_bianca-basilio-f",
+        "sex": "F",
+        "weightClass": "55KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:F:55KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:55KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_adele-fornarino-f",
+        "loserId": "athlete_jasmine-rocha-f",
+        "sex": "F",
+        "weightClass": "55KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:55KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:55KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_bianca-basilio-f",
+        "loserId": "athlete_jasmine-rocha-f",
+        "sex": "F",
+        "weightClass": "55KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:55KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:65KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_ana-vieira-f",
+        "loserId": "athlete_helena-crevar-f",
+        "sex": "F",
+        "weightClass": "65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:F:65KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:65KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_ana-vieira-f",
+        "loserId": "athlete_bia-mesquita-f",
+        "sex": "F",
+        "weightClass": "65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:65KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:65KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_helena-crevar-f",
+        "loserId": "athlete_bia-mesquita-f",
+        "sex": "F",
+        "weightClass": "65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:65KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:+65KG:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_rafaela-guedes-f",
+        "loserId": "athlete_nathiely-de-jesus-f",
+        "sex": "F",
+        "weightClass": "+65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:F:+65KG:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:+65KG:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_rafaela-guedes-f",
+        "loserId": "athlete_kendall-reusing-f",
+        "sex": "F",
+        "weightClass": "+65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:+65KG:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:+65KG:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_nathiely-de-jesus-f",
+        "loserId": "athlete_kendall-reusing-f",
+        "sex": "F",
+        "weightClass": "+65KG",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:+65KG:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:ABS:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_kaynan-duarte-m",
+        "loserId": "athlete_cyborg-abreu-m",
+        "sex": "M",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:M:ABS:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:ABS:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_kaynan-duarte-m",
+        "loserId": "athlete_dante-leon-m",
+        "sex": "M",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:ABS:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:M:ABS:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_cyborg-abreu-m",
+        "loserId": "athlete_dante-leon-m",
+        "sex": "M",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:M:ABS:2-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:ABS:1-2",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_adele-fornarino-f",
+        "loserId": "athlete_bia-mesquita-f",
+        "sex": "F",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_2",
+        "sourceMatchId": "adcc-worlds-2024:F:ABS:1-2"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:ABS:1-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_adele-fornarino-f",
+        "loserId": "athlete_amy-campo-f",
+        "sex": "F",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_1_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:ABS:1-3"
+      },
+      {
+        "id": "match_adcc-worlds-2024:F:ABS:2-3",
+        "eventId": "event_adcc-submission-fighting-world-championship-2024-2024",
+        "winnerId": "athlete_bia-mesquita-f",
+        "loserId": "athlete_amy-campo-f",
+        "sex": "F",
+        "weightClass": "ABS",
+        "method": "OFFICIAL_RESULT_RELATION",
+        "roundLabel": "PLACE_2_OVER_3",
+        "sourceMatchId": "adcc-worlds-2024:F:ABS:2-3"
       }
     ]
   }

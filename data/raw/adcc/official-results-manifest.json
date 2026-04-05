@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "adcc-worlds-2024",
+    "eventYear": 2024,
+    "eventType": "worlds",
+    "officialParsedPath": "data/processed/adcc/scraped-events/adcc-worlds-2024-official-results.json"
+  },
+  {
+    "slug": "adcc-worlds-2019",
+    "eventYear": 2019,
+    "eventType": "worlds",
+    "officialParsedPath": "data/processed/adcc/scraped-events/adcc-worlds-2019-official-results.json"
+  }
+]

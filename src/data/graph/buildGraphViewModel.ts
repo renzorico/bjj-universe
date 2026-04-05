@@ -1,45 +1,60 @@
 import {
+  AdccAthlete,
+  CanonicalAdccMatch,
   GraphEdgeViewModel,
   GraphNodeViewModel,
-  NormalizedCompetitionData,
 } from '@/domain/types';
-import { AthleteMetricsSnapshot } from '@/data/metrics/buildAthleteMetrics';
+import { CanonicalAthleteMetricsSnapshot } from '@/data/metrics/buildCanonicalAthleteMetrics';
 
 export function buildGraphViewModel(
-  normalized: NormalizedCompetitionData,
-  metrics: AthleteMetricsSnapshot,
+  athletes: AdccAthlete[],
+  matches: CanonicalAdccMatch[],
+  metrics: CanonicalAthleteMetricsSnapshot,
+  adccAthletes: AdccAthlete[],
 ): {
   nodes: GraphNodeViewModel[];
   edges: GraphEdgeViewModel[];
 } {
-  const eventById = new Map(
-    normalized.events.map((event) => [event.id, event]),
-  );
-  const positionsByAthleteId = createStableNodePositions(normalized, metrics);
-  const rivalryCounts = normalized.matches.reduce((registry, match) => {
-    const rivalryId = [match.winnerId, match.loserId].sort().join('__');
+  const athleteMetadata = buildAthleteMetadataIndex(adccAthletes);
+  const positionsByAthleteId = createStableNodePositions(athletes, metrics);
+  const rivalryCounts = matches.reduce((registry, match) => {
+    const rivalryId = [match.winnerCanonicalId, match.loserCanonicalId]
+      .sort()
+      .join('__');
     registry.set(rivalryId, (registry.get(rivalryId) ?? 0) + 1);
     return registry;
   }, new Map<string, number>());
+  const athleteIds = new Set(
+    athletes.map((athlete) => athlete.canonicalAthleteId),
+  );
 
-  const nodes = normalized.athletes.map((athlete) => {
-    const metric = metrics.athletes.get(athlete.id);
-    const basePosition = positionsByAthleteId.get(athlete.id) ?? {
-      x: 50,
-      y: 50,
-    };
+  const nodes = athletes.map((athlete) => {
+    const metric = metrics.athletes.get(athlete.canonicalAthleteId);
+    const metadata = resolveAthleteMetadata(athlete, athleteMetadata);
+    const basePosition =
+      positionsByAthleteId.get(athlete.canonicalAthleteId) ?? {
+        x: 50,
+        y: 50,
+      };
 
     return {
-      id: athlete.id,
-      label: athlete.name,
+      id: athlete.canonicalAthleteId,
+      label: metadata.name,
+      displaySex: metadata.sex,
+      displayPrimaryWeightClass: metadata.primaryWeightClass,
+      displayActiveYearFirst: metadata.activeYearFirst,
+      displayActiveYearLast: metadata.activeYearLast,
+      displayTotalMatches: metadata.totalMatches,
       size: 16 + (metric?.wins ?? 0) * 4,
       wins: metric?.wins ?? 0,
       losses: metric?.losses ?? 0,
       yearsActive: metric?.yearsActive ?? [],
-      sexes: athlete.sexes,
-      weightClasses: athlete.weightClasses,
-      nationality: athlete.nationality,
-      team: athlete.team,
+      sexes: metadata.sex ? [metadata.sex] : [],
+      weightClasses: metadata.primaryWeightClass
+        ? [metadata.primaryWeightClass]
+        : [],
+      nationality: metadata.nationality,
+      team: metadata.team,
       bridgeScore: metric?.bridgeScore ?? 0,
       position: basePosition,
     };
@@ -49,34 +64,47 @@ export function buildGraphViewModel(
     nodes.map((node) => [node.id, node.position] as const),
   );
 
-  const edges = normalized.matches.map((match, index) => {
-    const sourcePosition = nodePositions.get(match.winnerId) ?? { x: 0, y: 0 };
-    const targetPosition = nodePositions.get(match.loserId) ?? { x: 0, y: 0 };
-    const event = eventById.get(match.eventId);
-    const rivalryId = [match.winnerId, match.loserId].sort().join('__');
-    const deltaX = targetPosition.x - sourcePosition.x;
-    const deltaY = targetPosition.y - sourcePosition.y;
+  const edges = matches
+    .filter(
+      (match) =>
+        athleteIds.has(match.winnerCanonicalId) &&
+        athleteIds.has(match.loserCanonicalId),
+    )
+    .map((match, index) => {
+      const sourcePosition = nodePositions.get(match.winnerCanonicalId) ?? {
+        x: 0,
+        y: 0,
+      };
+      const targetPosition = nodePositions.get(match.loserCanonicalId) ?? {
+        x: 0,
+        y: 0,
+      };
+      const rivalryId = [match.winnerCanonicalId, match.loserCanonicalId]
+        .sort()
+        .join('__');
+      const deltaX = targetPosition.x - sourcePosition.x;
+      const deltaY = targetPosition.y - sourcePosition.y;
 
-    return {
-      id: `edge_${index + 1}`,
-      source: match.winnerId,
-      target: match.loserId,
-      weight: 1,
-      eventId: match.eventId,
-      eventName: event?.name ?? 'Unknown event',
-      year: event?.year ?? 0,
-      sex: match.sex,
-      weightClass: match.weightClass,
-      method: match.method,
-      roundLabel: match.roundLabel,
-      rivalryId,
-      rivalryCount: rivalryCounts.get(rivalryId) ?? 1,
-      sourcePosition,
-      targetPosition,
-      angle: (Math.atan2(deltaY, deltaX) * 180) / Math.PI,
-      length: Math.sqrt(deltaX ** 2 + deltaY ** 2),
-    };
-  });
+      return {
+        id: `edge_${index + 1}`,
+        source: match.winnerCanonicalId,
+        target: match.loserCanonicalId,
+        weight: 1,
+        eventId: match.eventId,
+        eventName: match.eventName,
+        year: match.year,
+        sex: match.sex,
+        weightClass: match.weightClass,
+        method: match.method,
+        roundLabel: match.roundLabel,
+        rivalryId,
+        rivalryCount: rivalryCounts.get(rivalryId) ?? 1,
+        sourcePosition,
+        targetPosition,
+        angle: (Math.atan2(deltaY, deltaX) * 180) / Math.PI,
+        length: Math.sqrt(deltaX ** 2 + deltaY ** 2),
+      };
+    });
 
   return {
     nodes,
@@ -84,13 +112,47 @@ export function buildGraphViewModel(
   };
 }
 
+function buildAthleteMetadataIndex(adccAthletes: AdccAthlete[]) {
+  return new Map(
+    adccAthletes.map(
+      (athlete) => [toAthleteLookupKey(athlete.name, athlete.sex), athlete] as const,
+    ),
+  );
+}
+
+function resolveAthleteMetadata(
+  athlete: AdccAthlete,
+  athleteMetadata: Map<string, AdccAthlete>,
+) {
+  const canonicalAthlete = athleteMetadata.get(
+    toAthleteLookupKey(athlete.name, athlete.sex),
+  );
+
+  return {
+    name: canonicalAthlete?.name ?? athlete.name,
+    sex: canonicalAthlete?.sex ?? athlete.sex,
+    primaryWeightClass:
+      canonicalAthlete?.primaryWeightClass ?? athlete.primaryWeightClass,
+    activeYearFirst:
+      canonicalAthlete?.activeYearFirst ?? athlete.activeYearFirst,
+    activeYearLast: canonicalAthlete?.activeYearLast ?? athlete.activeYearLast,
+    totalMatches: canonicalAthlete?.totalMatches ?? athlete.totalMatches,
+    nationality: canonicalAthlete?.nationality ?? athlete.nationality,
+    team: canonicalAthlete?.team ?? athlete.team,
+  };
+}
+
+function toAthleteLookupKey(name: string, sex: string) {
+  return `${name.trim().toLowerCase()}::${sex.trim().toUpperCase()}`;
+}
+
 function createStableNodePositions(
-  normalized: NormalizedCompetitionData,
-  metrics: AthleteMetricsSnapshot,
+  athletes: AdccAthlete[],
+  metrics: CanonicalAthleteMetricsSnapshot,
 ): Map<string, { x: number; y: number }> {
-  const sortedAthletes = [...normalized.athletes].sort((left, right) => {
-    const leftMetric = metrics.athletes.get(left.id);
-    const rightMetric = metrics.athletes.get(right.id);
+  const sortedAthletes = [...athletes].sort((left, right) => {
+    const leftMetric = metrics.athletes.get(left.canonicalAthleteId);
+    const rightMetric = metrics.athletes.get(right.canonicalAthleteId);
     const bridgeDelta =
       (rightMetric?.bridgeScore ?? 0) - (leftMetric?.bridgeScore ?? 0);
 
@@ -112,7 +174,9 @@ function createStableNodePositions(
   }
 
   if (sortedAthletes.length === 1) {
-    return new Map([[sortedAthletes[0].id, { x: 50, y: 50 }]]);
+    return new Map([
+      [sortedAthletes[0].canonicalAthleteId, { x: 50, y: 50 }],
+    ]);
   }
 
   const positions = new Map<string, { x: number; y: number }>();
@@ -125,7 +189,7 @@ function createStableNodePositions(
     const x = 50 + Math.cos(angle) * radius;
     const y = 50 + Math.sin(angle) * radius * 0.82;
 
-    positions.set(athlete.id, {
+    positions.set(athlete.canonicalAthleteId, {
       x: Number(x.toFixed(4)),
       y: Number(y.toFixed(4)),
     });

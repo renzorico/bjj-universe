@@ -169,14 +169,14 @@ function clamp(value: number, min: number, max: number) {
 function buildClusterPalette(nodes: SceneNodeViewModel[]): ClusterPalette {
   const clusterKeys = [...new Set(nodes.map(resolveClusterKey))].sort();
   const palette = [
-    '#86b7ff',
-    '#5fe1c5',
-    '#ffd977',
-    '#ff8ac6',
-    '#c6a6ff',
-    '#ff9f7c',
-    '#8de46b',
-    '#70c8ff',
+    '#e9e1d5',
+    '#b8ab9b',
+    '#8f8378',
+    '#c24a43',
+    '#7d2f2d',
+    '#a78663',
+    '#6f6760',
+    '#d3c6b8',
   ];
   const clusterIndexByKey = new Map(
     clusterKeys.map((key, index) => [key, index] as const),

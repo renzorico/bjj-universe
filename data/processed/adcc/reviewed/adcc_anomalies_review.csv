@@ -1,0 +1,7 @@
+canonical_athlete_id,slug,name,sex,primary_weight_class,active_year_first,active_year_last,total_matches,anomaly_reason
+athlete_alexandre-ribeiro-m,alexandre-ribeiro,Alexandre Ribeiro,M,99KG,2003,2022,43,high_match_count
+athlete_leonardo-vieira-m,leonardo-vieira,Leonardo Vieira,M,66KG,2000,2017,30,high_match_count
+athlete_marcelo-garcia-m,marcelo-garcia,Marcelo Garcia,M,77KG,2003,2011,32,high_match_count
+athlete_roberto-abreu-m,roberto-abreu,Roberto Abreu,M,+99KG,2009,2022,29,high_match_count
+athlete_saulo-ribeiro-m,saulo-ribeiro,Saulo Ribeiro,M,88KG,1999,2009,30,high_match_count
+athlete_vinicius-magalhaes-m,vinicius-magalhaes,Vinicius Magalhaes,M,+99KG,1999,2022,29,high_match_count

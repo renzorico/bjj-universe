@@ -1,0 +1,200 @@
+{
+  "sourceUrl": "https://adcombat.com/adcc-events/adcc-submission-fighting-world-championship-2024/",
+  "scrapedAt": "2026-04-03T16:19:33.271Z",
+  "eventTitle": "ADCC Submission Fighting World Championship 2024",
+  "organizer": "ADCC Federation",
+  "location": "T-Mobile Arena, Las Vegas, Nevada,",
+  "eventDate": "Aug 17, 2024",
+  "divisions": [
+    {
+      "divisionLabel": "MALE -66KG",
+      "sex": "M",
+      "weightClass": "-66KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Diogo Reis"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Diego Pato"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Josh Cisneros"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -77KG",
+      "sex": "M",
+      "weightClass": "-77KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Mica Galvao"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Vagner Rocha"
+        },
+        {
+          "rank": 3,
+          "athleteName": "PJ Barch"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -88KG",
+      "sex": "M",
+      "weightClass": "-88KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Giancarlo Bodoni"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Jay Rodriguez"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Felipe Costa"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE -99KG",
+      "sex": "M",
+      "weightClass": "-99KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Kaynan Duarte"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Rafael Lovato Jr."
+        },
+        {
+          "rank": 3,
+          "athleteName": "Roberto Abreu"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE +99KG",
+      "sex": "M",
+      "weightClass": "+99KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Felipe Pena"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Luke Griffith"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Daniel Manasoiu"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE -55KG",
+      "sex": "F",
+      "weightClass": "-55KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Adele Fornarino"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Bianca Basilio"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Jasmine Rocha"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE -65KG",
+      "sex": "F",
+      "weightClass": "-65KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Ana Vieira"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Helena Crevar"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Bia Mesquita"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE +65KG",
+      "sex": "F",
+      "weightClass": "+65KG",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Rafaela Guedes"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Nathiely De Jesus"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Kendall Reusing"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "MALE ABSOLUTE",
+      "sex": "M",
+      "weightClass": "ABS",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Kaynan Duarte"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Cyborg Abreu"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Dante Leon"
+        }
+      ]
+    },
+    {
+      "divisionLabel": "FEMALE ABSOLUTE",
+      "sex": "F",
+      "weightClass": "ABS",
+      "placements": [
+        {
+          "rank": 1,
+          "athleteName": "Adele Fornarino"
+        },
+        {
+          "rank": 2,
+          "athleteName": "Bia Mesquita"
+        },
+        {
+          "rank": 3,
+          "athleteName": "Amy Campo"
+        }
+      ]
+    }
+  ]
+}
