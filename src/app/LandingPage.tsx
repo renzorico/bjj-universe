@@ -332,7 +332,7 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
   );
 
   return (
-    <div className="page-reveal relative h-screen overflow-hidden bg-[var(--bg)] text-[var(--text-primary)]">
+    <div className="page-reveal relative h-dvh overflow-hidden bg-[var(--bg)] text-[var(--text-primary)]">
 
       {/* Unified space backdrop shared with Universe screen */}
       <div className="pointer-events-none absolute inset-0 z-0 space-depth" />
@@ -343,10 +343,10 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
       <div className="relative z-10 flex h-full flex-col">
 
         {/* ── Hero column ──────────────────────────────────────────────────── */}
-        <div className="relative z-10 flex h-full flex-col px-8 py-8 lg:pl-[11%] lg:pr-12 lg:py-10">
+        <div className="relative z-10 flex h-full flex-col px-4 py-5 sm:px-6 sm:py-7 lg:pl-[11%] lg:pr-12 lg:py-10">
 
           {/* Top strip — meta + credit capsules */}
-          <div className="mb-4 flex items-center gap-10 max-w-[380px] lg:mb-5">
+          <div className="mb-3 flex max-w-[380px] flex-wrap items-center gap-2.5 sm:mb-4 sm:gap-4 lg:mb-5 lg:gap-10">
             <span
               className="inline-flex items-center rounded-full border border-white/12 bg-black/24 px-3 py-1 text-[10px] tracking-[0.24em] text-[var(--text-muted)] uppercase"
               style={{ fontFamily: 'var(--font-mono)' }}
@@ -365,31 +365,31 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
           </div>
 
           {/* Center — dominant title + slogan + metrics */}
-          <div className="-mt-3 flex flex-col pt-0 lg:-mt-11 lg:pt-0 lg:max-w-[380px]">
+          <div className="-mt-1 flex max-w-[420px] flex-col pt-0 lg:-mt-11 lg:max-w-[380px] lg:pt-0">
 
             <div>
               <img
                 src={logoUrl}
                 alt="ADCC"
-                className="h-[clamp(12rem,30vw,24rem)] w-auto opacity-95"
+                className="h-[clamp(8.2rem,35vw,24rem)] w-auto opacity-95 sm:h-[clamp(10.5rem,34vw,24rem)]"
               />
               <h1
-                className="-mt-20 lg:-mt-24 font-display font-bold leading-[0.4] tracking-[0.08em] text-[var(--text-primary)] uppercase"
-                style={{ fontSize: 'clamp(4.25rem, 8.2vw, 5.8rem)' }}
+                className="-mt-14 font-display font-bold leading-[0.5] tracking-[0.08em] text-[var(--text-primary)] uppercase sm:-mt-18 lg:-mt-24"
+                style={{ fontSize: 'clamp(2.9rem, 15vw, 5.8rem)' }}
               >
                 UNIVERSE
               </h1>
             </div>
 
             <h2
-              className="mt-8 font-sans font-normal tracking-[0.01em] text-justify text-[color:var(--text-secondary)] lg:mt-9"
+              className="mt-4 font-sans font-normal tracking-[0.01em] text-left text-[color:var(--text-secondary)] sm:mt-6 lg:mt-9"
               style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.15rem)', lineHeight: '1.55', maxWidth: '380px' }}
             >
               See the world’s toughest grappling tournament as one connected network.
             </h2>
 
             <p
-              className="mt-6 text-justify text-[color:var(--text-dim)]"
+              className="mt-4 text-left text-[color:var(--text-dim)] sm:mt-6"
               style={{
                 fontSize: 'clamp(0.85rem, 1.1vw, 0.98rem)',
                 lineHeight: '1.65',
@@ -400,10 +400,29 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
               <br></br>Filter by year, division, and weight to see eras emerge, rivalries evolve, and hidden paths between athletes you&apos;d never think to connect.
             </p>
 
+            <div className="mt-5 grid grid-cols-2 gap-2.5 lg:hidden">
+              {bubbleMetrics.slice(0, 6).map((bubble) => (
+                <div
+                  key={`mobile-${bubble.label}`}
+                  className="rounded-[14px] border border-white/12 bg-[linear-gradient(180deg,rgba(24,16,16,0.72),rgba(10,9,10,0.84))] px-3 py-2.5 backdrop-blur-md"
+                >
+                  <p
+                    className="text-[8px] tracking-[0.17em] text-white/54 uppercase"
+                    style={{ fontFamily: 'var(--font-mono)' }}
+                  >
+                    {bubble.label}
+                  </p>
+                  <p className="font-display mt-1 text-[1.42rem] leading-none text-white/94">
+                    {bubble.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
           </div>
 
           {/* Bottom — slide threshold control for entering the universe */}
-          <div className="mt-auto pt-6 pb-1 max-w-[380px]">
+          <div className="mt-auto max-w-[420px] pb-1 pt-5 lg:max-w-[380px] lg:pt-6">
             <div
               ref={entryTrackRef}
               role="slider"
@@ -413,7 +432,7 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
               aria-valuenow={Math.round(entryProgress * 100)}
               aria-valuetext={isEntering ? 'Entering observatory' : 'Slide to enter observatory'}
               tabIndex={isEntering ? -1 : 0}
-              className="group relative h-14 w-full touch-none select-none overflow-hidden rounded-full border border-white/16 bg-[linear-gradient(180deg,rgba(22,18,18,0.74),rgba(10,9,10,0.82))] outline-none ring-1 ring-white/6 backdrop-blur-xl focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+              className="group relative h-13 w-full touch-none select-none overflow-hidden rounded-full border border-white/16 bg-[linear-gradient(180deg,rgba(22,18,18,0.74),rgba(10,9,10,0.82))] outline-none ring-1 ring-white/6 backdrop-blur-xl focus-visible:ring-2 focus-visible:ring-[var(--accent)] sm:h-14"
               onPointerDown={handleEntryPointerDown}
               onPointerMove={handleEntryPointerMove}
               onPointerUp={handleEntryPointerEnd}
@@ -428,7 +447,7 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
                 }}
               />
 
-              <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-20">
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-14 sm:px-20">
                 <span
                   className={`truncate text-[10px] tracking-[0.26em] uppercase transition-colors duration-300 ${
                     isEntering || entryProgress >= ENTRY_THRESHOLD
@@ -458,7 +477,7 @@ export function LandingPage({ onNavigate, snapshot }: LandingPageProps) {
         </div>
 
         {/* Constellation — full-screen atmospheric layer, hidden on mobile */}
-        <div className="pointer-events-none absolute inset-0 hidden lg:block">
+          <div className="pointer-events-none absolute inset-0 hidden lg:block">
 
           {/* SVG: connection lines between nodes */}
           <svg

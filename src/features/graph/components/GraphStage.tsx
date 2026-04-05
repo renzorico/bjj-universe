@@ -41,6 +41,10 @@ export function GraphStage({
   >('idle');
   const [compareAId, setCompareAId] = useState<string | null>(null);
   const [compareBId, setCompareBId] = useState<string | null>(null);
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
+  const [mobilePanel, setMobilePanel] = useState<
+    'none' | 'controls' | 'compare' | 'detail'
+  >('none');
 
   const scene = useMemo(
     () => buildGraphSceneModel(snapshot, filters),
@@ -92,6 +96,9 @@ export function GraphStage({
   const handleSelectAthlete = (athleteId: string | null) => {
     setSelectedAthleteId(athleteId);
     setDetailOpen(athleteId !== null);
+    if (athleteId && window.innerWidth < 768) {
+      setMobilePanel('detail');
+    }
   };
 
   const clearPath = () => {
@@ -190,18 +197,57 @@ export function GraphStage({
       <div className="pointer-events-none absolute inset-0 z-20">
 
         {/* Top-center: filter state */}
-        <div className="absolute inset-x-0 top-4 flex flex-col items-center gap-2 sm:top-5">
+          <div className="absolute inset-x-0 top-3 flex flex-col items-center gap-1.5 px-3 sm:top-5 sm:gap-2">
           <p
             className="text-[10px] tracking-[0.17em] uppercase"
             style={{ fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}
           >
             {filterSummary}
           </p>
-          <span className="hud-zone-divider w-[min(440px,62vw)]" />
+            <span className="hud-zone-divider w-[min(440px,86vw)] sm:w-[min(440px,62vw)]" />
         </div>
 
+          {/* Mobile top bar: home + title + search */}
+          <div className="absolute left-3 right-3 top-12 flex items-center justify-between gap-2 md:hidden">
+            <div className="pointer-events-auto hud-panel flex min-w-0 items-center gap-2 rounded-[4px] px-2.5 py-1.5">
+              {onNavigate ? (
+                <AppLink
+                  href="/"
+                  onNavigate={onNavigate}
+                  className="inline-flex items-center text-[9px] tracking-[0.18em] uppercase text-[color:var(--text-muted)] transition hover:text-[color:var(--text-secondary)] [font-family:var(--font-mono)]"
+                >
+                  Home
+                </AppLink>
+              ) : null}
+              <span className="hud-label truncate text-white/46">ADCC Universe</span>
+            </div>
+
+            <button
+              type="button"
+              className="pointer-events-auto hud-panel hud-label hud-focus rounded-[3px] border border-white/[0.08] px-3 py-2 text-white/48 transition hover:border-white/[0.14] hover:text-white/70"
+              onClick={() => setMobileSearchOpen((current) => !current)}
+            >
+              {mobileSearchOpen ? 'Close search' : 'Search'}
+            </button>
+          </div>
+
+          {mobileSearchOpen ? (
+            <div className="absolute left-3 right-3 top-[5.25rem] md:hidden">
+              <div className="pointer-events-auto hud-panel hud-search-shell w-full p-2">
+                <AthleteList
+                  athletes={scene.nodes}
+                  selectedAthleteId={selectedAthleteId}
+                  onSelectAthlete={(athleteId) => {
+                    handleSelectAthlete(athleteId);
+                    setMobileSearchOpen(false);
+                  }}
+                />
+              </div>
+            </div>
+          ) : null}
+
         {/* Left rail: narrative + search */}
-        <div className="absolute left-4 top-4 bottom-4 flex w-[min(320px,calc(100vw-2rem))] flex-col justify-between sm:left-5 sm:top-5 sm:bottom-5">
+          <div className="absolute bottom-4 left-4 top-4 hidden w-[min(320px,calc(100vw-2rem))] flex-col justify-between sm:left-5 sm:bottom-5 sm:top-5 md:flex">
           <div className="max-w-[17rem] space-y-7">
             {onNavigate ? (
               <div className="pointer-events-auto">
@@ -246,7 +292,7 @@ export function GraphStage({
         </div>
 
         {/* Right rail: filters + inspection */}
-        <div className="absolute right-4 top-4 flex w-[min(340px,calc(100vw-1.5rem))] flex-col items-end gap-2.5 sm:right-5 sm:top-5 sm:gap-3.5">
+        <div className="absolute right-4 top-4 hidden w-[min(340px,calc(100vw-1.5rem))] flex-col items-end gap-2.5 sm:right-5 sm:top-5 sm:gap-3.5 md:flex">
           <div className="pointer-events-auto w-full max-w-full">
             <GraphControls
               filters={filters}
@@ -304,6 +350,137 @@ export function GraphStage({
             </div>
           ) : null}
         </div>
+
+        {/* Mobile bottom action zone */}
+        <div className="absolute inset-x-3 bottom-3 z-30 md:hidden">
+          <div className="pointer-events-auto hud-panel flex items-center justify-between gap-1.5 rounded-[4px] p-1.5">
+            <button
+              type="button"
+              className={`hud-label hud-focus flex-1 rounded-[3px] border px-2 py-2 text-center transition ${
+                mobilePanel === 'controls'
+                  ? 'border-[color:var(--border-accent)] bg-[rgba(84,219,199,0.07)] text-white/86'
+                  : 'border-white/[0.08] text-white/46 hover:border-white/[0.14] hover:text-white/68'
+              }`}
+              onClick={() =>
+                setMobilePanel((current) =>
+                  current === 'controls' ? 'none' : 'controls',
+                )
+              }
+            >
+              Controls
+            </button>
+            <button
+              type="button"
+              className={`hud-label hud-focus flex-1 rounded-[3px] border px-2 py-2 text-center transition ${
+                mobilePanel === 'compare'
+                  ? 'border-[color:var(--border-accent)] bg-[rgba(84,219,199,0.07)] text-white/86'
+                  : 'border-white/[0.08] text-white/46 hover:border-white/[0.14] hover:text-white/68'
+              }`}
+              onClick={() =>
+                setMobilePanel((current) =>
+                  current === 'compare' ? 'none' : 'compare',
+                )
+              }
+            >
+              Compare
+            </button>
+            <button
+              type="button"
+              className={`hud-label hud-focus flex-1 rounded-[3px] border px-2 py-2 text-center transition ${
+                mobilePanel === 'detail'
+                  ? 'border-[color:var(--border-accent)] bg-[rgba(84,219,199,0.07)] text-white/86'
+                  : 'border-white/[0.08] text-white/46 hover:border-white/[0.14] hover:text-white/68'
+              }`}
+              onClick={() =>
+                setMobilePanel((current) =>
+                  current === 'detail' ? 'none' : 'detail',
+                )
+              }
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+
+        {mobilePanel !== 'none' ? (
+          <button
+            type="button"
+            aria-label="Close mobile panel"
+            className="absolute inset-0 z-20 bg-black/28 md:hidden"
+            onClick={() => setMobilePanel('none')}
+          />
+        ) : null}
+
+        {mobilePanel !== 'none' ? (
+          <div className="absolute inset-x-3 bottom-[4.5rem] z-30 max-h-[min(70vh,34rem)] overflow-y-auto md:hidden">
+            <div className="pointer-events-auto hud-panel rounded-[4px] p-2.5">
+              <div className="mb-2 flex items-center justify-between gap-2 border-b border-white/[0.06] pb-2">
+                <p className="hud-label text-white/36">
+                  {mobilePanel === 'controls'
+                    ? 'Controls'
+                    : mobilePanel === 'compare'
+                      ? 'Pinned compare'
+                      : 'Athlete detail'}
+                </p>
+                <button
+                  type="button"
+                  className="hud-label hud-focus rounded-[2px] border border-white/[0.08] px-2 py-1 text-white/42 transition hover:border-white/[0.14] hover:text-white/64"
+                  onClick={() => setMobilePanel('none')}
+                >
+                  Close
+                </button>
+              </div>
+
+              {mobilePanel === 'controls' ? (
+                <GraphControls
+                  filters={filters}
+                  years={scene.years}
+                  sexes={scene.sexes}
+                  weightClasses={scene.weightClasses}
+                  athletes={athleteOptions}
+                  sourceAthleteId={sourceAthleteId}
+                  targetAthleteId={targetAthleteId}
+                  pathStatus={pathStatus}
+                  pathChainLabels={pathChainLabels}
+                  onChangePathSource={setSourceAthleteId}
+                  onChangePathTarget={setTargetAthleteId}
+                  onClearPath={clearPath}
+                  onChange={(nextFilters) => {
+                    setFilters(nextFilters);
+                    setSelectedAthleteId(null);
+                  }}
+                />
+              ) : null}
+
+              {mobilePanel === 'compare' ? (
+                <ComparePanel
+                  compareA={compareA}
+                  compareB={compareB}
+                  compareALabel={compareALabel}
+                  compareBLabel={compareBLabel}
+                  onClearA={() => setCompareAId(null)}
+                  onClearB={() => setCompareBId(null)}
+                  onClearAll={clearCompare}
+                />
+              ) : null}
+
+              {mobilePanel === 'detail' ? (
+                <AthleteDetailPanel
+                  key={detail?.athlete.id ?? 'empty-mobile'}
+                  detail={detail}
+                  compareAId={compareAId}
+                  compareBId={compareBId}
+                  onPinCompareA={setCompareAId}
+                  onPinCompareB={setCompareBId}
+                  onClearSelection={() => {
+                    setSelectedAthleteId(null);
+                    setDetailOpen(false);
+                  }}
+                />
+              ) : null}
+            </div>
+          </div>
+        ) : null}
 
 
       </div>

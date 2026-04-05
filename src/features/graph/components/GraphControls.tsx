@@ -43,7 +43,7 @@ export function GraphControls({
     sortedYears.length === 0 ? 0 : (yearIndex / sortedYears.length) * 100;
 
   return (
-    <div className="w-full max-w-[20.5rem] space-y-1.5">
+    <div className="w-full max-w-full space-y-1.5 md:max-w-[20.5rem]">
       <p className="hud-label text-white/26">Filters</p>
 
       <ControlRow label="Year">
@@ -245,8 +245,8 @@ function ControlRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid grid-cols-[5.2rem_minmax(0,1fr)] items-start gap-2 border-b border-white/[0.05] py-1.5 last:border-b-0">
-      <p className="hud-label pt-[3px] text-white/24">{label}</p>
+    <div className="grid grid-cols-1 items-start gap-1.5 border-b border-white/[0.05] py-1.5 last:border-b-0 sm:grid-cols-[5.2rem_minmax(0,1fr)] sm:gap-2">
+      <p className="hud-label pt-[3px] text-white/24 sm:pt-[3px]">{label}</p>
       {children}
     </div>
   );
@@ -281,7 +281,7 @@ function Segment({
     <button
       type="button"
       aria-pressed={active}
-      className={`hud-label hud-focus flex h-[20px] items-center rounded-[2px] border px-2 transition-[color,border-color,background-color] duration-150 ${grow ? 'flex-1 justify-center' : ''} ${
+      className={`hud-label hud-focus flex h-[28px] items-center rounded-[2px] border px-2 transition-[color,border-color,background-color] duration-150 sm:h-[20px] ${grow ? 'flex-1 justify-center' : ''} ${
         active
           ? 'border-[color:var(--border-accent)] bg-[rgba(84,219,199,0.07)] font-medium text-white'
           : 'border-transparent text-white/42 hover:border-white/[0.06] hover:bg-white/[0.028] hover:text-white/76 focus-visible:border-[color:var(--border-accent)] focus-visible:text-white'
@@ -306,4 +306,4 @@ function formatWeightLabel(weightClass: string) {
 }
 
 const clusterSelectClass =
-  'hud-label hud-focus hud-select h-[22px] w-full appearance-none rounded-[3px] border border-white/[0.05] bg-white/[0.014] px-2.5 pr-7 text-left text-white/48 transition-[color,border-color,background-color] duration-150 cursor-pointer hover:border-white/[0.08] hover:bg-white/[0.024] hover:text-white/78 focus-visible:border-[color:var(--border-accent)] focus-visible:bg-white/[0.02] focus-visible:text-white';
+  'hud-label hud-focus hud-select h-[30px] w-full appearance-none rounded-[3px] border border-white/[0.05] bg-white/[0.014] px-2.5 pr-7 text-left text-white/48 transition-[color,border-color,background-color] duration-150 cursor-pointer hover:border-white/[0.08] hover:bg-white/[0.024] hover:text-white/78 focus-visible:border-[color:var(--border-accent)] focus-visible:bg-white/[0.02] focus-visible:text-white sm:h-[22px]';

@@ -280,8 +280,8 @@ export function GraphCanvas({
           {isGuideOpen ? (
             <aside
               id="graph-guide-panel"
-              className="absolute bottom-12 right-4 z-10 w-[min(22rem,calc(100vw-2rem))] overflow-y-auto rounded-[4px] border border-white/[0.1] bg-[rgba(4,9,17,0.9)] p-3 shadow-[0_18px_38px_rgba(0,0,0,0.4)] backdrop-blur-md sm:bottom-14 sm:right-5"
-              style={{ maxHeight: 'min(28rem, calc(100vh - 6rem))' }}
+              className="absolute bottom-28 left-3 right-3 z-20 w-auto overflow-y-auto rounded-[4px] border border-white/[0.1] bg-[rgba(4,9,17,0.9)] p-3 shadow-[0_18px_38px_rgba(0,0,0,0.4)] backdrop-blur-md sm:bottom-14 sm:left-auto sm:right-5 sm:w-[min(22rem,calc(100vw-2rem))]"
+              style={{ maxHeight: 'min(22rem, calc(100vh - 9rem))' }}
             >
               <h3 className="mb-2 text-[9px] tracking-[0.2em] text-white/50 uppercase" style={{ fontFamily: 'var(--font-mono)' }}>
                 Guide
@@ -336,7 +336,7 @@ export function GraphCanvas({
           ) : null}
 
           {/* Centered credit — matches LandingPage capsule style */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 flex justify-center sm:bottom-5">
+          <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 hidden justify-center sm:bottom-5 sm:flex">
             <a
               href="https://www.linkedin.com/in/renzorico"
               target="_blank"
@@ -349,12 +349,12 @@ export function GraphCanvas({
           </div>
 
           {/* Guide + Reset view buttons */}
-          <div className="hud-panel absolute bottom-4 right-4 z-10 flex items-center gap-1 p-1.5 sm:bottom-5 sm:right-5">
+          <div className="hud-panel absolute bottom-[4.25rem] right-3 z-20 flex items-center gap-1 p-1.5 sm:bottom-5 sm:right-5">
             <button
               type="button"
               aria-expanded={isGuideOpen}
               aria-controls="graph-guide-panel"
-              className="hud-label hud-focus rounded-[2px] border border-white/[0.08] px-2 py-0.5 text-white/34 transition hover:border-white/[0.14] hover:text-white/62"
+              className="hud-label hud-focus rounded-[2px] border border-white/[0.08] px-2 py-1 text-white/34 transition hover:border-white/[0.14] hover:text-white/62 sm:py-0.5"
               onClick={() => setIsGuideOpen((current) => !current)}
             >
               Guide
@@ -367,7 +367,7 @@ export function GraphCanvas({
                 onHoverAthlete(null);
                 resetView(graphRef.current, 260);
               }}
-              className="hud-label hud-focus rounded-[2px] border border-white/[0.08] px-2 py-0.5 text-white/34 transition hover:border-white/[0.14] hover:text-white/62"
+              className="hud-label hud-focus rounded-[2px] border border-white/[0.08] px-2 py-1 text-white/34 transition hover:border-white/[0.14] hover:text-white/62 sm:py-0.5"
             >
               Reset view
             </button>
