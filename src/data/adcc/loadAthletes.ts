@@ -1,4 +1,4 @@
-import athletesCsv from '../processed/adcc_athletes_final.csv?raw';
+import { loadProcessedCompetitionDataset } from '@/data/validation/loadProcessedCompetitionDataset';
 import { AdccAthlete } from '@/domain/types';
 
 export const ADCC_ATHLETE_EXPECTED_COLUMNS = [
@@ -13,9 +13,7 @@ export const ADCC_ATHLETE_EXPECTED_COLUMNS = [
   'team',
 ] as const;
 
-type AdccAthleteCsvColumn = (typeof ADCC_ATHLETE_EXPECTED_COLUMNS)[number];
-
-type AdccAthleteCsvRow = Record<AdccAthleteCsvColumn, string>;
+const processedDataset = loadProcessedCompetitionDataset();
 
 let cachedAthletes: AdccAthlete[] | null = null;
 
@@ -24,160 +22,115 @@ export function getAllAthletes(): AdccAthlete[] {
     return cachedAthletes;
   }
 
-  cachedAthletes = parseAthleteRecords(
-    athletesCsv,
-    'ADCC final athlete CSV',
-    ADCC_ATHLETE_EXPECTED_COLUMNS,
+  const eventYearById = new Map(
+    processedDataset.normalized.events.map((event) => [event.id, event.year]),
   );
+  const statsByAthleteId = buildAthleteStats(
+    processedDataset.normalized.matches,
+    eventYearById,
+  );
+
+  cachedAthletes = processedDataset.normalized.athletes
+    .map((athlete) => {
+      const stats = statsByAthleteId.get(athlete.id);
+
+      return {
+        canonicalAthleteId: athlete.id,
+        name: athlete.name,
+        sex: athlete.sexes[0] ?? 'M',
+        primaryWeightClass: stats?.primaryWeightClass ?? athlete.weightClasses[0] ?? 'ABS',
+        activeYearFirst: stats?.activeYearFirst ?? 0,
+        activeYearLast: stats?.activeYearLast ?? 0,
+        totalMatches: stats?.totalMatches ?? 0,
+        nationality: athlete.nationality ?? null,
+        team: athlete.team ?? null,
+      };
+    })
+    .sort((left, right) => left.name.localeCompare(right.name));
 
   return cachedAthletes;
 }
 
-function parseAthleteRecords(
-  csvText: string,
-  sourceLabel: string,
-  expectedColumns: readonly string[],
-): AdccAthlete[] {
-  const rows = parseAthleteCsv(csvText);
-
-  if (rows.length === 0) {
-    throw new Error(`${sourceLabel} is empty.`);
-  }
-
-  const detectedColumns = rows[0];
-  validateAthleteColumns(detectedColumns, sourceLabel, expectedColumns);
-
-  return rows.slice(1).map((values, index) => {
-    const athleteRow = buildAthleteRow(values, detectedColumns, index + 2, sourceLabel);
-
-    return {
-      canonicalAthleteId: athleteRow.canonical_athlete_id,
-      name: athleteRow.name,
-      sex: athleteRow.sex,
-      primaryWeightClass: athleteRow.primary_weight_class,
-      activeYearFirst: parseRequiredInteger(
-        athleteRow.active_year_first,
-        'active_year_first',
-        athleteRow.canonical_athlete_id,
-        sourceLabel,
-      ),
-      activeYearLast: parseRequiredInteger(
-        athleteRow.active_year_last,
-        'active_year_last',
-        athleteRow.canonical_athlete_id,
-        sourceLabel,
-      ),
-      totalMatches: parseRequiredInteger(
-        athleteRow.total_matches,
-        'total_matches',
-        athleteRow.canonical_athlete_id,
-        sourceLabel,
-      ),
-      nationality: normalizeOptionalValue(athleteRow.nationality ?? ''),
-      team: normalizeOptionalValue(athleteRow.team ?? ''),
-    };
-  });
-}
-
-function parseAthleteCsv(csvText: string): string[][] {
-  return csvText
-    .replace(/^\uFEFF/, '')
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0)
-    .map(parseCsvLine);
-}
-
-function parseCsvLine(line: string): string[] {
-  const values: string[] = [];
-  let currentValue = '';
-  let inQuotes = false;
-
-  for (let index = 0; index < line.length; index += 1) {
-    const character = line[index];
-    const nextCharacter = line[index + 1];
-
-    if (character === '"') {
-      if (inQuotes && nextCharacter === '"') {
-        currentValue += '"';
-        index += 1;
-        continue;
-      }
-
-      inQuotes = !inQuotes;
-      continue;
+function buildAthleteStats(
+  matches: ReturnType<typeof loadProcessedCompetitionDataset>['normalized']['matches'],
+  eventYearById: Map<string, number>,
+) {
+  const registry = new Map<
+    string,
+    {
+      totalMatches: number;
+      activeYearFirst: number;
+      activeYearLast: number;
+      weightClassCounts: Map<string, number>;
     }
+  >();
 
-    if (character === ',' && !inQuotes) {
-      values.push(currentValue.trim());
-      currentValue = '';
-      continue;
+  for (const match of matches) {
+    const year = eventYearById.get(match.eventId) ?? 0;
+    updateAthleteStats(registry, match.winnerId, year, match.weightClass);
+    updateAthleteStats(registry, match.loserId, year, match.weightClass);
+  }
+
+  const resolved = new Map<
+    string,
+    {
+      totalMatches: number;
+      activeYearFirst: number;
+      activeYearLast: number;
+      primaryWeightClass: string;
     }
+  >();
 
-    currentValue += character;
+  for (const [athleteId, stats] of registry.entries()) {
+    const primaryWeightClass =
+      [...stats.weightClassCounts.entries()].sort(
+        ([leftWeightClass, leftCount], [rightWeightClass, rightCount]) =>
+          rightCount - leftCount || leftWeightClass.localeCompare(rightWeightClass),
+      )[0]?.[0] ?? 'ABS';
+
+    resolved.set(athleteId, {
+      totalMatches: stats.totalMatches,
+      activeYearFirst: stats.activeYearFirst,
+      activeYearLast: stats.activeYearLast,
+      primaryWeightClass,
+    });
   }
 
-  if (inQuotes) {
-    throw new Error('ADCC athlete CSV contains an unterminated quoted value.');
-  }
-
-  values.push(currentValue.trim());
-  return values;
+  return resolved;
 }
 
-function buildAthleteRow(
-  values: string[],
-  columns: string[],
-  rowNumber: number,
-  sourceLabel: string,
-): AdccAthleteCsvRow {
-  if (values.length !== columns.length) {
-    throw new Error(
-      `${sourceLabel} row ${rowNumber} has ${values.length} columns; expected ${columns.length}.`,
-    );
-  }
-
-  const row = Object.fromEntries(
-    columns.map((column, index) => [column, values[index] ?? '']),
-  ) as Record<string, string>;
-
-  return row as AdccAthleteCsvRow;
-}
-
-function validateAthleteColumns(
-  columns: string[],
-  sourceLabel: string,
-  expectedColumns: readonly string[],
-): void {
-  const missingColumns = expectedColumns.filter(
-    (column) => !columns.includes(column),
-  );
-
-  if (missingColumns.length > 0) {
-    throw new Error(
-      `${sourceLabel} is missing expected columns: ${missingColumns.join(', ')}`,
-    );
-  }
-}
-
-function parseRequiredInteger(
-  rawValue: string,
-  fieldName: string,
+function updateAthleteStats(
+  registry: Map<
+    string,
+    {
+      totalMatches: number;
+      activeYearFirst: number;
+      activeYearLast: number;
+      weightClassCounts: Map<string, number>;
+    }
+  >,
   athleteId: string,
-  sourceLabel: string,
-): number {
-  const value = Number.parseInt(rawValue, 10);
+  year: number,
+  weightClass?: string,
+) {
+  const current =
+    registry.get(athleteId) ?? {
+      totalMatches: 0,
+      activeYearFirst: year,
+      activeYearLast: year,
+      weightClassCounts: new Map<string, number>(),
+    };
 
-  if (Number.isNaN(value)) {
-    throw new Error(
-      `${sourceLabel} has invalid ${fieldName} for ${athleteId}: ${rawValue}`,
+  current.totalMatches += 1;
+  current.activeYearFirst = Math.min(current.activeYearFirst, year);
+  current.activeYearLast = Math.max(current.activeYearLast, year);
+
+  if (weightClass) {
+    current.weightClassCounts.set(
+      weightClass,
+      (current.weightClassCounts.get(weightClass) ?? 0) + 1,
     );
   }
 
-  return value;
-}
-
-function normalizeOptionalValue(value: string): string | null {
-  const normalized = value.trim();
-  return normalized.length > 0 ? normalized : null;
+  registry.set(athleteId, current);
 }
