@@ -21,7 +21,7 @@ describe('getAllAthletes', () => {
       'nationality',
       'team',
     ]);
-    expect(athletes).toHaveLength(328);
+    expect(athletes).toHaveLength(334);
     expect(athlete).toEqual({
       canonicalAthleteId: 'athlete_nicholas-meregali-m',
       name: 'Nicholas Meregali',

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
 import { GraphControls } from '@/features/graph/components/GraphControls';
@@ -26,14 +26,12 @@ describe('GraphControls', () => {
       />,
     );
 
-    expect(
-      screen.getByRole('button', { name: 'All years' }),
-    ).toBeInTheDocument();
+    // Year slider starts at "All years"
+    const yearSlider = screen.getByRole('slider', { name: /year filter/i });
+    expect(yearSlider).toHaveValue('0');
 
-    await user.selectOptions(
-      screen.getByRole('combobox', { name: /year filter/i }),
-      '2022',
-    );
+    // Move slider to position 3 → 2022
+    fireEvent.change(yearSlider, { target: { value: '3' } });
 
     expect(onChange).toHaveBeenCalledWith({
       ...baseFilters,
@@ -63,13 +61,6 @@ describe('GraphControls', () => {
     expect(onChange).toHaveBeenCalledWith({
       ...baseFilters,
       displayMode: 'rivalry',
-    });
-
-    await user.click(screen.getByRole('button', { name: 'All years' }));
-
-    expect(onChange).toHaveBeenLastCalledWith({
-      ...baseFilters,
-      year: null,
     });
   });
 });

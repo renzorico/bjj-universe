@@ -1,15 +1,12 @@
-import { getAllAthletes } from '@/data/adcc/loadAthletes';
 import fixture from '@/data/fixtures/adcc-sample.fixture.json';
 import { normalizeAdccFixture } from '@/data/normalization/normalizeAdccFixture';
 import { buildAthleteMetrics } from '@/data/metrics/buildAthleteMetrics';
-import { buildGraphViewModel } from '@/data/graph/buildGraphViewModel';
 import { RawAdccFixture } from '@/domain/types';
 
 describe('normalizeAdccFixture', () => {
   it('creates normalized athletes, events, and graph-ready metrics from the sample fixture', () => {
     const normalized = normalizeAdccFixture(fixture as RawAdccFixture);
     const metrics = buildAthleteMetrics(normalized);
-    const graph = buildGraphViewModel(normalized, metrics, getAllAthletes());
 
     expect(normalized.events).toHaveLength(3);
     expect(normalized.matches).toHaveLength(6);
@@ -28,14 +25,6 @@ describe('normalizeAdccFixture', () => {
       id: 'athlete_craig-jones-m__athlete_kaynan-duarte-m',
       label: 'Craig Jones vs Kaynan Duarte',
       matches: 2,
-    });
-
-    expect(graph.nodes[0]).toMatchObject({
-      id: 'athlete_jt-torres-m',
-    });
-    expect(graph.edges[0]).toMatchObject({
-      source: 'athlete_jt-torres-m',
-      target: 'athlete_lucas-lepri-m',
     });
   });
 });

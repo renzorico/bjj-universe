@@ -11,11 +11,11 @@ describe('AppShell', () => {
     render(<AppShell route="/" onNavigate={vi.fn()} />);
 
     expect(
-      screen.getByRole('heading', { name: 'BJJ Universe' }),
+      screen.getByRole('heading', { name: /universe/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', {
-        name: /Every rivalry/i,
+        name: /toughest grappling/i,
       }),
     ).toBeInTheDocument();
   });

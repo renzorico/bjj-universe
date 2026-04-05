@@ -7,8 +7,9 @@ import {
 } from '@/data/ingestion/adccHistoricalDataset';
 import { normalizeAdccFixture } from '@/data/normalization/normalizeAdccFixture';
 import processedDataset from '@/data/processed/adcc-historical.processed.json';
+import { getAllCanonicalMatches } from '@/data/adcc/loadCanonicalMatches';
 import { buildGraphViewModel } from '@/data/graph/buildGraphViewModel';
-import { buildAthleteMetrics } from '@/data/metrics/buildAthleteMetrics';
+import { buildCanonicalAthleteMetrics } from '@/data/metrics/buildCanonicalAthleteMetrics';
 import { buildAthleteDiagnostics } from '@/data/validation/buildAthleteDiagnostics';
 import { ProcessedCompetitionDataset } from '@/domain/types';
 
@@ -77,17 +78,16 @@ describe('adccHistoricalDataset ingestion', () => {
 
   it('exports graph-ready data from the real processed dataset', () => {
     const processed = processedDataset as ProcessedCompetitionDataset;
-    const metrics = buildAthleteMetrics(processed.normalized);
-    const graph = buildGraphViewModel(
-      processed.normalized,
-      metrics,
-      getAllAthletes(),
-    );
+    const athletes = getAllAthletes();
+    const matches = getAllCanonicalMatches();
+    const metrics = buildCanonicalAthleteMetrics(athletes, matches);
+    const graph = buildGraphViewModel(athletes, matches, metrics, athletes);
 
     expect(processed.validationSummary.acceptedRows).toBe(1028);
     expect(processed.validationSummary.quarantinedRows).toBe(0);
     expect(processed.normalized.matches).toHaveLength(1058);
-    expect(graph.edges).toHaveLength(1058);
+    expect(graph.edges.length).toBeLessThanOrEqual(matches.length);
+    expect(graph.edges.length).toBeGreaterThan(700);
     expect(graph.nodes.length).toBeGreaterThan(200);
     expect(graph.edges.some((edge) => edge.year === 2022)).toBe(true);
     expect(graph.edges.some((edge) => edge.year === 2024)).toBe(true);

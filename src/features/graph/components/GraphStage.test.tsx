@@ -54,7 +54,7 @@ describe('GraphStage', () => {
     expect(screen.getAllByText('99KG').length).toBeGreaterThan(0);
     expect(screen.queryByText(/Won over Henrique Cardoso/i)).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: /show/i }));
+    await user.click(screen.getByRole('button', { name: /match log/i }));
     expect(screen.getByText(/Won over Henrique Cardoso/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Clear' }));

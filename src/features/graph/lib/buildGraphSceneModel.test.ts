@@ -55,7 +55,7 @@ describe('buildGraphSceneModel', () => {
     const scene = buildGraphSceneModel(snapshot, createDefaultGraphFilters());
     const tYano = scene.nodes.find((node) => node.id === 'athlete_t-yano-m');
 
-    expect(scene.nodes).toHaveLength(328);
+    expect(scene.nodes).toHaveLength(334);
     expect(scene.nodes.find((node) => node.label === 'Yuji Arai')).toBeUndefined();
     expect(tYano?.displayTotalMatches).toBe(3);
     expect(tYano?.displaySex).toBe('M');
