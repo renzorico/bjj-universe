@@ -53,8 +53,8 @@ export function buildGraphViewModel(
       weightClasses: metadata.primaryWeightClass
         ? [metadata.primaryWeightClass]
         : [],
-      nationality: metadata.nationality,
-      team: metadata.team,
+      nationality: metadata.nationality ?? undefined,
+      team: metadata.team ?? undefined,
       bridgeScore: metric?.bridgeScore ?? 0,
       position: basePosition,
     };
