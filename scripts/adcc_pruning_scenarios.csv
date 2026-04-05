@@ -1,0 +1,5 @@
+cutoff_year,remove_rule,removed_count,kept_count
+2013,total_matches = 1 and active_year_last < cutoff_year,198,396
+2015,total_matches = 1 and active_year_last < cutoff_year,228,366
+2017,total_matches = 1 and active_year_last < cutoff_year,255,339
+2019,total_matches = 1 and active_year_last < cutoff_year,281,313

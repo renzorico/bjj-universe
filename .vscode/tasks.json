@@ -1,0 +1,103 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build-project",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "vite-build-only",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"exec",
+				"vite",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "vite-build-pages-base",
+			"type": "shell",
+			"command": "VITE_BASE_PATH=/bjj-universe/ npm exec vite build",
+			"isBackground": false
+		},
+		{
+			"label": "vite-build-pages-check",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"exec",
+				"vite",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "verify-build-after-tsconfig-split",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "verify-build-unblocked",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "verify-build-after-data-loader-fix",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "verify-build-after-year-fix",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "build-mobile-responsive-branch",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "build-mobile-responsive-branch",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		}
+	]
+}
