@@ -8,6 +8,8 @@ interface MatchMappingEntry {
   sex: string;
   weightClass: string;
   year: number;
+  method?: string;
+  roundLabel?: string;
 }
 
 let cachedMatches: CanonicalAdccMatch[] | null = null;
@@ -28,6 +30,8 @@ export function getAllCanonicalMatches(): CanonicalAdccMatch[] {
     loserCanonicalId: m.loserCanonicalId,
     sex: m.sex,
     weightClass: m.weightClass,
+    method: m.method,
+    roundLabel: m.roundLabel,
   }));
 
   return cachedMatches;

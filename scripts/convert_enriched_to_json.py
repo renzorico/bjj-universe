@@ -10,6 +10,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 athletes_csv = os.path.join(BASE, "data/processed/adcc/adcc_athletes_final.csv")
 mapping_csv = os.path.join(BASE, "scripts/adcc_match_athlete_mapping.csv")
+processed_json = os.path.join(BASE, "src/data/processed/adcc-historical.processed.json")
 out_dir = os.path.join(BASE, "src/data/processed")
 
 # --- Athletes ---
@@ -36,9 +37,19 @@ with open(athletes_out, "w") as f:
     json.dump(athletes_json, f, indent=2)
 print(f"Athletes: {len(athletes_json)} records → {athletes_out}")
 
-# --- Match mapping ---
+# --- Match mapping (merge with processed dataset for method/roundLabel) ---
 with open(mapping_csv) as f:
     rows = list(csv.DictReader(f))
+
+with open(processed_json) as f:
+    processed = json.load(f)
+
+# Build lookup from sourceMatchId → processed match (for method, roundLabel)
+processed_by_source_id = {
+    m["sourceMatchId"]: m
+    for m in processed["normalized"]["matches"]
+    if "sourceMatchId" in m
+}
 
 athlete_ids = {a["canonicalAthleteId"] for a in athletes_json}
 
@@ -53,11 +64,6 @@ for match_id, roles in sorted(grouped.items(), key=lambda x: int(x[0])):
     loser = roles.get("loser")
     if not winner or not loser:
         continue
-    # Only include matches where both participants are in enriched set
-    if winner["canonical_athlete_id"] not in athlete_ids:
-        continue
-    if loser["canonical_athlete_id"] not in athlete_ids:
-        continue
     matches_json.append({
         "matchId": match_id,
         "winnerCanonicalId": winner["canonical_athlete_id"],
@@ -65,6 +71,8 @@ for match_id, roles in sorted(grouped.items(), key=lambda x: int(x[0])):
         "sex": winner["sex"],
         "weightClass": winner["weight_class"],
         "year": int(winner["year"]),
+        "method": processed_by_source_id.get(match_id, {}).get("method"),
+        "roundLabel": processed_by_source_id.get(match_id, {}).get("roundLabel"),
     })
 
 matches_json.sort(key=lambda m: (m["year"], int(m["matchId"])))
